@@ -8781,30 +8781,62 @@ th.sortable-th.active-sort .sort-icon {
 }
 
 #masterDbPage .historyTable th,
-#masterDbPage .historyTable td {
+html body #masterDbPage .historyTable th,
+#masterDbPage table.historyTable th {
   height: auto !important;
   max-height: none !important;
-  white-space: normal !important;
-  word-break: break-word !important;
-  overflow-wrap: break-word !important;
+  white-space: nowrap !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  background: #e2e8f0 !important;
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  text-align: left !important;
+  border-bottom: 2px solid #cbd5e1 !important;
   padding: 8px 10px !important;
   vertical-align: middle !important;
   font-size: 12px !important;
   box-sizing: border-box !important;
 }
 
-#masterDbPage .historyTable th {
-  background: #e2e8f0 !important;
-  color: #0f172a !important;
-  font-weight: 800 !important;
-  text-align: left !important;
-  border-bottom: 2px solid #cbd5e1 !important;
+#masterDbPage .historyTable td,
+html body #masterDbPage .historyTable td,
+#masterDbPage table.historyTable td {
+  height: auto !important;
+  max-height: none !important;
+  white-space: nowrap !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  padding: 8px 10px !important;
+  vertical-align: middle !important;
+  font-size: 12px !important;
+  box-sizing: border-box !important;
 }
 
 #masterDbPage .historyTable td div,
 #masterDbPage .historyTable td span,
 #masterDbPage .historyTable td small,
-#masterDbPage .historyTable td strong {
+#masterDbPage .historyTable td strong,
+#masterDbPage .historyTable td .namaTokoWrap {
+  white-space: nowrap !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+
+/* KHUSUS KOLOM ke-7 (DETAIL ITEM & ALASAN): DI-IZINKAN WRAP TEXT UNTUK ISI CELL TD */
+#masterDbPage .historyTable th:nth-child(7),
+html body #masterDbPage .historyTable th:nth-child(7) {
+  white-space: nowrap !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+
+#masterDbPage .historyTable td:nth-child(7),
+html body #masterDbPage .historyTable td:nth-child(7),
+#masterDbPage .historyTable td:nth-child(7) div,
+#masterDbPage .historyTable td:nth-child(7) span,
+#masterDbPage .historyTable td:nth-child(7) small,
+#masterDbPage .historyTable td:nth-child(7) strong {
   white-space: normal !important;
   word-break: break-word !important;
   overflow-wrap: break-word !important;
@@ -8829,6 +8861,12 @@ th.sortable-th.active-sort .sort-icon {
   white-space: nowrap !important;
 }
 
+#masterDbPage .historyTable th:nth-child(4),
+#masterDbPage .historyTable td:nth-child(4),
+#masterDbPage .historyTable td:nth-child(4) div {
+  white-space: nowrap !important;
+}
+
 #masterDbPage .historyTable th:nth-child(5),
 #masterDbPage .historyTable td:nth-child(5) {
   white-space: nowrap !important;
@@ -8844,6 +8882,11 @@ th.sortable-th.active-sort .sort-icon {
 #masterDbPage .historyTable td:nth-child(8) {
   white-space: nowrap !important;
   text-align: center !important;
+}
+
+#masterDbPage .historyTable th:nth-child(9),
+#masterDbPage .historyTable td:nth-child(9) {
+  white-space: nowrap !important;
 }
 
 #masterDbPage .historyTable th:nth-child(10),
@@ -10201,8 +10244,6 @@ div#miniCenterLoadingCard,
 .loadingBoxCard,
 #confirmBoxCard,
 .confirmBoxCard,
-#popupNotifCard,
-.popupNotifCard,
 #modalPilihanCetakPdfCard {
   width: min(420px, 92vw) !important;
   max-width: 92vw !important;
@@ -11562,4 +11603,86 @@ html body #dmApprovalDocPreviewContainer {
 #popupBantuan .chatFooter {
   flex-shrink: 0 !important;
   border-radius: 0 !important;
+}
+
+/* POPUP NOTIFIKASI REAL-TIME LIST (FULLSCREEN 100% LAYAR & 1MM PADDING) */
+html body #popupNotifList,
+#popupNotifList {
+  position: fixed !important;
+  inset: 0 !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  min-width: 100vw !important;
+  height: 100vh !important;
+  max-height: 100vh !important;
+  height: 100dvh !important;
+  max-height: 100dvh !important;
+  min-height: 100dvh !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-sizing: border-box !important;
+  z-index: 2147483640 !important;
+  background: #ffffff !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+html body #popupNotifList .popupNotifCard,
+html body #popupNotifList > div,
+#popupNotifList .popupNotifCard,
+#popupNotifList > div {
+  position: fixed !important;
+  inset: 0 !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  min-width: 100vw !important;
+  height: 100vh !important;
+  max-height: 100vh !important;
+  height: 100dvh !important;
+  max-height: 100dvh !important;
+  min-height: 100dvh !important;
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* BODY NOTIFIKASI PADDING KANAN KIRI PRES 1MM SAJA */
+html body #popupNotifList #notifListBody,
+html body #notifListBody,
+#notifListBody {
+  flex: 1 !important;
+  max-height: none !important;
+  overflow-y: auto !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 1mm !important;
+  padding-right: 1mm !important;
+  background: #ffffff !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+}
+
+/* KARTU ITEM NOTIFIKASI DI DALAM BODY - KANAN KIRI 1MM */
+html body #notifListBody > div,
+#notifListBody > div {
+  padding-left: 1mm !important;
+  padding-right: 1mm !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
 }
