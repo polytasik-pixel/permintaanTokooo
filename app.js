@@ -31609,8 +31609,8 @@ function renderFullPdfPreviewDocument(modelId) {
               <th style="width: 1%; white-space: nowrap; text-align: center; padding: 7px 6px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600;">NO</th>
               <th style="width: 1%; white-space: nowrap; padding: 7px 10px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600; text-align: left;">TIPE BARANG</th>
               <th style="width: 1%; white-space: nowrap; padding: 7px 10px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600; text-align: left;">NO. SERI</th>
-              <th style="padding: 7px 10px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600; text-align: left; white-space: normal; word-break: break-word;">PERMINTAAN BARANG</th>
-              <th style="padding: 7px 10px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600; text-align: left; white-space: normal; word-break: break-word;">ALASAN PERMINTAAN</th>
+              <th style="padding: 7px 10px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600; text-align: left; white-space: nowrap !important; word-break: normal !important;">PERMINTAAN BARANG</th>
+              <th style="padding: 7px 10px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600; text-align: left; white-space: nowrap !important; word-break: normal !important;">ALASAN PERMINTAAN</th>
               <th style="width: 1%; white-space: nowrap; text-align: center; padding: 7px 6px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600;">QTY</th>
             </tr>
           </thead>
@@ -32353,9 +32353,9 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
 
                 ${req.jenis === 'DUS' ? `<th style="width: 1%; padding:9px 10px; border:1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight:800 !important; text-align:center; white-space: nowrap !important;">NO. SERI DUS</th>` : ''}
 
-                <th style="padding:9px 10px; border:1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight:800 !important; text-align:center; white-space: normal !important;">PERMINTAAN BARANG</th>
+                <th style="padding:9px 10px; border:1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight:800 !important; text-align:center; white-space: nowrap !important; word-break: normal !important;">PERMINTAAN BARANG</th>
 
-                <th style="padding:9px 10px; border:1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight:800 !important; text-align:center; white-space: normal !important;">ALASAN PERMINTAAN</th>
+                <th style="padding:9px 10px; border:1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight:800 !important; text-align:center; white-space: nowrap !important; word-break: normal !important;">ALASAN PERMINTAAN</th>
 
                 <th style="width: 1%; text-align:center; padding:9px 8px; border:1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight:800 !important; white-space: nowrap !important;">QTY</th>
 
@@ -35295,8 +35295,8 @@ function filterListUserChat(query) {
               <th style="width: 32px; text-align: center; padding: 7px 4px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600;">NO</th>
               <th style="width: 110px; padding: 7px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600; text-align: left;">TIPE BARANG</th>
               <th style="width: 110px; padding: 7px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600; text-align: left;">NO. SERI</th>
-              <th style="padding: 7px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600; text-align: left;">PERMINTAAN BARANG</th>
-              <th style="padding: 7px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600; text-align: left;">ALASAN PERMINTAAN</th>
+              <th style="padding: 7px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600; text-align: left; white-space: nowrap !important; word-break: normal !important;">PERMINTAAN BARANG</th>
+              <th style="padding: 7px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600; text-align: left; white-space: nowrap !important; word-break: normal !important;">ALASAN PERMINTAAN</th>
               <th style="width: 42px; text-align: center; padding: 7px 4px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600;">QTY</th>
             </tr>
           </thead>
@@ -52639,9 +52639,9 @@ async function cetakPdfSuratParsial(noSurat, partialId) {
 
                 ${req.jenis === 'DUS' ? `<th style="width: 1%; padding:9px 10px; border:1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight:800 !important; text-align:center; white-space: nowrap !important;">NO. SERI DUS</th>` : ''}
 
-                <th style="padding:9px 10px; border:1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight:800 !important; text-align:center; white-space: normal !important;">PERMINTAAN BARANG</th>
+                <th style="padding:9px 10px; border:1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight:800 !important; text-align:center; white-space: nowrap !important; word-break: normal !important;">PERMINTAAN BARANG</th>
 
-                <th style="padding:9px 10px; border:1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight:800 !important; text-align:center; white-space: normal !important;">ALASAN PERMINTAAN</th>
+                <th style="padding:9px 10px; border:1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight:800 !important; text-align:center; white-space: nowrap !important; word-break: normal !important;">ALASAN PERMINTAAN</th>
 
                 <th style="width: 1%; text-align:center; padding:9px 8px; border:1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight:800 !important; white-space: nowrap !important;">QTY</th>
 
@@ -59415,133 +59415,7 @@ async function generateAndBackupApprovedPdf(noSurat, reqObj, forceDownload = fal
     const cleanNoSurat = String(req.noSurat || 'SURAT').replace(/[\/\:]/g, '_');
 
     // Build self-contained HTML Surat Permintaan layout
-    const items = Array.isArray(req.items) ? req.items : [];
-    const isDus = (String(req.jenis || '').toUpperCase() === 'DUS');
-    const dusHeaderTh = isDus ? `<th style="width: 1%; white-space: nowrap; padding: 8px 10px; border: 1px solid #0369a1; background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important; font-weight: 700; text-align: center !important;">NO. SERI DUS</th>` : '';
-
-    let itemsRowsHtml = items.map((i, idx) => {
-      const dusVal = i.noSeriDus || i.seriDus || i.snDus || i.dus || '-';
-      const dusStyle = (dusVal && dusVal !== '-') ? 'color: #d97706; font-weight: 600;' : 'color: #94a3b8; font-weight: 400;';
-      const dusTd = isDus ? `<td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; white-space: nowrap; ${dusStyle}">${dusVal}</td>` : '';
-      return `
-        <tr style="border-bottom: 1px solid #cbd5e1;">
-          <td style="text-align: center; padding: 6px 6px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: nowrap;">${idx + 1}</td>
-          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: nowrap;">${i.type || i.tipe || '-'}</td>
-          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: nowrap;">${i.seri || i.sn || '-'}</td>
-          ${dusTd}
-          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: normal; word-break: break-word;">${i.barang || i.permintaan || '-'}</td>
-          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: normal; word-break: break-word;">${i.alasan || i.keterangan || '-'}</td>
-          <td style="text-align: center; padding: 6px 6px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 600; white-space: nowrap;">${i.qty || 1}</td>
-        </tr>
-      `;
-    }).join('');
-
-    // Pre-process gambar TTD untuk membuat stroke TTD tebal & hitam pekat khusus di lembar PDF
-    const reqStatusUpper = String(req.status || '').toUpperCase();
-    const isApprovedByDM = reqStatusUpper === 'APPROVE' || reqStatusUpper === 'APPROVED' || reqStatusUpper === 'DONE';
-    let dmTTDBold = isApprovedByDM ? (req.dmTTD || '') : '';
-    let serviceTTDBold = req.serviceTTD || '';
-    let pemohonTTDBold = req.pemohonTTD || '';
-    if (typeof makeSignatureBoldBase64 === 'function') {
-      try {
-        const [dmB, srvB, pemB] = await Promise.all([
-          makeSignatureBoldBase64(dmTTDBold),
-          makeSignatureBoldBase64(serviceTTDBold),
-          makeSignatureBoldBase64(pemohonTTDBold)
-        ]);
-        if (dmB) dmTTDBold = dmB;
-        if (srvB) serviceTTDBold = srvB;
-        if (pemB) pemohonTTDBold = pemB;
-      } catch(e) {}
-    }
-
-    const dmTtdImg = dmTTDBold ? `<img src="${dmTTDBold}" style="height: 55px; max-width: 170px; object-fit: contain;" />` : '<div style="color: #16a34a; font-weight: bold; padding: 10px 0;">APPROVED (DM)</div>';
-    const serviceTtdImg = serviceTTDBold ? `<img src="${serviceTTDBold}" style="height: 55px; max-width: 170px; object-fit: contain;" />` : (req.serviceApprove ? '<div style="color: #0077b6; font-weight: bold; padding: 10px 0;">APPROVED (SERVICE)</div>' : '-');
-    const pemohonTtdImg = pemohonTTDBold ? `<img src="${pemohonTTDBold}" style="height: 55px; max-width: 170px; object-fit: contain;" />` : '';
-
-    const areaNameMap = { TSM: 'TASIKMALAYA', BDG: 'BANDUNG', BDU: 'BANDUNG UTARA', CRB: 'CIREBON', SKB: 'SUKABUMI', SBN: 'SUBANG' };
-    const cleanAreaKey = String(req.area || '').trim().toUpperCase();
-    const fullAreaName = areaNameMap[cleanAreaKey] || cleanAreaKey || '';
-    const hodsAreaTitle = fullAreaName ? `HODS ${fullAreaName}` : 'HODS';
-
-    const pemohonNameVal = req.toko || req.tokoNama || req.pemohonNama || req.userToko || (req.createdBy && req.createdBy !== req.serviceUserName ? req.createdBy : '') || 'TOKO';
-
-    const printDate = (typeof getFormattedDateDDMMYYYY === 'function') ? getFormattedDateDDMMYYYY() : new Date().toLocaleDateString('id-ID');
-    const printTime = new Date().toLocaleTimeString('id-ID');
-
-    const htmlContent = `
-      <div style="width: 794px; min-height: 1050px; padding: 35px; background: #ffffff !important; color: #0f172a !important; font-family: 'Poppins', Arial, sans-serif; box-sizing: border-box; position: relative; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility;">
-        
-        <!-- HEADER SURAT (CENTERED TITLE WITH DARK UNDERLINE) -->
-        <div style="text-align: center; font-size: 20px; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 16px; margin-bottom: 20px; letter-spacing: 0.5px; color: #0f172a; text-transform: uppercase;">
-          PERMINTAAN TOKO
-        </div>
-
-        <!-- INFO TABLE (PERFECT MATCH WITH REFERENCE IMAGE) -->
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 18px; font-size: 11.5px; color: #0f172a; background: transparent; border: none;">
-          <tr>
-            <td style="padding: 3px 0; width: 85px; font-weight: 400; color: #0f172a; border: none; white-space: nowrap;">NO SURAT</td>
-            <td style="padding: 3px 4px; width: 12px; color: #0f172a; border: none; text-align: center;">:</td>
-            <td style="padding: 3px 20px 3px 0; font-weight: 600; color: #0284c7; border: none; width: 100%;">${req.noSurat || '-'}</td>
-            <td style="padding: 3px 0; width: 75px; font-weight: 400; color: #0f172a; border: none; text-align: left; white-space: nowrap;">TANGGAL</td>
-            <td style="padding: 3px 4px; width: 12px; color: #0f172a; border: none; text-align: center;">:</td>
-            <td style="padding: 3px 0; color: #0f172a; border: none; text-align: left; white-space: nowrap;">${req.tanggal || '-'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 3px 0; font-weight: 400; color: #0f172a; border: none; white-space: nowrap;">TOKO</td>
-            <td style="padding: 3px 4px; color: #0f172a; border: none; text-align: center;">:</td>
-            <td style="padding: 3px 20px 3px 0; font-weight: 600; color: #0f172a; text-transform: uppercase; border: none; width: 100%;">${pemohonNameVal}</td>
-            <td style="padding: 3px 0; font-weight: 400; color: #0f172a; border: none; text-align: left; white-space: nowrap;">JENIS</td>
-            <td style="padding: 3px 4px; color: #0f172a; border: none; text-align: center;">:</td>
-            <td style="padding: 3px 0; color: #0f172a; text-transform: uppercase; border: none; text-align: left; white-space: nowrap;">${req.jenis || 'DEFAULT'}</td>
-          </tr>
-        </table>
-
-        <!-- TABLE ITEMS -->
-        <div style="font-size: 11px; font-weight: 800; margin-bottom: 6px; color: #0f172a; text-transform: uppercase;">DETAIL PERMINTAAN:</div>
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 28px; font-size: 10.5px; border: 1px solid #cbd5e1; table-layout: auto;">
-          <thead>
-            <tr style="background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important;">
-              <th style="width: 1%; white-space: nowrap; text-align: center !important; padding: 8px 6px; border: 1px solid #0369a1; background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important; font-weight: 700;">NO</th>
-              <th style="width: 1%; white-space: nowrap; padding: 8px 10px; border: 1px solid #0369a1; background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important; font-weight: 700; text-align: center !important;">TIPE BARANG</th>
-              <th style="width: 1%; white-space: nowrap; padding: 8px 10px; border: 1px solid #0369a1; background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important; font-weight: 700; text-align: center !important;">NO. SERI</th>
-              ${dusHeaderTh}
-              <th style="padding: 8px 10px; border: 1px solid #0369a1; background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important; font-weight: 700; text-align: center !important; white-space: normal; word-break: break-word;">PERMINTAAN BARANG</th>
-              <th style="padding: 8px 10px; border: 1px solid #0369a1; background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important; font-weight: 700; text-align: center !important; white-space: normal; word-break: break-word;">ALASAN PERMINTAAN</th>
-              <th style="width: 1%; white-space: nowrap; text-align: center !important; padding: 8px 6px; border: 1px solid #0369a1; background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important; font-weight: 700;">QTY</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${itemsRowsHtml}
-          </tbody>
-        </table>
-
-        <!-- TANDA TANGAN SECTION (3 COLUMNS LIKE IMAGE) -->
-        <table style="width: 100%; text-align: center; margin-top: 40px; font-size: 10.5px; color: #0f172a; border: none; page-break-inside: avoid;">
-          <tr>
-            <td style="width: 33%; vertical-align: top; border: none;">
-              <div style="font-weight: 700; text-transform: uppercase; color: #0f172a; margin-bottom: 4px;">PEMOHON</div>
-              <div style="height: 60px; display: flex; align-items: center; justify-content: center; margin: 4px 0;">${pemohonTtdImg}</div>
-              <strong style="text-transform: uppercase; color: #0f172a; font-size: 11px;">${pemohonNameVal}</strong>
-              <div style="font-size: 9.5px; color: #64748b; margin-top: 2px;">TOKO</div>
-            </td>
-            <td style="width: 33%; vertical-align: top; border: none;">
-              <div style="font-weight: 700; text-transform: uppercase; color: #0f172a; margin-bottom: 4px;">DIPERIKSA</div>
-              <div style="height: 60px; display: flex; align-items: center; justify-content: center; margin: 4px 0;">${serviceTtdImg}</div>
-              <strong style="text-transform: uppercase; color: #0f172a; font-size: 11px;">${req.serviceUserName || 'SERVICE'}</strong>
-              <div style="font-size: 9.5px; color: #64748b; margin-top: 2px;">${hodsAreaTitle}</div>
-            </td>
-            <td style="width: 33%; vertical-align: top; border: none;">
-              <div style="font-weight: 700; text-transform: uppercase; color: #0f172a; margin-bottom: 4px;">DISETUJUI</div>
-              <div style="height: 60px; display: flex; align-items: center; justify-content: center; margin: 4px 0;">${dmTtdImg}</div>
-              <strong style="text-transform: uppercase; color: #0f172a; font-size: 11px;">${req.dmUserName || 'DISTRICT MANAGER'}</strong>
-              <div style="font-size: 9.5px; color: #64748b; margin-top: 2px;">DISTRICT MANAGER</div>
-            </td>
-          </tr>
-        </table>
-
-      </div>
-    `;
+    const htmlContent = await buildSuratPermintaanHtmlString(req);
 
     // Make container positioned at top:0, left:0 behind opacity/z-index for exact html2canvas coordinate capture
     let printContainer = document.getElementById('tempPdfBackupContainer');
@@ -59767,6 +59641,245 @@ function getLoggedInUserSignature(req) {
 }
 window.getLoggedInUserSignature = getLoggedInUserSignature;
 
+// ============================================================================
+// HELPER GENERATE HTML SURAT PERMINTAAN & PRINT DIRECT (LIVE TTD CANVAS)
+// ============================================================================
+
+async function buildSuratPermintaanHtmlString(req) {
+  if (!req) return '';
+
+  const items = Array.isArray(req.items) ? req.items : [];
+  const isDus = (String(req.jenis || '').toUpperCase() === 'DUS');
+  const dusHeaderTh = isDus ? `<th style="width: 1%; white-space: nowrap; padding: 8px 10px; border: 1px solid #0369a1; background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important; font-weight: 700; text-align: center !important;">NO. SERI DUS</th>` : '';
+
+  let itemsRowsHtml = items.map((i, idx) => {
+    const dusVal = i.noSeriDus || i.seriDus || i.snDus || i.dus || '-';
+    const dusStyle = (dusVal && dusVal !== '-') ? 'color: #d97706; font-weight: 600;' : 'color: #94a3b8; font-weight: 400;';
+    const dusTd = isDus ? `<td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; white-space: nowrap; ${dusStyle}">${dusVal}</td>` : '';
+    return `
+      <tr style="border-bottom: 1px solid #cbd5e1;">
+        <td style="text-align: center; padding: 6px 6px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: nowrap;">${idx + 1}</td>
+        <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: nowrap;">${i.type || i.tipe || '-'}</td>
+        <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: nowrap;">${i.seri || i.sn || '-'}</td>
+        ${dusTd}
+        <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: nowrap !important; word-break: normal !important;">${i.barang || i.permintaan || '-'}</td>
+        <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: nowrap !important; word-break: normal !important;">${i.alasan || i.keterangan || '-'}</td>
+        <td style="text-align: center; padding: 6px 6px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 600; white-space: nowrap;">${i.qty || 1}</td>
+      </tr>
+    `;
+  }).join('');
+
+  const reqStatusUpper = String(req.status || '').toUpperCase();
+  const isApprovedByDM = (reqStatusUpper === 'APPROVE' || reqStatusUpper === 'APPROVED' || reqStatusUpper === 'DONE') || !!req.dmTTD;
+  let dmTTDBold = isApprovedByDM ? (req.dmTTD || '') : '';
+  let serviceTTDBold = req.serviceTTD || '';
+  let pemohonTTDBold = req.pemohonTTD || '';
+
+  if (typeof makeSignatureBoldBase64 === 'function') {
+    try {
+      const [dmB, srvB, pemB] = await Promise.all([
+        makeSignatureBoldBase64(dmTTDBold),
+        makeSignatureBoldBase64(serviceTTDBold),
+        makeSignatureBoldBase64(pemohonTTDBold)
+      ]);
+      if (dmB) dmTTDBold = dmB;
+      if (srvB) serviceTTDBold = srvB;
+      if (pemB) pemohonTTDBold = pemB;
+    } catch(e) {}
+  }
+
+  const dmTtdImg = dmTTDBold ? `<img src="${dmTTDBold}" style="height: 55px; max-width: 170px; object-fit: contain;" />` : (isApprovedByDM ? '<div style="color: #16a34a; font-weight: bold; padding: 10px 0;">APPROVED (DM)</div>' : '<div style="color: #94a3b8; font-style: italic; padding: 10px 0;">[ SILAKAN TTD DI CANVAS ]</div>');
+  const serviceTtdImg = serviceTTDBold ? `<img src="${serviceTTDBold}" style="height: 55px; max-width: 170px; object-fit: contain;" />` : (req.serviceApprove ? '<div style="color: #0077b6; font-weight: bold; padding: 10px 0;">APPROVED (SERVICE)</div>' : '-');
+  const pemohonTtdImg = pemohonTTDBold ? `<img src="${pemohonTTDBold}" style="height: 55px; max-width: 170px; object-fit: contain;" />` : '';
+
+  const areaNameMap = { TSM: 'TASIKMALAYA', BDG: 'BANDUNG', BDU: 'BANDUNG UTARA', CRB: 'CIREBON', SKB: 'SUKABUMI', SBN: 'SUBANG' };
+  const cleanAreaKey = String(req.area || '').trim().toUpperCase();
+  const fullAreaName = areaNameMap[cleanAreaKey] || cleanAreaKey || '';
+  const hodsAreaTitle = fullAreaName ? `HODS ${fullAreaName}` : 'HODS';
+  const pemohonNameVal = req.toko || req.tokoNama || req.pemohonNama || req.userToko || (req.createdBy && req.createdBy !== req.serviceUserName ? req.createdBy : '') || 'TOKO';
+
+  return `
+    <div style="width: 794px; min-height: 1050px; padding: 35px; background: #ffffff !important; color: #0f172a !important; font-family: 'Poppins', Arial, sans-serif; box-sizing: border-box; position: relative; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility;">
+      
+      <!-- HEADER SURAT -->
+      <div style="text-align: center; font-size: 20px; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 16px; margin-bottom: 20px; letter-spacing: 0.5px; color: #0f172a; text-transform: uppercase;">
+        PERMINTAAN TOKO
+      </div>
+
+      <!-- INFO TABLE -->
+      <table style="width: 100%; border-collapse: collapse; margin-bottom: 18px; font-size: 11.5px; color: #0f172a; background: transparent; border: none;">
+        <tr>
+          <td style="padding: 3px 0; width: 85px; font-weight: 400; color: #0f172a; border: none; white-space: nowrap;">NO SURAT</td>
+          <td style="padding: 3px 4px; width: 12px; color: #0f172a; border: none; text-align: center;">:</td>
+          <td style="padding: 3px 20px 3px 0; font-weight: 600; color: #0284c7; border: none; width: 100%;">${req.noSurat || '-'}</td>
+          <td style="padding: 3px 0; width: 75px; font-weight: 400; color: #0f172a; border: none; text-align: left; white-space: nowrap;">TANGGAL</td>
+          <td style="padding: 3px 4px; width: 12px; color: #0f172a; border: none; text-align: center;">:</td>
+          <td style="padding: 3px 0; color: #0f172a; border: none; text-align: left; white-space: nowrap;">${req.tanggal || '-'}</td>
+        </tr>
+        <tr>
+          <td style="padding: 3px 0; font-weight: 400; color: #0f172a; border: none; white-space: nowrap;">TOKO</td>
+          <td style="padding: 3px 4px; color: #0f172a; border: none; text-align: center;">:</td>
+          <td style="padding: 3px 20px 3px 0; font-weight: 600; color: #0f172a; text-transform: uppercase; border: none; width: 100%;">${pemohonNameVal}</td>
+          <td style="padding: 3px 0; font-weight: 400; color: #0f172a; border: none; text-align: left; white-space: nowrap;">JENIS</td>
+          <td style="padding: 3px 4px; color: #0f172a; border: none; text-align: center;">:</td>
+          <td style="padding: 3px 0; color: #0f172a; text-transform: uppercase; border: none; text-align: left; white-space: nowrap;">${req.jenis || 'DEFAULT'}</td>
+        </tr>
+      </table>
+
+      <!-- TABLE ITEMS -->
+      <div style="font-size: 11px; font-weight: 800; margin-bottom: 6px; color: #0f172a; text-transform: uppercase;">DETAIL PERMINTAAN:</div>
+      <table style="width: 100%; border-collapse: collapse; margin-bottom: 28px; font-size: 10.5px; border: 1px solid #cbd5e1; table-layout: auto;">
+        <thead>
+          <tr style="background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important;">
+            <th style="white-space: nowrap !important; text-align: center !important; padding: 8px 6px; border: 1px solid #0369a1; background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important; font-weight: 700;">NO</th>
+            <th style="white-space: nowrap !important; padding: 8px 10px; border: 1px solid #0369a1; background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important; font-weight: 700; text-align: center !important;">TIPE BARANG</th>
+            <th style="white-space: nowrap !important; padding: 8px 10px; border: 1px solid #0369a1; background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important; font-weight: 700; text-align: center !important;">NO. SERI</th>
+            ${dusHeaderTh}
+            <th style="white-space: nowrap !important; word-break: normal !important; padding: 8px 10px; border: 1px solid #0369a1; background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important; font-weight: 700; text-align: center !important;">PERMINTAAN BARANG</th>
+            <th style="white-space: nowrap !important; word-break: normal !important; padding: 8px 10px; border: 1px solid #0369a1; background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important; font-weight: 700; text-align: center !important;">ALASAN PERMINTAAN</th>
+            <th style="white-space: nowrap !important; text-align: center !important; padding: 8px 6px; border: 1px solid #0369a1; background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important; font-weight: 700;">QTY</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${itemsRowsHtml}
+        </tbody>
+      </table>
+
+      <!-- TANDA TANGAN SECTION -->
+      <table style="width: 100%; text-align: center; margin-top: 40px; font-size: 10.5px; color: #0f172a; border: none; page-break-inside: avoid;">
+        <tr>
+          <td style="width: 33%; vertical-align: top; border: none;">
+            <div style="font-weight: 700; text-transform: uppercase; color: #0f172a; margin-bottom: 4px;">PEMOHON</div>
+            <div style="height: 60px; display: flex; align-items: center; justify-content: center; margin: 4px 0;">${pemohonTtdImg}</div>
+            <strong style="text-transform: uppercase; color: #0f172a; font-size: 11px;">${pemohonNameVal}</strong>
+            <div style="font-size: 9.5px; color: #64748b; margin-top: 2px;">TOKO</div>
+          </td>
+          <td style="width: 33%; vertical-align: top; border: none;">
+            <div style="font-weight: 700; text-transform: uppercase; color: #0f172a; margin-bottom: 4px;">DIPERIKSA</div>
+            <div style="height: 60px; display: flex; align-items: center; justify-content: center; margin: 4px 0;">${serviceTtdImg}</div>
+            <strong style="text-transform: uppercase; color: #0f172a; font-size: 11px;">${req.serviceUserName || 'SERVICE'}</strong>
+            <div style="font-size: 9.5px; color: #64748b; margin-top: 2px;">${hodsAreaTitle}</div>
+          </td>
+          <td style="width: 33%; vertical-align: top; border: none;">
+            <div style="font-weight: 700; text-transform: uppercase; color: #0f172a; margin-bottom: 4px;">DISETUJUI</div>
+            <div style="height: 60px; display: flex; align-items: center; justify-content: center; margin: 4px 0;">${dmTtdImg}</div>
+            <strong style="text-transform: uppercase; color: #0f172a; font-size: 11px;">${req.dmUserName || 'DISTRICT MANAGER'}</strong>
+            <div style="font-size: 9.5px; color: #64748b; margin-top: 2px;">DISTRICT MANAGER</div>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+  `;
+}
+window.buildSuratPermintaanHtmlString = buildSuratPermintaanHtmlString;
+
+async function cetakHtmlSuratDirect(htmlContent, noSurat = '') {
+  let iframe = document.getElementById('printSuratDirectFrame');
+  if (iframe) iframe.remove();
+
+  iframe = document.createElement('iframe');
+  iframe.id = 'printSuratDirectFrame';
+  iframe.style.position = 'fixed';
+  iframe.style.right = '0';
+  iframe.style.bottom = '0';
+  iframe.style.width = '0';
+  iframe.style.height = '0';
+  iframe.style.border = '0';
+  iframe.style.visibility = 'hidden';
+  document.body.appendChild(iframe);
+
+  const doc = iframe.contentWindow.document;
+  doc.open();
+  doc.write(`
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Surat Permintaan #${noSurat}</title>
+      <style>
+        @page { size: A4 portrait; margin: 8mm; }
+        body { margin: 0; padding: 0; background: #ffffff; font-family: 'Poppins', Arial, sans-serif; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+        table { border-collapse: collapse; }
+        th, td { word-wrap: normal; }
+        @media print {
+          body { background: #ffffff; }
+        }
+      </style>
+    </head>
+    <body>
+      ${htmlContent}
+    </body>
+    </html>
+  `);
+  doc.close();
+
+  const imgs = doc.querySelectorAll('img');
+  await Promise.all(Array.from(imgs).map(img => {
+    if (img.complete) return Promise.resolve();
+    return new Promise(res => {
+      img.onload = res;
+      img.onerror = res;
+    });
+  }));
+  await new Promise(r => setTimeout(r, 250));
+
+  try {
+    iframe.contentWindow.focus();
+    iframe.contentWindow.print();
+  } catch(e) {
+    console.warn('[PRINT IFRAME WARN]:', e);
+  }
+}
+window.cetakHtmlSuratDirect = cetakHtmlSuratDirect;
+
+async function lihatPdfApprovalDMLive() {
+  const targetNoSurat = _dmApprovalCurrentNoSurat;
+  if (!targetNoSurat) return;
+
+  const requests = typeof getRequestsFromDB === 'function' ? getRequestsFromDB() : [];
+  const rawReq = requests.find(r => r && String(r.noSurat).trim().toUpperCase() === String(targetNoSurat).trim().toUpperCase());
+  if (!rawReq) {
+    if (typeof showNotif === 'function') showNotif('Data permintaan tidak ditemukan!', 'error');
+    return;
+  }
+
+  // Clone req agar tidak merusak DB sebelum disetujui
+  const req = JSON.parse(JSON.stringify(rawReq));
+
+  // Ambil TTD live dari canvas jika canvas diisi/dipakai
+  const canvas = document.getElementById('canvasTTDDM');
+  if (canvas && typeof isDMCanvasBlank === 'function' && !isDMCanvasBlank()) {
+    let ttdDataUrl = '';
+    if (typeof getThickCroppedSignatureBase64 === 'function') {
+      ttdDataUrl = await getThickCroppedSignatureBase64(canvas);
+    } else {
+      ttdDataUrl = canvas.toDataURL('image/png');
+    }
+    if (ttdDataUrl) {
+      req.dmTTD = ttdDataUrl;
+      req.status = 'APPROVE';
+      req.dmUserName = currentUser ? (currentUser.fullName || currentUser.username) : 'DM';
+    }
+  }
+
+  if (typeof tampilkanLoadingProses === 'function') tampilkanLoadingProses('MENYIAPKAN PRATINJAU DOKUMEN...');
+
+  try {
+    const htmlContent = await buildSuratPermintaanHtmlString(req);
+    if (typeof tutupLoadingProses === 'function') tutupLoadingProses();
+    else if (typeof hideLoading === 'function') hideLoading();
+
+    await cetakHtmlSuratDirect(htmlContent, req.noSurat);
+  } catch(e) {
+    console.error('[LIHAT PDF LIVE ERROR]:', e);
+    if (typeof tutupLoadingProses === 'function') tutupLoadingProses();
+    else if (typeof hideLoading === 'function') hideLoading();
+    if (typeof showNotif === 'function') showNotif('Gagal membuka pratinjau PDF!', 'error');
+  }
+}
+window.lihatPdfApprovalDMLive = lihatPdfApprovalDMLive;
+
 function bukaModalApprovalDMCanvas(noSurat) {
   if (!noSurat) return;
   _dmApprovalCurrentNoSurat = noSurat;
@@ -59780,111 +59893,10 @@ function bukaModalApprovalDMCanvas(noSurat) {
     return;
   }
 
-  // Render Surat Permintaan Preview into #dmApprovalDocPreviewContainer
+  // Render No Surat ke #dmApprovalDocPreviewContainer (di atas kotak TTD DM)
   const container = document.getElementById('dmApprovalDocPreviewContainer');
   if (container) {
-    const items = Array.isArray(req.items) ? req.items : [];
-    const isDus = (String(req.jenis || '').toUpperCase() === 'DUS');
-    const dusHeaderTh = isDus ? `<th style="width: 1%; white-space: nowrap !important; padding: 7px 10px; border: 1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight: 700; text-align: center !important;">NO. SERI DUS</th>` : '';
-
-    let itemsRowsHtml = items.map((i, idx) => {
-      const dusVal = i.noSeriDus || i.seriDus || i.snDus || i.dus || '-';
-      const dusStyle = (dusVal && dusVal !== '-') ? 'color: #d97706; font-weight: 600;' : 'color: #94a3b8; font-weight: 400;';
-      const dusTd = isDus ? `<td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; white-space: nowrap !important; ${dusStyle}">${dusVal}</td>` : '';
-      return `
-        <tr style="border-bottom: 1px solid #cbd5e1;">
-          <td style="text-align: center !important; padding: 6px 4px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: nowrap !important;">${idx + 1}</td>
-          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: nowrap !important;">${i.type || i.tipe || '-'}</td>
-          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: nowrap !important;">${i.seri || i.sn || '-'}</td>
-          ${dusTd}
-          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: normal !important; word-break: break-word !important; overflow-wrap: break-word !important;">${i.barang || i.permintaan || '-'}</td>
-          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: normal !important; word-break: break-word !important; overflow-wrap: break-word !important;">${i.alasan || i.keterangan || '-'}</td>
-          <td style="text-align: center !important; padding: 6px 4px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 600; white-space: nowrap !important;">${i.qty || 1}</td>
-        </tr>
-      `;
-    }).join('');
-
-    const serviceTtdImg = req.serviceTTD ? `<img src="${req.serviceTTD}" crossOrigin="anonymous" style="max-height: 44px; max-width: 110px; object-fit: contain;" />` : (req.serviceApprove ? '<div style="color: #0077b6; font-weight: 500; padding: 4px 0;">APPROVED (SERVICE)</div>' : '-');
-    const pemohonTtdImg = req.pemohonTTD ? `<img src="${req.pemohonTTD}" crossOrigin="anonymous" style="max-height: 44px; max-width: 110px; object-fit: contain;" />` : '';
-
-    container.innerHTML = `
-      <div style="font-family: 'Poppins', Arial, sans-serif; background: #ffffff; color: #0f172a; padding: 18px; border-radius: 4px; border: 1px solid #cbd5e1; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
-        
-        <!-- Header Title: PERMINTAAN TOKO (CENTERED TITLE WITH DARK UNDERLINE LIKE IMAGE) -->
-        <div style="text-align: center; font-size: 18px; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 12px; margin-bottom: 16px; letter-spacing: 0.5px; color: #0f172a; text-transform: uppercase;">
-          PERMINTAAN TOKO
-        </div>
-
-        <!-- Info Grid -->
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 11.5px; color: #0f172a;">
-          <tr>
-            <td style="padding: 3px 0; width: 85px; font-weight: 400; color: #0f172a;">NO SURAT</td>
-            <td style="padding: 3px 4px; width: 12px; color: #0f172a;">:</td>
-            <td style="padding: 3px 0; font-weight: 600; color: #0284c7;">${req.noSurat || '-'}</td>
-            <td style="padding: 3px 0; width: 85px; font-weight: 400; color: #0f172a; text-align: left;">TANGGAL</td>
-            <td style="padding: 3px 4px; width: 12px; color: #0f172a; text-align: center;">:</td>
-            <td style="padding: 3px 0; font-weight: 400; color: #0f172a; width: 120px;">${req.tanggal || '-'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 3px 0; font-weight: 400; color: #0f172a;">TOKO</td>
-            <td style="padding: 3px 4px; color: #0f172a;">:</td>
-            <td style="padding: 3px 0; font-weight: 600; color: #0f172a; text-transform: uppercase;">${req.toko || '-'}</td>
-            <td style="padding: 3px 0; font-weight: 400; color: #0f172a; text-align: left;">JENIS</td>
-            <td style="padding: 3px 4px; color: #0f172a; text-align: center;">:</td>
-            <td style="padding: 3px 0; text-transform: uppercase; font-weight: 400; color: #0f172a;">${req.jenis || 'DEFAULT'}</td>
-          </tr>
-        </table>
-
-        <!-- Section Label -->
-        <div style="font-size: 11.5px; font-weight: 700; margin-bottom: 8px; color: #0f172a; text-transform: uppercase;">DETAIL PERMINTAAN:</div>
-
-        <!-- Items Table (Auto-fit layout with Word Wrap) -->
-        <table style="width: 100% !important; table-layout: auto !important; border-collapse: collapse; margin-bottom: 16px; font-size: 10.5px; border: 1px solid #cbd5e1;">
-          <thead>
-            <tr style="background: #0284c7 !important; color: #ffffff !important;">
-              <th style="width: 1%; white-space: nowrap !important; text-align: center !important; padding: 7px 6px; border: 1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight: 700;">NO</th>
-              <th style="width: 1%; white-space: nowrap !important; padding: 7px 10px; border: 1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight: 700; text-align: center !important;">TIPE BARANG</th>
-              <th style="width: 1%; white-space: nowrap !important; padding: 7px 10px; border: 1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight: 700; text-align: center !important;">NO. SERI</th>
-              ${dusHeaderTh}
-              <th style="padding: 7px 10px; border: 1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight: 700; text-align: center !important; white-space: normal !important; word-break: break-word !important;">PERMINTAAN BARANG</th>
-              <th style="padding: 7px 10px; border: 1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight: 700; text-align: center !important; white-space: normal !important; word-break: break-word !important;">ALASAN PERMINTAAN</th>
-              <th style="width: 1%; white-space: nowrap !important; text-align: center !important; padding: 7px 6px; border: 1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight: 700;">QTY</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${itemsRowsHtml || '<tr><td colspan="7" style="text-align: center; padding: 10px; color: #94a3b8; font-weight: 400;">Tidak ada item</td></tr>'}
-          </tbody>
-        </table>
-
-        <!-- TTD Area Summary -->
-        <div style="display: flex; justify-content: space-around; text-align: center; font-size: 11px; margin-top: 10px; gap: 8px;">
-          <div style="flex: 1; border: 1px solid #e2e8f0; padding: 6px; border-radius: 4px; background: #f8fafc;">
-            <div style="font-weight: 600; color: #475569; margin-bottom: 2px;">PEMOHON</div>
-            <div style="height: 44px; display: flex; align-items: center; justify-content: center;">
-              ${pemohonTtdImg || '<span style="color: #94a3b8; font-style: italic; font-weight: 400;">ADA</span>'}
-            </div>
-            <div style="font-size: 10px; color: #64748b; font-weight: 400; margin-top: 2px;">${req.pemohonUserName || req.pemohon || 'Pemohon Toko'}</div>
-          </div>
-
-          <div style="flex: 1; border: 1px solid #e2e8f0; padding: 6px; border-radius: 4px; background: #f8fafc;">
-            <div style="font-weight: 600; color: #0077b6; margin-bottom: 2px;">SERVICE</div>
-            <div style="height: 44px; display: flex; align-items: center; justify-content: center;">
-              ${serviceTtdImg}
-            </div>
-            <div style="font-size: 10px; color: #64748b; font-weight: 400; margin-top: 2px;">${req.serviceUserName || 'Service'}</div>
-          </div>
-
-          <div style="flex: 1; border: 1px dashed #16a34a; padding: 6px; border-radius: 4px; background: #f0fdf4;">
-            <div style="font-weight: 600; color: #16a34a; margin-bottom: 2px;">DM</div>
-            <div style="height: 44px; display: flex; align-items: center; justify-content: center; color: #16a34a; font-weight: 500; font-size: 10px;">
-              [ SILAKAN TTD DI CANVAS ]
-            </div>
-            <div style="font-size: 10px; color: #16a34a; font-weight: 500; margin-top: 2px;">${currentUser ? (currentUser.fullName || currentUser.username) : 'DM'}</div>
-          </div>
-        </div>
-
-      </div>
-    `;
+    container.innerHTML = `No Surat: <span style="color: #0284c7;">#${req.noSurat || '-'}</span>`;
   }
 
   // Display Modal
