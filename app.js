@@ -30936,21 +30936,13 @@ function closeDetail() {
 
 
 function isValidSig(s) {
-
   if (!s || typeof s !== 'string') return false;
-
   const trimmed = s.trim();
-
-  if (!trimmed || trimmed === 'null' || trimmed === 'undefined') return false;
-
+  if (!trimmed || trimmed === 'null' || trimmed === 'undefined' || trimmed === '[]' || trimmed === '{}') return false;
   if (trimmed.startsWith('blob:')) return false; // BLOB URLs are local to device browser and fail on other devices
-
   if (trimmed.includes('DIGITALLY VERIFIED') || trimmed.includes('OfficialDigitalSignatureStamp') || trimmed.includes('rect x="1.5"') || trimmed.includes('<svg') || trimmed.includes('APPROVED')) return false;
-
-  return trimmed.startsWith('data:image/') || trimmed.startsWith('http://') || trimmed.startsWith('https://') || trimmed.startsWith('TTD_') || trimmed.endsWith('.png') || trimmed.endsWith('.jpg');
-
+  return trimmed.startsWith('[') || trimmed.startsWith('data:image/') || trimmed.startsWith('http://') || trimmed.startsWith('https://') || trimmed.startsWith('TTD_') || trimmed.endsWith('.png') || trimmed.endsWith('.jpg');
 }
-
 window.isValidSig = isValidSig;
 
 
@@ -30959,7 +30951,7 @@ function formatSupabaseStorageUrl(urlOrFileName) {
   if (!urlOrFileName || typeof urlOrFileName !== 'string') return '';
   const trimmed = urlOrFileName.trim();
   if (!trimmed || trimmed === 'null' || trimmed === 'undefined' || trimmed === 'false' || trimmed === '[]' || trimmed === '{}') return '';
-  if (trimmed.startsWith('data:image/') || trimmed.startsWith('blob:')) return trimmed;
+  if (trimmed.startsWith('[') || trimmed.startsWith('data:image/') || trimmed.startsWith('blob:')) return trimmed;
   if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) return trimmed;
 
   const sb = (typeof getSupabaseFileClient === 'function') ? getSupabaseFileClient() : ((typeof supabaseFile !== 'undefined' && supabaseFile) ? supabaseFile : ((typeof supabase !== 'undefined' && supabase) ? supabase : null));
@@ -30981,6 +30973,12 @@ window.formatSupabaseStorageUrl = formatSupabaseStorageUrl;
 
 function renderSafeTtdImageTag(sigUrl, styleAttr = 'max-height: 52px; max-width: 100%; object-fit: contain;') {
   if (!isValidSig(sigUrl)) return '';
+  if (typeof sigUrl === 'string' && sigUrl.trim().startsWith('[')) {
+    if (typeof convertStrokesToDataUrl === 'function') {
+      const strokeDataUrl = convertStrokesToDataUrl(sigUrl, 400, 150);
+      return `<img src="${strokeDataUrl}" style="${styleAttr}; background: transparent; mix-blend-mode: multiply;" onerror="this.style.display='none';">`;
+    }
+  }
   const fullUrl = formatSupabaseStorageUrl(sigUrl);
   if (!fullUrl) return '';
 
@@ -31729,17 +31727,25 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
   let directPdfUrl = (matchedReq && (matchedReq.pdf_drive_url || matchedReq.pdfDriveUrl)) || '';
 
   // Coba periksa database Supabase jika URL belum ada di memori lokal
-  if (!directPdfUrl && typeof supabase !== 'undefined' && supabase) {
-    try {
-      const { data } = await supabase.from('permintaan_toko').select('pdf_drive_url').or(`no_surat.eq.${targetNoStr},id.eq.${targetNoStr}`).maybeSingle();
-      if (data && data.pdf_drive_url) {
-        directPdfUrl = data.pdf_drive_url;
-        if (matchedReq) {
-          matchedReq.pdf_drive_url = directPdfUrl;
-          matchedReq.pdfDriveUrl = directPdfUrl;
+  if (!directPdfUrl) {
+    const sbClient = (typeof supabase !== 'undefined' && supabase) || window.supabase || window.supabaseClient || window.supabaseAdmin;
+    if (sbClient && typeof sbClient.from === 'function') {
+      try {
+        const cleanNo = targetNoStr.replace(/^#/g, '').trim();
+        const { data } = await sbClient
+          .from('permintaan_toko')
+          .select('pdf_drive_url')
+          .or(`no_surat.eq.${targetNoStr},no_surat.eq.#${cleanNo},no_surat.eq.${cleanNo},id.eq.${targetNoStr},id.eq.${cleanNo}`)
+          .maybeSingle();
+        if (data && data.pdf_drive_url) {
+          directPdfUrl = data.pdf_drive_url;
+          if (matchedReq) {
+            matchedReq.pdf_drive_url = directPdfUrl;
+            matchedReq.pdfDriveUrl = directPdfUrl;
+          }
         }
-      }
-    } catch(e) {}
+      } catch(e) {}
+    }
   }
 
   const uploadedPdf = typeof getUploadedPdfFromRequest === 'function' ? getUploadedPdfFromRequest(matchedReq) : null;
@@ -31759,8 +31765,8 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
     return;
   }
 
-  // 2. JIKA HANYA ADA PDF_DRIVE_URL SAJA (TANPA LAMPIRAN BUKTI & TANPA PARSIAL): LANGSUNG UNDUH FILE PDF
-  if (includePhotos !== 'skipChoice' && hasDriveUrl && !hasUploadedPdf && !hasPartials) {
+  // 2. JIKA ADA PDF_DRIVE_URL: LANGSUNG BUKA / UNDUH FILE PDF DARI DRIVE
+  if (hasDriveUrl) {
     if (typeof tutupLoadingProses === 'function') tutupLoadingProses();
     const cleanNoSurat = targetNoStr.replace(/[\/\\:\*\?"<>\|]/g, '_');
     const fileName = `SURAT_PERMINTAAN_${cleanNoSurat}.pdf`;
@@ -31779,7 +31785,7 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
     return;
   }
 
-  // 3. JIKA TIDAK ADA PDF_DRIVE_URL ATAU DIPILIH SURAT UTAMA DARI MODAL PILIHAN: LANGSUNG BUKA DIALOG CETAK BROWSER ASLI (WINDOW.PRINT)
+  // 3. JIKA TIDAK ADA PDF_DRIVE_URL (KOSONG): BARU BUKA DIALOG CETAK CHROME / HTML RENDERER
   autoPrint = true;
 
   if (typeof tampilkanLoadingProses === 'function') {
@@ -52850,7 +52856,7 @@ function tampilkanPilihanCetakPdf(noSurat, targetReq = null) {
         <span style="display: flex !important; align-items: center !important; gap: 8px !important; text-align: left !important;">
           <span class="material-symbols-rounded" style="color: #0284c7 !important; font-size: 22px !important; flex-shrink: 0 !important;">description</span> 
           <span>
-            <div style="font-size: 12px !important; font-weight: 800 !important; color: #0369a1 !important; line-height: 1.2 !important;">SURAT UTAMA (INDUK)</div>
+            <div style="font-size: 12px !important; font-weight: 800 !important; color: #0369a1 !important; line-height: 1.2 !important;">SURAT UTAMA</div>
             <div style="font-size: 10px !important; color: #64748b !important; font-weight: 700 !important; margin-top: 2px !important;">#${noSurat}</div>
           </span>
         </span>
@@ -59046,12 +59052,19 @@ async function simpanApprovalDMWithTTDAndGDrive() {
       return (rNo && rNo === cleanTarget) || (rId && rId === cleanTarget);
     });
 
+    const strokesJSON = typeof getSignatureStrokesJSON === 'function' ? getSignatureStrokesJSON() : JSON.stringify(window._dmCurrentStrokes || []);
+    const isStrokesValid = strokesJSON && strokesJSON !== '[]' && strokesJSON.length > 5;
+    const sigValueToSave = (finalTtdUrl && (finalTtdUrl.startsWith('http://') || finalTtdUrl.startsWith('https://'))) 
+      ? finalTtdUrl 
+      : (isStrokesValid ? strokesJSON : ttdDataUrl);
+
     let targetReq = null;
     if (idx !== -1) {
       requests[idx].status = 'APPROVE';
       requests[idx].dmUserName = currentUser ? (currentUser.fullName || currentUser.username) : 'DM';
-      requests[idx].dmTTD = ttdDataUrl || finalTtdUrl; // Ambil persis goresan gambar dari canvas DM
-      requests[idx].dm_ttd = finalTtdUrl;
+      requests[idx].dmTTD = sigValueToSave;
+      requests[idx].dm_ttd = sigValueToSave;
+      requests[idx].dmTTDStrokes = strokesJSON;
 
       if (!requests[idx].log) requests[idx].log = [];
       requests[idx].log.push({
@@ -59121,6 +59134,12 @@ window.ensureHtml2PdfLoaded = ensureHtml2PdfLoaded;
 function getThickCroppedSignatureBase64(source) {
   return new Promise((resolve) => {
     if (!source) return resolve(source);
+
+    if (typeof source === 'string' && source.trim().startsWith('[')) {
+      if (typeof convertStrokesToDataUrl === 'function') {
+        source = convertStrokesToDataUrl(source, 400, 150);
+      }
+    }
 
     const runProcessOnDataUrl = (dataUrl) => {
       const img = new Image();
@@ -59597,7 +59616,7 @@ async function buildSuratPermintaanHtmlString(req) {
 
   const reqStatusUpper = String(req.status || '').toUpperCase();
   const isApprovedByDM = (reqStatusUpper === 'APPROVE' || reqStatusUpper === 'APPROVED' || reqStatusUpper === 'DONE') || !!req.dmTTD;
-  let dmTTDBold = isApprovedByDM ? (req.dmTTD || '') : '';
+  let dmTTDBold = isApprovedByDM ? (req.dmTTD || req.dmTTDStrokes || '') : '';
   let serviceTTDBold = req.serviceTTD || '';
   let pemohonTTDBold = req.pemohonTTD || '';
 
@@ -59853,6 +59872,61 @@ function tutupModalApprovalDMCanvas() {
 }
 window.tutupModalApprovalDMCanvas = tutupModalApprovalDMCanvas;
 
+window._dmCurrentStrokes = [];
+
+function getSignatureStrokesJSON(strokes) {
+  const data = strokes || window._dmCurrentStrokes || [];
+  return JSON.stringify(data);
+}
+window.getSignatureStrokesJSON = getSignatureStrokesJSON;
+
+function renderStrokesToCanvas(targetCanvas, jsonOrArray, options = {}) {
+  if (!targetCanvas) return;
+  let strokes = jsonOrArray;
+  if (typeof jsonOrArray === 'string') {
+    try {
+      strokes = JSON.parse(jsonOrArray);
+    } catch(e) {
+      strokes = [];
+    }
+  }
+  if (!Array.isArray(strokes)) return;
+
+  const ctx = targetCanvas.getContext('2d');
+  const width = targetCanvas.width || 700;
+  const height = targetCanvas.height || 170;
+
+  if (options.fillBackground !== false) {
+    ctx.fillStyle = options.bgColor || '#ffffff';
+    ctx.fillRect(0, 0, width, height);
+  }
+
+  ctx.lineWidth = options.lineWidth || 3;
+  ctx.lineCap = options.lineCap || 'round';
+  ctx.lineJoin = options.lineJoin || 'round';
+  ctx.strokeStyle = options.strokeStyle || '#0f172a';
+
+  strokes.forEach(stroke => {
+    if (!Array.isArray(stroke) || stroke.length === 0) return;
+    ctx.beginPath();
+    ctx.moveTo(stroke[0].x, stroke[0].y);
+    for (let i = 1; i < stroke.length; i++) {
+      ctx.lineTo(stroke[i].x, stroke[i].y);
+    }
+    ctx.stroke();
+  });
+}
+window.renderStrokesToCanvas = renderStrokesToCanvas;
+
+function convertStrokesToDataUrl(jsonOrArray, width = 400, height = 150) {
+  const canvas = document.createElement('canvas');
+  canvas.width = width;
+  canvas.height = height;
+  renderStrokesToCanvas(canvas, jsonOrArray, { fillBackground: true, bgColor: '#ffffff' });
+  return canvas.toDataURL('image/png');
+}
+window.convertStrokesToDataUrl = convertStrokesToDataUrl;
+
 function initCanvasTTDDM() {
   const canvas = document.getElementById('canvasTTDDM');
   if (!canvas) return;
@@ -59870,10 +59944,12 @@ function initCanvasTTDDM() {
   ctx.strokeStyle = '#0f172a';
 
   _isDMCanvasDirty = false;
+  window._dmCurrentStrokes = [];
 
   let isDrawing = false;
   let lastX = 0;
   let lastY = 0;
+  let currentStroke = [];
 
   function getPos(e) {
     const rect = canvas.getBoundingClientRect();
@@ -59884,8 +59960,8 @@ function initCanvasTTDDM() {
       clientY = e.touches[0].clientY;
     }
     return {
-      x: clientX - rect.left,
-      y: clientY - rect.top
+      x: Math.round(clientX - rect.left),
+      y: Math.round(clientY - rect.top)
     };
   }
 
@@ -59894,6 +59970,7 @@ function initCanvasTTDDM() {
     const pos = getPos(e);
     lastX = pos.x;
     lastY = pos.y;
+    currentStroke = [{ x: pos.x, y: pos.y }];
     _isDMCanvasDirty = true;
   }
 
@@ -59911,11 +59988,18 @@ function initCanvasTTDDM() {
     ctx.stroke();
     lastX = pos.x;
     lastY = pos.y;
+    currentStroke.push({ x: pos.x, y: pos.y });
     _isDMCanvasDirty = true;
   }
 
   function stopDrawing() {
-    isDrawing = false;
+    if (isDrawing) {
+      isDrawing = false;
+      if (currentStroke.length > 0) {
+        window._dmCurrentStrokes.push(currentStroke);
+        currentStroke = [];
+      }
+    }
   }
 
   canvas.onmousedown = startDrawing;
@@ -59970,6 +60054,7 @@ function hapusCanvasDM() {
   ctx.fillStyle = '#ffffff';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   _isDMCanvasDirty = false;
+  window._dmCurrentStrokes = [];
 }
 window.hapusCanvasDM = hapusCanvasDM;
 
