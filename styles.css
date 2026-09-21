@@ -2309,16 +2309,18 @@ button[onclick*="bukaModalPdfModels"]:hover {
   overflow: hidden !important;
   background: #ffffff !important;
   border: 2px solid #e2e8f0 !important;
-  border-radius: 4px !important;
-  padding: 17px 19px !important;
+  border-radius: 6px !important;
+  padding: 10px 8px !important;
   cursor: pointer !important;
   transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
   box-shadow: 0 4px 12px rgba(0,0,0,0.03) !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: space-between !important;
-  gap: 14px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
   box-sizing: border-box !important;
+  text-align: center !important;
 }
 
 .cardStat:hover {
@@ -2332,60 +2334,59 @@ button[onclick*="bukaModalPdfModels"]:hover {
 
 .cardTop {
   display: flex !important;
-  align-items: center !important;
-  gap: 14px !important;
-  position: relative !important;
-  z-index: 2 !important;
-}
-
-.cardTop .icon {
-  width: 48px !important;
-  height: 48px !important;
-  min-width: 48px !important;
-  border-radius: 4px !important;
-  display: flex !important;
+  flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
-  flex-shrink: 0 !important;
+  gap: 2px !important;
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100% !important;
 }
 
-.cardTop .icon .material-symbols-rounded {
-  font-size: 26px !important;
+/* Hide Icons & Watermark Backgrounds */
+.cardTop .icon,
+.cardStat .icon,
+.cardStat .bgWatermark,
+.bgWatermark {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .cardText {
   flex: 1 !important;
-  overflow: hidden !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column-reverse !important; /* ANGKA AT TOP, JUDUL AT BOTTOM */
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.cardText .angka {
+  font-size: 24px !important;
+  font-weight: 900 !important;
+  color: #0f172a !important;
+  line-height: 1.1 !important;
+  text-align: center !important;
+  margin-bottom: 2px !important;
+  position: static !important;
+  opacity: 1 !important;
 }
 
 .cardText .judul {
-  font-size: 11.5px !important;
+  font-size: 10.5px !important;
   font-weight: 800 !important;
   text-transform: uppercase !important;
   letter-spacing: 0.5px !important;
   color: #64748b !important;
-  margin-bottom: 2px !important;
+  text-align: center !important;
   white-space: nowrap !important;
-  text-overflow: ellipsis !important;
-  overflow: hidden !important;
-}
-
-.cardText .angka {
-  font-size: 26px !important;
-  font-weight: 900 !important;
-  color: #0f172a !important;
-  line-height: 1.1 !important;
-}
-
-.bgWatermark {
-  position: absolute !important;
-  right: -10px !important;
-  bottom: -10px !important;
-  font-size: 85px !important;
-  pointer-events: none !important;
-  z-index: 1 !important;
-  opacity: 0.08 !important;
-  user-select: none !important;
+  margin: 0 !important;
 }
 
 .statProgressBg {
@@ -10785,6 +10786,8 @@ html body #excelTemplateOverlay .btnExcelTemplateOption .btnTitle {
   display: block !important;
   transition: color 0.15s ease !important;
 }
+
+
 
 .btnExcelTemplateOption .btnSubtext,
 html body #excelTemplateOverlay .btnExcelTemplateOption .btnSubtext {
