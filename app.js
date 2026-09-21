@@ -288,12 +288,12 @@ function ensureUploadBuktiPermintaanModalInDOM() {
             <span class="material-symbols-rounded" style="font-size: 20px !important; color: #ffffff !important;">cloud_upload</span>
           </div>
           <div style="display: flex !important; flex-direction: column !important;">
-            <span id="uploadBuktiTitle" style="font-size: 7pt !important; font-weight: 400 !important; color: #ffffff !important; letter-spacing: 0 !important;">Unggah Bukti Permintaan</span>
-            <span style="font-size: 7pt !important; font-weight: 400 !important; color: rgba(255, 255, 255, 0.9) !important;">Format PDF • Maks. 1 File (Max 1 MB)</span>
+            <span id="uploadBuktiTitle" style="font-size: 14px !important; font-weight: 400 !important; color: #ffffff !important; letter-spacing: 0 !important;">Unggah Bukti Permintaan</span>
+            <span style="font-size: 11px !important; font-weight: 400 !important; color: rgba(255, 255, 255, 0.9) !important;">Format PDF • Maks. 1 File (Max 1 MB)</span>
           </div>
         </div>
         <!-- Tombol X Jelas & Tebal Warna Putih Header -->
-        <button type="button" class="btnHeaderCloseX" onclick="tutupModalUploadBuktiPermintaan()" style="background: rgba(255, 255, 255, 0.2) !important; border: 1px solid rgba(255, 255, 255, 0.4) !important; font-size: 7pt !important; font-weight: 900 !important; color: #ffffff !important; cursor: pointer !important; width: 30px !important; height: 30px !important; border-radius: 4px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; padding: 0 !important; margin-left: auto !important; line-height: 1 !important; transition: all 0.15s ease !important;" title="TUTUP">&times;</button>
+        <button type="button" class="btnHeaderCloseX" onclick="tutupModalUploadBuktiPermintaan()" style="background: rgba(255, 255, 255, 0.2) !important; border: 1px solid rgba(255, 255, 255, 0.4) !important; font-size: 22px !important; font-weight: 900 !important; color: #ffffff !important; cursor: pointer !important; width: 30px !important; height: 30px !important; border-radius: 4px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; padding: 0 !important; margin-left: auto !important; line-height: 1 !important; transition: all 0.15s ease !important;" title="TUTUP">&times;</button>
       </div>
 
       <!-- Body Content -->
@@ -309,10 +309,10 @@ function ensureUploadBuktiPermintaanModalInDOM() {
               <span class="material-symbols-rounded" style="font-size: 22px !important;">upload_file</span>
             </div>
           </div>
-          <div style="font-size: 7pt !important; font-weight: 400 !important; color: #1e293b !important;">
+          <div style="font-size: 13px !important; font-weight: 400 !important; color: #1e293b !important;">
             Klik untuk memilih file PDF
           </div>
-          <div style="font-size: 7pt !important; font-weight: 400 !important; color: #64748b !important; margin-top: 2px !important;">
+          <div style="font-size: 11px !important; font-weight: 400 !important; color: #64748b !important; margin-top: 2px !important;">
             Atau tarik dan lepas file PDF di sini
           </div>
         </div>
@@ -324,8 +324,8 @@ function ensureUploadBuktiPermintaanModalInDOM() {
 
         <!-- Action Footer (Batal Putih Teks Hitam, Simpan Abu Teks Hitam) -->
         <div style="display: flex !important; justify-content: flex-end !important; gap: 8px !important; margin-top: 4px !important; padding-top: 12px !important; border-top: 1px solid #e2e8f0 !important;">
-          <button type="button" class="btnBatal" onclick="tutupModalUploadBuktiPermintaan()" style="height: 36px !important; padding: 0 16px !important; border-radius: 4px !important; font-weight: 600 !important; font-size: 7pt !important; cursor: pointer !important; background: #ffffff !important; color: #0f172a !important; border: 1px solid #000000 !important; transition: all 0.15s ease !important;">BATAL</button>
-          <button type="button" class="btnOkNotif" onclick="simpanBuktiPermintaanUploaded()" style="height: 36px !important; padding: 0 20px !important; border-radius: 4px !important; font-weight: 700 !important; font-size: 7pt !important; cursor: pointer !important; background: #e2e8f0 !important; color: #0f172a !important; border: 1px solid #000000 !important; transition: all 0.15s ease !important;">SIMPAN BUKTI</button>
+          <button type="button" class="btnBatal" onclick="tutupModalUploadBuktiPermintaan()" style="height: 36px !important; padding: 0 16px !important; border-radius: 4px !important; font-weight: 600 !important; font-size: 12px !important; cursor: pointer !important; background: #ffffff !important; color: #0f172a !important; border: 1px solid #000000 !important; transition: all 0.15s ease !important;">BATAL</button>
+          <button type="button" class="btnOkNotif" onclick="simpanBuktiPermintaanUploaded()" style="height: 36px !important; padding: 0 20px !important; border-radius: 4px !important; font-weight: 700 !important; font-size: 12px !important; cursor: pointer !important; background: #e2e8f0 !important; color: #0f172a !important; border: 1px solid #000000 !important; transition: all 0.15s ease !important;">SIMPAN BUKTI</button>
         </div>
       </div>
 
@@ -353,19 +353,19 @@ function ensurePinHapusLokalModalInDOM() {
       <div class="rejectHeaderPopup" style="background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important; padding: 12px 16px !important; border-radius: 4px 4px 0 0 !important; display: flex !important; align-items: center !important; justify-content: space-between !important; box-sizing: border-box !important;">
         <div style="display: flex; align-items: center; gap: 8px;">
           <span class="material-symbols-rounded" style="font-size: 22px; font-weight: 400; color: #ffffff !important;">lock_reset</span>
-          <span style="font-size: 7pt !important; font-weight: 400; color: #ffffff !important; text-transform: uppercase;">BERSIHKAN CACHE LOKAL</span>
+          <span style="font-size: 14px; font-weight: 400; color: #ffffff !important; text-transform: uppercase;">BERSIHKAN CACHE LOKAL</span>
         </div>
-        <button type="button" class="btnHeaderCloseX" onclick="tutupModalPinHapusLokal()" style="background: none !important; border: none !important; color: #ffffff !important; font-size: 7pt !important; font-weight: 400 !important; cursor: pointer !important; line-height: 1 !important; padding: 0 4px !important;" title="TUTUP">&times;</button>
+        <button type="button" class="btnHeaderCloseX" onclick="tutupModalPinHapusLokal()" style="background: none !important; border: none !important; color: #ffffff !important; font-size: 26px !important; font-weight: 400 !important; cursor: pointer !important; line-height: 1 !important; padding: 0 4px !important;" title="TUTUP">&times;</button>
       </div>
       <div class="rejectBodyPopup" style="padding: 16px !important; box-sizing: border-box !important;">
-        <p style="font-size: 7pt !important; font-weight: 400; color: var(--text-main); margin-bottom: 12px; line-height: 1.4;">
+        <p style="font-size: 12px; font-weight: 400; color: var(--text-main); margin-bottom: 12px; line-height: 1.4;">
           Masukkan Password Keamanan 6 Digit untuk membersihkan cache & penyimpanan lokal aplikasi:
         </p>
-        <input type="password" id="inputPinHapusLokal" maxlength="6" placeholder="Masukkan 6 Digit Password (111111)" style="width: 100% !important; height: 42px !important; padding: 1px 3px !important; line-height: 1.15 !important; border-radius: 4px !important; border: 1px solid var(--border-color) !important; background: var(--bg-body) !important; color: var(--text-main) !important; font-size: 7pt !important; font-weight: 400 !important; text-align: center !important; outline: none !important; margin-bottom: 8px !important; box-sizing: border-box !important;" onkeyup="if(event.key==='Enter') verifikasiDanEksekusiHapusLokal()">
-        <div id="pinHapusLokalError" style="display: none; color: #ef4444; font-size: 7pt !important; font-weight: 400; margin-bottom: 12px; text-align: center;"></div>
+        <input type="password" id="inputPinHapusLokal" maxlength="6" placeholder="Masukkan 6 Digit Password (111111)" style="width: 100% !important; height: 42px !important; padding: 8px 12px !important; border-radius: 4px !important; border: 1px solid var(--border-color) !important; background: var(--bg-body) !important; color: var(--text-main) !important; font-size: 14px !important; font-weight: 400 !important; text-align: center !important; outline: none !important; margin-bottom: 8px !important; box-sizing: border-box !important;" onkeyup="if(event.key==='Enter') verifikasiDanEksekusiHapusLokal()">
+        <div id="pinHapusLokalError" style="display: none; color: #ef4444; font-size: 11px; font-weight: 400; margin-bottom: 12px; text-align: center;"></div>
         <div style="display: flex; gap: 8px; margin-top: 10px; align-items: center; width: 100%;">
-          <button type="button" class="btnBatal" onclick="tutupModalPinHapusLokal()" style="flex: 1 1 0% !important; height: 38px !important; min-height: 38px !important; max-height: 38px !important; border-radius: 4px !important; background: #ffffff !important; background-color: #ffffff !important; color: #1e293b !important; border: 1px solid #000000 !important; font-weight: 700 !important; font-size: 7pt !important; box-sizing: border-box !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; padding: 0 12px !important;">BATAL</button>
-          <button type="button" class="btnOkNotif" onclick="verifikasiDanEksekusiHapusLokal()" style="flex: 1 1 0% !important; height: 38px !important; min-height: 38px !important; max-height: 38px !important; border-radius: 4px !important; background: #e2e8f0 !important; background-color: #e2e8f0 !important; color: #0f172a !important; border: 1px solid #000000 !important; font-weight: 700 !important; font-size: 7pt !important; box-sizing: border-box !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; padding: 0 12px !important;">BERSIHKAN</button>
+          <button type="button" class="btnBatal" onclick="tutupModalPinHapusLokal()" style="flex: 1 1 0% !important; height: 38px !important; min-height: 38px !important; max-height: 38px !important; border-radius: 4px !important; background: #ffffff !important; background-color: #ffffff !important; color: #1e293b !important; border: 1px solid #000000 !important; font-weight: 700 !important; font-size: 12px !important; box-sizing: border-box !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; padding: 0 12px !important;">BATAL</button>
+          <button type="button" class="btnOkNotif" onclick="verifikasiDanEksekusiHapusLokal()" style="flex: 1 1 0% !important; height: 38px !important; min-height: 38px !important; max-height: 38px !important; border-radius: 4px !important; background: #e2e8f0 !important; background-color: #e2e8f0 !important; color: #0f172a !important; border: 1px solid #000000 !important; font-weight: 700 !important; font-size: 12px !important; box-sizing: border-box !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; padding: 0 12px !important;">BERSIHKAN</button>
         </div>
       </div>
     </div>
@@ -405,13 +405,13 @@ function ensureScannerModalInDOM() {
       <div class="rejectHeaderPopup" style="background: #0284c7 !important; color: #ffffff !important; padding: 12px 16px !important; border-radius: 6px 6px 0 0 !important; display: flex !important; align-items: center !important; justify-content: space-between !important; box-sizing: border-box !important;">
         <div style="display: flex; align-items: center; gap: 8px;">
           <span class="material-symbols-rounded" style="font-size: 22px; font-weight: 900; color: #ffffff !important;">qr_code_scanner</span>
-          <span style="font-size: 7pt !important; font-weight: 900; color: #ffffff !important; text-transform: uppercase;">SCAN BARCODE / QR NO SERI</span>
+          <span style="font-size: 14px; font-weight: 900; color: #ffffff !important; text-transform: uppercase;">SCAN BARCODE / QR NO SERI</span>
         </div>
-        <button type="button" class="btnHeaderCloseX" onclick="tutupScanner()" style="background: none !important; border: none !important; color: #ffffff !important; font-size: 7pt !important; font-weight: 900 !important; cursor: pointer !important; line-height: 1 !important; padding: 0 4px !important;" title="TUTUP SCANNER">&times;</button>
+        <button type="button" class="btnHeaderCloseX" onclick="tutupScanner()" style="background: none !important; border: none !important; color: #ffffff !important; font-size: 26px !important; font-weight: 900 !important; cursor: pointer !important; line-height: 1 !important; padding: 0 4px !important;" title="TUTUP SCANNER">&times;</button>
       </div>
       <div class="rejectBodyPopup" style="padding: 16px !important; box-sizing: border-box !important; display: flex; flex-direction: column; align-items: center;">
         <div id="readerScanner" style="width: 100% !important; min-height: 240px !important; border-radius: 6px !important; overflow: hidden !important; background: #0f172a !important; display: flex !important; align-items: center !important; justify-content: center !important;"></div>
-        <p style="margin-top: 12px; margin-bottom: 4px; font-size: 7pt !important; font-weight: 700; color: var(--text-muted); text-align: center; text-transform: uppercase;">ARAHKAN KAMERA KE BARCODE / QR NO SERI</p>
+        <p style="margin-top: 12px; margin-bottom: 4px; font-size: 11.5px; font-weight: 700; color: var(--text-muted); text-align: center; text-transform: uppercase;">ARAHKAN KAMERA KE BARCODE / QR NO SERI</p>
         <button type="button" onclick="tutupScanner()" style="margin-top: 10px; width: 100%; height: 38px; border-radius: 5px; background: #64748b !important; color: #ffffff !important; font-weight: 700; border: none; cursor: pointer;">TUTUP SCANNER</button>
       </div>
     </div>
@@ -2334,17 +2334,17 @@ function ensureSetupSupabaseKeysModalInDOM() {
   const div = document.createElement('div');
   div.id = 'modalSetupSupabaseKeys';
   div.className = 'popupOverlay';
-  div.style.cssText = 'background: rgba(0, 0, 0, 0.82) !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; display: none !important; position: fixed !important; inset: 0 !important; top: 0 !important; left: 0 !important; right: 0 !important; bottom: 0 !important; width: 100vw !important; height: 100vh !important; z-index: 2147483647 !important; align-items: center !important; justify-content: center !important; padding: 1mm !important; box-sizing: border-box !important; margin: 0 !important;';
+  div.style.cssText = 'background: rgba(0, 0, 0, 0.82) !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; display: none !important; position: fixed !important; inset: 0 !important; z-index: 2147483647 !important; align-items: center !important; justify-content: center !important; padding: 10mm 12px !important; box-sizing: border-box !important;';
 
   div.innerHTML = `
-    <div class="popupBox" style="position: relative !important; width: calc(100vw - 2mm) !important; min-width: calc(100vw - 2mm) !important; max-width: calc(100vw - 2mm) !important; height: calc(100vh - 2mm) !important; min-height: calc(100vh - 2mm) !important; max-height: calc(100vh - 2mm) !important; background: #ffffff !important; color: #0f172a !important; border-radius: 4px !important; border: 1px solid #cbd5e1 !important; box-shadow: 0 20px 45px rgba(0,0,0,0.35) !important; overflow: hidden !important; display: flex !important; flex-direction: column !important; margin: auto !important; box-sizing: border-box !important;">
+    <div class="popupBox" style="position: relative !important; width: min(920px, 95vw) !important; max-width: 95vw !important; background: #ffffff !important; color: #0f172a !important; border-radius: 4px !important; border: 1px solid #cbd5e1 !important; box-shadow: 0 20px 45px rgba(0,0,0,0.35) !important; overflow: hidden !important; display: flex !important; flex-direction: column !important; margin: auto !important; box-sizing: border-box !important;">
       
       <!-- Header Biru Solid Full (Unbold Title) -->
       <div style="background: #0284c7 !important; background-color: #0284c7 !important; background-image: none !important; color: #ffffff !important; padding: 14px 18px !important; display: flex !important; justify-content: space-between !important; align-items: center !important; border-radius: 4px 4px 0 0 !important; border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important; width: 100% !important; box-sizing: border-box !important;">
-        <span style="font-weight: 400 !important; font-size: 7pt !important; display: flex !important; align-items: center !important; gap: 8px !important; color: #ffffff !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">
+        <span style="font-weight: 400 !important; font-size: 14.5px !important; display: flex !important; align-items: center !important; gap: 8px !important; color: #ffffff !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">
           <span class="material-symbols-rounded" style="font-size: 22px !important; color: #ffffff !important; font-weight: 400 !important;">vpn_key</span> PENGATURAN KUNCI DUAL SUPABASE (DATABASE & FILE STORAGE)
         </span>
-        <button type="button" onclick="tutupModalSetupSupabaseKeys()" style="background: rgba(255, 255, 255, 0.2) !important; border: 1px solid rgba(255, 255, 255, 0.35) !important; font-size: 7pt !important; font-weight: 800 !important; color: #ffffff !important; cursor: pointer !important; width: 30px !important; height: 30px !important; border-radius: 4px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; padding: 0 !important;" title="TUTUP">&times;</button>
+        <button type="button" onclick="tutupModalSetupSupabaseKeys()" style="background: rgba(255, 255, 255, 0.2) !important; border: 1px solid rgba(255, 255, 255, 0.35) !important; font-size: 22px !important; font-weight: 800 !important; color: #ffffff !important; cursor: pointer !important; width: 30px !important; height: 30px !important; border-radius: 4px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; padding: 0 !important;" title="TUTUP">&times;</button>
       </div>
 
       <!-- Body Container: Layout Kanan - Kiri (2 Kolom) -->
@@ -2352,64 +2352,64 @@ function ensureSetupSupabaseKeysModalInDOM() {
         
         <!-- KOLOM KIRI: SUPABASE 1 (DATABASE DATA) -->
         <div style="flex: 1 1 380px !important; min-width: 290px !important; background: #f8fafc !important; border: 1px solid #cbd5e1 !important; border-radius: 4px !important; padding: 16px !important; display: flex !important; flex-direction: column !important; gap: 12px !important; box-sizing: border-box !important;">
-          <div style="font-size: 7pt !important; font-weight: 800 !important; color: #0369a1 !important; display: flex !important; align-items: center !important; gap: 8px !important; padding-bottom: 8px !important; border-bottom: 1px solid #e2e8f0 !important;">
+          <div style="font-size: 13px !important; font-weight: 800 !important; color: #0369a1 !important; display: flex !important; align-items: center !important; gap: 8px !important; padding-bottom: 8px !important; border-bottom: 1px solid #e2e8f0 !important;">
             <span class="material-symbols-rounded" style="color: #0284c7 !important; font-size: 20px !important;">database</span> SUPABASE 1 (DATABASE DATA)
           </div>
           
           <div>
-            <label style="font-size: 7pt !important; font-weight: 700 !important; color: #334155 !important; display: block !important; margin-bottom: 4px !important;">URL SUPABASE 1 (DATA)</label>
-            <input type="text" id="parsedSupabaseUrlInput" placeholder="https://xyz.supabase.co" style="width: 100% !important; height: 38px !important; padding: 0 12px !important; border-radius: 4px !important; border: 1px solid #cbd5e1 !important; font-size: 7pt !important; color: #0f172a !important; box-sizing: border-box !important; outline: none !important;">
+            <label style="font-size: 11.5px !important; font-weight: 700 !important; color: #334155 !important; display: block !important; margin-bottom: 4px !important;">URL SUPABASE 1 (DATA)</label>
+            <input type="text" id="parsedSupabaseUrlInput" placeholder="https://xyz.supabase.co" style="width: 100% !important; height: 38px !important; padding: 0 12px !important; border-radius: 4px !important; border: 1px solid #cbd5e1 !important; font-size: 12.5px !important; color: #0f172a !important; box-sizing: border-box !important; outline: none !important;">
           </div>
 
           <div>
-            <label style="font-size: 7pt !important; font-weight: 700 !important; color: #334155 !important; display: block !important; margin-bottom: 4px !important;">ANON KEY / PUBLIC KEY 1</label>
-            <input type="password" id="parsedSupabaseKeyInput" placeholder="eyJhbGciOi..." style="width: 100% !important; height: 38px !important; padding: 0 12px !important; border-radius: 4px !important; border: 1px solid #cbd5e1 !important; font-size: 7pt !important; color: #0f172a !important; box-sizing: border-box !important; outline: none !important;">
+            <label style="font-size: 11.5px !important; font-weight: 700 !important; color: #334155 !important; display: block !important; margin-bottom: 4px !important;">ANON KEY / PUBLIC KEY 1</label>
+            <input type="password" id="parsedSupabaseKeyInput" placeholder="eyJhbGciOi..." style="width: 100% !important; height: 38px !important; padding: 0 12px !important; border-radius: 4px !important; border: 1px solid #cbd5e1 !important; font-size: 12.5px !important; color: #0f172a !important; box-sizing: border-box !important; outline: none !important;">
           </div>
 
           <div>
-            <label style="font-size: 7pt !important; font-weight: 600 !important; color: #64748b !important; display: block !important; margin-bottom: 4px !important;">AUTO-PARSE TEXT (.ENV SUPABASE 1)</label>
-            <textarea id="rawSupabaseTextInput" placeholder="Tempelkan teks murni .env / Dashboard Supabase 1 di sini untuk auto-parse..." oninput="if(typeof prosesAutoParseRawSupabaseText==='function') prosesAutoParseRawSupabaseText(this.value)" style="width: 100% !important; height: 60px !important; padding: 1px 3px !important; line-height: 1.15 !important; border-radius: 4px !important; border: 1px solid #cbd5e1 !important; font-size: 7pt !important; color: #334155 !important; box-sizing: border-box !important; outline: none !important; resize: vertical !important;"></textarea>
+            <label style="font-size: 11px !important; font-weight: 600 !important; color: #64748b !important; display: block !important; margin-bottom: 4px !important;">AUTO-PARSE TEXT (.ENV SUPABASE 1)</label>
+            <textarea id="rawSupabaseTextInput" placeholder="Tempelkan teks murni .env / Dashboard Supabase 1 di sini untuk auto-parse..." oninput="if(typeof prosesAutoParseRawSupabaseText==='function') prosesAutoParseRawSupabaseText(this.value)" style="width: 100% !important; height: 60px !important; padding: 8px 10px !important; border-radius: 4px !important; border: 1px solid #cbd5e1 !important; font-size: 11.5px !important; color: #334155 !important; box-sizing: border-box !important; outline: none !important; resize: vertical !important;"></textarea>
           </div>
 
           <!-- Tombol Salin Kode SQL Master Database Data (Supabase 1) -->
-          <button type="button" onclick="salinKodeMasterSqlSupabase()" style="height: 36px !important; width: 100% !important; margin-top: 4px !important; border-radius: 4px !important; background: #ffffff !important; color: #0284c7 !important; border: 1px solid #0284c7 !important; font-weight: 800 !important; font-size: 7pt !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 6px !important; box-shadow: none !important;">
+          <button type="button" onclick="salinKodeMasterSqlSupabase()" style="height: 36px !important; width: 100% !important; margin-top: 4px !important; border-radius: 4px !important; background: #ffffff !important; color: #0284c7 !important; border: 1px solid #0284c7 !important; font-weight: 800 !important; font-size: 11.5px !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 6px !important; box-shadow: none !important;">
             <span class="material-symbols-rounded" style="font-size: 17px !important; font-weight: 800 !important;">content_copy</span> SALIN KODE SQL TABEL (SUPABASE 1 DATA)
           </button>
 
           <!-- Tombol Simpan Supabase 1 (Abu-abu, Text Bold, Border Hitam) -->
-          <button type="button" onclick="simpanSupabase1Data()" style="height: 40px !important; width: 100% !important; margin-top: 2px !important; border-radius: 4px !important; background: #e2e8f0 !important; background-color: #e2e8f0 !important; background-image: none !important; color: #0f172a !important; border: 1px solid #000000 !important; font-weight: 800 !important; font-size: 7pt !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 6px !important; box-shadow: none !important;">
+          <button type="button" onclick="simpanSupabase1Data()" style="height: 40px !important; width: 100% !important; margin-top: 2px !important; border-radius: 4px !important; background: #e2e8f0 !important; background-color: #e2e8f0 !important; background-image: none !important; color: #0f172a !important; border: 1px solid #000000 !important; font-weight: 800 !important; font-size: 12.5px !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 6px !important; box-shadow: none !important;">
             <span class="material-symbols-rounded" style="font-size: 18px !important; font-weight: 800 !important;">save</span> SIMPAN SUPABASE 1 (DATA)
           </button>
         </div>
 
         <!-- KOLOM KANAN: SUPABASE 2 (STORAGE FILE) -->
         <div style="flex: 1 1 380px !important; min-width: 290px !important; background: #f8fafc !important; border: 1px solid #cbd5e1 !important; border-radius: 4px !important; padding: 16px !important; display: flex !important; flex-direction: column !important; gap: 12px !important; box-sizing: border-box !important;">
-          <div style="font-size: 7pt !important; font-weight: 800 !important; color: #15803d !important; display: flex !important; align-items: center !important; gap: 8px !important; padding-bottom: 8px !important; border-bottom: 1px solid #e2e8f0 !important;">
+          <div style="font-size: 13px !important; font-weight: 800 !important; color: #15803d !important; display: flex !important; align-items: center !important; gap: 8px !important; padding-bottom: 8px !important; border-bottom: 1px solid #e2e8f0 !important;">
             <span class="material-symbols-rounded" style="color: #16a34a !important; font-size: 20px !important;">folder_open</span> SUPABASE 2 (STORAGE FILE)
           </div>
           
           <div>
-            <label style="font-size: 7pt !important; font-weight: 700 !important; color: #334155 !important; display: block !important; margin-bottom: 4px !important;">URL SUPABASE 2 (FILE STORAGE)</label>
-            <input type="text" id="parsedSupabaseFileUrlInput" placeholder="https://abc.supabase.co" style="width: 100% !important; height: 38px !important; padding: 0 12px !important; border-radius: 4px !important; border: 1px solid #cbd5e1 !important; font-size: 7pt !important; color: #0f172a !important; box-sizing: border-box !important; outline: none !important;">
+            <label style="font-size: 11.5px !important; font-weight: 700 !important; color: #334155 !important; display: block !important; margin-bottom: 4px !important;">URL SUPABASE 2 (FILE STORAGE)</label>
+            <input type="text" id="parsedSupabaseFileUrlInput" placeholder="https://abc.supabase.co" style="width: 100% !important; height: 38px !important; padding: 0 12px !important; border-radius: 4px !important; border: 1px solid #cbd5e1 !important; font-size: 12.5px !important; color: #0f172a !important; box-sizing: border-box !important; outline: none !important;">
           </div>
 
           <div>
-            <label style="font-size: 7pt !important; font-weight: 700 !important; color: #334155 !important; display: block !important; margin-bottom: 4px !important;">ANON KEY / PUBLIC KEY 2</label>
-            <input type="password" id="parsedSupabaseFileKeyInput" placeholder="eyJhbGciOi..." style="width: 100% !important; height: 38px !important; padding: 0 12px !important; border-radius: 4px !important; border: 1px solid #cbd5e1 !important; font-size: 7pt !important; color: #0f172a !important; box-sizing: border-box !important; outline: none !important;">
+            <label style="font-size: 11.5px !important; font-weight: 700 !important; color: #334155 !important; display: block !important; margin-bottom: 4px !important;">ANON KEY / PUBLIC KEY 2</label>
+            <input type="password" id="parsedSupabaseFileKeyInput" placeholder="eyJhbGciOi..." style="width: 100% !important; height: 38px !important; padding: 0 12px !important; border-radius: 4px !important; border: 1px solid #cbd5e1 !important; font-size: 12.5px !important; color: #0f172a !important; box-sizing: border-box !important; outline: none !important;">
           </div>
 
           <div>
-            <label style="font-size: 7pt !important; font-weight: 600 !important; color: #64748b !important; display: block !important; margin-bottom: 4px !important;">AUTO-PARSE TEXT (.ENV SUPABASE 2)</label>
-            <textarea id="rawSupabaseFileTextInput" placeholder="Tempelkan teks murni .env / Dashboard Supabase 2 di sini untuk auto-parse..." oninput="if(typeof prosesAutoParseRawSupabaseFileText==='function') prosesAutoParseRawSupabaseFileText(this.value)" style="width: 100% !important; height: 60px !important; padding: 1px 3px !important; line-height: 1.15 !important; border-radius: 4px !important; border: 1px solid #cbd5e1 !important; font-size: 7pt !important; color: #334155 !important; box-sizing: border-box !important; outline: none !important; resize: vertical !important;"></textarea>
+            <label style="font-size: 11px !important; font-weight: 600 !important; color: #64748b !important; display: block !important; margin-bottom: 4px !important;">AUTO-PARSE TEXT (.ENV SUPABASE 2)</label>
+            <textarea id="rawSupabaseFileTextInput" placeholder="Tempelkan teks murni .env / Dashboard Supabase 2 di sini untuk auto-parse..." oninput="if(typeof prosesAutoParseRawSupabaseFileText==='function') prosesAutoParseRawSupabaseFileText(this.value)" style="width: 100% !important; height: 60px !important; padding: 8px 10px !important; border-radius: 4px !important; border: 1px solid #cbd5e1 !important; font-size: 11.5px !important; color: #334155 !important; box-sizing: border-box !important; outline: none !important; resize: vertical !important;"></textarea>
           </div>
 
           <!-- Tombol Salin Kode SQL Storage Buckets (Supabase 2 File) -->
-          <button type="button" onclick="salinKodeMasterSqlStorageSupabase()" style="height: 36px !important; width: 100% !important; margin-top: 4px !important; border-radius: 4px !important; background: #ffffff !important; color: #16a34a !important; border: 1px solid #16a34a !important; font-weight: 800 !important; font-size: 7pt !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 6px !important; box-shadow: none !important;">
+          <button type="button" onclick="salinKodeMasterSqlStorageSupabase()" style="height: 36px !important; width: 100% !important; margin-top: 4px !important; border-radius: 4px !important; background: #ffffff !important; color: #16a34a !important; border: 1px solid #16a34a !important; font-weight: 800 !important; font-size: 11.5px !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 6px !important; box-shadow: none !important;">
             <span class="material-symbols-rounded" style="font-size: 17px !important; font-weight: 800 !important;">content_copy</span> SALIN KODE SQL BUCKET (SUPABASE 2 FILE)
           </button>
 
           <!-- Tombol Simpan Supabase 2 (Abu-abu, Text Bold, Border Hitam) -->
-          <button type="button" onclick="simpanSupabase2File()" style="height: 40px !important; width: 100% !important; margin-top: 2px !important; border-radius: 4px !important; background: #e2e8f0 !important; background-color: #e2e8f0 !important; background-image: none !important; color: #0f172a !important; border: 1px solid #000000 !important; font-weight: 800 !important; font-size: 7pt !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 6px !important; box-shadow: none !important;">
+          <button type="button" onclick="simpanSupabase2File()" style="height: 40px !important; width: 100% !important; margin-top: 2px !important; border-radius: 4px !important; background: #e2e8f0 !important; background-color: #e2e8f0 !important; background-image: none !important; color: #0f172a !important; border: 1px solid #000000 !important; font-weight: 800 !important; font-size: 12.5px !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 6px !important; box-shadow: none !important;">
             <span class="material-symbols-rounded" style="font-size: 18px !important; font-weight: 800 !important;">save</span> SIMPAN SUPABASE 2 (FILE)
           </button>
         </div>
@@ -2418,8 +2418,8 @@ function ensureSetupSupabaseKeysModalInDOM() {
 
       <!-- Footer Modal -->
       <div style="padding: 12px 16px !important; background: #f8fafc !important; border-top: 1px solid #e2e8f0 !important; display: flex !important; justify-content: space-between !important; align-items: center !important; border-radius: 0 0 4px 4px !important; flex-wrap: wrap !important; gap: 10px !important;">
-        <div id="statusSupabaseKeysCloudInfo" style="font-size: 7pt !important; font-weight: 600 !important; color: #475569 !important;"></div>
-        <button type="button" onclick="tutupModalSetupSupabaseKeys()" style="height: 36px !important; padding: 0 20px !important; border-radius: 4px !important; background: #ffffff !important; color: #0f172a !important; border: 1px solid #000000 !important; font-weight: 700 !important; font-size: 7pt !important; cursor: pointer !important;">TUTUP</button>
+        <div id="statusSupabaseKeysCloudInfo" style="font-size: 11.5px !important; font-weight: 600 !important; color: #475569 !important;"></div>
+        <button type="button" onclick="tutupModalSetupSupabaseKeys()" style="height: 36px !important; padding: 0 20px !important; border-radius: 4px !important; background: #ffffff !important; color: #0f172a !important; border: 1px solid #000000 !important; font-weight: 700 !important; font-size: 12px !important; cursor: pointer !important;">TUTUP</button>
       </div>
 
     </div>
@@ -5228,7 +5228,7 @@ function loadNotificationList() {
 
 
   if (!userNotifs || userNotifs.length === 0) {
-    container.innerHTML = '<div style="text-align:center; padding:20px; color:#94a3b8; font-size: 7pt !important;">Tidak ada notifikasi sistem.</div>';
+    container.innerHTML = '<div style="text-align:center; padding:20px; color:#94a3b8; font-size:13px;">Tidak ada notifikasi sistem.</div>';
     return;
   }
 
@@ -5332,13 +5332,13 @@ function loadNotificationList() {
 
             <div style="display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 3px;">
 
-              <span style="background: #d97706; color: #ffffff; font-size: 7pt !important; font-weight: 800; padding: 2px 6px; border-radius: 4px;">FORWARD PENDING</span>
+              <span style="background: #d97706; color: #ffffff; font-size: 10px; font-weight: 800; padding: 2px 6px; border-radius: 4px;">FORWARD PENDING</span>
 
-              <span style="font-size: 7pt !important; color: #b45309; font-weight: 600;">${n.time || ''}</span>
+              <span style="font-size: 11px; color: #b45309; font-weight: 600;">${n.time || ''}</span>
 
             </div>
 
-            <div style="font-size: 7pt !important; font-weight: 800; color: #92400e; line-height: 1.4;">
+            <div style="font-size: 12.5px; font-weight: 800; color: #92400e; line-height: 1.4;">
 
               ${n.message}
 
@@ -5352,13 +5352,13 @@ function loadNotificationList() {
 
         <div style="display: flex; align-items: center; gap: 8px; justify-content: flex-end; width: 100%; padding-top: 6px; border-top: 1px dashed rgba(245, 158, 11, 0.4);" onclick="event.stopPropagation();">
 
-          <button type="button" onclick="event.stopPropagation(); setujuiForwardService('${n.noSurat}');" style="background: linear-gradient(135deg, #16a34a, #15803d) !important; color: #ffffff !important; border: none !important; border-radius: 6px !important; padding: 6px 14px !important; font-size: 7pt !important; font-weight: 800 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; gap: 4px !important; box-shadow: 0 2px 6px rgba(22, 163, 74, 0.3) !important;">
+          <button type="button" onclick="event.stopPropagation(); setujuiForwardService('${n.noSurat}');" style="background: linear-gradient(135deg, #16a34a, #15803d) !important; color: #ffffff !important; border: none !important; border-radius: 6px !important; padding: 6px 14px !important; font-size: 11.5px !important; font-weight: 800 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; gap: 4px !important; box-shadow: 0 2px 6px rgba(22, 163, 74, 0.3) !important;">
 
             <span class="material-symbols-rounded" style="font-size: 15px !important;">check_circle</span> APPROVE FORWARD
 
           </button>
 
-          <button type="button" onclick="event.stopPropagation(); tolakForwardService('${n.noSurat}');" style="background: linear-gradient(135deg, #dc2626, #b91c1c) !important; color: #ffffff !important; border: none !important; border-radius: 6px !important; padding: 6px 14px !important; font-size: 7pt !important; font-weight: 800 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; gap: 4px !important; box-shadow: 0 2px 6px rgba(220, 38, 38, 0.3) !important;">
+          <button type="button" onclick="event.stopPropagation(); tolakForwardService('${n.noSurat}');" style="background: linear-gradient(135deg, #dc2626, #b91c1c) !important; color: #ffffff !important; border: none !important; border-radius: 6px !important; padding: 6px 14px !important; font-size: 11.5px !important; font-weight: 800 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; gap: 4px !important; box-shadow: 0 2px 6px rgba(220, 38, 38, 0.3) !important;">
 
             <span class="material-symbols-rounded" style="font-size: 15px !important;">cancel</span> TOLAK FORWARD
 
@@ -5430,13 +5430,13 @@ function loadNotificationList() {
 
           <div style="display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 3px;">
 
-            ${!isRead ? `<span style="background: #0284c7; color: #ffffff; font-size: 7pt !important; font-weight: 900; padding: 2px 7px; border-radius: 4px; letter-spacing: 0.3px;">BELUM DIBACA</span>` : `<span style="background: #e2e8f0; color: #64748b; font-size: 7pt !important; font-weight: 700; padding: 2px 7px; border-radius: 4px;">SUDAH DIBACA</span>`}
+            ${!isRead ? `<span style="background: #0284c7; color: #ffffff; font-size: 10px; font-weight: 900; padding: 2px 7px; border-radius: 4px; letter-spacing: 0.3px;">BELUM DIBACA</span>` : `<span style="background: #e2e8f0; color: #64748b; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 4px;">SUDAH DIBACA</span>`}
 
-            <span style="font-size: 7pt !important; color: ${!isRead ? '#0284c7' : '#64748b'}; font-weight: 700;">${n.time || ''}</span>
+            <span style="font-size: 11px; color: ${!isRead ? '#0284c7' : '#64748b'}; font-weight: 700;">${n.time || ''}</span>
 
           </div>
 
-          <div style="font-size: 7pt !important; font-weight: ${fontWt}; color: ${textColor} !important; line-height: 1.45;">
+          <div style="font-size: 12.5px; font-weight: ${fontWt}; color: ${textColor} !important; line-height: 1.45;">
 
             ${n.message}
 
@@ -6297,20 +6297,6 @@ let currentThemeIndex = 0;
 let filterStatusRiwayat = '';
 
 let dashboardFilterStatus = 'PENDING';
-
-
-function closeAllPopups() {
-  const allOverlays = document.querySelectorAll('.popupOverlay, #imageViewer, #rejectOverlay, #confirmOverlay, #pdfModal, #popupDetail, #popupDetailBarangV2, #popupAkun, #popupUserForm, #popupUserManagementModal, #popupTTD, #popupNotifList, #popupBantuan, #scannerModal, #popupTambahToko, #popupPdfModelsModal, #artemisOverlay, #uploadBuktiPermintaanOverlay, #popupNotif');
-  allOverlays.forEach(el => {
-    if (el) {
-      el.style.setProperty('display', 'none', 'important');
-      el.style.display = 'none';
-      el.classList.remove('show');
-    }
-  });
-}
-window.closeAllPopups = closeAllPopups;
-
 
 let modeEdit = false;
 
@@ -16664,9 +16650,7 @@ window.logoutSemuaPerangkat = logoutSemuaPerangkat;
 // =======================================================================
 
 async function bukaMainApp(isFreshLogin = false) {
-
   document.body.classList.remove('sidebar-open');
-
   updateBodyClasses();
 
 
@@ -17370,7 +17354,6 @@ window.isFormDirtyOrFilled = isFormDirtyOrFilled;
 
 
 function showPage(pageId) {
-  document.body.classList.remove('sidebar-open');
 
   if (typeof forceCloseAllDetailPopups === "function") forceCloseAllDetailPopups();
 
@@ -18654,8 +18637,8 @@ function loadDashboard() {
         <td style="padding: 10px 1mm; text-align: center; color: #334155; border-bottom: 1px solid #e2e8f0 !important; white-space: nowrap;">${r.tanggal || '-'}</td>
         <td style="padding: 10px 5mm; font-weight: 700; color: #1e293b; border-bottom: 1px solid #e2e8f0 !important; white-space: nowrap;">${r.noSurat || '-'}</td>
         <td style="padding: 10px 5mm; color: #1e293b; border-bottom: 1px solid #e2e8f0 !important; white-space: nowrap;"><div class="namaTokoWrap" style="color: #1e293b; font-weight: 700; text-transform: uppercase; white-space: nowrap;" title="${r.toko || ''}">${r.toko || '-'}</div></td>
-        <td style="padding: 10px 5mm; text-align: left; border-bottom: 1px solid #e2e8f0 !important; white-space: nowrap;"><span style="font-weight: 400; color: #334155; font-size: 7pt !important;">${jenisTxt}</span></td>
-        <td style="padding: 10px 1mm; text-align: left; border-bottom: 1px solid #e2e8f0 !important; white-space: nowrap;"><span style="font-weight: 400; color: #334155; font-size: 7pt !important;">${countItem} Item</span></td>
+        <td style="padding: 10px 5mm; text-align: left; border-bottom: 1px solid #e2e8f0 !important; white-space: nowrap;"><span style="font-weight: 400; color: #334155; font-size: 12px;">${jenisTxt}</span></td>
+        <td style="padding: 10px 1mm; text-align: left; border-bottom: 1px solid #e2e8f0 !important; white-space: nowrap;"><span style="font-weight: 400; color: #334155; font-size: 12px;">${countItem} Item</span></td>
         <td style="padding: 10px 5mm; text-align: left; color: #475569; border-bottom: 1px solid #e2e8f0 !important; white-space: nowrap;"><div style="white-space: nowrap; color: #475569;" title="${ketTxt}">${ketTxt || '-'}</div></td>
         <td style="padding: 10px 5mm; text-align: center; border-bottom: 1px solid #e2e8f0 !important; white-space: nowrap;">${getBadgeStatusHTML(r)}</td>
       `;
@@ -19810,7 +19793,7 @@ function renderListPilihanNadaNotif() {
     const bgCard = isSelected ? '#f0f9ff' : '#ffffff';
     const borderCard = isSelected ? '2px solid #0284c7' : '1px solid #cbd5e1';
     const activeBadge = isSelected
-      ? `<span style="background:#0284c7; color:#ffffff; font-size: 7pt !important; font-weight:400; padding:2px 8px; border-radius:4px; margin-left:6px;">AKTIF</span>`
+      ? `<span style="background:#0284c7; color:#ffffff; font-size:10px; font-weight:400; padding:2px 8px; border-radius:4px; margin-left:6px;">AKTIF</span>`
       : '';
 
     html += `
@@ -19818,21 +19801,21 @@ function renderListPilihanNadaNotif() {
         <div style="display:flex !important; align-items:flex-start !important; gap:10px !important; flex:1 !important;">
           <span class="material-symbols-rounded" style="font-size:24px !important; color:${isSelected ? '#0284c7' : '#64748b'} !important; margin-top:2px !important; font-weight:400 !important;">${preset.icon}</span>
           <div>
-            <div style="font-size: 7pt !important; font-weight:400 !important; color:#0f172a !important; display:flex !important; align-items:center !important; gap:4px !important;">
+            <div style="font-size:13px !important; font-weight:400 !important; color:#0f172a !important; display:flex !important; align-items:center !important; gap:4px !important;">
               ${preset.name} ${activeBadge}
             </div>
-            <div style="font-size: 7pt !important; color:#64748b !important; font-weight:400 !important; margin-top:2px !important; line-height:1.35 !important;">
+            <div style="font-size:11px !important; color:#64748b !important; font-weight:400 !important; margin-top:2px !important; line-height:1.35 !important;">
               ${preset.desc}
             </div>
           </div>
         </div>
 
         <div style="display:flex !important; align-items:center !important; gap:6px !important; flex-shrink:0 !important;">
-          <button type="button" onclick="playSoundToneByName('${preset.key}')" title="TES SUARA" style="height:32px !important; padding:0 10px !important; font-size: 7pt !important; font-weight:400 !important; border-radius:4px !important; background:#e0f2fe !important; color:#0284c7 !important; border:1px solid #bae6fd !important; cursor:pointer !important; display:inline-flex !important; align-items:center !important; gap:4px !important;">
+          <button type="button" onclick="playSoundToneByName('${preset.key}')" title="TES SUARA" style="height:32px !important; padding:0 10px !important; font-size:11px !important; font-weight:400 !important; border-radius:4px !important; background:#e0f2fe !important; color:#0284c7 !important; border:1px solid #bae6fd !important; cursor:pointer !important; display:inline-flex !important; align-items:center !important; gap:4px !important;">
             <span class="material-symbols-rounded" style="font-size:16px !important; font-weight:400 !important;">volume_up</span> TES
           </button>
 
-          <button type="button" onclick="pilihNadaNotif('${preset.key}')" style="height:32px !important; padding:0 12px !important; font-size: 7pt !important; font-weight:400 !important; border-radius:4px !important; background:${isSelected ? '#16a34a' : '#0284c7'} !important; color:#ffffff !important; border:none !important; cursor:pointer !important; display:inline-flex !important; align-items:center !important; gap:4px !important;">
+          <button type="button" onclick="pilihNadaNotif('${preset.key}')" style="height:32px !important; padding:0 12px !important; font-size:11px !important; font-weight:400 !important; border-radius:4px !important; background:${isSelected ? '#16a34a' : '#0284c7'} !important; color:#ffffff !important; border:none !important; cursor:pointer !important; display:inline-flex !important; align-items:center !important; gap:4px !important;">
             ${isSelected ? '<span class="material-symbols-rounded" style="font-size:16px !important; font-weight:400 !important;">check</span> TERPILIH' : 'PILIH'}
           </button>
         </div>
@@ -20890,7 +20873,7 @@ async function bukaScanner(btn) {
   }
 
   if (readerEl) {
-    readerEl.innerHTML = '<div style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding:40px 16px; color:#0284c7; font-weight:800; font-size: 7pt !important; gap:10px;"><span class="material-symbols-rounded" style="font-size:36px; animation: spin 1s infinite linear;">sync</span> MEMUAT KAMERA...</div>';
+    readerEl.innerHTML = '<div style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding:40px 16px; color:#0284c7; font-weight:800; font-size:13px; gap:10px;"><span class="material-symbols-rounded" style="font-size:36px; animation: spin 1s infinite linear;">sync</span> MEMUAT KAMERA...</div>';
   }
 
   if (typeof Html5Qrcode === 'undefined') {
@@ -24822,7 +24805,7 @@ function renderArtemisPhotoPreviews() {
 
       return `
 
-        <div style="display: flex; align-items: center; justify-content: space-between; background: #ffffff; border: 1px solid #bfdbfe; border-radius: 4px; padding: 1px 3px !important; line-height: 1.15 !important; width: 100%; box-sizing: border-box;">
+        <div style="display: flex; align-items: center; justify-content: space-between; background: #ffffff; border: 1px solid #bfdbfe; border-radius: 4px; padding: 8px 12px; width: 100%; box-sizing: border-box;">
 
           <div style="display: flex; align-items: center; gap: 10px; overflow: hidden; flex: 1;">
 
@@ -24834,7 +24817,7 @@ function renderArtemisPhotoPreviews() {
 
             <div style="display: flex; flex-direction: column; overflow: hidden;">
 
-              <span style="font-size: 7pt !important; font-weight: 400; color: #0f172a; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Dokumen PDF Terpilih</span>
+              <span style="font-size: 12.5px; font-weight: 400; color: #0f172a; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Dokumen PDF Terpilih</span>
 
             </div>
 
@@ -24860,7 +24843,7 @@ function renderArtemisPhotoPreviews() {
 
     return `
 
-      <div style="display: flex; align-items: center; justify-content: space-between; background: #ffffff; border: 1px solid #bfdbfe; border-radius: 4px; padding: 1px 3px !important; line-height: 1.15 !important; width: 100%; box-sizing: border-box;">
+      <div style="display: flex; align-items: center; justify-content: space-between; background: #ffffff; border: 1px solid #bfdbfe; border-radius: 4px; padding: 8px 12px; width: 100%; box-sizing: border-box;">
 
         <div style="display: flex; align-items: center; gap: 10px; overflow: hidden; flex: 1;">
 
@@ -24872,7 +24855,7 @@ function renderArtemisPhotoPreviews() {
 
           <div style="display: flex; flex-direction: column; overflow: hidden;">
 
-            <span style="font-size: 7pt !important; font-weight: 400; color: #0f172a; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Foto Bukti Terpilih</span>
+            <span style="font-size: 12.5px; font-weight: 400; color: #0f172a; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Foto Bukti Terpilih</span>
 
           </div>
 
@@ -27523,7 +27506,7 @@ async function lihatDetail(noSuratOrObj, fromDashboard = false) {
 
       btnAjukanHtml = `
 
-        <button type="button" onclick="bukaModalBuatParsial('${req.noSurat}')" style="background: #16a34a !important; color: #ffffff !important; border: 1px solid #000000 !important; border-radius: 4px !important; padding: 6px 14px !important; font-size: 7pt !important; font-weight: 700 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: none !important; transition: all 0.15s ease !important;">
+        <button type="button" onclick="bukaModalBuatParsial('${req.noSurat}')" style="background: #16a34a !important; color: #ffffff !important; border: 1px solid #000000 !important; border-radius: 4px !important; padding: 6px 14px !important; font-size: 12px !important; font-weight: 700 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: none !important; transition: all 0.15s ease !important;">
           <span class="material-symbols-rounded" style="font-size: 16px !important; color: #ffffff !important;">add_circle</span> + AJUKAN BREAKDOWN
         </button>
 
@@ -27539,7 +27522,7 @@ async function lihatDetail(noSuratOrObj, fromDashboard = false) {
 
       btnPermintaanParsialHtml = `
 
-        <button type="button" onclick="bukaModalRiwayatParsialList('${req.noSurat}')" style="background: linear-gradient(135deg, #059669, #047857); color: #ffffff; border: none; border-radius: 5px; padding: 6px 14px; font-size: 7pt !important; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 3px 10px rgba(5,150,105,0.3);">
+        <button type="button" onclick="bukaModalRiwayatParsialList('${req.noSurat}')" style="background: linear-gradient(135deg, #059669, #047857); color: #ffffff; border: none; border-radius: 5px; padding: 6px 14px; font-size: 12px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 3px 10px rgba(5,150,105,0.3);">
 
           <span class="material-symbols-rounded" style="font-size: 16px;">call_split</span> PERMINTAAN BREAKDOWN (${partialsList.length})
 
@@ -27559,11 +27542,11 @@ async function lihatDetail(noSuratOrObj, fromDashboard = false) {
 
         <div id="containerBatchKetPart" style="display: none !important; align-items: center !important; gap: 6px !important; flex-wrap: wrap !important; background: transparent !important; padding: 0 !important; border: none !important; box-shadow: none !important;">
 
-          <input type="text" id="inputBatchKetPart" placeholder="Keterangan Part Masal..." style="padding: 5px 10px !important; font-size: 7pt !important; font-weight: 700 !important; border: 1.5px solid #0284c7 !important; border-radius: 3px !important; outline: none !important; background: #ffffff !important; color: #0f172a !important; width: 175px !important; box-shadow: 0 1px 4px rgba(0,0,0,0.1) !important;" onkeyup="if(event.key==='Enter') simpanBatchKetPart('${req.noSurat}')">
+          <input type="text" id="inputBatchKetPart" placeholder="Keterangan Part Masal..." style="padding: 5px 10px !important; font-size: 12px !important; font-weight: 700 !important; border: 1.5px solid #0284c7 !important; border-radius: 3px !important; outline: none !important; background: #ffffff !important; color: #0f172a !important; width: 175px !important; box-shadow: 0 1px 4px rgba(0,0,0,0.1) !important;" onkeyup="if(event.key==='Enter') simpanBatchKetPart('${req.noSurat}')">
 
-          <button type="button" id="btnBatchSimpanKetPart" onclick="simpanBatchKetPart('${req.noSurat}')" style="padding: 5px 12px !important; font-size: 7pt !important; font-weight: 700 !important; background: #16a34a !important; background-color: #16a34a !important; background-image: none !important; color: #ffffff !important; border-radius: 4px !important; box-shadow: 0 2px 6px rgba(22, 163, 74, 0.3) !important; border: 1px solid #15803d !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; gap: 4px !important;" title="Simpan Keterangan Part untuk item centang">
+          <button type="button" id="btnBatchSimpanKetPart" onclick="simpanBatchKetPart('${req.noSurat}')" style="padding: 5px 12px !important; font-size: 11.5px !important; font-weight: 700 !important; background: #16a34a !important; background-color: #16a34a !important; background-image: none !important; color: #ffffff !important; border-radius: 4px !important; box-shadow: 0 2px 6px rgba(22, 163, 74, 0.3) !important; border: 1px solid #15803d !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; gap: 4px !important;" title="Simpan Keterangan Part untuk item centang">
 
-            <span class="material-symbols-rounded" style="font-size: 16px !important;">edit_note</span> EDIT KET. MASAL <span id="batchCountBadge" style="font-size: 7pt !important; opacity: 0.9 !important; margin-left: 2px !important;">(0 Item)</span>
+            <span class="material-symbols-rounded" style="font-size: 16px !important;">edit_note</span> EDIT KET. MASAL <span id="batchCountBadge" style="font-size: 11px !important; opacity: 0.9 !important; margin-left: 2px !important;">(0 Item)</span>
 
           </button>
 
@@ -27603,7 +27586,7 @@ async function lihatDetail(noSuratOrObj, fromDashboard = false) {
 
     <div class="detailHeaderInfoV2" style="display: flex !important; flex-direction: row !important; flex-wrap: wrap !important; justify-content: space-between !important; align-items: center !important; width: 100% !important; padding: 10px 14px !important; box-sizing: border-box !important; background: #ffffff !important; border-bottom: 1.5px solid #e2e8f0 !important; margin-bottom: 0 !important; gap: 6px !important; flex-shrink: 0 !important; position: relative !important; z-index: 400 !important; box-shadow: 0 2px 6px rgba(0,0,0,0.04) !important;">
 
-      <div class="noSuratWrapV2" style="display: flex !important; flex-direction: column !important; gap: 3px !important; align-items: flex-start !important; text-align: left !important; flex: 0 0 auto !important; background: transparent !important; font-size: 7pt !important; font-weight: 400 !important; color: var(--text-main) !important;">
+      <div class="noSuratWrapV2" style="display: flex !important; flex-direction: column !important; gap: 3px !important; align-items: flex-start !important; text-align: left !important; flex: 0 0 auto !important; background: transparent !important; font-size: 12px !important; font-weight: 400 !important; color: var(--text-main) !important;">
 
         <div style="display: flex; align-items: center; white-space: nowrap;">
 
@@ -27623,7 +27606,7 @@ async function lihatDetail(noSuratOrObj, fromDashboard = false) {
 
           <span class="tokoValSubV2" style="color: var(--text-main) !important; font-weight: 400 !important; background: transparent !important;">
 
-            ${req.toko || '-'}${req.area ? `<span style="font-size: 7pt !important; opacity: 0.75; margin-left: 4px; font-weight: 400;">(${req.area})</span>` : ''}
+            ${req.toko || '-'}${req.area ? `<span style="font-size: 11px; opacity: 0.75; margin-left: 4px; font-weight: 400;">(${req.area})</span>` : ''}
 
           </span>
 
@@ -27647,7 +27630,7 @@ async function lihatDetail(noSuratOrObj, fromDashboard = false) {
 
 
 
-  const thBase = "background: #e2e8f0 !important; color: #0f172a !important; padding: 1px 3px !important; line-height: 1.15 !important; border: none !important; border-right: 1px solid #cbd5e1 !important; border-bottom: 2px solid #cbd5e1 !important; border-radius: 0 !important; border-top-left-radius: 0 !important; border-top-right-radius: 0 !important; position: sticky !important; top: 0 !important; z-index: 300 !important; font-size: 7pt !important; font-weight: 800 !important; letter-spacing: 0.3px !important; text-align: center !important; vertical-align: middle !important; white-space: nowrap !important; word-break: keep-all !important; overflow-wrap: normal !important; box-shadow: none !important; text-shadow: none !important; -webkit-clip-path: none !important; clip-path: none !important;";
+  const thBase = "background: #e2e8f0 !important; color: #0f172a !important; padding: 8px 12px !important; border: none !important; border-right: 1px solid #cbd5e1 !important; border-bottom: 2px solid #cbd5e1 !important; border-radius: 0 !important; border-top-left-radius: 0 !important; border-top-right-radius: 0 !important; position: sticky !important; top: 0 !important; z-index: 300 !important; font-size: 11.5px !important; font-weight: 800 !important; letter-spacing: 0.3px !important; text-align: center !important; vertical-align: middle !important; white-space: nowrap !important; word-break: keep-all !important; overflow-wrap: normal !important; box-shadow: none !important; text-shadow: none !important; -webkit-clip-path: none !important; clip-path: none !important;";
 
   const thStyleAutofit = `${thBase} width: 1% !important; white-space: nowrap !important; text-align: center !important;`;
 
@@ -27667,7 +27650,7 @@ async function lihatDetail(noSuratOrObj, fromDashboard = false) {
 
 
 
-  const tdBase = "padding: 1px 3px !important; line-height: 1.15 !important; border-top: none !important; border-left: none !important; border-right: none !important; background: inherit !important; color: var(--text-main) !important; font-size: 7pt !important; vertical-align: middle !important;";
+  const tdBase = "padding: 8px 12px !important; border-top: none !important; border-left: none !important; border-right: none !important; background: inherit !important; color: var(--text-main) !important; font-size: 12px !important; vertical-align: middle !important;";
 
   const getTdStyleAutofit = (idx, total) => `${tdBase} ${getTdBorder(idx, total)} width: 1% !important; white-space: nowrap !important; text-align: center !important;`;
 
@@ -27783,15 +27766,15 @@ async function lihatDetail(noSuratOrObj, fromDashboard = false) {
 
 
 
-    let statusPartBadgeHtml = '<span style="color: var(--text-muted); font-size: 7pt !important; font-weight: 700;">-</span>';
+    let statusPartBadgeHtml = '<span style="color: var(--text-muted); font-size: 11.5px; font-weight: 700;">-</span>';
 
     if (isUnfulfilled) {
 
-      statusPartBadgeHtml = `<span style="font-weight: 800; font-size: 7pt !important; color: var(--text-main);">TIDAK DIPENUHI</span>`;
+      statusPartBadgeHtml = `<span style="font-weight: 800; font-size: 11.5px; color: var(--text-main);">TIDAK DIPENUHI</span>`;
 
     } else if (statusPartVal) {
 
-      statusPartBadgeHtml = `<span style="font-weight: 800; font-size: 7pt !important; color: var(--text-main);">${statusPartVal}</span>`;
+      statusPartBadgeHtml = `<span style="font-weight: 800; font-size: 11.5px; color: var(--text-main);">${statusPartVal}</span>`;
 
     }
 
@@ -27887,7 +27870,7 @@ async function lihatDetail(noSuratOrObj, fromDashboard = false) {
 
               <div style="display: inline-flex !important; align-items: center !important; justify-content: flex-end !important; gap: 4px !important; width: 100% !important; vertical-align: middle !important;">
 
-                <span style="font-size: 7pt !important; font-weight: 700; color: #10b981;">🔒 SERAH</span>
+                <span style="font-size: 11px; font-weight: 700; color: #10b981;">🔒 SERAH</span>
 
                 ${chkItemHtml}
 
@@ -28429,11 +28412,11 @@ async function lihatDetail(noSuratOrObj, fromDashboard = false) {
 
   const thActionHtml = canServiceRowActions ? `
 
-    <th class="th-aksi-col" style="${thStyleLeftLast} white-space: nowrap !important; text-align: right !important; vertical-align: middle !important; padding: 1px 3px !important; line-height: 1.15 !important;">
+    <th class="th-aksi-col" style="${thStyleLeftLast} white-space: nowrap !important; text-align: right !important; vertical-align: middle !important; padding: 8px 12px !important;">
 
       <div style="display: inline-flex !important; align-items: center !important; justify-content: flex-end !important; gap: 6px !important; width: 100% !important; vertical-align: middle !important;">
 
-        <span style="font-size: 7pt !important; font-weight: 800 !important; letter-spacing: 0.5px !important; color: #0f172a !important;">AKSI</span>
+        <span style="font-size: 11px !important; font-weight: 800 !important; letter-spacing: 0.5px !important; color: #0f172a !important;">AKSI</span>
 
         <label class="chkBoxBoxHeader" style="display: inline-flex !important; align-items: center !important; justify-content: center !important; width: 28px !important; height: 28px !important; min-width: 28px !important; min-height: 28px !important; border: 1.5px solid #64748b !important; border-radius: 6px !important; background: #cbd5e1 !important; cursor: pointer !important; box-sizing: border-box !important; vertical-align: middle !important; transition: all 0.15s ease !important; margin: 0 !important;" title="PILIH SEMUA ITEM">
 
@@ -28567,7 +28550,7 @@ async function lihatDetail(noSuratOrObj, fromDashboard = false) {
 
           <div style="display: flex !important; align-items: center !important; justify-content: space-between !important; flex-wrap: wrap !important; gap: 8px !important;">
 
-            <div style="display: flex !important; align-items: center !important; gap: 8px !important; color: #92400e !important; font-size: 7pt !important; font-weight: 800 !important;">
+            <div style="display: flex !important; align-items: center !important; gap: 8px !important; color: #92400e !important; font-size: 13px !important; font-weight: 800 !important;">
 
               <span class="material-symbols-rounded" style="color: #d97706 !important; font-size: 20px !important;">forward_to_inbox</span>
 
@@ -28577,13 +28560,13 @@ async function lihatDetail(noSuratOrObj, fromDashboard = false) {
 
           <div style="display: flex !important; align-items: center !important; justify-content: center !important; gap: 12px !important; margin-top: 6px !important; width: 100% !important;">
 
-            <button type="button" onclick="setujuiForwardService('${req.noSurat}')" style="background: linear-gradient(135deg, #16a34a, #15803d) !important; color: #ffffff !important; border: none !important; border-radius: 6px !important; padding: 7px 18px !important; font-size: 7pt !important; font-weight: 800 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 3px 10px rgba(22, 163, 74, 0.3) !important;">
+            <button type="button" onclick="setujuiForwardService('${req.noSurat}')" style="background: linear-gradient(135deg, #16a34a, #15803d) !important; color: #ffffff !important; border: none !important; border-radius: 6px !important; padding: 7px 18px !important; font-size: 12px !important; font-weight: 800 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 3px 10px rgba(22, 163, 74, 0.3) !important;">
 
               <span class="material-symbols-rounded" style="font-size: 17px !important;">check_circle</span> APPROVE FORWARD
 
             </button>
 
-            <button type="button" onclick="tolakForwardService('${req.noSurat}')" style="background: linear-gradient(135deg, #dc2626, #b91c1c) !important; color: #ffffff !important; border: none !important; border-radius: 6px !important; padding: 7px 18px !important; font-size: 7pt !important; font-weight: 800 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 3px 10px rgba(220, 38, 38, 0.3) !important;">
+            <button type="button" onclick="tolakForwardService('${req.noSurat}')" style="background: linear-gradient(135deg, #dc2626, #b91c1c) !important; color: #ffffff !important; border: none !important; border-radius: 6px !important; padding: 7px 18px !important; font-size: 12px !important; font-weight: 800 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 3px 10px rgba(220, 38, 38, 0.3) !important;">
 
               <span class="material-symbols-rounded" style="font-size: 17px !important;">cancel</span> TOLAK FORWARD
 
@@ -28593,13 +28576,13 @@ async function lihatDetail(noSuratOrObj, fromDashboard = false) {
 
           </div>
 
-          <div style="font-size: 7pt !important; color: #78350f !important; line-height: 1.4 !important;">
+          <div style="font-size: 12px !important; color: #78350f !important; line-height: 1.4 !important;">
 
             Dokumen ini diajukan <b>FORWARD</b> dari <b>Area ${req.forwardSourceArea || req.area}</b> ke <b>Service Area ${req.forwardTargetArea}</b> oleh <b>${req.forwardedBy || 'SERVICE'}</b>.<br>
 
             <i>Catatan: "${req.forwardNotes || '-'}"</i><br>
 
-            <span style="font-size: 7pt !important; opacity: 0.9 !important; color: #b45309 !important;">* Apabila disetujui (Approve), area resmi dokumen akan berpindah ke ${req.forwardTargetArea}. Total item barang TIDAK akan berubah.</span>
+            <span style="font-size: 11px !important; opacity: 0.9 !important; color: #b45309 !important;">* Apabila disetujui (Approve), area resmi dokumen akan berpindah ke ${req.forwardTargetArea}. Total item barang TIDAK akan berubah.</span>
 
           </div>
 
@@ -28613,7 +28596,7 @@ async function lihatDetail(noSuratOrObj, fromDashboard = false) {
 
         <div class="fwAlertBanner" style="background: linear-gradient(135deg, #eff6ff, #dbeafe) !important; border: 1.5px solid #3b82f6 !important; border-radius: 8px !important; padding: 10px 14px !important; margin: 6px 14px 10px 14px !important; display: flex !important; flex-direction: column !important; gap: 6px !important; flex-shrink: 0 !important;">
 
-          <div style="display: flex !important; align-items: center !important; gap: 8px !important; color: #1e40af !important; font-size: 7pt !important; font-weight: 800 !important;">
+          <div style="display: flex !important; align-items: center !important; gap: 8px !important; color: #1e40af !important; font-size: 13px !important; font-weight: 800 !important;">
 
             <span class="material-symbols-rounded" style="color: #2563eb !important; font-size: 20px !important;">hourglass_top</span>
 
@@ -28621,7 +28604,7 @@ async function lihatDetail(noSuratOrObj, fromDashboard = false) {
 
           </div>
 
-          <div style="font-size: 7pt !important; color: #1e3a8a !important; line-height: 1.4 !important;">
+          <div style="font-size: 12px !important; color: #1e3a8a !important; line-height: 1.4 !important;">
 
             Dokumen sedang diajukan Forward ke <b>Service Area ${req.forwardTargetArea}</b> oleh <b>${req.forwardedBy || 'SERVICE'}</b>.<br>
 
@@ -28639,7 +28622,7 @@ async function lihatDetail(noSuratOrObj, fromDashboard = false) {
 
     fwBannerHtml = `
 
-      <div class="fwAlertBanner" style="background: linear-gradient(135deg, #fef2f2, #fee2e2) !important; border: 1.5px solid #ef4444 !important; border-radius: 8px !important; padding: 8px 14px !important; margin: 6px 14px 10px 14px !important; font-size: 7pt !important; color: #991b1b !important; flex-shrink: 0 !important;">
+      <div class="fwAlertBanner" style="background: linear-gradient(135deg, #fef2f2, #fee2e2) !important; border: 1.5px solid #ef4444 !important; border-radius: 8px !important; padding: 8px 14px !important; margin: 6px 14px 10px 14px !important; font-size: 12px !important; color: #991b1b !important; flex-shrink: 0 !important;">
 
         ⚠️ <b>FORWARD DITOLAK</b> oleh Tim Service Area ${req.forwardTargetArea || 'Tujuan'} (${req.forwardRejectedBy || '-'}). Alasan: <i>"${req.forwardRejectReason || '-'}"</i>
 
@@ -28879,9 +28862,9 @@ function bukaModalEditStatusPart(noSurat) {
 
           <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dashed var(--border-color); padding-bottom: 6px;">
 
-            <strong style="font-size: 7pt !important; color: var(--primary);">${idx + 1}. ${typeVal} (SN: ${seriVal})</strong>
+            <strong style="font-size: 13px; color: var(--primary);">${idx + 1}. ${typeVal} (SN: ${seriVal})</strong>
 
-            <span style="font-size: 7pt !important; font-weight: 700; color: var(--text-muted);">${barangVal} (Qty: ${i.qty || 1})</span>
+            <span style="font-size: 11px; font-weight: 700; color: var(--text-muted);">${barangVal} (Qty: ${i.qty || 1})</span>
 
           </div>
 
@@ -28889,17 +28872,17 @@ function bukaModalEditStatusPart(noSurat) {
 
             <div>
 
-              <label style="font-size: 7pt !important; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 4px;">NO PART / KODE PART</label>
+              <label style="font-size: 11px; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 4px;">NO PART / KODE PART</label>
 
-              <input type="text" id="input_nopart_${idx}" value="${currentNoPart}" placeholder="Contoh: PRT-99210 / BAUT..." style="width: 100%; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-box); color: var(--text-main); font-size: 7pt !important; font-weight: 600; box-sizing: border-box;">
+              <input type="text" id="input_nopart_${idx}" value="${currentNoPart}" placeholder="Contoh: PRT-99210 / BAUT..." style="width: 100%; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-box); color: var(--text-main); font-size: 12px; font-weight: 600; box-sizing: border-box;">
 
             </div>
 
             <div>
 
-              <label style="font-size: 7pt !important; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 4px;">STATUS PART</label>
+              <label style="font-size: 11px; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 4px;">STATUS PART</label>
 
-              <input type="text" id="input_statuspart_${idx}" list="list_statuspart_presets" value="${currentStatusPart}" placeholder="Pilih / Ketik Status..." style="width: 100%; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-box); color: var(--text-main); font-size: 7pt !important; font-weight: 600; box-sizing: border-box;">
+              <input type="text" id="input_statuspart_${idx}" list="list_statuspart_presets" value="${currentStatusPart}" placeholder="Pilih / Ketik Status..." style="width: 100%; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-box); color: var(--text-main); font-size: 12px; font-weight: 600; box-sizing: border-box;">
 
               <datalist id="list_statuspart_presets">
 
@@ -30335,9 +30318,9 @@ function bukaModalEditKetPartSingle(noSurat, itemIndex) {
 
     infoEl.innerHTML = `
 
-      <div style="color: #0077b6; font-size: 7pt !important; font-weight: 400 !important; margin-bottom: 3px;">#${req.noSurat} - Baris ${itemIndex + 1}</div>
+      <div style="color: #0077b6; font-size: 13px; font-weight: 400 !important; margin-bottom: 3px;">#${req.noSurat} - Baris ${itemIndex + 1}</div>
 
-      <div style="color: #475569; font-size: 7pt !important; font-weight: 400 !important;">Item: ${barangVal} | Type: ${typeVal} (SN: ${seriVal})</div>
+      <div style="color: #475569; font-size: 12px; font-weight: 400 !important;">Item: ${barangVal} | Type: ${typeVal} (SN: ${seriVal})</div>
 
     `;
 
@@ -31354,14 +31337,12 @@ function bukaModalPdfModels() {
 
 
 function tutupModalPdfModels() {
+
   const modal = document.getElementById('popupPdfModelsModal');
-  if (modal) {
-    modal.style.setProperty('display', 'none', 'important');
-    modal.style.display = 'none';
-    modal.classList.remove('show');
-  }
+
+  if (modal) modal.style.display = 'none';
+
 }
-window.tutupModalPdfModels = tutupModalPdfModels;
 
 
 
@@ -31415,7 +31396,7 @@ function updatePdfModelSelectorButtons() {
 
       <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
 
-        <div style="font-weight:900; font-size: 7pt !important; color:var(--text-main); text-transform:uppercase; display:flex; align-items:center; gap:6px;">
+        <div style="font-weight:900; font-size:12.5px; color:var(--text-main); text-transform:uppercase; display:flex; align-items:center; gap:6px;">
 
           <span class="material-symbols-rounded" style="color:${activeModelObj.color}; font-size:18px;">style</span>
 
@@ -31423,7 +31404,7 @@ function updatePdfModelSelectorButtons() {
 
         </div>
 
-        <div style="font-size: 7pt !important; color:var(--text-muted); font-weight:600;">${activeModelObj.desc}</div>
+        <div style="font-size:11.5px; color:var(--text-muted); font-weight:600;">${activeModelObj.desc}</div>
 
       </div>
 
@@ -31503,7 +31484,7 @@ function renderFullPdfPreviewDocument(modelId) {
 
   let headerTitleHtml = `
 
-    <div style="text-align: center; font-size: 7pt !important; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 8px; margin-bottom: 36px; letter-spacing: 0.5px; color: #0f172a; text-transform: uppercase;">
+    <div style="text-align: center; font-size: 20px; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 8px; margin-bottom: 36px; letter-spacing: 0.5px; color: #0f172a; text-transform: uppercase;">
 
       PERMINTAAN TOKO
 
@@ -31519,7 +31500,7 @@ function renderFullPdfPreviewDocument(modelId) {
 
     headerTitleHtml = `
 
-      <div style="background: linear-gradient(135deg, #0284c7, #0369a1); color: #ffffff; padding: 12px 18px; border-radius: 10px; text-align: center; font-size: 7pt !important; font-weight: 900; margin-bottom: 20px; letter-spacing: 1px; box-shadow: 0 4px 12px rgba(2,132,199,0.25);">
+      <div style="background: linear-gradient(135deg, #0284c7, #0369a1); color: #ffffff; padding: 12px 18px; border-radius: 10px; text-align: center; font-size: 20px; font-weight: 900; margin-bottom: 20px; letter-spacing: 1px; box-shadow: 0 4px 12px rgba(2,132,199,0.25);">
 
         PERMINTAAN TOKO
 
@@ -31533,7 +31514,7 @@ function renderFullPdfPreviewDocument(modelId) {
 
     headerTitleHtml = `
 
-      <div style="background: #0f172a; color: #fbbf24; padding: 14px 18px; border-radius: 8px; border-bottom: 4px solid #fbbf24; text-align: center; font-size: 7pt !important; font-weight: 900; margin-bottom: 20px; letter-spacing: 1.5px; text-transform: uppercase;">
+      <div style="background: #0f172a; color: #fbbf24; padding: 14px 18px; border-radius: 8px; border-bottom: 4px solid #fbbf24; text-align: center; font-size: 21px; font-weight: 900; margin-bottom: 20px; letter-spacing: 1.5px; text-transform: uppercase;">
 
         PERMINTAAN TOKO
 
@@ -31547,7 +31528,7 @@ function renderFullPdfPreviewDocument(modelId) {
 
     headerTitleHtml = `
 
-      <div style="background: #059669; color: #ffffff; padding: 12px 18px; border-radius: 6px; text-align: center; font-size: 7pt !important; font-weight: 900; margin-bottom: 20px; letter-spacing: 1px; border-left: 6px solid #047857;">
+      <div style="background: #059669; color: #ffffff; padding: 12px 18px; border-radius: 6px; text-align: center; font-size: 20px; font-weight: 900; margin-bottom: 20px; letter-spacing: 1px; border-left: 6px solid #047857;">
 
         PERMINTAAN TOKO
 
@@ -31561,7 +31542,7 @@ function renderFullPdfPreviewDocument(modelId) {
 
     headerTitleHtml = `
 
-      <div style="background: linear-gradient(135deg, #7c3aed, #4c1d95); color: #ffffff; padding: 14px 18px; border-radius: 12px; text-align: center; font-size: 7pt !important; font-weight: 900; margin-bottom: 20px; letter-spacing: 1.5px; box-shadow: 0 6px 18px rgba(124,58,237,0.3);">
+      <div style="background: linear-gradient(135deg, #7c3aed, #4c1d95); color: #ffffff; padding: 14px 18px; border-radius: 12px; text-align: center; font-size: 21px; font-weight: 900; margin-bottom: 20px; letter-spacing: 1.5px; box-shadow: 0 6px 18px rgba(124,58,237,0.3);">
 
         PERMINTAAN TOKO
 
@@ -31577,12 +31558,12 @@ function renderFullPdfPreviewDocument(modelId) {
       <div style="font-family: 'Poppins', Arial, sans-serif; background: #ffffff; color: #0f172a; padding: 18px; border-radius: 4px; border: 1px solid #cbd5e1; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
         
         <!-- Header Title: PERMINTAAN TOKO -->
-        <div style="text-align: center; font-size: 7pt !important; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 10px; margin-bottom: 16px; color: #0f172a; text-transform: uppercase; letter-spacing: 0.5px;">
+        <div style="text-align: center; font-size: 18px; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 10px; margin-bottom: 16px; color: #0f172a; text-transform: uppercase; letter-spacing: 0.5px;">
           PERMINTAAN TOKO
         </div>
 
         <!-- Info Grid -->
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 7pt !important; color: #0f172a;">
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 11.5px; color: #0f172a;">
           <tr>
             <td style="padding: 3px 0; width: 85px; font-weight: 600; color: #0f172a;">NO SURAT</td>
             <td style="padding: 3px 4px; width: 12px; color: #0f172a;">:</td>
@@ -31602,10 +31583,10 @@ function renderFullPdfPreviewDocument(modelId) {
         </table>
 
         <!-- Section Label -->
-        <div style="font-size: 7pt !important; font-weight: 700; margin-bottom: 8px; color: #0f172a; text-transform: uppercase;">DETAIL PERMINTAAN:</div>
+        <div style="font-size: 11.5px; font-weight: 700; margin-bottom: 8px; color: #0f172a; text-transform: uppercase;">DETAIL PERMINTAAN:</div>
 
         <!-- Items Table -->
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 7pt !important; border: 1px solid #cbd5e1; table-layout: auto;">
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 11px; border: 1px solid #cbd5e1; table-layout: auto;">
           <thead>
             <tr style="background: #0284c7; color: #ffffff;">
               <th style="width: 1%; white-space: nowrap; text-align: center; padding: 7px 6px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600;">NO</th>
@@ -31622,13 +31603,13 @@ function renderFullPdfPreviewDocument(modelId) {
         </table>
 
         <!-- TTD Area Summary -->
-        <div style="display: flex; justify-content: space-around; text-align: center; font-size: 7pt !important; margin-top: 10px; gap: 8px;">
+        <div style="display: flex; justify-content: space-around; text-align: center; font-size: 11px; margin-top: 10px; gap: 8px;">
           <div style="flex: 1; border: 1px solid #e2e8f0; padding: 6px; border-radius: 4px; background: #f8fafc;">
             <div style="font-weight: 500; color: #475569; margin-bottom: 2px;">PEMOHON (TOKO)</div>
             <div style="height: 44px; display: flex; align-items: center; justify-content: center;">
               ${pemohonTtdImg || '<span style="color: #94a3b8; font-style: italic; font-weight: 400;">ADA</span>'}
             </div>
-            <div style="font-size: 7pt !important; color: #64748b; font-weight: 400; margin-top: 2px;">${req.pemohonUserName || req.pemohon || 'Pemohon Toko'}</div>
+            <div style="font-size: 10px; color: #64748b; font-weight: 400; margin-top: 2px;">${req.pemohonUserName || req.pemohon || 'Pemohon Toko'}</div>
           </div>
 
           <div style="flex: 1; border: 1px solid #e2e8f0; padding: 6px; border-radius: 4px; background: #f8fafc;">
@@ -31636,15 +31617,15 @@ function renderFullPdfPreviewDocument(modelId) {
             <div style="height: 44px; display: flex; align-items: center; justify-content: center;">
               ${serviceTtdImg}
             </div>
-            <div style="font-size: 7pt !important; color: #64748b; font-weight: 400; margin-top: 2px;">${req.serviceUserName || 'Service'}</div>
+            <div style="font-size: 10px; color: #64748b; font-weight: 400; margin-top: 2px;">${req.serviceUserName || 'Service'}</div>
           </div>
 
           <div style="flex: 1; border: 1px dashed #16a34a; padding: 6px; border-radius: 4px; background: #f0fdf4;">
             <div style="font-weight: 500; color: #16a34a; margin-bottom: 2px;">DM (DITANDATANGANI DI BEWAH)</div>
-            <div style="height: 44px; display: flex; align-items: center; justify-content: center; color: #16a34a; font-weight: 500; font-size: 7pt !important;">
+            <div style="height: 44px; display: flex; align-items: center; justify-content: center; color: #16a34a; font-weight: 500; font-size: 10px;">
               [ SILAKAN TTD DI CANVAS ]
             </div>
-            <div style="font-size: 7pt !important; color: #16a34a; font-weight: 500; margin-top: 2px;">${currentUser ? (currentUser.fullName || currentUser.username) : 'DM'}</div>
+            <div style="font-size: 10px; color: #16a34a; font-weight: 500; margin-top: 2px;">${currentUser ? (currentUser.fullName || currentUser.username) : 'DM'}</div>
           </div>
         </div>
 
@@ -31903,8 +31884,8 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
       );
 
       const strikeStyle = isUnfulfilled ? 'text-decoration: line-through; text-decoration-thickness: 1.5px; color: #475569;' : '';
-      const rowTdStyle = `padding:6px 6px; border:1px solid #cbd5e1; font-size: 7pt !important; ${strikeStyle}`;
-      const numTdStyle = `text-align:center; padding:6px 4px; border:1px solid #cbd5e1; font-size: 7pt !important; white-space: nowrap !important; ${strikeStyle}`;
+      const rowTdStyle = `padding:6px 6px; border:1px solid #cbd5e1; font-size:11px; ${strikeStyle}`;
+      const numTdStyle = `text-align:center; padding:6px 4px; border:1px solid #cbd5e1; font-size:11px; white-space: nowrap !important; ${strikeStyle}`;
 
       return `
         <tr style="border-bottom:1px solid #cbd5e1;">
@@ -32184,7 +32165,7 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
 
         <div style="margin-top: 10px; margin-bottom: 8px; page-break-inside: avoid;">
 
-          <div style="font-size: 7pt !important; font-weight: 700; color: #475569; letter-spacing: 0.3px; margin-bottom: 4px; border-bottom: 1px solid #e2e8f0; padding-bottom: 2px; text-transform: uppercase;">
+          <div style="font-size: 8px; font-weight: 700; color: #475569; letter-spacing: 0.3px; margin-bottom: 4px; border-bottom: 1px solid #e2e8f0; padding-bottom: 2px; text-transform: uppercase;">
 
             LAMPIRAN FOTO BARANG (${loadedValidPhotos.length} FOTO):
 
@@ -32198,7 +32179,7 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
 
                 <img src="${p}" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;">
 
-                <span style="position: absolute; bottom: 2px; right: 2px; background: rgba(15,23,42,0.75); color: #ffffff; font-size: 7pt !important; font-weight: 800; padding: 1px 3px; border-radius: 2px;">#${pIdx+1}</span>
+                <span style="position: absolute; bottom: 2px; right: 2px; background: rgba(15,23,42,0.75); color: #ffffff; font-size: 7.5px; font-weight: 800; padding: 1px 3px; border-radius: 2px;">#${pIdx+1}</span>
 
               </div>
 
@@ -32238,7 +32219,7 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
 
     let headerTitleHtml = `
 
-      <div style="text-align: center; font-size: 7pt !important; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 24px; margin-bottom: 20px; letter-spacing: 0.5px; color: #0f172a; text-transform: uppercase;">
+      <div style="text-align: center; font-size: 20px; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 24px; margin-bottom: 20px; letter-spacing: 0.5px; color: #0f172a; text-transform: uppercase;">
 
         PERMINTAAN TOKO
 
@@ -32254,7 +32235,7 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
 
       headerTitleHtml = `
 
-        <div style="background: linear-gradient(135deg, #0284c7, #0369a1); color: #ffffff; padding: 12px 18px; border-radius: 10px; text-align: center; font-size: 7pt !important; font-weight: 900; margin-bottom: 14px; letter-spacing: 1px; box-shadow: 0 4px 12px rgba(2,132,199,0.25);">
+        <div style="background: linear-gradient(135deg, #0284c7, #0369a1); color: #ffffff; padding: 12px 18px; border-radius: 10px; text-align: center; font-size: 20px; font-weight: 900; margin-bottom: 14px; letter-spacing: 1px; box-shadow: 0 4px 12px rgba(2,132,199,0.25);">
 
           PERMINTAAN TOKO
 
@@ -32268,7 +32249,7 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
 
       headerTitleHtml = `
 
-        <div style="background: #0f172a; color: #fbbf24; padding: 14px 18px; border-radius: 8px; border-bottom: 4px solid #fbbf24; text-align: center; font-size: 7pt !important; font-weight: 900; margin-bottom: 14px; letter-spacing: 1.5px; text-transform: uppercase;">
+        <div style="background: #0f172a; color: #fbbf24; padding: 14px 18px; border-radius: 8px; border-bottom: 4px solid #fbbf24; text-align: center; font-size: 21px; font-weight: 900; margin-bottom: 14px; letter-spacing: 1.5px; text-transform: uppercase;">
 
           PERMINTAAN TOKO
 
@@ -32282,7 +32263,7 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
 
       headerTitleHtml = `
 
-        <div style="background: #059669; color: #ffffff; padding: 12px 18px; border-radius: 6px; text-align: center; font-size: 7pt !important; font-weight: 900; margin-bottom: 14px; letter-spacing: 1px; border-left: 6px solid #047857;">
+        <div style="background: #059669; color: #ffffff; padding: 12px 18px; border-radius: 6px; text-align: center; font-size: 20px; font-weight: 900; margin-bottom: 14px; letter-spacing: 1px; border-left: 6px solid #047857;">
 
           PERMINTAAN TOKO
 
@@ -32296,7 +32277,7 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
 
       headerTitleHtml = `
 
-        <div style="background: linear-gradient(135deg, #7c3aed, #4c1d95); color: #ffffff; padding: 14px 18px; border-radius: 12px; text-align: center; font-size: 7pt !important; font-weight: 900; margin-bottom: 14px; letter-spacing: 1.5px; box-shadow: 0 6px 18px rgba(124,58,237,0.3);">
+        <div style="background: linear-gradient(135deg, #7c3aed, #4c1d95); color: #ffffff; padding: 14px 18px; border-radius: 12px; text-align: center; font-size: 21px; font-weight: 900; margin-bottom: 14px; letter-spacing: 1.5px; box-shadow: 0 6px 18px rgba(124,58,237,0.3);">
 
           PERMINTAAN TOKO
 
@@ -32318,7 +32299,7 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
 
 
 
-                                  <table class="pdf-info-table" style="width: 100%; border-collapse: collapse; margin-top: 8px; margin-bottom: 20px; font-size: 7pt !important; background: transparent; border: none;">
+                                  <table class="pdf-info-table" style="width: 100%; border-collapse: collapse; margin-top: 8px; margin-bottom: 20px; font-size: 12px; background: transparent; border: none;">
             <tr>
               <td style="padding: 4px 0; width: 85px; font-weight: 400; color: #0f172a; border: none; white-space: nowrap;">NO SURAT</td>
               <td style="padding: 4px 4px; width: 12px; font-weight: 400; color: #0f172a; border: none; text-align: center;">:</td>
@@ -32339,9 +32320,9 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
 
 
 
-          <div style="font-size: 7pt !important; font-weight: bold; margin-bottom: 6px; color: #0f172a;">DETAIL PERMINTAAN:</div>
+          <div style="font-size: 11px; font-weight: bold; margin-bottom: 6px; color: #0f172a;">DETAIL PERMINTAAN:</div>
 
-          <table style="width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 7pt !important; border: 1px solid #cbd5e1;">
+          <table style="width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 11.5px; border: 1px solid #cbd5e1;">
 
             <thead>
 
@@ -32383,15 +32364,15 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
 
               return `
 
-                <div style="margin-top: 12px; margin-bottom: 16px; font-size: 7pt !important; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 1.5px solid #0284c7; border-left: 6px solid ${tableHeaderBg}; padding: 12px 16px; border-radius: 8px; box-shadow: 0 3px 10px rgba(2,132,199,0.12); color: #0f172a; opacity: 1 !important;">
+                <div style="margin-top: 12px; margin-bottom: 16px; font-size: 11.5px; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 1.5px solid #0284c7; border-left: 6px solid ${tableHeaderBg}; padding: 12px 16px; border-radius: 8px; box-shadow: 0 3px 10px rgba(2,132,199,0.12); color: #0f172a; opacity: 1 !important;">
 
-                  <div style="font-weight: 800; font-size: 7pt !important; color: ${tableHeaderBg === '#0f172a' ? '#0369a1' : tableHeaderBg}; margin-bottom: 4px; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
+                  <div style="font-weight: 800; font-size: 11.5px; color: ${tableHeaderBg === '#0f172a' ? '#0369a1' : tableHeaderBg}; margin-bottom: 4px; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px;">
 
-                    <span style="font-size: 7pt !important;">📌</span> CATATAN / KETERANGAN PERMINTAAN:
+                    <span style="font-size: 14px;">📌</span> CATATAN / KETERANGAN PERMINTAAN:
 
                   </div>
 
-                  <div style="font-weight: 600; color: #0f172a; line-height: 1.5; font-size: 7pt !important; word-break: break-word;">${cTxt}</div>
+                  <div style="font-weight: 600; color: #0f172a; line-height: 1.5; font-size: 11.5px; word-break: break-word;">${cTxt}</div>
 
                 </div>
 
@@ -32409,7 +32390,7 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
 
         <div>
 
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 28px; text-align: center; font-size: 7pt !important; page-break-inside: avoid;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 28px; text-align: center; font-size: 11px; page-break-inside: avoid;">
 
             <div style="width: 30%; display: flex; flex-direction: column; justify-content: space-between; height: 125px;">
 
@@ -32423,9 +32404,9 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
 
               <div>
 
-                <div style="font-weight: 500; color: #0f172a; font-size: 7pt !important;">${pemohonName}</div>
+                <div style="font-weight: 500; color: #0f172a; font-size: 11.5px;">${pemohonName}</div>
 
-                <div style="font-size: 7pt !important; color: #475569; margin-top: 2px; text-transform: uppercase;">${pemohonRoleTitle}</div>
+                <div style="font-size: 10px; color: #475569; margin-top: 2px; text-transform: uppercase;">${pemohonRoleTitle}</div>
 
               </div>
 
@@ -32445,9 +32426,9 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
 
               <div>
 
-                <div style="font-weight: 500; color: #0f172a; font-size: 7pt !important;">${serviceName}</div>
+                <div style="font-weight: 500; color: #0f172a; font-size: 11.5px;">${serviceName}</div>
 
-                <div style="font-size: 7pt !important; color: #475569; margin-top: 2px; text-transform: uppercase;">${hodsAreaTitle}</div>
+                <div style="font-size: 10px; color: #475569; margin-top: 2px; text-transform: uppercase;">${hodsAreaTitle}</div>
 
               </div>
 
@@ -32467,9 +32448,9 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
 
               <div>
 
-                <div style="font-weight: 500; color: #0f172a; font-size: 7pt !important;">${dmName}</div>
+                <div style="font-weight: 500; color: #0f172a; font-size: 11.5px;">${dmName}</div>
 
-                <div style="font-size: 7pt !important; color: #475569; margin-top: 2px; text-transform: uppercase;">DISTRICT MANAGER</div>
+                <div style="font-size: 10px; color: #475569; margin-top: 2px; text-transform: uppercase;">DISTRICT MANAGER</div>
 
               </div>
 
@@ -32479,13 +32460,13 @@ async function bukaPdfModal(noSurat, includePhotos = null, autoPrint = true) {
 
 
 
-          <div style="margin-top: 28px; display: flex; justify-content: space-between; align-items: center; font-size: 7pt !important; color: #64748b; letter-spacing: 0.2px;">
+          <div style="margin-top: 28px; display: flex; justify-content: space-between; align-items: center; font-size: 8.5px; color: #64748b; letter-spacing: 0.2px;">
 
             <div>
-              ${hasUnfulfilledItem ? `<div style="font-weight: 700; color: #475569; font-style: normal; display: flex; align-items: center; gap: 4px; font-size: 7pt !important;"><span style="text-decoration: line-through; text-decoration-thickness: 2px; font-weight: 800; color: #475569; font-size: 7pt !important;">---</span> = Tidak di penuhi</div>` : ''}
+              ${hasUnfulfilledItem ? `<div style="font-weight: 700; color: #475569; font-style: normal; display: flex; align-items: center; gap: 4px; font-size: 8px;"><span style="text-decoration: line-through; text-decoration-thickness: 2px; font-weight: 800; color: #475569; font-size: 10px;">---</span> = Tidak di penuhi</div>` : ''}
             </div>
 
-            <div style="font-style: italic; opacity: 0.85; font-size: 7pt !important;">
+            <div style="font-style: italic; opacity: 0.85; font-size: 8px;">
 
               ${timestampStr}
 
@@ -34991,13 +34972,13 @@ function loadDaftarChatAdmin() {
 
   actionToolbar.innerHTML = `
 
-    <button type="button" onclick="bukaModalPilihUserChat()" style="width:100%; padding:9px 12px; background:linear-gradient(135deg, #10b981, #059669) !important; color:#ffffff !important; border:none; border-radius:4px; font-weight:800; font-size: 7pt !important; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:6px; box-shadow:0 2px 6px rgba(16,185,129,0.35); box-sizing:border-box;">
+    <button type="button" onclick="bukaModalPilihUserChat()" style="width:100%; padding:9px 12px; background:linear-gradient(135deg, #10b981, #059669) !important; color:#ffffff !important; border:none; border-radius:4px; font-weight:800; font-size:12px; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:6px; box-shadow:0 2px 6px rgba(16,185,129,0.35); box-sizing:border-box;">
 
       <span class="material-symbols-rounded" style="font-size:17px; color:#ffffff !important;">add_comment</span> + MULAI CHAT KE TOKO / USER
 
     </button>
 
-    <button type="button" onclick="bukaModalBroadcastChat()" style="width:100%; padding:8px 12px; background:linear-gradient(135deg, #f97316, #ea580c) !important; color:#ffffff !important; border:none; border-radius:4px; font-weight:800; font-size: 7pt !important; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:6px; box-shadow:0 2px 6px rgba(249,115,22,0.35); box-sizing:border-box;">
+    <button type="button" onclick="bukaModalBroadcastChat()" style="width:100%; padding:8px 12px; background:linear-gradient(135deg, #f97316, #ea580c) !important; color:#ffffff !important; border:none; border-radius:4px; font-weight:800; font-size:12px; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:6px; box-shadow:0 2px 6px rgba(249,115,22,0.35); box-sizing:border-box;">
 
       <span class="material-symbols-rounded" style="font-size:17px; color:#ffffff !important;">campaign</span> SIARKAN KE SEMUA TOKO
 
@@ -35031,7 +35012,7 @@ function loadDaftarChatAdmin() {
 
     roomsContainer.innerHTML = `
 
-      <div style="padding:16px 12px; text-align:center; color:var(--text-muted); font-size: 7pt !important;">
+      <div style="padding:16px 12px; text-align:center; color:var(--text-muted); font-size:12px;">
 
         <span class="material-symbols-rounded" style="font-size:32px; color:var(--primary); margin-bottom:4px; display:block;">chat_bubble_outline</span>
 
@@ -35075,7 +35056,7 @@ function loadDaftarChatAdmin() {
 
     const borderStyle = hasUnread ? 'border:2px solid #0284c7 !important; border-left:7px solid #0284c7 !important;' : 'border-bottom:1px solid var(--border-color); border-left:7px solid transparent;';
 
-    const unreadBadgeHtml = hasUnread ? `<span style="background:#ef4444; color:#ffffff; border-radius:5px !important; padding:3px 10px; font-size: 7pt !important; font-weight:900; box-shadow:0 2px 6px rgba(239,68,68,0.5); letter-spacing:0.4px;">PESAN BARU</span>` : '';
+    const unreadBadgeHtml = hasUnread ? `<span style="background:#ef4444; color:#ffffff; border-radius:5px !important; padding:3px 10px; font-size:11px; font-weight:900; box-shadow:0 2px 6px rgba(239,68,68,0.5); letter-spacing:0.4px;">PESAN BARU</span>` : '';
 
     
 
@@ -35105,9 +35086,9 @@ function loadDaftarChatAdmin() {
 
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:3px;">
 
-          <div style="font-size: 7pt !important; font-weight:${hasUnread ? '900' : '700'}; color:${hasUnread ? 'var(--primary)' : 'var(--text-main)'}; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
+          <div style="font-size:12.5px; font-weight:${hasUnread ? '900' : '700'}; color:${hasUnread ? 'var(--primary)' : 'var(--text-main)'}; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
 
-            ${r.userName || r.user} <span style="font-size: 7pt !important; font-weight:bold; color:var(--primary); background:rgba(59,130,246,0.15); padding:1px 5px; border-radius:4px;">(${r.userArea || 'TSM'})</span>
+            ${r.userName || r.user} <span style="font-size:10.5px; font-weight:bold; color:var(--primary); background:rgba(59,130,246,0.15); padding:1px 5px; border-radius:4px;">(${r.userArea || 'TSM'})</span>
 
           </div>
 
@@ -35115,7 +35096,7 @@ function loadDaftarChatAdmin() {
 
         </div>
 
-        <div style="color:${hasUnread ? 'var(--text-main)' : 'var(--text-muted)'}; font-weight:${hasUnread ? '800' : 'normal'}; font-size: 7pt !important; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${r.last || '-'}</div>
+        <div style="color:${hasUnread ? 'var(--text-main)' : 'var(--text-muted)'}; font-weight:${hasUnread ? '800' : 'normal'}; font-size:11px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${r.last || '-'}</div>
 
       </div>
 
@@ -35263,12 +35244,12 @@ function filterListUserChat(query) {
       <div style="font-family: 'Poppins', Arial, sans-serif; background: #ffffff; color: #0f172a; padding: 18px; border-radius: 4px; border: 1px solid #cbd5e1; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
         
         <!-- Header Title: PERMINTAAN TOKO -->
-        <div style="text-align: center; font-size: 7pt !important; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 10px; margin-bottom: 16px; color: #0f172a; text-transform: uppercase; letter-spacing: 0.5px;">
+        <div style="text-align: center; font-size: 18px; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 10px; margin-bottom: 16px; color: #0f172a; text-transform: uppercase; letter-spacing: 0.5px;">
           PERMINTAAN TOKO
         </div>
 
         <!-- Info Grid -->
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 7pt !important; color: #0f172a;">
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 11.5px; color: #0f172a;">
           <tr>
             <td style="padding: 3px 0; width: 85px; font-weight: 600; color: #0f172a;">NO SURAT</td>
             <td style="padding: 3px 4px; width: 12px; color: #0f172a;">:</td>
@@ -35288,10 +35269,10 @@ function filterListUserChat(query) {
         </table>
 
         <!-- Section Label -->
-        <div style="font-size: 7pt !important; font-weight: 700; margin-bottom: 8px; color: #0f172a; text-transform: uppercase;">DETAIL PERMINTAAN:</div>
+        <div style="font-size: 11.5px; font-weight: 700; margin-bottom: 8px; color: #0f172a; text-transform: uppercase;">DETAIL PERMINTAAN:</div>
 
         <!-- Items Table -->
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 7pt !important; border: 1px solid #cbd5e1;">
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 11px; border: 1px solid #cbd5e1;">
           <thead>
             <tr style="background: #0284c7; color: #ffffff;">
               <th style="width: 32px; text-align: center; padding: 7px 4px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600;">NO</th>
@@ -35308,13 +35289,13 @@ function filterListUserChat(query) {
         </table>
 
         <!-- TTD Area Summary -->
-        <div style="display: flex; justify-content: space-around; text-align: center; font-size: 7pt !important; margin-top: 10px; gap: 8px;">
+        <div style="display: flex; justify-content: space-around; text-align: center; font-size: 11px; margin-top: 10px; gap: 8px;">
           <div style="flex: 1; border: 1px solid #e2e8f0; padding: 6px; border-radius: 4px; background: #f8fafc;">
             <div style="font-weight: 500; color: #475569; margin-bottom: 2px;">PEMOHON (TOKO)</div>
             <div style="height: 44px; display: flex; align-items: center; justify-content: center;">
               ${pemohonTtdImg || '<span style="color: #94a3b8; font-style: italic; font-weight: 400;">ADA</span>'}
             </div>
-            <div style="font-size: 7pt !important; color: #64748b; font-weight: 400; margin-top: 2px;">${req.pemohonUserName || req.pemohon || 'Pemohon Toko'}</div>
+            <div style="font-size: 10px; color: #64748b; font-weight: 400; margin-top: 2px;">${req.pemohonUserName || req.pemohon || 'Pemohon Toko'}</div>
           </div>
 
           <div style="flex: 1; border: 1px solid #e2e8f0; padding: 6px; border-radius: 4px; background: #f8fafc;">
@@ -35322,15 +35303,15 @@ function filterListUserChat(query) {
             <div style="height: 44px; display: flex; align-items: center; justify-content: center;">
               ${serviceTtdImg}
             </div>
-            <div style="font-size: 7pt !important; color: #64748b; font-weight: 400; margin-top: 2px;">${req.serviceUserName || 'Service'}</div>
+            <div style="font-size: 10px; color: #64748b; font-weight: 400; margin-top: 2px;">${req.serviceUserName || 'Service'}</div>
           </div>
 
           <div style="flex: 1; border: 1px dashed #16a34a; padding: 6px; border-radius: 4px; background: #f0fdf4;">
             <div style="font-weight: 500; color: #16a34a; margin-bottom: 2px;">DM (DITANDATANGANI DI BEWAH)</div>
-            <div style="height: 44px; display: flex; align-items: center; justify-content: center; color: #16a34a; font-weight: 500; font-size: 7pt !important;">
+            <div style="height: 44px; display: flex; align-items: center; justify-content: center; color: #16a34a; font-weight: 500; font-size: 10px;">
               [ SILAKAN TTD DI CANVAS ]
             </div>
-            <div style="font-size: 7pt !important; color: #16a34a; font-weight: 500; margin-top: 2px;">${currentUser ? (currentUser.fullName || currentUser.username) : 'DM'}</div>
+            <div style="font-size: 10px; color: #16a34a; font-weight: 500; margin-top: 2px;">${currentUser ? (currentUser.fullName || currentUser.username) : 'DM'}</div>
           </div>
         </div>
 
@@ -35369,7 +35350,7 @@ function filterListUserChat(query) {
 
       <div style="display:flex; align-items:center; gap:10px; min-width:0;">
 
-        <div style="width:32px; height:32px; border-radius:50%; background:var(--primary); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size: 7pt !important; flex-shrink:0;">
+        <div style="width:32px; height:32px; border-radius:50%; background:var(--primary); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:13px; flex-shrink:0;">
 
           ${initial}
 
@@ -35377,13 +35358,13 @@ function filterListUserChat(query) {
 
         <div style="min-width:0;">
 
-          <div style="font-weight:700; font-size: 7pt !important; color:var(--text-main); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
+          <div style="font-weight:700; font-size:12.5px; color:var(--text-main); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
 
             ${u.fullName || u.username}
 
           </div>
 
-          <div style="font-size: 7pt !important; color:var(--text-muted);">
+          <div style="font-size:11px; color:var(--text-muted);">
 
             @${u.username} &bull; ${u.phone || '-'}
 
@@ -35395,13 +35376,13 @@ function filterListUserChat(query) {
 
       <div style="text-align:right; flex-shrink:0;">
 
-        <span style="font-size: 7pt !important; font-weight:700; color:var(--primary); background:rgba(59,130,246,0.15); padding:2px 6px; border-radius:4px; display:inline-block; margin-bottom:2px;">
+        <span style="font-size:10px; font-weight:700; color:var(--primary); background:rgba(59,130,246,0.15); padding:2px 6px; border-radius:4px; display:inline-block; margin-bottom:2px;">
 
           ${u.area || 'TSM'}
 
         </span>
 
-        <div style="font-size: 7pt !important; color:var(--text-muted); font-weight:600;">
+        <div style="font-size:9.5px; color:var(--text-muted); font-weight:600;">
 
           ${u.category || 'USER'}
 
@@ -37132,35 +37113,14 @@ function bukaPopupUserManagement() {
   if (modal) {
     modal.style.setProperty('display', 'flex', 'important');
     modal.style.setProperty('position', 'fixed', 'important');
-    modal.style.setProperty('top', '0px', 'important');
-    modal.style.setProperty('left', '0px', 'important');
-    modal.style.setProperty('right', '0px', 'important');
-    modal.style.setProperty('bottom', '0px', 'important');
-    modal.style.setProperty('width', '100vw', 'important');
-    modal.style.setProperty('height', '100vh', 'important');
     modal.style.setProperty('inset', '0px', 'important');
     modal.style.setProperty('z-index', '2147483647', 'important');
     modal.style.setProperty('background', 'rgba(0, 0, 0, 0.82)', 'important');
     modal.style.setProperty('backdrop-filter', 'none', 'important');
     modal.style.setProperty('align-items', 'center', 'important');
     modal.style.setProperty('justify-content', 'center', 'important');
-    modal.style.setProperty('padding', '1mm', 'important');
-    modal.style.setProperty('margin', '0px', 'important');
+    modal.style.setProperty('padding', '5mm 15mm', 'important');
     modal.style.setProperty('box-sizing', 'border-box', 'important');
-    
-    const innerBox = modal.querySelector('.userManagementBoxPopup') || modal.firstElementChild;
-    if (innerBox) {
-      innerBox.style.setProperty('position', 'relative', 'important');
-      innerBox.style.setProperty('width', 'calc(100vw - 2mm)', 'important');
-      innerBox.style.setProperty('height', 'calc(100vh - 2mm)', 'important');
-      innerBox.style.setProperty('min-width', 'calc(100vw - 2mm)', 'important');
-      innerBox.style.setProperty('min-height', 'calc(100vh - 2mm)', 'important');
-      innerBox.style.setProperty('max-width', 'calc(100vw - 2mm)', 'important');
-      innerBox.style.setProperty('max-height', 'calc(100vh - 2mm)', 'important');
-      innerBox.style.setProperty('margin', 'auto', 'important');
-      innerBox.style.setProperty('padding', '0px', 'important');
-      innerBox.style.setProperty('border-radius', '4px', 'important');
-    }
     modal.classList.add('show');
     if (typeof pushPopupHistoryState === 'function') pushPopupHistoryState();
   }
@@ -37412,7 +37372,7 @@ function loadUsersManagement() {
 
         <td style="text-align:left !important; color:#0f172a !important; padding:10px 12px; background:${rowBg};">${escapeHTML(phone)}</td>
 
-        <td style="text-align:left !important; padding:10px 12px; background:${rowBg};"><span class="badgeStatus badge-pending" style="font-weight:700; background:#e0f2fe !important; color:#0369a1 !important; border:1px solid #bae6fd !important; padding:3px 8px; border-radius:4px; font-size: 7pt !important;">${escapeHTML(cat)}</span></td>
+        <td style="text-align:left !important; padding:10px 12px; background:${rowBg};"><span class="badgeStatus badge-pending" style="font-weight:700; background:#e0f2fe !important; color:#0369a1 !important; border:1px solid #bae6fd !important; padding:3px 8px; border-radius:4px; font-size:11px;">${escapeHTML(cat)}</span></td>
 
         <td style="text-align:left !important; padding:10px 12px; background:${rowBg};"><span style="color:#0284c7 !important; font-weight:700;">${escapeHTML(area)}</span></td>
 
@@ -38346,35 +38306,29 @@ function bukaUserModal(userId = null, btnElement = null) {
 
 
     const modal = document.getElementById('popupUserForm');
-    if (modal) {
-      modal.style.setProperty('display', 'flex', 'important');
-      modal.style.setProperty('position', 'fixed', 'important');
-      modal.style.setProperty('top', '0px', 'important');
-      modal.style.setProperty('left', '0px', 'important');
-      modal.style.setProperty('width', '100vw', 'important');
-      modal.style.setProperty('height', '100vh', 'important');
-      modal.style.setProperty('z-index', '2147483648', 'important');
-      modal.style.setProperty('visibility', 'visible', 'important');
-      modal.style.setProperty('opacity', '1', 'important');
-      modal.style.setProperty('pointer-events', 'auto', 'important');
-      modal.style.setProperty('padding', '1mm', 'important');
-      modal.style.setProperty('margin', '0px', 'important');
-      modal.style.setProperty('align-items', 'center', 'important');
-      modal.style.setProperty('justify-content', 'center', 'important');
 
-      const innerBox = modal.querySelector('.userFormCard') || modal.firstElementChild;
-      if (innerBox) {
-        innerBox.style.setProperty('position', 'relative', 'important');
-        innerBox.style.setProperty('width', 'calc(100vw - 2mm)', 'important');
-        innerBox.style.setProperty('height', 'calc(100vh - 2mm)', 'important');
-        innerBox.style.setProperty('min-width', 'calc(100vw - 2mm)', 'important');
-        innerBox.style.setProperty('min-height', 'calc(100vh - 2mm)', 'important');
-        innerBox.style.setProperty('max-width', 'calc(100vw - 2mm)', 'important');
-        innerBox.style.setProperty('max-height', 'calc(100vh - 2mm)', 'important');
-        innerBox.style.setProperty('margin', 'auto', 'important');
-        innerBox.style.setProperty('padding', '0px', 'important');
-        innerBox.style.setProperty('border-radius', '4px', 'important');
-      }
+    if (modal) {
+
+      modal.style.setProperty('display', 'flex', 'important');
+
+      modal.style.setProperty('position', 'fixed', 'important');
+
+      modal.style.setProperty('top', '0px', 'important');
+
+      modal.style.setProperty('left', '0px', 'important');
+
+      modal.style.setProperty('width', '100vw', 'important');
+
+      modal.style.setProperty('height', '100vh', 'important');
+
+      modal.style.setProperty('z-index', '2147483648', 'important');
+
+      modal.style.setProperty('visibility', 'visible', 'important');
+
+      modal.style.setProperty('opacity', '1', 'important');
+
+      modal.style.setProperty('pointer-events', 'auto', 'important');
+
       modal.classList.add('show');
 
       pushPopupHistoryState();
@@ -38396,27 +38350,4701 @@ window.bukaUserModal = bukaUserModal;
 
 
 function tutupUserModal() {
+
   const modal = document.getElementById('popupUserForm');
+
+  if (modal) {
+
+    modal.style.setProperty('display', 'none', 'important');
+
+    modal.classList.remove('show');
+
+  }
+
+}
+
+window.tutupUserModal = tutupUserModal;
+
+
+
+async function simpanUserData(btnElement = null) {
+
+  let editId = document.getElementById('editUserId') ? document.getElementById('editUserId').value : '';
+
+  if (typeof editId !== 'string' || editId.startsWith('[object')) {
+
+    editId = '';
+
+  }
+
+
+
+  const usernameEl = document.getElementById('uFormUsername');
+
+  const passwordEl = document.getElementById('uFormPassword');
+
+  const fullNameEl = document.getElementById('uFormFullName');
+
+  const storeCodeEl = document.getElementById('uFormStoreCode');
+
+  const phoneEl = document.getElementById('uFormPhone');
+
+  const categoryEl = document.getElementById('uFormCategory') || document.getElementById('uFormRole');
+
+
+
+  const username = usernameEl ? usernameEl.value.trim().toUpperCase() : '';
+
+  const password = passwordEl ? passwordEl.value.trim() : '';
+
+  const fullName = fullNameEl ? fullNameEl.value.trim().toUpperCase() : '';
+
+  const storeCode = storeCodeEl ? storeCodeEl.value.trim().toUpperCase() : '';
+
+  const phone = phoneEl ? phoneEl.value.trim() : '';
+
+  const category = categoryEl ? categoryEl.value : 'TOKO';
+
+  const canPrintPdf = !!(document.getElementById('uFormCanPrintPdf') && document.getElementById('uFormCanPrintPdf').checked);
+
+  const canForward = !!(document.getElementById('uFormCanForwardService') && document.getElementById('uFormCanForwardService').checked);
+
+  const canDownloadExcel = !!(document.getElementById('uFormCanDownloadExcel') && document.getElementById('uFormCanDownloadExcel').checked);
+
+  const canUploadBukti = !!(document.getElementById('uFormCanUploadBukti') && document.getElementById('uFormCanUploadBukti').checked);
+
+  const canUploadSmart = !!(document.getElementById('uFormCanUploadSmart') && document.getElementById('uFormCanUploadSmart').checked);
+
+  const docId = String(username).toUpperCase();
+
+
+
+  const allCheckbox = document.querySelector('input[name="uFormAreaCheck"][value="ALL"]');
+
+  const checkedBoxes = Array.from(document.querySelectorAll('input[name="uFormAreaCheck"]:checked')).map(cb => cb.value);
+
+
+
+  let area = 'BDG';
+
+  if (allCheckbox && allCheckbox.checked) {
+
+    area = 'ALL';
+
+  } else {
+
+    const activeAreas = checkedBoxes.filter(v => v !== 'ALL');
+
+    const validAreas = ['BDG', 'BDU', 'CRB', 'SKB', 'SBN', 'TSM', 'BGR'];
+
+    const filteredActive = Array.from(new Set(activeAreas)).filter(v => validAreas.includes(v));
+
+
+
+    if (filteredActive.length === 0) {
+
+      area = 'BDG';
+
+    } else if (validAreas.every(v => filteredActive.includes(v))) {
+
+      area = 'ALL';
+
+    } else {
+
+      area = filteredActive.join(', ');
+
+    }
+
+  }
+
+  const hiddenAreaInput = document.getElementById('uFormArea');
+
+  if (hiddenAreaInput) hiddenAreaInput.value = area;
+
+
+
+  if (!username || !password || !fullName) {
+
+    showNotif('USERNAME, PASSWORD, DAN NAMA LENGKAP WAJIB DIISI!', 'warning');
+
+    return;
+
+  }
+
+
+
+  showLoading('LOADING...');
+
+  try {
+
+    const users = (typeof getUsersFromDB === 'function') ? getUsersFromDB() : [];
+
+
+
+    if (editId) {
+
+      let idx = users.findIndex(u => u && (
+
+        (u.id && String(u.id) === String(editId)) ||
+
+        (u.username && String(u.username).toUpperCase() === String(editId).toUpperCase())
+
+      ));
+
+      if (idx === -1 && username) {
+
+        idx = users.findIndex(u => u && u.username && String(u.username).trim().toUpperCase() === username);
+
+      }
+
+
+
+      if (idx !== -1) {
+
+        const duplicateWithOtherUser = users.some((u, i) => {
+
+          if (!u || !u.username || i === idx) return false;
+
+          return String(u.username).trim().toUpperCase() === username;
+
+        });
+
+
+
+        if (duplicateWithOtherUser) {
+
+          showNotif(`USERNAME '${username}' SUDAH TERDAFTAR! GUNAKAN USERNAME LAIN.`, 'error');
+
+          return;
+
+        }
+
+
+
+        const unameUpper = username.toUpperCase();
+
+        users.forEach((u, i) => {
+
+          if (u && ((u.id && String(u.id) === String(editId)) || (u.username && String(u.username).toUpperCase() === unameUpper))) {
+
+            users[i].username = username;
+
+            users[i].password = password;
+
+            users[i].fullName = fullName;
+
+            users[i].storeCode = storeCode;
+
+            users[i].phone = phone;
+
+            users[i].category = category;
+
+            users[i].area = area;
+
+            users[i].canPrintPdf = canPrintPdf;
+
+            users[i].can_print_pdf = canPrintPdf;
+
+            users[i].custom_print_pdf = true;
+
+            users[i].canForward = canForward;
+
+            users[i].can_forward = canForward;
+
+            users[i].custom_forward = true;
+
+            users[i].canDownloadExcel = canDownloadExcel;
+
+            users[i].can_download_excel = canDownloadExcel;
+
+            users[i].custom_download_excel = true;
+
+            users[i].canUploadBukti = canUploadBukti;
+
+            users[i].can_upload_bukti = canUploadBukti;
+
+            users[i].custom_upload_bukti = true;
+
+            users[i].canUploadSmart = canUploadSmart;
+
+            users[i].can_upload_smart = canUploadSmart;
+
+            users[i].custom_upload_smart = true;
+
+          }
+
+        });
+
+
+
+        if (!users[idx].id) users[idx].id = users[idx].username || docId;
+
+        users[idx].area = area;
+
+
+
+        const cleanedUsers = [];
+
+        const seenUnames = new Set();
+
+        users.forEach(u => {
+
+          if (!u || !u.username) return;
+
+          const key = String(u.username).toUpperCase();
+
+          if (key === unameUpper) {
+
+            if (!seenUnames.has(key)) {
+
+              seenUnames.add(key);
+
+              cleanedUsers.push(users[idx]);
+
+            }
+
+          } else {
+
+            if (!seenUnames.has(key)) {
+
+              seenUnames.add(key);
+
+              cleanedUsers.push(u);
+
+            }
+
+          }
+
+        });
+
+
+
+        if (typeof saveUsersToDB === 'function') saveUsersToDB(cleanedUsers, users[idx]);
+
+        if (typeof syncUserToSupabase === 'function') syncUserToSupabase(users[idx]);
+
+        showNotif(`DATA USER '${username}' BERHASIL DIPERBARUI!`, 'success');
+
+      } else {
+
+        const newUserObj = {
+
+          id: docId,
+
+          username,
+
+          password,
+
+          fullName,
+
+          storeCode,
+
+          phone,
+
+          category,
+
+          area,
+
+          canPrintPdf,
+
+          can_print_pdf: canPrintPdf,
+
+          custom_print_pdf: true,
+
+          canForward,
+
+          can_forward: canForward,
+
+          custom_forward: true,
+
+          canDownloadExcel,
+
+          can_download_excel: canDownloadExcel,
+
+          custom_download_excel: true,
+
+          canUploadBukti,
+
+          can_upload_bukti: canUploadBukti,
+
+          custom_upload_bukti: true,
+
+          canUploadSmart,
+
+          can_upload_smart: canUploadSmart,
+
+          custom_upload_smart: true
+
+        };
+
+        users.push(newUserObj);
+
+        if (typeof saveUsersToDB === 'function') saveUsersToDB(users, newUserObj);
+
+        if (typeof syncUserToSupabase === 'function') syncUserToSupabase(newUserObj);
+
+        showNotif(`USER BARU '${username}' BERHASIL DITAMBAHKAN!`, 'success');
+
+      }
+
+    } else {
+
+      const exists = users.some(u => u && u.username && String(u.username).trim().toUpperCase() === username);
+
+      if (exists) {
+
+        showNotif(`USERNAME '${username}' SUDAH TERDAFTAR! GUNAKAN USERNAME LAIN.`, 'error');
+
+        return;
+
+      }
+
+
+
+      const newUserObj = {
+
+        id: docId,
+
+        username,
+
+        password,
+
+        fullName,
+
+        storeCode,
+
+        phone,
+
+        category,
+
+        area,
+
+        canPrintPdf,
+
+        can_print_pdf: canPrintPdf,
+
+        custom_print_pdf: true,
+
+        canForward,
+
+        can_forward: canForward,
+
+        custom_forward: true,
+
+        canDownloadExcel,
+
+        can_download_excel: canDownloadExcel,
+
+        custom_download_excel: true,
+
+        canUploadBukti,
+
+        can_upload_bukti: canUploadBukti,
+
+        custom_upload_bukti: true,
+
+        canUploadSmart,
+
+        can_upload_smart: canUploadSmart,
+
+        custom_upload_smart: true
+
+      };
+
+      users.push(newUserObj);
+
+      if (typeof saveUsersToDB === 'function') saveUsersToDB(users, newUserObj);
+
+      if (typeof syncUserToSupabase === 'function') syncUserToSupabase(newUserObj);
+
+      showNotif(`USER BARU '${username}' BERHASIL DITAMBAHKAN!`, 'success');
+
+    }
+
+
+
+    // DUA ARAH SINKRONISASI: Jika Kategori adalah TOKO, perbarui Master Toko, Cloud Supabase, & Dropdown Toko
+
+    const isCategoryToko = String(category || '').toUpperCase() === 'TOKO';
+
+    if (isCategoryToko) {
+
+      try {
+
+        const fnUpper = String(fullName).trim().toUpperCase();
+
+        const storeKey = `${fnUpper}_${String(area).trim().toUpperCase()}`;
+
+
+
+        // 1. CLEAR DARI DELETED_STORES_KEY & DELETED_USERS_KEY JIKA PERNAH DIHAPUS SEBELUMNYA
+
+        try {
+
+          let delStores = JSON.parse(appStorage.getItem(DELETED_STORES_KEY) || '[]');
+
+          delStores = delStores.filter(k => k && k !== fnUpper && k !== storeKey && k !== docId);
+
+          appStorage.setItem(DELETED_STORES_KEY, JSON.stringify(delStores));
+
+        } catch(e) {}
+
+
+
+        try {
+
+          let delUsers = JSON.parse(appStorage.getItem(DELETED_USERS_KEY) || '[]');
+
+          delUsers = delUsers.filter(k => k && k !== docId && k !== username.toUpperCase() && k !== fnUpper);
+
+          appStorage.setItem(DELETED_USERS_KEY, JSON.stringify(delUsers));
+
+        } catch(e) {}
+
+
+
+        // 2. SIMPAN / UPDATE LOKAL MASTER TOKO
+
+        const localStores = JSON.parse(appStorage.getItem(STORES_DB_KEY) || '[]');
+
+        const existingIdx = localStores.findIndex(s => s && (s.id === docId || (s.fullName && String(s.fullName).toUpperCase() === fnUpper)));
+
+        const storeCodeVal = storeCode || (typeof generateStoreCode === 'function' ? generateStoreCode(fullName, area) : 'STK');
+
+
+
+        if (existingIdx !== -1) {
+
+          localStores[existingIdx].fullName = fullName;
+
+          localStores[existingIdx].area = area;
+
+          localStores[existingIdx].storeCode = storeCodeVal;
+
+        } else {
+
+          localStores.push({
+
+            id: docId || `STK-${Date.now()}`,
+
+            fullName: fullName,
+
+            area: area,
+
+            storeCode: storeCodeVal,
+
+            createdBy: currentUser ? currentUser.fullName : 'ADMIN'
+
+          });
+
+        }
+
+        appStorage.setItem(STORES_DB_KEY, JSON.stringify(localStores));
+
+        try { localStorage.setItem(STORES_DB_KEY, JSON.stringify(localStores)); } catch(e) {}
+
+
+
+        if (typeof cacheStores !== 'undefined' && Array.isArray(cacheStores)) {
+
+          const cIdx = cacheStores.findIndex(s => s && (s.id === docId || (s.fullName && String(s.fullName).toUpperCase() === fnUpper)));
+
+          if (cIdx !== -1) {
+
+            cacheStores[cIdx].fullName = fullName;
+
+            cacheStores[cIdx].area = area;
+
+            cacheStores[cIdx].storeCode = storeCodeVal;
+
+          } else {
+
+            cacheStores.push({
+
+              id: docId || `STK-${Date.now()}`,
+
+              fullName: fullName,
+
+              area: area,
+
+              storeCode: storeCodeVal,
+
+              createdBy: currentUser ? currentUser.fullName : 'ADMIN'
+
+            });
+
+          }
+
+        }
+
+
+
+        // 3. BACKGROUND CLOUD SYNC KE TABEL toko_list SUPABASE
+
+        (async () => {
+
+          if (typeof supabase !== 'undefined' && supabase) {
+
+            try {
+
+              await supabase.from('toko_list').upsert({
+
+                id: docId || `STK-${Date.now()}`,
+
+                full_name: fullName,
+
+                area: area,
+
+                store_code: storeCodeVal,
+
+                created_by: currentUser ? currentUser.fullName : 'ADMIN'
+
+              });
+
+            } catch(sbErr) {
+
+              console.warn('[SUPABASE TOKO_LIST SYNC NOTICE]:', sbErr);
+
+            }
+
+          }
+
+        })();
+
+
+
+      } catch(e) {
+
+        console.warn('[STORE SYNC ERROR IN USER FORM]:', e);
+
+      }
+
+
+
+      if (typeof loadDaftarTokoModal === 'function') loadDaftarTokoModal();
+
+      if (typeof updateStoreDropdownOptions === 'function') updateStoreDropdownOptions(fullName);
+
+    }
+
+
+
+    if (typeof tutupUserModal === 'function') tutupUserModal();
+
+    if (typeof loadUsersManagement === 'function') loadUsersManagement();
+
+
+
+  } catch (err) {
+
+    console.error('Error saving user data:', err);
+
+    showNotif('TERJADI KESALAHAN SAAT MENYIMPAN DATA USER!', 'error');
+
+  } finally {
+
+    hideLoading();
+
+  }
+
+}
+
+window.simpanUserData = simpanUserData;
+
+
+
+async function hapusUser(userId, btnElement = null) {
+
+  if (!userId || userId === 'undefined') return;
+
+  const users = getUsersFromDB();
+
+  const u = users.find(x => x && (
+
+    (x.id && String(x.id) === String(userId)) ||
+
+    (x.username && String(x.username).toUpperCase() === String(userId).toUpperCase())
+
+  ));
+
+  if (!u) {
+
+    showNotif('USER TIDAK DITEMUKAN ATAU SUDAH DIHAPUS!', 'warning');
+
+    return;
+
+  }
+
+
+
+  if (currentUser && u.username && u.username.toUpperCase() === currentUser.username.toUpperCase()) {
+
+    showNotif('TIDAK DAPAT MENGHAPUS AKUN AKTIF ANDA!', 'error');
+
+    return;
+
+  }
+
+
+
+  if (u.username && u.username.toUpperCase() === 'ADMIN') {
+
+    showNotif('AKUN MASTER ADMIN UTAMA TIDAK BOLEH DIHAPUS!', 'error');
+
+    return;
+
+  }
+
+
+
+showConfirm('HAPUS USER TERPILIH?', () => {
+
+    const btn = (btnElement && btnElement instanceof HTMLElement) ? btnElement : (typeof event !== 'undefined' && event ? event.currentTarget : null);
+
+    setBtnLoading(btn, true, 'HAPUS...');
+
+
+
+    try {
+
+      const uNameUpper = String(u.fullName || '').trim().toUpperCase();
+
+      const uUnameUpper = String(u.username || '').trim().toUpperCase();
+
+      const uArea = String(u.area || 'BDG').trim().toUpperCase();
+
+
+
+      // 1. UPDATE DELETED KEYS & LOKAL STORAGE FOR USERS & STORES INSTANTLY
+
+      try {
+
+        const delUsers = JSON.parse(appStorage.getItem(DELETED_USERS_KEY) || '[]');
+
+        if (u.id && !delUsers.includes(u.id)) delUsers.push(u.id);
+
+        if (u.username && !delUsers.includes(u.username)) delUsers.push(u.username);
+
+        if (uUnameUpper && !delUsers.includes(uUnameUpper)) delUsers.push(uUnameUpper);
+
+        appStorage.setItem(DELETED_USERS_KEY, JSON.stringify(delUsers));
+
+        try { localStorage.setItem(DELETED_USERS_KEY, JSON.stringify(delUsers)); } catch(e) {}
+
+
+
+        const localStores = JSON.parse(appStorage.getItem(STORES_DB_KEY) || '[]');
+
+        const updatedStores = localStores.filter(s => {
+
+          if (!s) return false;
+
+          if (s.id === u.id) return false;
+
+          if (uNameUpper && String(s.fullName || '').trim().toUpperCase() === uNameUpper) return false;
+
+          return true;
+
+        });
+
+        appStorage.setItem(STORES_DB_KEY, JSON.stringify(updatedStores));
+
+        try { localStorage.setItem(STORES_DB_KEY, JSON.stringify(updatedStores)); } catch(e) {}
+
+
+
+        const storeKey = `${uNameUpper}_${uArea}`;
+
+        const deletedStoreKeys = JSON.parse(appStorage.getItem(DELETED_STORES_KEY) || '[]');
+
+        if (uNameUpper && !deletedStoreKeys.includes(uNameUpper)) deletedStoreKeys.push(uNameUpper);
+
+        if (storeKey && !deletedStoreKeys.includes(storeKey)) deletedStoreKeys.push(storeKey);
+
+        if (u.id && !deletedStoreKeys.includes(u.id)) deletedStoreKeys.push(u.id);
+
+        appStorage.setItem(DELETED_STORES_KEY, JSON.stringify(deletedStoreKeys));
+
+        try { localStorage.setItem(DELETED_STORES_KEY, JSON.stringify(deletedStoreKeys)); } catch(e) {}
+
+      } catch(e) {}
+
+
+
+      const updatedUsers = users.filter(x => x.id !== u.id && x.username !== u.username);
+
+      try {
+
+        saveUsersToDB(updatedUsers, null, 'DELETE');
+
+      } catch(e) {
+
+        cacheUsers = updatedUsers;
+
+      }
+
+
+
+      showNotif(`USER '${u.fullName || u.username}' BERHASIL DIHAPUS!`, 'info');
+
+
+
+      // 2. REFRESH UI INSTANTLY (< 20ms)
+
+      loadUsersManagement();
+
+      if (typeof loadDaftarTokoModal === 'function') loadDaftarTokoModal();
+
+      if (typeof updateStoreDropdownOptions === 'function') updateStoreDropdownOptions();
+
+
+
+      // 3. BACKGROUND SYNC DELETE TO SUPABASE & FIREBASE CLOUD (NON-BLOCKING)
+
+      (async () => {
+
+        const client = (typeof supabaseAdmin !== 'undefined' && supabaseAdmin) ? supabaseAdmin : supabase;
+
+        if (client) {
+
+          try {
+
+            if (u.id) await client.from('users').delete().eq('id', u.id);
+
+            if (u.username) {
+
+              await client.from('users').delete().eq('username', u.username);
+
+              await client.from('users').delete().ilike('username', u.username);
+
+            }
+
+            if (u.fullName) {
+
+              await client.from('users').delete().eq('full_name', u.fullName);
+
+            }
+
+            if (u.id) await client.from('toko_list').delete().eq('id', u.id);
+
+            if (u.fullName) {
+
+              await client.from('toko_list').delete().eq('full_name', u.fullName);
+
+              await client.from('toko_list').delete().ilike('full_name', u.fullName);
+
+            }
+
+          } catch (sbErr) {
+
+            console.warn('[SUPABASE DELETE USER NOTICE]:', sbErr);
+
+          }
+
+        }
+
+
+
+        const docId = String(u.username).toUpperCase();
+
+        if (typeof dbFirestore !== 'undefined' && dbFirestore) {
+
+          await dbFirestore.collection('users').doc(docId).delete().catch(e => console.warn(e));
+
+          if (u.id) await dbFirestore.collection('stores').doc(u.id).delete().catch(e => console.warn(e));
+
+        }
+
+        if (typeof dbRealtime !== 'undefined' && dbRealtime) {
+
+          await dbRealtime.ref(`users/${docId}`).remove().catch(e => console.warn(e));
+
+          if (u.id) await dbRealtime.ref(`stores/${u.id}`).remove().catch(e => console.warn(e));
+
+        }
+
+
+
+        if (typeof pushCentralCloudDB === 'function') {
+
+          try { await pushCentralCloudDB(); } catch(e) {}
+
+        }
+
+      })();
+
+
+
+    } catch (err) {
+
+      console.error('[HAPUS USER ERROR]:', err);
+
+      showNotif('GAGAL MENGHAPUS USER: ' + (err.message || err), 'error');
+
+    } finally {
+
+      setBtnLoading(btn, false);
+
+    }
+
+  });
+
+}
+
+window.hapusUser = hapusUser;
+
+
+
+function loadMasterDbTable() {
+
+  const tbody = document.getElementById('masterDbTableBody');
+
+  if (!tbody) return;
+
+
+
+  const searchInput = document.getElementById('searchMasterDb');
+
+  const search = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+
+
+  // Preserve checked checkbox selections across re-renders
+
+  const checkedBoxes = tbody.querySelectorAll('.masterDbCheckbox:checked');
+
+  const checkedSet = new Set(Array.from(checkedBoxes).map(cb => cb.value));
+
+
+
+  let requests = getRequestsFromDB();
+
+
+
+  if (search) {
+
+    requests = requests.filter(r => matchesRequestSearchFilter(r, search));
+
+  }
+
+
+
+  tbody.innerHTML = '';
+
+
+
+  if (requests.length === 0) {
+
+    tbody.innerHTML = `<tr><td colspan="10" style="text-align:center; padding:30px; color:var(--text-muted);">BELUM ADA DATA PERMINTAAN TERDAFTAR.</td></tr>`;
+
+    // Empty dummy rows removed per user request
+
+    updateMultiMasterDbBtnState();
+
+    return;
+
+  }
+
+
+
+  requests.forEach(r => {
+
+    let itemsDetailText = (r.items || []).map((i, idx) => {
+
+      let dusText = i.dus ? ` | Dus:${i.dus}` : '';
+
+      return `<div style="padding:3px 0; border-bottom:1px dashed var(--border-color); font-size:12px; line-height:1.4;">
+
+        <strong>${idx + 1}. ${i.type || '-'}</strong> (SN: <span style="font-family:monospace; color:var(--primary);">${i.seri || '-'}${dusText}</span>)<br>
+
+        <span style="color:var(--text-main);">${i.barang || '-'}</span> <small style="color:var(--text-muted);">[Alasan: ${i.alasan || '-'}]</small> 
+
+        <strong style="color:var(--primary);">(Qty: ${i.qty || 1})</strong>
+
+      </div>`;
+
+    }).join('');
+
+
+
+    const tr = document.createElement('tr');
+
+    // Blinking row animation disabled per user request
+
+    const isChecked = checkedSet.has(r.noSurat) ? 'checked' : '';
+
+    tr.innerHTML = `
+      <td style="text-align:center; padding: 10px 14px; border-bottom: 1px solid #e2e8f0 !important;"><input type="checkbox" class="masterDbCheckbox" value="${r.noSurat}" ${isChecked} onchange="updateMultiMasterDbBtnState()"></td>
+      <td style="padding: 10px 14px; font-weight: 700; color: #1e293b; border-bottom: 1px solid #e2e8f0 !important;">${r.noSurat || '-'}</td>
+      <td style="padding: 10px 14px; text-align: left; color: #334155; border-bottom: 1px solid #e2e8f0 !important;">${r.tanggal || '-'}</td>
+      <td style="padding: 10px 14px; color: #1e293b; border-bottom: 1px solid #e2e8f0 !important;"><div class="namaTokoWrap" style="color: #1e293b; font-weight: 700; text-transform: uppercase;">${r.toko || '-'}</div></td>
+      <td style="padding: 10px 14px; text-align: center; font-weight: 700; color: #334155; border-bottom: 1px solid #e2e8f0 !important;">${r.area || 'BDG'}</td>
+      <td style="padding: 10px 14px; text-align: center; color: #334155; border-bottom: 1px solid #e2e8f0 !important;">${r.jenis || '-'}</td>
+      <td style="padding: 10px 14px; border-bottom: 1px solid #e2e8f0 !important;">${itemsDetailText}</td>
+      <td style="padding: 10px 14px; text-align: center; border-bottom: 1px solid #e2e8f0 !important;">${getBadgeStatusHTML(r)}</td>
+      <td style="padding: 10px 14px; color: #334155; border-bottom: 1px solid #e2e8f0 !important;">${r.catatan || '-'}</td>
+      <td style="text-align:center; white-space:nowrap; padding: 10px 14px; border-bottom: 1px solid #e2e8f0 !important;">
+        <button type="button" class="btnIcon btnDelete" onclick="hapusDataMaster('${r.noSurat}')" title="HAPUS DATA"><span class="material-symbols-rounded">delete</span></button>
+        <button type="button" class="btnIcon btnEdit" onclick="bukaModalUbahStatusAdmin('${r.noSurat}')" title="UBAH STATUS SUPABASE (ADMIN ONLY)" style="background: #8b5cf6 !important; color: #ffffff !important; margin-left: 4px !important;"><span class="material-symbols-rounded" style="font-size: 16px;">published_with_changes</span></button>
+      </td>
+    `;
+
+    tbody.appendChild(tr);
+
+  });
+
+
+
+  // Empty dummy rows removed per user request
+
+  updateMultiMasterDbBtnState();
+
+}
+
+
+
+function toggleSelectAllMasterDb(masterCheckbox) {
+
+  const isChecked = masterCheckbox ? masterCheckbox.checked : false;
+
+  const checkboxes = document.querySelectorAll('.masterDbCheckbox');
+
+  checkboxes.forEach(cb => {
+
+    cb.checked = isChecked;
+
+  });
+
+  updateMultiMasterDbBtnState();
+
+}
+
+
+
+function updateMultiMasterDbBtnState() {
+
+  const checkboxes = document.querySelectorAll('.masterDbCheckbox:checked');
+
+  const btn = document.getElementById('btnHapusMultiMasterDb');
+
+  const selectAll = document.getElementById('selectAllMasterDb');
+
+  const totalCheckboxes = document.querySelectorAll('.masterDbCheckbox');
+
+
+
+  if (selectAll && totalCheckboxes.length > 0) {
+
+    selectAll.checked = (checkboxes.length === totalCheckboxes.length);
+
+  }
+
+
+
+  if (btn) {
+
+    if (checkboxes.length > 0) {
+
+      btn.style.display = 'inline-flex';
+
+      btn.innerHTML = `<span class="material-symbols-rounded" style="vertical-align:middle; margin-right:4px;">delete_sweep</span> HAPUS (${checkboxes.length}) DATA`;
+
+    } else {
+
+      btn.style.display = 'none';
+
+    }
+
+  }
+
+}
+
+
+
+async function hapusMultiMasterDb() {
+
+  const selectedCheckboxes = document.querySelectorAll('.masterDbCheckbox:checked');
+
+  const noSuratList = Array.from(selectedCheckboxes).map(cb => cb.value).filter(Boolean);
+
+
+
+  if (noSuratList.length === 0) {
+
+    showNotif('PILIH MINIMAL 1 DATA PERMINTAAN UNTUK DIHAPUS!', 'warning');
+
+    return;
+
+  }
+
+
+
+showConfirm(`ADMIN: YAKIN INGIN MENGHAPUS ${noSuratList.length} DATA PERMINTAAN TERPILIH?`, () => {
+
+    showLoading('MENGHAPUS DATA TERPILIH...');
+
+    setTimeout(async () => {
+
+      try {
+
+        // 1. DOKUMENTASIKAN KODE SURAT PADA DELETED_REQUESTS_KEY
+
+        try {
+
+          const delReqs = JSON.parse(appStorage.getItem(DELETED_REQUESTS_KEY) || '[]');
+
+          noSuratList.forEach(ns => {
+
+            if (ns && !delReqs.includes(ns)) delReqs.push(ns);
+
+          });
+
+          appStorage.setItem(DELETED_REQUESTS_KEY, JSON.stringify(delReqs));
+
+        } catch(e) {}
+
+
+
+        // 2. FILTER DARI CACHE LOKAL & SIMPAN
+
+        const currentReqs = getRequestsFromDB();
+
+        const updatedReqs = currentReqs.filter(r => r && r.noSurat && !noSuratList.includes(r.noSurat));
+
+        try {
+
+          saveRequestsToDB(updatedReqs);
+
+        } catch(e) {
+
+          appStorage.setItem(REQUESTS_DB_KEY, JSON.stringify(updatedReqs));
+
+        }
+
+
+
+        // 3. HAPUS BATCH DARI SUPABASE (TABEL: permintaan_toko)
+
+        if (typeof supabase !== 'undefined' && supabase) {
+
+          try {
+
+            await supabase.from('permintaan_toko').delete().in('no_surat', noSuratList);
+
+          } catch(sbErr1) {}
+
+        }
+
+
+
+        if (typeof syncSupabaseRequestsToLocalCache === 'function') {
+
+          await syncSupabaseRequestsToLocalCache();
+
+        }
+
+
+
+        // 4. HAPUS INDIVIDUAL FIRESTORE & REALTIME DB
+
+        noSuratList.forEach(noSurat => {
+
+          try {
+
+            const docId = String(noSurat || '').replace(/[\/\.]/g, '_');
+
+            if (docId) {
+
+              if (typeof dbFirestore !== 'undefined' && dbFirestore) {
+
+                dbFirestore.collection('requests').doc(docId).delete().catch(err => console.warn('[FIRESTORE DELETE NOTICE]:', err));
+
+              }
+
+              if (typeof dbRealtime !== 'undefined' && dbRealtime) {
+
+                dbRealtime.ref(`requests/${docId}`).remove().catch(err => console.warn('[REALTIME DELETE NOTICE]:', err));
+
+              }
+
+            }
+
+          } catch(e) {}
+
+        });
+
+
+
+        if (supabaseRealtimeChannel) {
+
+          try {
+
+            supabaseRealtimeChannel.send({
+
+              type: 'broadcast',
+
+              event: 'data_changed',
+
+              payload: { action: 'BATCH_DELETE', noSuratList: noSuratList, timestamp: Date.now() }
+
+            });
+
+          } catch(e) {}
+
+        }
+
+        if (typeof pushCentralCloudDB === 'function') {
+
+          try { await pushCentralCloudDB(); } catch(e) {}
+
+        }
+
+
+
+        hideLoading();
+
+        showNotif(`BERHASIL MENGHAPUS ${noSuratList.length} DATA PERMINTAAN TERPILIH!`, 'info');
+
+
+
+        if (typeof loadMasterDbTable === 'function') loadMasterDbTable();
+
+        if (typeof loadRiwayat === 'function') loadRiwayat();
+
+        if (typeof loadDashboard === 'function') loadDashboard();
+
+      } catch (err) {
+
+        hideLoading();
+
+        console.error('[HAPUS MULTI MASTER ERROR]:', err);
+
+        showNotif('TERJADI KESALAHAN SAAT MENGHAPUS DATA MULTI TERPILIH: ' + (err.message || err), 'error');
+
+      }
+
+    }, 400);
+
+  });
+
+}
+
+window.toggleSelectAllMasterDb = toggleSelectAllMasterDb;
+
+window.updateMultiMasterDbBtnState = updateMultiMasterDbBtnState;
+
+window.hapusMultiMasterDb = hapusMultiMasterDb;
+
+
+
+function hapusDataMaster(noSurat) {
+
+  if (!noSurat) return;
+
+  tolakServiceModal(noSurat, 'HAPUS');
+
+}
+
+
+
+function getBreakdownSuratExportValue(r, item) {
+
+  if (!r || (!r.noSurat && !r.id)) return '-';
+
+  const targetNs = String(r.noSurat || r.id).trim();
+
+  
+
+  const partials = typeof getPartialBreakdownsFromDB === 'function' ? getPartialBreakdownsFromDB(targetNs) : [];
+
+  if (!Array.isArray(partials) || partials.length === 0) {
+
+    return '-';
+
+  }
+
+
+
+  if (!item) {
+
+    return partials.map(p => {
+
+      const pId = p.partial_id || p.partialId || 'P1';
+
+      const pStat = p.status || 'PENDING';
+
+      return `${targetNs}-${pId} (${pStat})`;
+
+    }).join(', ');
+
+  }
+
+
+
+  // 1. Cari breakdown (p) mana saja yang benar-benar memuat item ini di dalam p.items
+
+  const matchedPartials = [];
+
+  const itemType = String(item.type || item.tipe || '').trim().toUpperCase();
+
+  const itemSeri = String(item.seri || item.sn || '').trim().toUpperCase();
+
+  const itemBarang = String(item.barang || item.permintaan || '').trim().toUpperCase();
+
+
+
+  partials.forEach(p => {
+
+    let pItems = p.items;
+
+    if (typeof pItems === 'string') {
+
+      try { pItems = JSON.parse(pItems || '[]'); } catch (e) { pItems = []; }
+
+    }
+
+    if (!Array.isArray(pItems)) pItems = [];
+
+
+
+    const pId = p.partial_id || p.partialId || 'P1';
+
+    const pStat = p.status || 'PENDING';
+
+
+
+    const isMatchInP = pItems.some(pi => {
+
+      if (!pi) return false;
+
+      const piType = String(pi.type || pi.tipe || '').trim().toUpperCase();
+
+      const piSeri = String(pi.seri || pi.sn || '').trim().toUpperCase();
+
+      const piBarang = String(pi.barang || pi.permintaan || '').trim().toUpperCase();
+
+
+
+      if (itemSeri && piSeri && itemSeri !== '-' && piSeri !== '-') {
+
+        return itemSeri === piSeri && (itemType === piType || itemBarang === piBarang);
+
+      }
+
+      if (itemType && piType && itemType !== '-' && piType !== '-') {
+
+        return itemType === piType && itemBarang === piBarang;
+
+      }
+
+      return itemBarang && piBarang && itemBarang === piBarang;
+
+    });
+
+
+
+    if (isMatchInP) {
+
+      matchedPartials.push(`${targetNs}-${pId} (${pStat})`);
+
+    }
+
+  });
+
+
+
+  if (matchedPartials.length > 0) {
+
+    return matchedPartials.join(', ');
+
+  }
+
+
+
+  // 2. Cek rujukan dari item.statusPart jika tidak ketemu di p.items
+
+  const itemKet = String(item.statusPart || item.keteranganPart || item.updatePart || '').trim();
+
+  if (itemKet) {
+
+    const matchP = itemKet.match(/(P\d+)/i) || itemKet.match(/([A-Za-z0-9\/\._\-]+-P\d+)/i);
+
+    if (matchP) {
+
+      const targetPid = matchP[1].toUpperCase();
+
+      const foundP = partials.find(p => {
+
+        const pId = String(p.partial_id || p.partialId || p.id || '').toUpperCase();
+
+        return pId.includes(targetPid) || targetPid.includes(pId);
+
+      });
+
+      if (foundP) {
+
+        const pLabel = foundP.partial_id || foundP.partialId || targetPid;
+
+        const pStat = foundP.status || 'PENDING';
+
+        return `${targetNs}-${pLabel} (${pStat})`;
+
+      }
+
+      return `${targetNs}-${targetPid}`;
+
+    }
+
+  }
+
+
+
+  return '-';
+
+}
+
+window.getBreakdownSuratExportValue = getBreakdownSuratExportValue;
+
+
+
+function downloadMasterExcel() {
+
+  if (typeof checkUserCanDownloadExcel === 'function' && !checkUserCanDownloadExcel(currentUser)) {
+
+    showNotif('TIDAK ADA HAK AKSES!', 'warning');
+
+    return;
+
+  }
+
+  const data = getRequestsFromDB();
+
+  if (data.length === 0) {
+
+    showNotif('TIDAK ADA DATA MASTER UNTUK DIEKSPOR!', 'warning');
+
+    return;
+
+  }
+
+
+
+  showLoading('MOHON TUNGGU...');
+
+  setTimeout(() => {
+
+    hideLoading();
+
+    const rows = [];
+
+    rows.push([
+
+      'NO SURAT', 'TANGGAL', 'TOKO / PEMOHON', 'AREA', 'JENIS',
+
+      'TIPE BARANG', 'NO SERI', 'NO SERI DUS', 'PERMINTAAN',
+
+      'ALASAN', 'QTY', 'STATUS PART', 'BREAKDOWN SURAT', 'STATUS', 'CATATAN', 'LOG APPROVAL'
+
+    ]);
+
+
+
+    data.forEach(r => {
+
+      const logStr = (r.log || []).map(l => `${l.action} by ${l.user} (${l.time})`).join(' | ');
+
+      r.items.forEach(it => {
+
+        const isUnfulfilled = !!(it.unfulfilled || it.batal || it.status === 'TIDAK BISA DIPENUHI' || it.status === 'TIDAK DIPENUHI' || r.status === 'BATAL' || r.unfulfilled);
+
+        const customKet = (it.statusPart || it.keteranganPart || it.updatePart || it.noPart || it.alasanBatal || '').trim();
+
+        
+
+        let statusPartVal = '';
+
+        if (isUnfulfilled) {
+
+          if (customKet && customKet !== 'TIDAK DIPENUHI' && customKet !== 'TIDAK BISA DIPENUHI') {
+
+            statusPartVal = `TIDAK DIPENUHI (${customKet})`;
+
+          } else {
+
+            statusPartVal = 'TIDAK DIPENUHI';
+
+          }
+
+        } else if (customKet) {
+
+          statusPartVal = customKet;
+
+        } else if (r.status === 'DONE') {
+
+          statusPartVal = 'DIPENUHI';
+
+        } else {
+
+          statusPartVal = '-';
+
+        }
+
+
+
+        // Kolom K: Murni nama barang permintaan tanpa tambahan [TIDAK DIPENUHI/Ket]
+        let namaBarangDisplay = it.barang || it.permintaan || '-';
+
+
+
+        rows.push([
+
+          r.noSurat,
+
+          r.tanggal,
+
+          `${r.toko} (${r.createdBy})`,
+
+          r.area,
+
+          r.jenis,
+
+          it.type || it.tipe || '-',
+
+          it.seri || it.sn || '-',
+
+          it.dus || '',
+
+          namaBarangDisplay,
+
+          it.alasan || '-',
+
+          it.qty || it.jumlah || 1,
+
+          statusPartVal,
+
+          getBreakdownSuratExportValue(r, it),
+
+          isUnfulfilled ? `${r.status} (TIDAK DIPENUHI)` : r.status,
+
+          r.catatan || '',
+
+          logStr
+
+        ]);
+
+      });
+
+    });
+
+
+
+    if (typeof XLSX !== 'undefined') {
+
+      const ws = XLSX.utils.aoa_to_sheet(rows);
+
+      const wb = XLSX.utils.book_new();
+
+      XLSX.utils.book_append_sheet(wb, ws, "Master Data");
+
+      XLSX.writeFile(wb, `MASTER_DATA_PERMINTAAN_LENGKAP_${new Date().toISOString().split('T')[0]}.xlsx`);
+
+      } else {
+
+      showNotif('MODUL EXCEL (.XLSX) BELUM SIAP, PERIKSA KONEKSI INTERNET!', 'warning');
+
+    }
+
+  }, 400);
+
+}
+
+
+
+async function prosesUploadExcelLookup(event) {
+
+  const file = event.target.files[0];
+
+  if (!file) return;
+
+
+
+  if (typeof XLSX === 'undefined') {
+
+    showNotif('MODUL SHEETJS UNTUK EXCEL BELUM TERMUAT!', 'error');
+
+    return;
+
+  }
+
+
+
+  showLoading('MEMBACA FILE EXCEL...');
+
+  const reader = new FileReader();
+
+  reader.onload = async function(e) {
+
+    try {
+
+      const data = new Uint8Array(e.target.result);
+
+      const workbook = XLSX.read(data, { type: 'array' });
+
+      const firstSheetName = workbook.SheetNames[0];
+
+      const worksheet = workbook.Sheets[firstSheetName];
+
+      const jsonRows = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+
+
+
+      const newLookup = {};
+
+      let count = 0;
+
+
+
+      jsonRows.forEach((row, idx) => {
+
+        if (row && row.length >= 2) {
+
+          const colA = String(row[0] !== undefined && row[0] !== null ? row[0] : '').trim().toUpperCase();
+
+          const colB = String(row[1] !== undefined && row[1] !== null ? row[1] : '').trim().toUpperCase();
+
+
+
+          if (idx === 0 && (colA.includes('KODE') || colB.includes('TYPE') || colA.includes('SERI') || colB.includes('BARANG') || colB.includes('NAMA'))) return;
+
+
+
+          if (colA && colB) {
+
+            newLookup[colA] = colB;
+
+            count++;
+
+          }
+
+        }
+
+      });
+
+
+
+      if (count > 0) {
+
+        // 1. SIMPAN KE PENYIMPANAN LOKAL PERANGKAT
+
+        const existingMap = JSON.parse(appStorage.getItem(KODE_UNIT_MAP_KEY) || '{}');
+
+        const updatedMap = { ...existingMap, ...newLookup };
+
+        const mapJsonStr = JSON.stringify(updatedMap);
+
+        appStorage.setItem(KODE_UNIT_MAP_KEY, mapJsonStr);
+
+        try { localStorage.setItem(KODE_UNIT_MAP_KEY, mapJsonStr); } catch(e) {}
+
+
+
+        // 2. SIMPAN & SINKRONKAN KHUSUS KE FIREBASE ONLINE (FIRESTORE & REALTIME DATABASE)
+
+        const mapJsonStrForCloud = JSON.stringify(updatedMap);
+
+        const fs = getDbFirestore();
+
+        const rtdb = getDbRealtime();
+
+
+
+        // A. FIREBASE FIRESTORE
+
+        if (fs) {
+
+          try {
+
+            // Bersihkan key object jika ada karakter slash untuk doc field
+
+            const cleanMap = {};
+
+            Object.keys(updatedMap).forEach(k => {
+
+              if (k) cleanMap[k.replace(/[\/\.#$\[\]]/g, '_')] = updatedMap[k];
+
+            });
+
+
+
+            await fs.collection('app_settings').doc('config').set({
+
+              kodeUnitMapJson: mapJsonStrForCloud,
+
+              totalMasterItems: Object.keys(updatedMap).length,
+
+              updatedAt: new Date().toISOString()
+
+            }, { merge: true });
+
+
+
+            await fs.collection('master_lookup').doc('kode_unit_map').set({
+
+              data: cleanMap,
+
+              dataJson: mapJsonStrForCloud,
+
+              totalItems: Object.keys(updatedMap).length,
+
+              updatedAt: new Date().toISOString()
+
+            }, { merge: true });
+
+            console.log('[FIREBASE] Master lookup uploaded successfully to Firestore.');
+
+          } catch(e) {
+
+            console.warn('[FIRESTORE LOOKUP SYNC]:', e);
+
+          }
+
+        }
+
+
+
+        // B. FIREBASE REALTIME DATABASE
+
+        if (rtdb) {
+
+          try {
+
+            await rtdb.ref('app_settings/kodeUnitMapJson').set(mapJsonStrForCloud);
+
+            await rtdb.ref('master_kode_unit_json').set(mapJsonStrForCloud);
+
+            console.log('[FIREBASE] Master lookup uploaded successfully to Realtime DB.');
+
+          } catch(e) {
+
+            console.warn('[RTDB LOOKUP SYNC]:', e);
+
+          }
+
+        }
+
+        // Master lookup type barang FULL 100% dikelola via Firebase
+
+
+
+        hideLoading();
+
+        showNotif(`BERHASIL! ${count} MASTER TYPE / KODE UNIT TERSIMPAN DI FIREBASE & TERKIRIM KE SEMUA PERANGKAT!`, 'info');
+
+        const statusEl = document.getElementById('lookupUploadStatus');
+
+        if (statusEl) statusEl.textContent = `✅ ${count} MASTER TYPE TERSIMPAN DI FIREBASE & LOKAL!`;
+
+      } else {
+
+        hideLoading();
+
+        showNotif('TIDAK ADA DATA VALID DENGAN 2 KOLOM (KOLOM A & KOLOM B)!', 'warning');
+
+      }
+
+    } catch (err) {
+
+      hideLoading();
+
+      showNotif('GAGAL MEMBACA FILE EXCEL MASTER TYPE: ' + err.message, 'error');
+
+    }
+
+  };
+
+  reader.readAsArrayBuffer(file);
+
+  event.target.value = '';
+
+}
+
+
+
+function bukaAkun() {
+
+  setTimeout(() => { if (typeof initCanvasTTD === "function") initCanvasTTD(); }, 150);
+
+  if (!currentUser) return;
+
+  if (typeof tutupPdfModal === 'function') tutupPdfModal();
+
+  if (typeof tutupDetailBarangV2 === 'function') tutupDetailBarangV2(true);
+
+
+
+  const currentActivePage = typeof getCurrentActivePageId === 'function' ? getCurrentActivePageId() : '';
+
+  if (currentActivePage === 'inputPage' && typeof isFormDirtyOrFilled === 'function' && isFormDirtyOrFilled()) {
+
+    const confirmMsg = (typeof modeEdit !== 'undefined' && modeEdit) ? 'KELUAR DARI MENU EDIT?' : 'KELUAR DARI FORM PERMINTAAN? (DATA YANG DIISI AKAN HILANG)';
+
+    showConfirm(confirmMsg, () => {
+
+      if (typeof bersihkanForm === 'function') bersihkanForm();
+
+      closeAllPopups();
+
+      pindahHalaman('akunPage');
+
+      if (typeof prosesBukaAkun === 'function') prosesBukaAkun();
+
+    });
+
+    return;
+
+  }
+
+
+
+  closeAllPopups();
+
+  pindahHalaman('akunPage');
+
+  if (typeof prosesBukaAkun === 'function') prosesBukaAkun();
+
+}
+
+window.bukaAkun = bukaAkun;
+
+
+
+function tutupAkun() {
+
+  showPage('dashboardPage');
+
+}
+
+window.tutupAkun = tutupAkun;
+
+
+
+
+// =============================================================================
+// FITUR FOTO PROFIL LOKAL (JPG / PNG UPLOAD & PERSISTENCE)
+// =============================================================================
+
+
+// State Sementara Foto Profil di Modal Popup
+let tempSelectedProfilePhoto = undefined; // undefined = belum berubah, null = hapus foto, string = base64 foto baru
+
+function bukaModalPengaturanFotoProfil() {
+  if (!currentUser) return;
+  const modal = document.getElementById('popupFotoProfilModal');
+  if (!modal) return;
+
+  const photoKey = getProfilePhotoKey();
+  const savedPhoto = localStorage.getItem(photoKey) || currentUser.photo || currentUser.foto || null;
+  tempSelectedProfilePhoto = savedPhoto;
+
+  renderPreviewFotoInModal(tempSelectedProfilePhoto);
+
+  modal.style.setProperty('display', 'flex', 'important');
+  modal.style.setProperty('z-index', '2147483647', 'important');
+  modal.classList.add('show');
+}
+window.bukaModalPengaturanFotoProfil = bukaModalPengaturanFotoProfil;
+
+function tutupModalPengaturanFotoProfil() {
+  const modal = document.getElementById('popupFotoProfilModal');
   if (modal) {
     modal.style.setProperty('display', 'none', 'important');
     modal.classList.remove('show');
   }
+  tempSelectedProfilePhoto = undefined;
 }
-window.tutupUserModal = tutupUserModal;
+window.tutupModalPengaturanFotoProfil = tutupModalPengaturanFotoProfil;
 
-// Using existing confirmCallback & confirmCancelCallback declarations
+function handleFotoProfilSelectedInModal(input) {
+  if (!input || !input.files || !input.files[0]) return;
+  const file = input.files[0];
 
-function showConfirm(message, onYes, onNo = null) {
-  confirmCallback = onYes;
-  confirmCancelCallback = onNo;
-  const modal = document.getElementById('confirmOverlay');
-  const msgEl = document.getElementById('confirmMsg') || document.getElementById('confirmText') || document.getElementById('confirmMessage');
-  if (msgEl) msgEl.textContent = message || 'Apakah Anda yakin?';
-  if (modal) {
-    modal.style.setProperty('display', 'flex', 'important');
-    modal.classList.add('show');
+  if (!file.type.match('image.*')) {
+    if (typeof showNotif === 'function') showNotif('File harus berupa gambar (JPG, JPEG, PNG, WEBP)!', 'warning');
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const rawDataUrl = e.target.result;
+    const oneMb = 1024 * 1024; // 1 MB = 1,048,576 Bytes
+
+    // Jika ukuran file < 1MB: SAMA SEKALI TIDAK DIKOMPRES
+    if (file.size < oneMb) {
+      tempSelectedProfilePhoto = rawDataUrl;
+      renderPreviewFotoInModal(tempSelectedProfilePhoto);
+      return;
+    }
+
+    // Jika ukuran file >= 1MB: BARU JALANKAN FUNGSI KOMPRESI CANVAS
+    const img = new Image();
+    img.onload = function() {
+      try {
+        const canvas = document.createElement('canvas');
+        const maxDim = 250;
+        let width = img.width;
+        let height = img.height;
+        if (width > height) {
+          if (width > maxDim) {
+            height = Math.round((height * maxDim) / width);
+            width = maxDim;
+          }
+        } else {
+          if (height > maxDim) {
+            width = Math.round((width * maxDim) / height);
+            height = maxDim;
+          }
+        }
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, width, height);
+        tempSelectedProfilePhoto = canvas.toDataURL('image/jpeg', 0.85);
+      } catch(err) {
+        tempSelectedProfilePhoto = rawDataUrl;
+      }
+      renderPreviewFotoInModal(tempSelectedProfilePhoto);
+    };
+    img.onerror = function() {
+      tempSelectedProfilePhoto = rawDataUrl;
+      renderPreviewFotoInModal(tempSelectedProfilePhoto);
+    };
+    img.src = rawDataUrl;
+  };
+  reader.readAsDataURL(file);
+  input.value = '';
+}
+window.handleFotoProfilSelectedInModal = handleFotoProfilSelectedInModal;
+
+function handleHapusFotoInModal() {
+  tempSelectedProfilePhoto = null; // Menandakan dihapus
+  renderPreviewFotoInModal(null);
+}
+window.handleHapusFotoInModal = handleHapusFotoInModal;
+
+function renderPreviewFotoInModal(photoUrl) {
+  const pImg = document.getElementById('popupAvatarPreviewImg');
+  const pText = document.getElementById('popupAvatarPreviewText');
+
+  const name = currentUser ? (currentUser.fullName || currentUser.nama_lengkap || currentUser.nama || currentUser.username || 'USER') : 'USER';
+  let initials = 'SA';
+  if (name) {
+    const parts = String(name).trim().split(/\s+/);
+    if (parts.length >= 2) {
+      initials = (parts[0][0] + parts[1][0]).toUpperCase();
+    } else if (parts[0].length >= 2) {
+      initials = parts[0].substring(0, 2).toUpperCase();
+    } else {
+      initials = parts[0][0].toUpperCase();
+    }
+  }
+
+  if (photoUrl) {
+    if (pImg) {
+      pImg.src = photoUrl;
+      pImg.style.display = 'block';
+    }
+    if (pText) pText.style.display = 'none';
+  } else {
+    if (pImg) pImg.style.display = 'none';
+    if (pText) {
+      pText.textContent = initials;
+      pText.style.display = 'block';
+    }
   }
 }
+
+function simpanFotoProfilFromModal() {
+  if (tempSelectedProfilePhoto === undefined) {
+    tutupModalPengaturanFotoProfil();
+    return;
+  }
+
+  if (tempSelectedProfilePhoto === null) {
+    prosesHapusFotoProfilLocal();
+  } else {
+    simpanDanTerapkanFotoProfil(tempSelectedProfilePhoto);
+  }
+
+  tutupModalPengaturanFotoProfil();
+}
+window.simpanFotoProfilFromModal = simpanFotoProfilFromModal;
+
+
+function pilihFotoProfilLocal() {
+  const inputEl = document.getElementById('inputFotoProfilLocal');
+  if (inputEl) {
+    inputEl.click();
+  }
+}
+window.pilihFotoProfilLocal = pilihFotoProfilLocal;
+
+function uploadFotoProfilLocal(input) {
+  if (!input || !input.files || !input.files[0]) return;
+  const file = input.files[0];
+
+  // Validasi format gambar
+  if (!file.type.match('image.*')) {
+    if (typeof showNotif === 'function') showNotif('File harus berupa gambar (JPG, JPEG, PNG, WEBP)!', 'warning');
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const rawDataUrl = e.target.result;
+    const oneMb = 1024 * 1024; // 1 MB
+
+    // Jika ukuran file < 1MB: SAMA SEKALI TIDAK DIKOMPRES
+    if (file.size < oneMb) {
+      simpanDanTerapkanFotoProfil(rawDataUrl);
+      return;
+    }
+
+    // Jika ukuran file >= 1MB: BARU JALANKAN FUNGSI KOMPRESI CANVAS
+    const img = new Image();
+    img.onload = function() {
+      try {
+        const canvas = document.createElement('canvas');
+        const maxDim = 250;
+        let width = img.width;
+        let height = img.height;
+
+        if (width > height) {
+          if (width > maxDim) {
+            height = Math.round((height * maxDim) / width);
+            width = maxDim;
+          }
+        } else {
+          if (height > maxDim) {
+            width = Math.round((width * maxDim) / height);
+            height = maxDim;
+          }
+        }
+
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, width, height);
+
+        const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.85);
+        simpanDanTerapkanFotoProfil(compressedDataUrl);
+      } catch(err) {
+        simpanDanTerapkanFotoProfil(rawDataUrl);
+      }
+    };
+    img.onerror = function() {
+      simpanDanTerapkanFotoProfil(rawDataUrl);
+    };
+    img.src = rawDataUrl;
+  };
+  reader.readAsDataURL(file);
+
+  // Reset value agar dapat mengunggah file yang sama berturut-turut
+  input.value = '';
+}
+window.uploadFotoProfilLocal = uploadFotoProfilLocal;
+
+function getProfilePhotoKey() {
+  if (typeof currentUser !== 'undefined' && currentUser) {
+    const keyUser = String(currentUser.username || currentUser.nama || currentUser.id || 'default').trim().toLowerCase();
+    return 'user_profile_photo_' + keyUser;
+  }
+  return 'user_profile_photo_default';
+}
+
+function simpanDanTerapkanFotoProfil(photoDataUrl) {
+  if (!currentUser) return;
+  const photoKey = getProfilePhotoKey();
+
+  try {
+    localStorage.setItem(photoKey, photoDataUrl);
+  } catch(e) {
+    console.warn("Storage full when saving profile photo:", e);
+  }
+
+  // Update object session currentUser
+  currentUser.photo = photoDataUrl;
+  currentUser.foto = photoDataUrl;
+  try {
+    appStorage.setItem(SESSION_KEY, JSON.stringify(currentUser));
+    localStorage.setItem(SESSION_KEY, JSON.stringify(currentUser));
+  } catch(e) {}
+
+  // Update local DB user list record if present
+  try {
+    const allUsers = typeof getUsersFromDB === 'function' ? getUsersFromDB() : [];
+    const updatedUsers = allUsers.map(u => {
+      if (u && (
+        (u.id && currentUser.id && String(u.id) === String(currentUser.id)) ||
+        (u.username && String(u.username).trim().toUpperCase() === String(currentUser.username).trim().toUpperCase())
+      )) {
+        return { ...u, photo: photoDataUrl, foto: photoDataUrl };
+      }
+      return u;
+    });
+    if (typeof saveUsersToDB === 'function') saveUsersToDB(updatedUsers);
+  } catch(e) {}
+
+  // Render perubahan seketika pada UI
+  muatDanRenderFotoProfilUser();
+
+  if (typeof showNotif === 'function') {
+    showNotif('FOTO PROFIL BERHASIL DIPERBARUI!', 'success');
+  }
+}
+
+function muatDanRenderFotoProfilUser() {
+  if (!currentUser) return;
+  const photoKey = getProfilePhotoKey();
+  const savedPhoto = localStorage.getItem(photoKey) || currentUser.photo || currentUser.foto || null;
+
+  const elAvatarText = document.getElementById('akunUserAvatarText');
+  const elAvatarImg = document.getElementById('akunUserAvatarImg');
+  const btnHapus = document.getElementById('btnHapusFotoProfil');
+  const topInitialsEl = document.getElementById('topUserAvatarInitials');
+
+  const name = currentUser.fullName || currentUser.nama_lengkap || currentUser.namaLengkap || currentUser.name || currentUser.nama || currentUser.username || 'USER';
+
+  // Format Inisial Teks (misal "SA" / "BA")
+  let initials = 'SA';
+  if (name) {
+    const parts = String(name).trim().split(/\s+/);
+    if (parts.length >= 2) {
+      initials = (parts[0][0] + parts[1][0]).toUpperCase();
+    } else if (parts[0].length >= 2) {
+      initials = parts[0].substring(0, 2).toUpperCase();
+    } else {
+      initials = parts[0][0].toUpperCase();
+    }
+  }
+
+  if (savedPhoto) {
+    // 1. Tampilkan Foto di Profile Page Header
+    if (elAvatarImg) {
+      elAvatarImg.src = savedPhoto;
+      elAvatarImg.style.display = 'block';
+    }
+    if (elAvatarText) elAvatarText.style.display = 'none';
+    if (btnHapus) btnHapus.style.display = 'inline-block';
+
+    // 2. Tampilkan Foto di Topbar User Badge jika ada
+    if (topInitialsEl) {
+      topInitialsEl.innerHTML = `<img src="${savedPhoto}" alt="Avatar" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">`;
+    }
+  } else {
+    // Tampilkan Teks Inisial
+    if (elAvatarImg) elAvatarImg.style.display = 'none';
+    if (elAvatarText) {
+      elAvatarText.textContent = initials;
+      elAvatarText.style.display = 'block';
+    }
+    if (btnHapus) btnHapus.style.display = 'none';
+
+    // Tampilkan Area Code / Initials di Topbar
+    if (topInitialsEl) {
+      var areaRaw = String(currentUser.area || currentUser.cabang || currentUser.service_area || initials).trim();
+      var displayArea = areaRaw;
+      if (displayArea.includes(',')) displayArea = displayArea.split(',')[0].trim();
+      if (displayArea.includes('-')) {
+        var areaParts = displayArea.split('-');
+        displayArea = areaParts[areaParts.length - 1].trim();
+      }
+      topInitialsEl.textContent = displayArea.toUpperCase();
+    }
+  }
+}
+window.muatDanRenderFotoProfilUser = muatDanRenderFotoProfilUser;
+
+function hapusFotoProfilLocal() {
+  if (typeof showConfirm === 'function') {
+    showConfirm('APAKAH ANDA YAKIN INGIN MENGHAPUS FOTO PROFIL DAN KEMBALI KE TEKS INISIAL?', () => {
+      prosesHapusFotoProfilLocal();
+    });
+  } else {
+    if (confirm('Apakah Anda yakin ingin menghapus foto profil?')) {
+      prosesHapusFotoProfilLocal();
+    }
+  }
+}
+window.hapusFotoProfilLocal = hapusFotoProfilLocal;
+
+function prosesHapusFotoProfilLocal() {
+  if (!currentUser) return;
+  const photoKey = getProfilePhotoKey();
+  try {
+    localStorage.removeItem(photoKey);
+  } catch(e) {}
+
+  delete currentUser.photo;
+  delete currentUser.foto;
+  try {
+    appStorage.setItem(SESSION_KEY, JSON.stringify(currentUser));
+    localStorage.setItem(SESSION_KEY, JSON.stringify(currentUser));
+  } catch(e) {}
+
+  muatDanRenderFotoProfilUser();
+
+  if (typeof showNotif === 'function') {
+    showNotif('FOTO PROFIL DIHAPUS, EMBLEM KEMBALI KE TEKS INISIAL!', 'info');
+  }
+}
+window.prosesHapusFotoProfilLocal = prosesHapusFotoProfilLocal;
+
+
+function prosesBukaAkun() {
+
+  if (typeof tutupPdfModal === 'function') tutupPdfModal();
+
+  if (typeof tutupDetailBarangV2 === 'function') tutupDetailBarangV2(true);
+
+
+
+  // REFRESH DATA CURRENTUSER DARI DATABASE LOKAL TERBARU SEBELUM DITAMPILKAN
+
+  if (currentUser && currentUser.username) {
+
+    const allUsers = typeof getUsersFromDB === 'function' ? getUsersFromDB() : [];
+
+    const latestU = allUsers.find(u => u && (
+
+      (u.id && currentUser.id && String(u.id) === String(currentUser.id)) ||
+
+      (u.username && String(u.username).trim().toUpperCase() === String(currentUser.username).trim().toUpperCase())
+
+    ));
+
+    if (latestU) {
+
+      currentUser = { ...currentUser, ...latestU };
+
+      appStorage.setItem(SESSION_KEY, JSON.stringify(currentUser));
+
+      try { localStorage.setItem(SESSION_KEY, JSON.stringify(currentUser)); } catch(e) {}
+
+    }
+
+  }
+
+
+
+  if (!currentUser) return;
+
+
+
+  const elNama = document.getElementById('akunNama');
+
+  const elHP = document.getElementById('akunHP');
+
+  const elArea = document.getElementById('akunArea');
+
+  const elKat = document.getElementById('akunKategori');
+
+  const elPass = document.getElementById('akunPassword');
+
+
+
+  const elHeadingName = document.getElementById('akunUserHeadingName');
+
+  const elHeadingRole = document.getElementById('akunUserHeadingRole');
+
+  const elAvatarLarge = document.getElementById('akunUserAvatarLarge');
+
+
+
+  const name = currentUser.fullName || currentUser.nama || currentUser.username || 'USER';
+
+  const role = currentUser.category || currentUser.kategori || currentUser.role || 'USER';
+
+  const phone = currentUser.phone || currentUser.hp || '-';
+
+  const area = currentUser.area || 'GENERAL';
+
+
+
+  if (elNama) elNama.value = name;
+
+  if (elHP) elHP.value = phone;
+
+  if (elArea) elArea.value = `${area} - ${typeof AREA_MAP !== 'undefined' && AREA_MAP[area] ? AREA_MAP[area] : area}`;
+
+  if (elKat) elKat.value = role.toUpperCase();
+
+  if (elPass) elPass.value = currentUser.password || '';
+
+
+
+  
+
+  // INITIALIZE EMBEDDED TTD CANVAS & GEMINI API KEY IN AKUN PAGE
+
+  setTimeout(() => {
+
+    if (typeof initCanvasTTD === 'function') initCanvasTTD();
+
+    if (typeof loadTTD === 'function') loadTTD();
+
+
+
+    const inputGemini = document.getElementById('inputGeminiApiKeyVal');
+
+    if (inputGemini && typeof getGeminiApiKey === 'function') {
+
+      inputGemini.value = getGeminiApiKey();
+
+    }
+
+    if (typeof updateAiKeyBadgeStatus === 'function') updateAiKeyBadgeStatus();
+
+    if (typeof updateAkunSelectedSoundBadge === 'function') updateAkunSelectedSoundBadge();
+
+    // TAMPILKAN PENGATURAN KHUSUS KHUSUS USER LOGIN DM
+    const secDm = document.getElementById('sectionDmAutoDownloadSetting');
+    if (secDm) {
+      const isDm = typeof checkIsDMUser === 'function' ? checkIsDMUser() : (role.toUpperCase().includes('DM') || role.toUpperCase().includes('DISTRICT'));
+      if (isDm) {
+        secDm.style.display = 'block';
+        const isEnabled = typeof isDmAutoDownloadPdfEnabled === 'function' ? isDmAutoDownloadPdfEnabled() : true;
+        const toggleEl = document.getElementById('toggleDmAutoDownloadPdf');
+        const labelEl = document.getElementById('labelDmAutoDownloadStatus');
+        if (toggleEl) toggleEl.checked = isEnabled;
+        if (labelEl) {
+          labelEl.innerText = isEnabled ? 'AKTIF' : 'NONAKTIF';
+          labelEl.style.color = isEnabled ? '#0284c7' : '#64748b';
+        }
+      } else {
+        secDm.style.display = 'none';
+      }
+    }
+
+  }, 100);
+
+function checkIsDMUser() {
+  if (!currentUser) return false;
+  const role = String(currentUser.category || currentUser.kategori || currentUser.role || currentUser.username || '').toUpperCase();
+  const uname = String(currentUser.username || '').toUpperCase();
+  const name = String(currentUser.fullName || currentUser.nama || '').toUpperCase();
+  return role.includes('DM') || role.includes('DISTRICT') || uname.includes('DM') || name.includes('DISTRICT MANAGER');
+}
+window.checkIsDMUser = checkIsDMUser;
+
+function isDmAutoDownloadPdfEnabled() {
+  const val = appStorage.getItem('DM_AUTO_DOWNLOAD_PDF_ENABLED');
+  if (val === null || val === undefined) return true;
+  return val === 'true' || val === true;
+}
+window.isDmAutoDownloadPdfEnabled = isDmAutoDownloadPdfEnabled;
+
+async function simpanPengaturanDmAutoDownloadPdf(isChecked) {
+  const newStateStr = isChecked ? 'true' : 'false';
+  appStorage.setItem('DM_AUTO_DOWNLOAD_PDF_ENABLED', newStateStr);
+  try { localStorage.setItem('DM_AUTO_DOWNLOAD_PDF_ENABLED', newStateStr); } catch(e) {}
+
+  const labelEl = document.getElementById('labelDmAutoDownloadStatus');
+  if (labelEl) {
+    labelEl.innerText = isChecked ? 'AKTIF' : 'NONAKTIF';
+    labelEl.style.color = isChecked ? '#0284c7' : '#64748b';
+  }
+
+  if (typeof showNotif === 'function') {
+    showNotif(`AUTO-DOWNLOAD PDF DM: ${isChecked ? 'AKTIF & OTOMATIS TERUNDUH' : 'NONAKTIF (HANYA SIMPAN GOOGLE DRIVE & SUPABASE)'}`, isChecked ? 'success' : 'info');
+  }
+
+  const sb1 = (typeof supabase !== 'undefined' && supabase) || window.supabase || window.supabaseClient || window.supabaseAdmin;
+  if (sb1 && typeof sb1.from === 'function') {
+    try {
+      await sb1.from('system_settings').upsert({
+        setting_key: 'dm_auto_download_pdf',
+        setting_value: newStateStr,
+        updated_at: new Date().toISOString()
+      }, { onConflict: 'setting_key' });
+    } catch(err1) {}
+
+    try {
+      await sb1.from('permintaan_toko').upsert({
+        id: '__SYSTEM_SETTING_DM_AUTO_DOWNLOAD',
+        no_surat: '__SYSTEM_SETTING_DM_AUTO_DOWNLOAD',
+        catatan: newStateStr,
+        updated_at: new Date().toISOString()
+      }, { onConflict: 'id' });
+      console.log('✅ [SUPABASE REALTIME SYNC SUCCESS]: DM Auto Download setting =', newStateStr);
+    } catch(err2) {
+      console.warn('[SUPABASE REALTIME SYNC ERR]:', err2);
+    }
+  }
+
+  if (typeof broadcastRealtimeDataChange === 'function') {
+    broadcastRealtimeDataChange('__SYSTEM_SETTING_DM_AUTO_DOWNLOAD');
+  }
+}
+window.simpanPengaturanDmAutoDownloadPdf = simpanPengaturanDmAutoDownloadPdf;
+
+
+
+  if (elHeadingName) elHeadingName.textContent = name.toUpperCase();
+
+  if (elHeadingRole) elHeadingRole.textContent = `AKUN ${role.toUpperCase()}`;
+
+
+
+  if (elAvatarLarge) {
+
+    const parts = name.trim().split(' ');
+
+    const init = parts.length > 1 ? (parts[0][0] + parts[1][0]) : name.slice(0, 2);
+
+    elAvatarLarge.textContent = init.toUpperCase();
+
+  }
+
+
+
+  window._isTtdCanvasDirty = false;
+
+  window._origAkunSnapshot = {
+
+    nama: (name || '').trim().toUpperCase(),
+
+    hp: (phone || '').trim(),
+
+    pass: (currentUser.password || '').trim()
+
+  };
+
+
+
+  if (typeof updateDesignModeButtonUI === 'function' && typeof getSavedDesignMode === 'function') {
+
+    updateDesignModeButtonUI(getSavedDesignMode());
+
+  }
+
+}
+
+
+
+function isAkunDirty() {
+
+  if (!currentUser) return false;
+
+  const elNama = document.getElementById('akunNama');
+
+  const elHP = document.getElementById('akunHP');
+
+  const elPass = document.getElementById('akunPassword');
+
+
+
+  const currentNama = (elNama ? elNama.value : '').trim().toUpperCase();
+
+  const currentHP = (elHP ? elHP.value : '').trim();
+
+  const currentPass = (elPass ? elPass.value : '').trim();
+
+
+
+  if (window._origAkunSnapshot) {
+
+    const namaChanged = currentNama !== window._origAkunSnapshot.nama;
+
+    const hpChanged = currentHP !== window._origAkunSnapshot.hp;
+
+    const passChanged = (currentPass.length > 0 && currentPass !== window._origAkunSnapshot.pass);
+
+    const ttdChanged = !!window._isTtdCanvasDirty;
+
+    return (namaChanged || hpChanged || passChanged || ttdChanged);
+
+  }
+
+
+
+  const origNama = (currentUser.fullName || currentUser.nama || currentUser.username || '').trim().toUpperCase();
+
+  const origHP = (currentUser.phone || currentUser.hp || '-').trim();
+
+  const origHPAlt = (currentUser.phone || currentUser.hp || '').trim();
+
+  const origPass = (currentUser.password || '').trim();
+
+
+
+  const namaChanged = (currentNama !== origNama && currentNama.length > 0);
+
+  const hpChanged = (currentHP !== origHP && currentHP !== origHPAlt);
+
+  const passChanged = (currentPass.length > 0 && currentPass !== origPass);
+
+  const ttdChanged = !!window._isTtdCanvasDirty;
+
+
+
+  return (namaChanged || hpChanged || passChanged || ttdChanged);
+
+}
+
+window.isAkunDirty = isAkunDirty;
+
+
+
+function batalDanKeluarAkun(targetPageId = 'dashboardPage') {
+
+  window._isTtdCanvasDirty = false;
+
+  window._origAkunSnapshot = null;
+
+
+
+  if (currentUser) {
+
+    const elNama = document.getElementById('akunNama');
+
+    const elHP = document.getElementById('akunHP');
+
+    const elPass = document.getElementById('akunPassword');
+
+    if (elNama) elNama.value = currentUser.fullName || currentUser.nama || currentUser.username || '';
+
+    if (elHP) elHP.value = currentUser.phone || currentUser.hp || '-';
+
+    if (elPass) elPass.value = currentUser.password || '';
+
+  }
+
+
+
+  const modal = document.getElementById('popupAkun');
+
+  if (modal) {
+
+    modal.classList.remove('show');
+
+    modal.style.setProperty('display', 'none', 'important');
+
+  }
+
+
+
+  const akunPage = document.getElementById('akunPage');
+
+  if (akunPage) {
+
+    akunPage.classList.remove('active');
+
+    akunPage.style.setProperty('display', 'none', 'important');
+
+  }
+
+
+
+  if (typeof closeAllPopups === 'function') closeAllPopups();
+
+
+
+  const pageToOpen = (targetPageId && targetPageId !== 'akunPage') ? targetPageId : 'dashboardPage';
+
+  if (typeof pindahHalaman === 'function') {
+
+    pindahHalaman(pageToOpen, false);
+
+  }
+
+  if (typeof aturTampilanLonceng === 'function') {
+
+    aturTampilanLonceng(pageToOpen);
+
+  }
+
+}
+
+window.batalDanKeluarAkun = batalDanKeluarAkun;
+
+
+
+function tutupAkun(force = false) {
+
+  if (force !== true && typeof isAkunDirty === 'function' && isAkunDirty()) {
+
+    showConfirm(
+
+      'APAKAH ANDA INGIN MENYIMPAN PERUBAHAN AKUN?',
+
+      () => {
+
+        if (typeof eksekusiSimpanAkun === 'function') {
+
+          eksekusiSimpanAkun(true);
+
+        }
+
+        batalDanKeluarAkun('dashboardPage');
+
+      },
+
+      () => {
+
+        batalDanKeluarAkun('dashboardPage');
+
+      },
+
+      'YA, SIMPAN',
+
+      'BATAL'
+
+    );
+
+    return;
+
+  }
+
+
+
+  batalDanKeluarAkun('dashboardPage');
+
+}
+
+window.tutupAkun = tutupAkun;
+
+
+
+function simpanAkun(autoClose = false) {
+
+  if (autoClose) {
+
+    eksekusiSimpanAkun(true);
+
+  } else {
+
+    showConfirm(
+
+      'SIMPAN PERUBAHAN DATA AKUN?',
+
+      () => {
+
+        eksekusiSimpanAkun(false);
+
+      },
+
+      null, // KLIK BATAL -> HANYA TUTUP POPUP KONFIRMASI (TETAP DI AKUN & DATA TIDAK DI-RESET)
+
+      'YA, SIMPAN',
+
+      'BATAL'
+
+    );
+
+  }
+
+}
+
+window.simpanAkun = simpanAkun;
+
+
+
+async function eksekusiSimpanAkun(autoClose = false) {
+
+  const nama = document.getElementById('akunNama').value.trim().toUpperCase();
+
+  const hp = document.getElementById('akunHP').value.trim();
+
+  const pass = document.getElementById('akunPassword').value.trim();
+
+
+
+  if (!nama) {
+
+    showNotif('NAMA LENGKAP TIDAK BOLEH KOSONG!', 'warning');
+
+    return;
+
+  }
+
+
+
+  if (typeof tampilkanLoadingProses === 'function') {
+
+    tampilkanLoadingProses('MENYIMPAN PERUBAHAN AKUN... MOHON TUNGGU');
+
+  } else {
+
+    showLoading('MENYIMPAN PERUBAHAN AKUN... MOHON TUNGGU');
+
+  }
+
+  const _simpanStartTime = Date.now();
+
+
+
+  try {
+
+    const users = getUsersFromDB();
+
+    let idx = users.findIndex(u => u && (
+
+      (currentUser && currentUser.id && u.id && String(u.id) === String(currentUser.id)) ||
+
+      (currentUser && currentUser.username && u.username && String(u.username).toUpperCase() === String(currentUser.username).toUpperCase())
+
+    ));
+
+
+
+    if (idx === -1 && currentUser) {
+
+      idx = users.length;
+
+      users.push({ ...currentUser });
+
+    }
+
+
+
+    if (idx !== -1) {
+
+      users[idx].fullName = nama;
+
+      users[idx].phone = hp;
+
+      if (pass) users[idx].password = pass;
+
+      if (!users[idx].id) {
+
+        users[idx].id = users[idx].username || `USR-${Date.now()}`;
+
+      }
+
+
+
+      currentUser = { ...users[idx] };
+
+      appStorage.setItem(SESSION_KEY, JSON.stringify(currentUser));
+
+      try { localStorage.setItem(SESSION_KEY, JSON.stringify(currentUser)); } catch(e) {}
+
+
+
+      saveUsersToDB(users, currentUser);
+
+
+
+      if (typeof simpanUserKeSupabase === 'function') {
+
+        await simpanUserKeSupabase(currentUser);
+
+      }
+
+
+
+      // BROADCAST REALTIME EVENT TO ALL LOGGED-IN ADMINS/DEVICES
+
+      if (supabaseRealtimeChannel) {
+
+        try {
+
+          supabaseRealtimeChannel.send({
+
+            type: 'broadcast',
+
+            event: 'user_data_changed',
+
+            payload: { username: currentUser.username, time: Date.now() }
+
+          });
+
+        } catch(e) {}
+
+      }
+
+
+
+      if (typeof pushCentralCloudDB === 'function') {
+
+        try { pushCentralCloudDB(); } catch(e) {}
+
+      }
+
+
+
+      if (typeof syncSupabaseUsersToLocalCache === 'function') {
+
+        await syncSupabaseUsersToLocalCache();
+
+      }
+
+
+
+      if (typeof tutupLoadingProses === 'function') tutupLoadingProses();
+
+      hideLoading();
+
+
+
+      showNotif('PROFIL AKUN BERHASIL DIPERBARUI!', 'success');
+
+
+
+      window._isTtdCanvasDirty = false;
+
+      window._origAkunSnapshot = {
+
+        nama: (currentUser.fullName || '').trim().toUpperCase(),
+
+        hp: (currentUser.phone || '-').trim(),
+
+        pass: (currentUser.password || '').trim()
+
+      };
+
+
+
+      const akunArea = document.getElementById('akunArea');
+
+      if (akunArea) akunArea.value = `${currentUser.area} - ${formatUserAreaDisplay(currentUser.area)}`;
+
+
+
+      const akunKategori = document.getElementById('akunKategori');
+
+      if (akunKategori) akunKategori.value = currentUser.category;
+
+
+
+      const akunNama = document.getElementById('akunNama');
+
+      if (akunNama) akunNama.value = currentUser.fullName;
+
+
+
+      const akunHP = document.getElementById('akunHP');
+
+      if (akunHP) akunHP.value = currentUser.phone || '-';
+
+
+
+      const akunPassword = document.getElementById('akunPassword');
+
+      if (akunPassword) akunPassword.value = '';
+
+
+
+      if (typeof loadDashboard === 'function') loadDashboard();
+
+      if (document.getElementById('userTableBody') && typeof loadUsersManagement === 'function') {
+
+        loadUsersManagement();
+
+      }
+
+
+
+      if (autoClose) {
+
+        tutupAkun(true);
+
+      }
+
+    } else {
+
+      if (typeof tutupLoadingProses === 'function') tutupLoadingProses();
+
+      hideLoading();
+
+      showNotif('DATA AKUN TIDAK DITEMUKAN!', 'warning');
+
+    }
+
+  } catch (err) {
+
+    if (typeof tutupLoadingProses === 'function') tutupLoadingProses();
+
+    hideLoading();
+
+    console.error(err);
+
+    showNotif('GAGAL MENYIMPAN PERUBAHAN AKUN', 'danger');
+
+  }
+
+}
+
+window.eksekusiSimpanAkun = eksekusiSimpanAkun;
+
+
+
+function bukaModalTambahToko(btnElement = null) {
+
+  if (!currentUser) return;
+
+  const userCat = (currentUser.category || '').toUpperCase();
+
+  if (userCat === 'TOKO') {
+
+    showNotif('TIDAK ADA HAK AKSES!', 'warning');
+
+    return;
+
+  }
+
+  
+
+  // Sembunyikan popup/halaman akun jika sedang terbuka
+
+  const popupAkunEl = document.getElementById('popupAkun');
+
+  const akunPageEl = document.getElementById('akunPage');
+
+  if (popupAkunEl) {
+
+    popupAkunEl.style.setProperty('display', 'none', 'important');
+
+    popupAkunEl.classList.remove('show');
+
+  }
+
+  if (akunPageEl) {
+
+    akunPageEl.classList.remove('active');
+
+    akunPageEl.style.setProperty('display', 'none', 'important');
+
+  }
+
+
+
+  // EKSPLISIT SET HALAMAN AKTIF = inputPage
+
+  if (typeof pindahHalaman === 'function') {
+
+    pindahHalaman('inputPage', false);
+
+  }
+
+
+
+  try {
+
+    const selectAreaEl = document.getElementById('selectAreaTokoBaru');
+
+    if (selectAreaEl) {
+
+      selectAreaEl.innerHTML = '';
+
+      const userAreas = typeof getUserAreaList === 'function' ? getUserAreaList(currentUser.area) : [currentUser.area || 'BDG'];
+
+      
+
+      if (userAreas.includes('ALL')) {
+
+        const allCodes = ['BDG', 'BDU', 'CRB', 'SKB', 'SBN', 'TSM'];
+
+        allCodes.forEach(code => {
+
+          selectAreaEl.innerHTML += `<option value="${code}">${code}</option>`;
+
+        });
+
+      } else {
+
+        userAreas.forEach(code => {
+
+          selectAreaEl.innerHTML += `<option value="${code}">${code}</option>`;
+
+        });
+
+      }
+
+    }
+
+
+
+    const inputEl = document.getElementById('inputNamaTokoBaru');
+
+    if (inputEl) inputEl.value = '';
+
+    const cariModalInput = document.getElementById('cariTokoModalInput');
+
+    if (cariModalInput) cariModalInput.value = '';
+
+
+
+    const uploadBox = document.getElementById('boxUploadExcelTokoModal');
+
+    if (uploadBox) {
+
+      const isAdmin = currentUser && (
+
+        String(currentUser.category || '').toUpperCase() === 'ADMIN' || 
+
+        String(currentUser.role || '').toUpperCase() === 'ADMIN' || 
+
+        String(currentUser.username || '').toUpperCase() === 'ADMIN'
+
+      );
+
+      uploadBox.style.display = isAdmin ? 'block' : 'none';
+
+    }
+
+
+
+    loadDaftarTokoModal('');
+
+    const popup = document.getElementById('popupTambahToko');
+
+    if (popup) {
+
+      popup.style.setProperty('display', 'flex', 'important');
+
+      popup.classList.add('show');
+
+      pushPopupHistoryState();
+
+    }
+
+  } catch (err) {
+
+    console.error('Error opening store modal:', err);
+
+  }
+
+}
+
+
+
+let editStoreId = null;
+
+
+
+function editTokoCustom(id) {
+
+  const allStores = getStoresFromDB();
+
+  const store = allStores.find(s => s.id === id);
+
+  if (!store) return;
+
+
+
+  const selectAreaEl = document.getElementById('selectAreaTokoBaru');
+
+  if (selectAreaEl && store.area) {
+
+    selectAreaEl.value = store.area;
+
+  }
+
+
+
+  const inputEl = document.getElementById('inputNamaTokoBaru');
+
+  const btnSimpan = document.getElementById('btnSimpanTokoBaru');
+
+
+
+  if (inputEl) {
+
+    inputEl.value = store.fullName;
+
+    inputEl.focus();
+
+  }
+
+  editStoreId = store.id;
+
+
+
+  if (btnSimpan) {
+
+    btnSimpan.innerHTML = `<span class="material-symbols-rounded" style="vertical-align: middle; color: #000000 !important;">save</span> SIMPAN EDIT`;
+
+    btnSimpan.style.setProperty('background', '#16a34a', 'important');
+    btnSimpan.style.setProperty('background-color', '#16a34a', 'important');
+    btnSimpan.style.setProperty('color', '#000000', 'important');
+
+  }
+
+}
+
+window.editTokoCustom = editTokoCustom;
+
+
+
+function tutupModalTambahToko() {
+
+  editStoreId = null;
+
+  const inputEl = document.getElementById('inputNamaTokoBaru');
+
+  const btnSimpan = document.getElementById('btnSimpanTokoBaru');
+
+  const cariModalInput = document.getElementById('cariTokoModalInput');
+
+  if (cariModalInput) cariModalInput.value = '';
+
+  if (inputEl) inputEl.value = '';
+
+  if (btnSimpan) {
+
+    btnSimpan.innerHTML = `<span class="material-symbols-rounded" style="vertical-align: middle; color: #000000 !important;">save</span> SIMPAN`;
+
+    btnSimpan.style.setProperty('background', '#16a34a', 'important');
+    btnSimpan.style.setProperty('background-color', '#16a34a', 'important');
+    btnSimpan.style.setProperty('color', '#000000', 'important');
+
+  }
+
+
+
+  const popup = document.getElementById('popupTambahToko');
+
+  if (popup) {
+
+    popup.classList.remove('show');
+
+    popup.style.setProperty('display', 'none', 'important');
+
+  }
+
+  try {
+
+    if (typeof loadForm === 'function') loadForm();
+
+  } catch (err) {
+
+    console.warn('[tutupModalTambahToko notice]:', err);
+
+  }
+
+}
+
+window.bukaModalTambahToko = bukaModalTambahToko;
+
+window.tutupModalTambahToko = tutupModalTambahToko;
+
+
+
+window._tokoSortCol = null;
+
+window._tokoSortDir = 'asc';
+
+
+
+function sortTableDaftarTokoModal(colKey) {
+
+  if (window._tokoSortCol === colKey) {
+
+    window._tokoSortDir = window._tokoSortDir === 'asc' ? 'desc' : 'asc';
+
+  } else {
+
+    window._tokoSortCol = colKey;
+
+    window._tokoSortDir = 'asc';
+
+  }
+
+  const input = document.getElementById('cariTokoModalInput');
+
+  const kw = input ? input.value : '';
+
+  loadDaftarTokoModal(kw);
+
+}
+
+window.sortTableDaftarTokoModal = sortTableDaftarTokoModal;
+
+
+
+function updateTokoSortIcons() {
+
+  const cols = ['fullName', 'area', 'storeCode'];
+
+  cols.forEach(c => {
+
+    const iconEl = document.getElementById('sortIconToko_' + c);
+
+    const thEl = document.getElementById('thToko_' + c);
+
+    if (iconEl) {
+
+      if (window._tokoSortCol === c) {
+
+        iconEl.textContent = window._tokoSortDir === 'asc' ? 'arrow_upward' : 'arrow_downward';
+
+        if (thEl) thEl.classList.add('active-sort');
+
+      } else {
+
+        iconEl.textContent = 'unfold_more';
+
+        if (thEl) thEl.classList.remove('active-sort');
+
+      }
+
+    }
+
+  });
+
+}
+
+window.updateTokoSortIcons = updateTokoSortIcons;
+
+
+
+function loadDaftarTokoModal(filterKeyword = '') {
+
+  const tbody = document.getElementById('daftarTokoTableBody');
+
+  const btnHapus = document.getElementById('btnHapusCariTokoModal');
+
+  const infoHasil = document.getElementById('infoHasilCariTokoModal');
+
+  if (!tbody) return;
+
+  tbody.innerHTML = '';
+
+
+
+  const allStores = getStoresFromDB();
+
+  let areaStores = (currentUser && (currentUser.category === 'DM' || currentUser.area === 'ALL')) 
+
+    ? allStores 
+
+    : allStores.filter(s => currentUser && currentUser.area ? isAreaMatch(currentUser.area, s.area) : true);
+
+
+
+  const kw = String(filterKeyword || '').trim().toUpperCase();
+
+  if (btnHapus) {
+
+    btnHapus.style.display = kw ? 'inline-flex' : 'none';
+
+  }
+
+
+
+  if (kw) {
+
+    areaStores = areaStores.filter(s => {
+
+      if (!s) return false;
+
+      const fn = String(s.fullName || '').toUpperCase();
+
+      const code = String(s.storeCode || '').toUpperCase();
+
+      const area = String(s.area || '').toUpperCase();
+
+      return fn.includes(kw) || code.includes(kw) || area.includes(kw);
+
+    });
+
+  }
+
+  if (infoHasil) infoHasil.style.display = 'none';
+
+
+
+  if (window._tokoSortCol) {
+
+    const col = window._tokoSortCol;
+
+    const dir = window._tokoSortDir === 'desc' ? -1 : 1;
+
+    areaStores.sort((a, b) => {
+
+      let valA = a[col] || '';
+
+      let valB = b[col] || '';
+
+      if (typeof valA === 'string') valA = valA.toLowerCase();
+
+      if (typeof valB === 'string') valB = valB.toLowerCase();
+
+      if (valA < valB) return -1 * dir;
+
+      if (valA > valB) return 1 * dir;
+
+      return 0;
+
+    });
+
+  }
+
+  updateTokoSortIcons();
+
+
+
+  if (areaStores.length === 0) {
+
+    tbody.innerHTML = `<tr><td colspan="4" style="text-align:center; padding:15px; color:var(--text-muted);">${kw ? 'TIDAK ADA TOKO YANG COCOK DENGAN PENCARIAN.' : 'BELUM ADA TOKO TERDAFTAR DI AREA ANDA.'}</td></tr>`;
+
+    return;
+
+  }
+
+
+
+  areaStores.forEach(s => {
+
+    const tr = document.createElement('tr');
+
+    tr.style.borderBottom = '1px solid var(--border-color)';
+
+    const isEven = (areaStores.indexOf(s) % 2 === 1);
+
+    tr.style.backgroundColor = isEven ? '#f0f6fa' : '#ffffff';
+
+    tr.style.color = '#1e293b';
+
+    const code = s.storeCode || generateStoreCode(s.fullName);
+
+    const areaBadge = s.area || 'BDG';
+
+    tr.innerHTML = `
+      <td style="padding: 10px 14px; font-weight: 400; color: #1e293b; border-bottom: 1px solid #e2e8f0 !important;"><div class="namaTokoWrap" style="color: #1e293b; font-weight: 400; text-transform: uppercase;">${s.fullName}</div></td>
+      <td style="padding: 10px 14px; text-align: center; font-weight: 400; color: #334155; border-bottom: 1px solid #e2e8f0 !important;">${areaBadge}</td>
+      <td style="padding: 10px 14px; text-align: center; color: #334155; font-weight: 400; border-bottom: 1px solid #e2e8f0 !important;">${code}</td>
+      <td style="padding: 10px 14px; text-align: center; white-space: nowrap; border-bottom: 1px solid #e2e8f0 !important;">
+        <button type="button" class="btnIcon btnEdit" onclick="editTokoCustom('${s.id}')" title="EDIT TOKO" style="background: #334155 !important; color: #ffffff !important; border: none !important; border-radius: 4px !important; width: 28px !important; height: 28px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; cursor: pointer !important; margin-right: 6px !important;"><span class="material-symbols-rounded" style="font-size: 16px !important; color: #ffffff !important;">edit</span></button>
+        <button type="button" class="btnIcon btnDelete" onclick="hapusTokoCustom('${s.id}', this)" title="HAPUS TOKO" style="background: #ef4444 !important; color: #ffffff !important; border: none !important; border-radius: 4px !important; width: 28px !important; height: 28px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; cursor: pointer !important;"><span class="material-symbols-rounded" style="font-size: 16px !important; color: #ffffff !important;">delete</span></button>
+      </td>
+    `;
+
+    tbody.appendChild(tr);
+
+  });
+
+
+
+  // Empty dummy rows removed per user request
+
+}
+
+window.loadDaftarTokoModal = loadDaftarTokoModal;
+
+
+
+function filterDaftarTokoModal(keyword) {
+
+  loadDaftarTokoModal(keyword);
+
+}
+
+window.filterDaftarTokoModal = filterDaftarTokoModal;
+
+
+
+function resetCariTokoModal() {
+
+  const cariInput = document.getElementById('cariTokoModalInput');
+
+  if (cariInput) cariInput.value = '';
+
+  loadDaftarTokoModal('');
+
+}
+
+window.resetCariTokoModal = resetCariTokoModal;
+
+
+
+async function simpanTokoBaru(btnElement = null) {
+
+  const inputEl = document.getElementById('inputNamaTokoBaru');
+
+  const btnSimpan = (btnElement && btnElement instanceof HTMLElement) ? btnElement : (document.getElementById('btnSimpanTokoBaru') || (typeof event !== 'undefined' && event ? event.currentTarget : null));
+
+  const selectAreaEl = document.getElementById('selectAreaTokoBaru');
+
+  const targetArea = selectAreaEl ? selectAreaEl.value : (getUserAreaList(currentUser.area)[0] || 'BDG');
+
+  const namaToko = inputEl ? inputEl.value.trim().toUpperCase() : '';
+
+
+
+  if (!namaToko) {
+
+    showNotif('NAMA TOKO TIDAK BOLEH KOSONG!', 'warning');
+
+    return;
+
+  }
+
+
+
+  const existingStores = getStoresFromDB();
+
+  const isDuplicate = existingStores.some(s => s.fullName.toUpperCase() === namaToko && s.area === targetArea && s.id !== editStoreId);
+
+  if (isDuplicate) {
+
+    showNotif(`TOKO '${namaToko}' SUDAH TERDAFTAR DI AREA ${targetArea}!`, 'warning');
+
+    return;
+
+  }
+
+
+
+  setBtnLoading(btnSimpan, true, editStoreId ? 'MEMPERBARUI...' : 'MENYIMPAN...');
+
+  showLoading('LOADING...');
+
+
+
+  try {
+
+    if (editStoreId) {
+
+      // MODE EDIT TOKO
+
+      const targetStore = existingStores.find(s => s.id === editStoreId);
+
+      const oldName = targetStore ? targetStore.fullName : '';
+
+      const newCode = generateStoreCode(namaToko);
+
+
+
+      // 1. UPDATE CACHE STORES & LOCAL STORAGE INSTANTLY
+
+      try {
+
+        const localStores = JSON.parse(appStorage.getItem(STORES_DB_KEY) || '[]');
+
+        const idx = localStores.findIndex(s => s.id === editStoreId || (s.fullName && oldName && s.fullName.toUpperCase() === oldName.toUpperCase()));
+
+        if (idx !== -1) {
+
+          localStores[idx].fullName = namaToko;
+
+          localStores[idx].storeCode = newCode;
+
+          localStores[idx].area = targetArea;
+
+          appStorage.setItem(STORES_DB_KEY, JSON.stringify(localStores));
+
+        }
+
+      } catch (e) {}
+
+
+
+      if (typeof cacheStores !== 'undefined' && Array.isArray(cacheStores)) {
+
+        const idx = cacheStores.findIndex(s => s.id === editStoreId || (s.fullName && oldName && s.fullName.toUpperCase() === oldName.toUpperCase()));
+
+        if (idx !== -1) {
+
+          cacheStores[idx].fullName = namaToko;
+
+          cacheStores[idx].storeCode = newCode;
+
+          cacheStores[idx].area = targetArea;
+
+        }
+
+      }
+
+
+
+      // 2. UPDATE AKUN USER JIKA TERKAIT
+
+      const users = getUsersFromDB();
+
+      const userObj = users.find(u => u.id === editStoreId || (u.fullName && oldName && u.fullName.toUpperCase() === oldName.toUpperCase()));
+
+      if (userObj) {
+
+        userObj.fullName = namaToko;
+
+        userObj.storeCode = newCode;
+
+        userObj.area = targetArea;
+
+        try { saveUsersToDB(users); } catch (e) {}
+
+      }
+
+
+
+      const currentEditId = editStoreId;
+
+      editStoreId = null;
+
+      if (inputEl) inputEl.value = '';
+
+      if (btnSimpan) {
+
+        btnSimpan.innerHTML = `<span class="material-symbols-rounded" style="vertical-align: middle;">save</span> SIMPAN`;
+
+        btnSimpan.style.background = '#16a34a';
+
+      }
+
+
+
+      // 3. REFRESH UI INSTANTLY
+
+      if (typeof loadDaftarTokoModal === 'function') loadDaftarTokoModal();
+
+      if (typeof updateStoreDropdownOptions === 'function') updateStoreDropdownOptions(namaToko);
+
+      if (typeof loadUsersManagement === 'function') loadUsersManagement();
+
+
+
+      showNotif(`TOKO BERHASIL DIPERBARUHI MENJADI '${namaToko}' (AREA ${targetArea})!`, 'success');
+
+
+
+      // 4. BACKGROUND CLOUD SYNC (NON-BLOCKING)
+
+      (async () => {
+
+        if (typeof supabase !== 'undefined' && supabase) {
+
+          try {
+
+            await supabase.from('toko_list').upsert({
+
+              id: currentEditId,
+
+              full_name: namaToko,
+
+              area: targetArea,
+
+              store_code: newCode || generateStoreCode(namaToko, targetArea),
+
+              created_by: currentUser.fullName
+
+            });
+
+            if (userObj && typeof simpanUserKeSupabase === "function") {
+
+              await simpanUserKeSupabase(userObj);
+
+            }
+
+          } catch (e) {
+
+            console.warn('[SUPABASE TOKO_LIST UPDATE WARNING]:', e);
+
+          }
+
+        }
+
+        if (typeof pushCentralCloudDB === 'function') {
+
+          try { await pushCentralCloudDB(); } catch (e) {}
+
+        }
+
+      })();
+
+
+
+    } else {
+
+      // MODE TAMBAH TOKO BARU
+
+      const storeKey = `${namaToko}_${targetArea}`;
+
+      let deletedStoreKeys = JSON.parse(appStorage.getItem(DELETED_STORES_KEY) || '[]');
+
+      if (deletedStoreKeys.includes(storeKey)) {
+
+        deletedStoreKeys = deletedStoreKeys.filter(k => k !== storeKey);
+
+        appStorage.setItem(DELETED_STORES_KEY, JSON.stringify(deletedStoreKeys));
+
+      }
+
+
+
+      const generatedCode = generateStoreCode(namaToko);
+
+      const newId = `STK-${Date.now()}`;
+
+
+
+      // 1. SAVE LOCAL STORAGE & CACHE INSTANTLY
+
+      const localStores = JSON.parse(appStorage.getItem(STORES_DB_KEY) || '[]');
+
+      const newStore = {
+
+        id: newId,
+
+        fullName: namaToko,
+
+        area: targetArea,
+
+        storeCode: generatedCode,
+
+        createdBy: currentUser.fullName
+
+      };
+
+      localStores.push(newStore);
+
+      appStorage.setItem(STORES_DB_KEY, JSON.stringify(localStores));
+
+
+
+      const users = getUsersFromDB();
+
+      const safeUsername = namaToko.replace(/[^A-Z0-9]/gi, '_').toUpperCase();
+
+      let newUserAcc = null;
+
+      if (!users.some(u => u.username.toUpperCase() === safeUsername)) {
+
+        newUserAcc = {
+
+          id: newId,
+
+          username: safeUsername,
+
+          password: generateUnique3DigitPassword(safeUsername),
+
+          fullName: namaToko,
+
+          storeCode: generatedCode,
+
+          phone: '-',
+
+          category: 'TOKO',
+
+          area: targetArea,
+
+          createdAt: getFormattedDateDDMMYYYY()
+
+        };
+
+        users.push(newUserAcc);
+
+        saveUsersToDB(users);
+
+      }
+
+
+
+      if (inputEl) inputEl.value = '';
+
+
+
+      // 2. REFRESH UI INSTANTLY
+
+      if (typeof loadDaftarTokoModal === 'function') loadDaftarTokoModal();
+
+      if (typeof updateStoreDropdownOptions === 'function') updateStoreDropdownOptions(namaToko);
+
+      if (typeof loadUsersManagement === 'function') loadUsersManagement();
+
+
+
+      showNotif(`TOKO '${namaToko}' BERHASIL DITAMBAHKAN!`, 'success');
+
+
+
+      // 3. BACKGROUND CLOUD SYNC (NON-BLOCKING)
+
+      (async () => {
+
+        if (typeof supabase !== 'undefined' && supabase) {
+
+          try {
+
+            await supabase.from('toko_list').upsert({
+
+              id: newId,
+
+              full_name: newStore.fullName,
+
+              area: newStore.area,
+
+              store_code: newStore.storeCode || generateStoreCode(newStore.fullName, newStore.area),
+
+              created_by: newStore.createdBy
+
+            });
+
+            if (newUserAcc && typeof simpanUserKeSupabase === 'function') {
+
+              await simpanUserKeSupabase(newUserAcc);
+
+            }
+
+          } catch (sbErr) {
+
+            console.warn('[SUPABASE STORE SAVE WARNING]:', sbErr);
+
+          }
+
+        }
+
+        if (typeof pushCentralCloudDB === 'function') {
+
+          try { await pushCentralCloudDB(); } catch (e) {}
+
+        }
+
+      })();
+
+    }
+
+  } catch (err) {
+
+    console.error('[SIMPAN TOKO ERROR]:', err);
+
+    showNotif('GAGAL MENYIMPAN TOKO: ' + (err.message || err), 'error');
+
+  } finally {
+
+    setBtnLoading(btnSimpan, false);
+
+    hideLoading();
+
+  }
+
+}
+
+window.simpanTokoBaru = simpanTokoBaru;
+
+
+
+async function hapusTokoCustom(id, btnElement = null) {
+
+  const allStores = getStoresFromDB();
+
+  const store = allStores.find(s => s.id === id || (s.fullName && String(s.fullName).toUpperCase() === String(id).toUpperCase()));
+
+  const name = store ? store.fullName : 'TOKO';
+
+  const storeArea = store ? (store.area || 'BDG') : (currentUser ? currentUser.area : 'BDG');
+
+
+
+  showConfirm(`HAPUS TOKO '${name}' DARI DAFTAR MASTER TOKO & PENGATURAN USER?`, () => {
+
+    const btn = (btnElement && btnElement instanceof HTMLElement) ? btnElement : (typeof event !== 'undefined' && event ? event.currentTarget : null);
+
+    setBtnLoading(btn, true, 'HAPUS...');
+
+
+
+    try {
+
+      const nameUpper = String(name).trim().toUpperCase();
+
+      const storeKey = `${nameUpper}_${String(storeArea).trim().toUpperCase()}`;
+
+
+
+      // 1. UPDATE DELETED STORES & STORES CACHE LOKAL INSTANTLY
+
+      try {
+
+        const localStores = JSON.parse(appStorage.getItem(STORES_DB_KEY) || '[]');
+
+        const updatedLocal = localStores.filter(s => s && s.id !== id && String(s.fullName || '').trim().toUpperCase() !== nameUpper);
+
+        appStorage.setItem(STORES_DB_KEY, JSON.stringify(updatedLocal));
+
+        try { localStorage.setItem(STORES_DB_KEY, JSON.stringify(updatedLocal)); } catch(e) {}
+
+      } catch(e) {}
+
+
+
+      try {
+
+        let deletedStoreKeys = JSON.parse(appStorage.getItem(DELETED_STORES_KEY) || '[]');
+
+        if (!deletedStoreKeys.includes(storeKey)) deletedStoreKeys.push(storeKey);
+
+        if (!deletedStoreKeys.includes(nameUpper)) deletedStoreKeys.push(nameUpper);
+
+        if (id && !deletedStoreKeys.includes(id)) deletedStoreKeys.push(id);
+
+        appStorage.setItem(DELETED_STORES_KEY, JSON.stringify(deletedStoreKeys));
+
+        try { localStorage.setItem(DELETED_STORES_KEY, JSON.stringify(deletedStoreKeys)); } catch(e) {}
+
+      } catch(e) {}
+
+
+
+      // 2. CARI DAN HAPUS AKUN USER TOKO YANG TERKAIT INSTANTLY
+
+      const users = getUsersFromDB();
+
+      const safeUname = name.replace(/[^A-Z0-9]/gi, '_').toUpperCase();
+
+      const targetUser = users.find(u => u && (
+
+        (u.id && u.id === id) ||
+
+        (u.fullName && String(u.fullName).trim().toUpperCase() === nameUpper) ||
+
+        (u.username && String(u.username).trim().toUpperCase() === safeUname)
+
+      ));
+
+
+
+      try {
+
+        let delUsers = JSON.parse(appStorage.getItem(DELETED_USERS_KEY) || '[]');
+
+        if (id && !delUsers.includes(id)) delUsers.push(id);
+
+        if (safeUname && !delUsers.includes(safeUname)) delUsers.push(safeUname);
+
+        if (targetUser) {
+
+          if (targetUser.id && !delUsers.includes(targetUser.id)) delUsers.push(targetUser.id);
+
+          if (targetUser.username && !delUsers.includes(targetUser.username)) delUsers.push(targetUser.username);
+
+          if (targetUser.username && !delUsers.includes(targetUser.username.toUpperCase())) delUsers.push(targetUser.username.toUpperCase());
+
+        }
+
+        appStorage.setItem(DELETED_USERS_KEY, JSON.stringify(delUsers));
+
+        try { localStorage.setItem(DELETED_USERS_KEY, JSON.stringify(delUsers)); } catch(e) {}
+
+      } catch(e) {}
+
+
+
+      const updatedUsers = users.filter(u => {
+
+        if (!u) return false;
+
+        if (u.id === id) return false;
+
+        if (targetUser && (u.id === targetUser.id || u.username === targetUser.username)) return false;
+
+        if (u.category === 'TOKO' && u.fullName && String(u.fullName).trim().toUpperCase() === nameUpper) return false;
+
+        return true;
+
+      });
+
+
+
+      try { saveUsersToDB(updatedUsers, null, 'DELETE'); } catch(e) {}
+
+
+
+      showNotif(`TOKO '${name}' & AKUN USER BERHASIL DIHAPUS!`, 'info');
+
+
+
+      // 3. REFRESH UI INSTANTLY
+
+      if (typeof loadDaftarTokoModal === 'function') loadDaftarTokoModal();
+
+      if (typeof updateStoreDropdownOptions === 'function') updateStoreDropdownOptions();
+
+      if (typeof loadUsersManagement === 'function') loadUsersManagement();
+
+
+
+      // 4. BACKGROUND CLOUD DELETE (NON-BLOCKING)
+
+      (async () => {
+
+        const client = (typeof supabaseAdmin !== 'undefined' && supabaseAdmin) ? supabaseAdmin : supabase;
+
+        if (client) {
+
+          try {
+
+            if (id) await client.from('toko_list').delete().eq('id', id);
+
+            await client.from('toko_list').delete().eq('full_name', name);
+
+            await client.from('toko_list').delete().ilike('full_name', name);
+
+
+
+            if (id) await client.from('users').delete().eq('id', id);
+
+            await client.from('users').delete().eq('full_name', name);
+
+            await client.from('users').delete().ilike('full_name', name);
+
+            if (targetUser && targetUser.username) {
+
+              await client.from('users').delete().eq('username', targetUser.username);
+
+            }
+
+          } catch (sbErr) {
+
+            console.warn('[SUPABASE DELETE STORE NOTICE]:', sbErr);
+
+          }
+
+        }
+
+
+
+        if (typeof dbFirestore !== 'undefined' && dbFirestore) {
+
+          try {
+
+            if (id) await dbFirestore.collection('stores').doc(id).delete().catch(() => {});
+
+            await dbFirestore.collection('users').doc(safeUname).delete().catch(() => {});
+
+            if (targetUser && targetUser.username) {
+
+              await dbFirestore.collection('users').doc(targetUser.username.toUpperCase()).delete().catch(() => {});
+
+            }
+
+          } catch(e) {}
+
+        }
+
+        if (typeof dbRealtime !== 'undefined' && dbRealtime) {
+
+          try {
+
+            if (id) await dbRealtime.ref(`stores/${id}`).remove().catch(() => {});
+
+            await dbRealtime.ref(`users/${safeUname}`).remove().catch(() => {});
+
+            if (targetUser && targetUser.username) {
+
+              await dbRealtime.ref(`users/${targetUser.username.toUpperCase()}`).remove().catch(() => {});
+
+            }
+
+          } catch(e) {}
+
+        }
+
+
+
+        if (typeof pushCentralCloudDB === 'function') {
+
+          try { await pushCentralCloudDB(); } catch (e) {}
+
+        }
+
+      })();
+
+
+
+    } catch (err) {
+
+      console.error('[HAPUS TOKO ERROR]:', err);
+
+      showNotif('GAGAL MENGHAPUS TOKO!', 'error');
+
+    } finally {
+
+      setBtnLoading(btn, false);
+
+    }
+
+  });
+
+}
+
+window.hapusTokoCustom = hapusTokoCustom;
+
+
+
+async function prosesUploadExcelToko(event) {
+
+  const file = event.target.files[0];
+
+  if (!file) return;
+
+
+
+  if (typeof XLSX === 'undefined') {
+
+    showNotif('MODUL BACA EXCEL (XLSX) BELUM SIAP!', 'error');
+
+    return;
+
+  }
+
+
+
+  showLoading('MEMBACA FILE EXCEL...');
+
+
+
+  const reader = new FileReader();
+
+  reader.onload = async function(e) {
+
+    try {
+
+      const data = new Uint8Array(e.target.result);
+
+      const workbook = XLSX.read(data, { type: 'array' });
+
+      const firstSheetName = workbook.SheetNames[0];
+
+      const worksheet = workbook.Sheets[firstSheetName];
+
+      
+
+      const rawJson = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+
+
+
+      if (!Array.isArray(rawJson) || rawJson.length === 0) {
+
+        hideLoading();
+
+        showNotif('FILE EXCEL KOSONG ATAU FORMAT TIDAK SESUAI!', 'warning');
+
+        return;
+
+      }
+
+
+
+      const existingStores = getStoresFromDB();
+
+      const defaultUserArea = (currentUser && currentUser.area && currentUser.area !== 'ALL') ? currentUser.area : 'BDG';
+
+      const users = getUsersFromDB();
+
+
+
+      let addedCount = 0;
+
+      let skippedCount = 0;
+
+      const newStoresList = [];
+
+      const newUsersList = [];
+
+
+
+      for (let i = 0; i < rawJson.length; i++) {
+
+        const row = rawJson[i];
+
+        if (!row || !row.length) continue;
+
+        
+
+        let storeNameVal = String(row[0] || '').trim().toUpperCase();
+
+        let storeAreaVal = String(row[1] || '').trim().toUpperCase();
+
+
+
+        if (!storeNameVal) continue;
+
+
+
+        if (storeNameVal === 'NAMA TOKO' || storeNameVal === 'TOKO' || storeNameVal === 'STORE' || storeNameVal === 'NAME' || storeAreaVal === 'AREA' || storeAreaVal === 'KODE AREA') {
+
+          continue;
+
+        }
+
+
+
+        if (!storeAreaVal || storeAreaVal === 'UNDEFINED' || storeAreaVal === 'NULL') {
+
+          storeAreaVal = defaultUserArea;
+
+        }
+
+
+
+        const isDuplicate = existingStores.some(s => s && s.fullName && s.fullName.trim().toUpperCase() === storeNameVal && s.area === storeAreaVal);
+
+        if (isDuplicate) {
+
+          skippedCount++;
+
+          continue;
+
+        }
+
+
+
+        const generatedCode = generateStoreCode(storeNameVal, storeAreaVal);
+
+        const newId = `STK-UPL-${Date.now()}-${Math.floor(Math.random()*1000)}`;
+
+
+
+        const storeObj = {
+
+          id: newId,
+
+          fullName: storeNameVal,
+
+          area: storeAreaVal,
+
+          storeCode: generatedCode,
+
+          createdBy: currentUser ? currentUser.fullName : 'ADMIN'
+
+        };
+
+
+
+        existingStores.push(storeObj);
+
+        newStoresList.push(storeObj);
+
+
+
+        const safeUsername = storeNameVal.replace(/[^A-Z0-9]/gi, '_').toUpperCase();
+
+        if (!users.some(u => u && u.username && u.username.toUpperCase() === safeUsername)) {
+
+          const userAcc = {
+
+            id: newId,
+
+            username: safeUsername,
+
+            password: generateUnique3DigitPassword(safeUsername),
+
+            fullName: storeNameVal,
+
+            storeCode: generatedCode,
+
+            phone: '-',
+
+            category: 'TOKO',
+
+            area: storeAreaVal,
+
+            createdAt: getFormattedDateDDMMYYYY()
+
+          };
+
+          users.push(userAcc);
+
+          newUsersList.push(userAcc);
+
+        }
+
+
+
+        addedCount++;
+
+      }
+
+
+
+      if (addedCount === 0) {
+
+        hideLoading();
+
+        showNotif(`TIDAK ADA TOKO BARU DITAMBAHKAN (${skippedCount} TOKO SUDAH TERDAFTAR SEBELUMNYA).`, 'info');
+
+        event.target.value = '';
+
+        return;
+
+      }
+
+
+
+      // 1. BERSIHKAN DAFTAR DELETED KEYS DARI TOKO / USER YANG DIUNGGAH ULANG
+
+      const uploadedStoreNames = new Set(newStoresList.map(s => s.fullName.toUpperCase()));
+
+      const uploadedUsernames = new Set(newUsersList.map(u => u.username.toUpperCase()));
+
+
+
+      let delStores = JSON.parse(appStorage.getItem(DELETED_STORES_KEY) || '[]');
+
+      delStores = delStores.filter(k => {
+
+        const val = String(k || '').trim().toUpperCase();
+
+        if (uploadedStoreNames.has(val)) return false;
+
+        for (let s of newStoresList) {
+
+          if (val === `${s.fullName.toUpperCase()}_${s.area.toUpperCase()}`) return false;
+
+        }
+
+        return true;
+
+      });
+
+      appStorage.setItem(DELETED_STORES_KEY, JSON.stringify(delStores));
+
+      try { localStorage.setItem(DELETED_STORES_KEY, JSON.stringify(delStores)); } catch(e) {}
+
+
+
+      let delUsers = JSON.parse(appStorage.getItem(DELETED_USERS_KEY) || '[]');
+
+      delUsers = delUsers.filter(k => {
+
+        const val = String(k || '').trim().toUpperCase();
+
+        return !uploadedUsernames.has(val) && !uploadedStoreNames.has(val);
+
+      });
+
+      appStorage.setItem(DELETED_USERS_KEY, JSON.stringify(delUsers));
+
+      try { localStorage.setItem(DELETED_USERS_KEY, JSON.stringify(delUsers)); } catch(e) {}
+
+
+
+      // 2. SIMPAN KE STORES_DB_KEY SECARA LOKAL & PERSISTEN
+
+      const localStores = JSON.parse(appStorage.getItem(STORES_DB_KEY) || '[]');
+
+      newStoresList.forEach(ns => {
+
+        if (!localStores.some(s => s && s.fullName && s.fullName.toUpperCase() === ns.fullName.toUpperCase() && s.area === ns.area)) {
+
+          localStores.push(ns);
+
+        }
+
+      });
+
+      appStorage.setItem(STORES_DB_KEY, JSON.stringify(localStores));
+
+      try { localStorage.setItem(STORES_DB_KEY, JSON.stringify(localStores)); } catch(e) {}
+
+
+
+      if (newUsersList.length > 0) {
+
+        saveUsersToDB(users);
+
+      }
+
+
+
+      // 3. SIMPAN KE SUPABASE (TABEL toko_list & users)
+
+      if (typeof supabase !== 'undefined' && supabase) {
+
+        try {
+
+          const supaStoresPayload = newStoresList.map(s => ({
+
+            id: s.id,
+
+            full_name: s.fullName,
+
+            area: s.area,
+
+            store_code: s.storeCode || generateStoreCode(s.fullName, s.area),
+
+            created_by: s.createdBy
+
+          }));
+
+          await supabase.from('toko_list').upsert(supaStoresPayload);
+
+
+
+          if (newUsersList.length > 0) {
+
+            const supaUsersPayload = newUsersList.map(u => ({
+
+              id: u.id,
+
+              username: u.username,
+
+              password: u.password,
+
+              full_name: u.fullName,
+
+              phone: u.phone,
+
+              category: u.category,
+
+              area: u.area,
+
+              ttd: u.ttd || '',
+
+              created_at: u.createdAt
+
+            }));
+
+            await supabase.from('users').upsert(supaUsersPayload);
+
+          }
+
+        } catch(sbErr) {
+
+          console.warn('[SUPABASE BATCH UPLOAD STORES WARNING]:', sbErr);
+
+        }
+
+      }
+
+
+
+      pushCentralCloudDB();
+
+      hideLoading();
+
+
+
+      showNotif(`BERHASIL MENGUNGGAH ${addedCount} TOKO BARU (KOLOM A = NAMA, KOLOM B = AREA)! (${skippedCount} DUPLIKAT DILEWATI)`, 'success');
+
+      event.target.value = '';
+
+
+
+      if (typeof loadDaftarTokoModal === 'function') loadDaftarTokoModal();
+
+      if (typeof updateStoreDropdownOptions === 'function') updateStoreDropdownOptions();
+
+      if (typeof loadUsersManagement === 'function') loadUsersManagement();
+
+      if (typeof loadForm === 'function') loadForm();
+
+
+
+    } catch(err) {
+
+      hideLoading();
+
+      console.error('[EXCEL UPLOAD TOKO ERROR]:', err);
+
+      showNotif('GAGAL MEMBACA FILE EXCEL: ' + (err.message || err), 'error');
+
+      event.target.value = '';
+
+    }
+
+  };
+
+
+
+  reader.readAsArrayBuffer(file);
+
+}
+
+window.prosesUploadExcelToko = prosesUploadExcelToko;
+
+
+
+
+/* =============================================================================
+   HELPER FORMAT KETERANGAN PART KOLOM N UNTUK DOWNLOAD EXCEL
+   KAPITAL SEMUA & MURNI DARI ISI KOTAK KETERANGAN PART DI APLIKASI
+   ============================================================================= */
+function getExportKeteranganPartValue(req, item) {
+  if (!req && !item) return '-';
+
+  const itemObj = item || {};
+
+  // Ambil teks murni dari kotak Keterangan Part / Status Part di aplikasi
+  let rawKet = String(
+    itemObj.keteranganPart ||
+    itemObj.statusPart ||
+    itemObj.updatePart ||
+    itemObj.noPart ||
+    itemObj.alasanBatal ||
+    itemObj.ketPart ||
+    ''
+  ).trim();
+
+  // Abaikan teks otomatis bawaan sistem lama jika tidak diketik manual
+  const rawKetUpper = rawKet.toUpperCase();
+  if (rawKetUpper === 'DIPENUHI' || rawKetUpper === 'SUDAH DIPENUHI' || rawKetUpper === 'TIDAK DIPENUHI' || rawKetUpper === 'TIDAK BISA DIPENUHI') {
+    rawKet = '';
+  }
+
+  // Jika ada isi dari kotak keterangan part di aplikasi, kembalikan KAPITAL SEMUA!
+  if (rawKet) {
+    return rawKet.toUpperCase();
+  }
+
+  return '-';
+}
+window.getExportKeteranganPartValue = getExportKeteranganPartValue;
+
+
+
+/* =============================================================================
+   HELPER AMBIL DATA SESUAI FILTER STATUS (filterStatusDropdown) UNTUK EXCEL
+   ============================================================================= */
+function getFilteredRequestsForExport() {
+  let data = typeof getAccessibleRequests === 'function' ? getAccessibleRequests() : [];
+
+  const dropdown = document.getElementById('filterStatusDropdown');
+  let selectedStatus = '';
+  if (dropdown && dropdown.value) {
+    selectedStatus = String(dropdown.value).trim().toUpperCase();
+  } else if (typeof filterStatusRiwayat !== 'undefined' && filterStatusRiwayat) {
+    selectedStatus = String(filterStatusRiwayat).trim().toUpperCase();
+  }
+
+  // Filter berdasarkan filterStatusDropdown secara presisi
+  if (selectedStatus && selectedStatus !== 'ALL') {
+    data = data.filter(r => {
+      if (!r) return false;
+      const st = String(r.status || '').trim().toUpperCase();
+
+      if (selectedStatus === 'PENDING') {
+        return st === 'PENDING' || st.includes('TUNGGU') || st === 'WAITING';
+      }
+      if (selectedStatus === 'DONE' || selectedStatus === 'SELESAI') {
+        return st === 'DONE' || st === 'SELESAI' || st === 'SUDAH DIPENUHI';
+      }
+      if (selectedStatus === 'REJECT' || selectedStatus === 'REJECTED' || selectedStatus === 'DITOLAK' || selectedStatus === 'RIJEK') {
+        return st === 'REJECT' || st === 'REJECTED' || st === 'DITOLAK' || st === 'RIJEK';
+      }
+      if (selectedStatus === 'BATAL' || selectedStatus === 'CANCEL' || selectedStatus === 'CANCELLED') {
+        return st === 'BATAL' || st === 'CANCEL' || st === 'CANCELLED';
+      }
+      if (selectedStatus === 'APPROVE' || selectedStatus === 'APPROVED') {
+        return st === 'APPROVE' || st === 'APPROVED' || st === 'DISETUJUI';
+      }
+
+      return st === selectedStatus;
+    });
+  }
+
+  // Filter tambahan kata kunci pencarian aktif jika ada
+  const searchInput = document.getElementById('searchRiwayat');
+  const search = searchInput ? searchInput.value.toLowerCase().trim() : '';
+  if (search && typeof matchesRequestSearchFilter === 'function') {
+    data = data.filter(r => matchesRequestSearchFilter(r, search));
+  }
+
+  return data;
+}
+window.getFilteredRequestsForExport = getFilteredRequestsForExport;
+
+
+function downloadExcel() {
+
+  if (typeof checkUserCanDownloadExcel === 'function' && !checkUserCanDownloadExcel(currentUser)) {
+
+    showNotif('TIDAK ADA HAK AKSES!', 'warning');
+
+    return;
+
+  }
+
+  const data = getFilteredRequestsForExport();
+
+  if (data.length === 0) {
+
+    showNotif('TIDAK ADA DATA UNTUK DIEKSPOR!', 'warning');
+
+    return;
+
+  }
+
+
+
+  showLoading('MOHON TUNGGU...');
+
+  setTimeout(() => {
+
+    hideLoading();
+
+    const rows = [];
+
+    rows.push([
+
+      'NO SURAT', 'TANGGAL', 'TOKO', 'AREA', 'JENIS PERMINTAAN', 'STATUS',
+
+      'NO', 'TYPE BARANG', 'NO SERI', 'DUS BARANG', 'PERMINTAAN DETAIL', 'ALASAN', 'QTY',
+
+      'STATUS PART', 'BREAKDOWN SURAT',
+
+      'PEMOHON', 'CATATAN'
+
+    ]);
+
+
+
+    data.forEach(r => {
+
+      if (r.items && r.items.length > 0) {
+
+        r.items.forEach((item, itemIdx) => {
+
+          const isUnfulfilled = !!(item.unfulfilled || item.batal || item.status === 'TIDAK BISA DIPENUHI' || item.status === 'TIDAK DIPENUHI' || r.status === 'BATAL');
+
+          const customKet = (item.statusPart || item.keteranganPart || item.updatePart || item.noPart || item.alasanBatal || '').trim();
+
+          
+
+          let statusPartVal = getExportKeteranganPartValue(r, item);
+
+
+
+          let namaBarangDisplay = item.barang || item.permintaan || '-';
+
+
+
+          rows.push([
+
+            r.noSurat,
+
+            r.tanggal,
+
+            r.toko,
+
+            r.area,
+
+            r.jenis,
+
+            r.status,
+
+            itemIdx + 1,
+
+            item.type || item.tipe || '-',
+
+            item.seri || item.sn || '-',
+
+            item.dus || '-',
+
+            namaBarangDisplay,
+
+            item.alasan || '-',
+
+            item.qty || item.jumlah || 1,
+
+            statusPartVal,
+
+            getBreakdownSuratExportValue(r, item),
+
+            r.createdBy,
+
+            r.catatan || ''
+
+          ]);
+
+        });
+
+      } else {
+
+        rows.push([
+
+          r.noSurat,
+
+          r.tanggal,
+
+          r.toko,
+
+          r.area,
+
+          r.jenis,
+
+          r.status,
+
+          1,
+
+          '-',
+
+          '-',
+
+          '-',
+
+          '-',
+
+          '-',
+
+          1,
+
+          '-',
+
+          getBreakdownSuratExportValue(r, null),
+
+          r.createdBy,
+
+          r.catatan || ''
+
+        ]);
+
+      }
+
+    });
+
+
+
+    if (typeof XLSX !== 'undefined') {
+
+      const ws = XLSX.utils.aoa_to_sheet(rows);
+
+      const wb = XLSX.utils.book_new();
+
+      XLSX.utils.book_append_sheet(wb, ws, "Data Permintaan Detail");
+
+      XLSX.writeFile(wb, `DATA_PERMINTAAN_DETAIL_${new Date().toISOString().split('T')[0]}.xlsx`);
+
+      } else {
+
+      showNotif('MODUL EXCEL (.XLSX) BELUM SIAP, PERIKSA KONEKSI INTERNET!', 'warning');
+
+    }
+
+  }, 400);
+
+}
+
+
+
+function closeAllPopups() {
+
+  const allOverlays = document.querySelectorAll('.popupOverlay, #imageViewer, #rejectOverlay, #confirmOverlay, #pdfModal, #popupDetail, #popupDetailBarangV2, #popupAkun, #popupUserForm, #popupUserManagementModal, #popupTTD, #popupNotifList, #popupBantuan, #scannerModal, #popupTambahToko, #popupPdfModelsModal, #artemisOverlay, #uploadBuktiPermintaanOverlay, #popupNotif');
+
+  allOverlays.forEach(el => {
+
+    if (el) {
+
+      el.style.setProperty('display', 'none', 'important');
+
+      el.style.display = 'none';
+
+      el.classList.remove('show');
+
+    }
+
+  });
+
+}
+
+window.closeAllPopups = closeAllPopups;
+
+
+
+// confirmCancelCallback declared at top
+
+
+
+function showConfirm(msg, callback, cancelCallback = null, customYesText = 'YA, LANJUT', customNoText = 'BATAL') {
+
+  const modal = document.getElementById('confirmOverlay');
+
+  const msgEl = document.getElementById('confirmMessage');
+
+  if (modal && document.body && modal.parentNode !== document.body) {
+
+    document.body.appendChild(modal);
+
+  } else if (modal && document.body) {
+
+    document.body.appendChild(modal); // Re-append to ensure last child in DOM tree
+
+  }
+
+
+
+  if (!modal || !msgEl) {
+
+    if (window.confirm(msg)) {
+
+      if (typeof callback === 'function') callback();
+
+    } else {
+
+      if (typeof cancelCallback === 'function') cancelCallback();
+
+    }
+
+    return;
+
+  }
+
+
+
+  msgEl.innerHTML = String(msg || '').split(String.fromCharCode(10)).join('<br>');
+
+  confirmCallback = callback;
+
+  confirmCancelCallback = cancelCallback;
+
+
+
+  const btnBatal = modal.querySelector('.btnBatal') || modal.querySelector('#btnBatalConfirm') || modal.querySelector('.btn-secondary');
+
+  const btnOk = modal.querySelector('.btnOkNotif') || modal.querySelector('#btnYaConfirm') || modal.querySelector('.btnPrimary') || modal.querySelector('.btn-primary');
+
+  if (btnBatal) {
+
+    btnBatal.innerText = customNoText;
+
+    btnBatal.onclick = function(e) {
+
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+
+      confirmNo();
+
+    };
+
+  }
+
+  if (btnOk) {
+
+    btnOk.innerText = customYesText;
+
+    btnOk.onclick = function(e) {
+
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+
+      confirmYes();
+
+    };
+
+  }
+
+
+
+  modal.style.setProperty('z-index', '2147483647', 'important');
+
+  const confirmCard = modal.querySelector('.confirmBoxCard') || modal.querySelector('.popupNotifCard') || modal.querySelector('.popupBox');
+
+  if (confirmCard) {
+
+    confirmCard.style.setProperty('z-index', '2147483647', 'important');
+
+  }
+
+  modal.style.setProperty('display', 'flex', 'important');
+
+  modal.style.setProperty('pointer-events', 'auto', 'important');
+
+  modal.classList.add('show');
+
+  pushPopupHistoryState();
+
+}
+
 window.showConfirm = showConfirm;
 
 
@@ -38737,14 +43365,14 @@ function ensureMiniCenterLoadingExists() {
         <div style="display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 6px !important; width: 100% !important; flex: 1 !important;">
           <span class="material-symbols-rounded" style="font-size: 28px !important; color: #0284c7 !important; animation: spin 0.8s linear infinite !important; display: inline-block !important;">sync</span>
           <div style="display: flex !important; flex-direction: column !important; gap: 2px !important; text-align: center !important; width: 100% !important;">
-            <span id="miniCenterLoadingText" style="font-size: 7pt !important; font-weight: 700 !important; color: #0284c7 !important; letter-spacing: 0.5px !important; text-transform: uppercase !important; word-break: break-word !important; line-height: 1.3 !important; text-align: center !important;">LOADING...</span>
-            <span id="miniCenterLoadingSubtext" style="font-size: 7pt !important; color: #64748b !important; font-weight: 600 !important; text-align: center !important;">MOHON TUNGGU SEBENTAR...</span>
+            <span id="miniCenterLoadingText" style="font-size: 14.5px !important; font-weight: 700 !important; color: #0284c7 !important; letter-spacing: 0.5px !important; text-transform: uppercase !important; word-break: break-word !important; line-height: 1.3 !important; text-align: center !important;">LOADING...</span>
+            <span id="miniCenterLoadingSubtext" style="font-size: 12px !important; color: #64748b !important; font-weight: 600 !important; text-align: center !important;">MOHON TUNGGU SEBENTAR...</span>
           </div>
         </div>
 
         <!-- BOTTOM ROW: TOMBOL BATAL DI POJOK KANAN BAWAH (RAPI DI DALAM CARD) -->
         <div style="width: 100% !important; display: flex !important; justify-content: flex-end !important; margin-top: 6px !important; margin-bottom: 0 !important;">
-          <button type="button" id="btnBatalLoading" onclick="batalProsesLoading()" style="height: 30px !important; padding: 0 16px !important; width: auto !important; min-width: 90px !important; border-radius: 4px !important; background: #ef4444 !important; background-color: #ef4444 !important; color: #ffffff !important; border: 1px solid #000000 !important; font-size: 7pt !important; font-weight: 700 !important; cursor: pointer !important; display: none !important; align-items: center !important; justify-content: center !important; gap: 0px !important; transition: all 0.15s ease !important; outline: none !important; box-shadow: none !important; align-self: flex-end !important; margin-left: auto !important;">
+          <button type="button" id="btnBatalLoading" onclick="batalProsesLoading()" style="height: 30px !important; padding: 0 16px !important; width: auto !important; min-width: 90px !important; border-radius: 4px !important; background: #ef4444 !important; background-color: #ef4444 !important; color: #ffffff !important; border: 1px solid #000000 !important; font-size: 11.5px !important; font-weight: 700 !important; cursor: pointer !important; display: none !important; align-items: center !important; justify-content: center !important; gap: 0px !important; transition: all 0.15s ease !important; outline: none !important; box-shadow: none !important; align-self: flex-end !important; margin-left: auto !important;">
             <span>BATAL</span>
           </button>
         </div>
@@ -45188,7 +49816,7 @@ function bukaModalBuatParsial(noSurat) {
 
     }));
 
-    const rejectBadge = wasRejectedByDM ? `<span style="font-size: 7pt !important; background: #ef4444; color: #ffffff; padding: 2px 6px; border-radius: 4px; font-weight: 700; margin-left: 6px; display: inline-flex; align-items: center; gap: 2px;">🔴 DITOLAK DM (BISA DIAJUKAN ULANG)</span>` : '';
+    const rejectBadge = wasRejectedByDM ? `<span style="font-size: 10px; background: #ef4444; color: #ffffff; padding: 2px 6px; border-radius: 4px; font-weight: 700; margin-left: 6px; display: inline-flex; align-items: center; gap: 2px;">🔴 DITOLAK DM (BISA DIAJUKAN ULANG)</span>` : '';
 
 
 
@@ -45202,17 +49830,17 @@ function bukaModalBuatParsial(noSurat) {
 
         </td>
 
-        <td style="padding: 2mm !important; font-weight: 400 ; color: var(--text-main) !important; font-size: 7pt !important; vertical-align: middle; white-space: nowrap !important; border-radius: 0px !important;">${i.type || i.tipe || '-'}${rejectBadge}</td>
+        <td style="padding: 2mm !important; font-weight: 400 ; color: var(--text-main) !important; font-size: 11.5px; vertical-align: middle; white-space: nowrap !important; border-radius: 0px !important;">${i.type || i.tipe || '-'}${rejectBadge}</td>
 
-        <td style="padding: 2mm !important; color: var(--text-muted) !important; font-size: 7pt !important; vertical-align: middle; white-space: nowrap !important; border-radius: 0px !important;">${i.seri || i.sn || '-'}</td>
+        <td style="padding: 2mm !important; color: var(--text-muted) !important; font-size: 11.5px; vertical-align: middle; white-space: nowrap !important; border-radius: 0px !important;">${i.seri || i.sn || '-'}</td>
 
-        <td style="padding: 2mm !important; color: var(--text-main) !important; font-weight: 500; font-size: 7pt !important; vertical-align: middle; white-space: nowrap !important; border-radius: 0px !important;">${i.barang || i.permintaan || '-'}</td>
+        <td style="padding: 2mm !important; color: var(--text-main) !important; font-weight: 500; font-size: 11.5px; vertical-align: middle; white-space: nowrap !important; border-radius: 0px !important;">${i.barang || i.permintaan || '-'}</td>
 
-        <td style="padding: 2mm !important; text-align: center; font-weight: 400 ; color: var(--text-main) !important; font-size: 7pt !important; vertical-align: middle; white-space: nowrap !important; border-radius: 0px !important;">${reqQty}</td>
+        <td style="padding: 2mm !important; text-align: center; font-weight: 400 ; color: var(--text-main) !important; font-size: 11.5px; vertical-align: middle; white-space: nowrap !important; border-radius: 0px !important;">${reqQty}</td>
 
-        <td style="padding: 2mm !important; text-align: center; font-weight: 400 ; color: #10b981 !important; font-size: 7pt !important; vertical-align: middle; white-space: nowrap !important; border-radius: 0px !important;">${delQty}</td>
+        <td style="padding: 2mm !important; text-align: center; font-weight: 400 ; color: #10b981 !important; font-size: 11.5px; vertical-align: middle; white-space: nowrap !important; border-radius: 0px !important;">${delQty}</td>
 
-        <td style="padding: 2mm !important; text-align: center; font-weight: 400 ; color: var(--primary) !important; font-size: 7pt !important; vertical-align: middle; white-space: nowrap !important; border-radius: 0px !important;">${el.remQty}</td>
+        <td style="padding: 2mm !important; text-align: center; font-weight: 400 ; color: var(--primary) !important; font-size: 12px; vertical-align: middle; white-space: nowrap !important; border-radius: 0px !important;">${el.remQty}</td>
 
         <td style="padding: 2mm !important; text-align: center; vertical-align: middle; white-space: nowrap !important; border-radius: 0px !important;">
 
@@ -45240,13 +49868,13 @@ function bukaModalBuatParsial(noSurat) {
 
         <div style="background: #e2e8f0 !important; color: #0f172a !important; padding: 12px 16px !important; display: flex; justify-content: space-between; align-items: center; border-radius: 0px !important; border-bottom: 2px solid #cbd5e1 !important; flex-shrink: 0; position: relative !important;">
 
-          <div style="font-weight: 800; font-size: 7pt !important; color: #0f172a !important; text-align: center !important; width: 100%;">
+          <div style="font-weight: 800; font-size: 14.5px; color: #0f172a !important; text-align: center !important; width: 100%;">
 
             AJUKAN SURAT JALAN PARSIAL (${nextPartialId})
 
           </div>
 
-          <button type="button" onclick="tutupModalBuatParsial()" title="TUTUP" style="background: #cbd5e1 !important; color: #0f172a !important; border: 1px solid #94a3b8 !important; border-radius: 6px !important; width: 28px !important; min-width: 28px !important; height: 28px !important; font-size: 7pt !important; line-height: 1 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; font-weight: 700 !important; flex-shrink: 0 !important;">&times;</button>
+          <button type="button" onclick="tutupModalBuatParsial()" title="TUTUP" style="background: #cbd5e1 !important; color: #0f172a !important; border: 1px solid #94a3b8 !important; border-radius: 6px !important; width: 28px !important; min-width: 28px !important; height: 28px !important; font-size: 20px !important; line-height: 1 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; font-weight: 700 !important; flex-shrink: 0 !important;">&times;</button>
 
         </div>
 
@@ -45256,7 +49884,7 @@ function bukaModalBuatParsial(noSurat) {
 
         <div style="padding: 2mm 0 !important; overflow-y: auto; flex: 1; background: var(--bg-card); display: flex; flex-direction: column;">
 
-          <div style="background: var(--bg-box); border-left: 3px solid var(--primary); padding: 2mm !important; border-radius: 0px !important; margin: 0 2mm 2mm 2mm !important; font-size: 7pt !important; color: var(--text-main); font-weight: 600; display: flex; align-items: center; gap: 6px; flex-shrink: 0;">
+          <div style="background: var(--bg-box); border-left: 3px solid var(--primary); padding: 2mm !important; border-radius: 0px !important; margin: 0 2mm 2mm 2mm !important; font-size: 11.5px; color: var(--text-main); font-weight: 600; display: flex; align-items: center; gap: 6px; flex-shrink: 0;">
 
             <span class="material-symbols-rounded" style="font-size: 16px; color: var(--primary);">info</span>
 
@@ -45272,9 +49900,9 @@ function bukaModalBuatParsial(noSurat) {
 
             <div style="position: relative; flex: 1; min-width: 220px;">
 
-              <input type="text" id="inputCariItemParsial" oninput="filterTableItemParsial()" placeholder="Cari Type, Seri Barang, Permintaan..." style="width: 100%; padding: 6px 28px 6px 10px; border-radius: 0px !important; border: 1px solid var(--border-color); background: var(--bg-box); color: var(--text-main); font-size: 7pt !important; box-sizing: border-box !important;">
+              <input type="text" id="inputCariItemParsial" oninput="filterTableItemParsial()" placeholder="Cari Type, Seri Barang, Permintaan..." style="width: 100%; padding: 6px 28px 6px 10px; border-radius: 0px !important; border: 1px solid var(--border-color); background: var(--bg-box); color: var(--text-main); font-size: 11.5px; box-sizing: border-box !important;">
 
-              <button type="button" id="btnHapusCariItemParsial" onclick="resetCariItemParsial()" title="Hapus Pencarian" style="position: absolute; right: 6px; top: 50%; transform: translateY(-50%); background: transparent !important; border: none !important; color: #0f172a !important; font-size: 7pt !important; font-weight: 900 !important; cursor: pointer !important; padding: 0 4px !important; line-height: 1 !important; outline: none !important; display: none; box-shadow: none !important; -webkit-appearance: none !important; appearance: none !important;">&times;</button>
+              <button type="button" id="btnHapusCariItemParsial" onclick="resetCariItemParsial()" title="Hapus Pencarian" style="position: absolute; right: 6px; top: 50%; transform: translateY(-50%); background: transparent !important; border: none !important; color: #0f172a !important; font-size: 18px !important; font-weight: 900 !important; cursor: pointer !important; padding: 0 4px !important; line-height: 1 !important; outline: none !important; display: none; box-shadow: none !important; -webkit-appearance: none !important; appearance: none !important;">&times;</button>
 
             </div>
 
@@ -45284,9 +49912,9 @@ function bukaModalBuatParsial(noSurat) {
 
             <input type="file" id="inputFotoParsialFile" accept="image/jpeg, image/jpg, image/png, .jpg, .jpeg, .png" onchange="handleFotoParsialFileSelected(event)" style="display: none;">
 
-            <button type="button" onclick="document.getElementById('inputFotoParsialFile').click()" style="background: linear-gradient(135deg, #0284c7, #0369a1) !important; color: #ffffff !important; border: none !important; padding: 5px 14px; height: 32px; border-radius: 4px !important; font-weight: 800; font-size: 7pt !important; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap !important; box-shadow: 0 3px 8px rgba(2,132,199,0.3) !important;">
+            <button type="button" onclick="document.getElementById('inputFotoParsialFile').click()" style="background: linear-gradient(135deg, #0284c7, #0369a1) !important; color: #ffffff !important; border: none !important; padding: 5px 14px; height: 32px; border-radius: 4px !important; font-weight: 800; font-size: 11px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap !important; box-shadow: 0 3px 8px rgba(2,132,199,0.3) !important;">
 
-              <span class="material-symbols-rounded" style="font-size: 15px; color: #ffffff !important;">add_a_photo</span> UNGGAH <span style="color: #e0f2fe; font-weight: 600; font-size: 7pt !important;">(OPSIONAL)</span>
+              <span class="material-symbols-rounded" style="font-size: 15px; color: #ffffff !important;">add_a_photo</span> UNGGAH <span style="color: #e0f2fe; font-weight: 600; font-size: 10.5px;">(OPSIONAL)</span>
 
             </button>
 
@@ -45298,7 +49926,7 @@ function bukaModalBuatParsial(noSurat) {
 
           <div style="overflow-x: auto; width: 100%; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); border-left: none !important; border-right: none !important; margin: 0 !important; border-radius: 0px !important; flex: 1;">
 
-            <table style="width: 100%; border-collapse: collapse; font-size: 7pt !important; border-radius: 0px !important;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 11.5px; border-radius: 0px !important;">
 
               <thead style="position: sticky; top: 0; z-index: 5; background: #e2e8f0 !important; border-radius: 0px !important;">
 
@@ -45344,8 +49972,8 @@ function bukaModalBuatParsial(noSurat) {
 
         <!-- FOOTER -->
         <div style="padding: 12px 16px !important; background: #ffffff !important; border-top: 1px solid #e2e8f0 !important; display: flex !important; justify-content: flex-end !important; gap: 8px !important; border-radius: 0 0 4px 4px !important; flex-shrink: 0 !important;">
-          <button type="button" onclick="tutupModalBuatParsial()" class="btnBatal" style="height: 36px !important; padding: 0 16px !important; border-radius: 4px !important; font-weight: 600 !important; font-size: 7pt !important; cursor: pointer !important; background: #ffffff !important; color: #0f172a !important; border: 1px solid #000000 !important; transition: all 0.15s ease !important;">BATAL</button>
-          <button type="button" onclick="prosesKirimPengajuanBreakdown()" class="btnOkNotif" style="height: 36px !important; padding: 0 20px !important; border-radius: 4px !important; font-weight: 700 !important; font-size: 7pt !important; cursor: pointer !important; background: #16a34a !important; color: #ffffff !important; border: 1px solid #000000 !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: none !important; transition: all 0.15s ease !important;">
+          <button type="button" onclick="tutupModalBuatParsial()" class="btnBatal" style="height: 36px !important; padding: 0 16px !important; border-radius: 4px !important; font-weight: 600 !important; font-size: 12px !important; cursor: pointer !important; background: #ffffff !important; color: #0f172a !important; border: 1px solid #000000 !important; transition: all 0.15s ease !important;">BATAL</button>
+          <button type="button" onclick="prosesKirimPengajuanBreakdown()" class="btnOkNotif" style="height: 36px !important; padding: 0 20px !important; border-radius: 4px !important; font-weight: 700 !important; font-size: 12px !important; cursor: pointer !important; background: #16a34a !important; color: #ffffff !important; border: 1px solid #000000 !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: none !important; transition: all 0.15s ease !important;">
             <span class="material-symbols-rounded" style="font-size: 16px !important; color: #ffffff !important;">send</span> KIRIM PENGAJUAN PARSIAL (${nextPartialId})
           </button>
         </div>
@@ -45716,15 +50344,15 @@ function renderTempFotoParsialPreviews() {
 
       return `
 
-        <div style="position: relative; height: 32px; padding: 0 8px; border-radius: 4px; border: 1.5px solid #ea580c; background: #fff7ed; color: #c2410c; font-size: 7pt !important; font-weight: 800; flex-shrink: 0; display: inline-flex; align-items: center; gap: 4px; margin-left: 4px; vertical-align: middle;">
+        <div style="position: relative; height: 32px; padding: 0 8px; border-radius: 4px; border: 1.5px solid #ea580c; background: #fff7ed; color: #c2410c; font-size: 11px; font-weight: 800; flex-shrink: 0; display: inline-flex; align-items: center; gap: 4px; margin-left: 4px; vertical-align: middle;">
 
           <span class="material-symbols-rounded" style="font-size: 16px; color: #ea580c;">picture_as_pdf</span>
 
-          <button type="button" onclick="bukaViewPdfDokumen('${url.replace(/'/g, "\'")}', 'Bukti_Parsial_${idx+1}.pdf')" style="background: #ea580c; color: #ffffff; border: none; border-radius: 3px; padding: 2px 6px; font-size: 7pt !important; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 2px;" title="Lihat PDF">LIHAT PDF</button>
+          <button type="button" onclick="bukaViewPdfDokumen('${url.replace(/'/g, "\'")}', 'Bukti_Parsial_${idx+1}.pdf')" style="background: #ea580c; color: #ffffff; border: none; border-radius: 3px; padding: 2px 6px; font-size: 10px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 2px;" title="Lihat PDF">LIHAT PDF</button>
 
-          <button type="button" onclick="downloadPdfFile('${url.replace(/'/g, "\'")}', 'Bukti_Parsial_${idx+1}.pdf')" style="background: #10b981; color: #ffffff; border: none; border-radius: 3px; padding: 2px 6px; font-size: 7pt !important; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 2px;" title="Download PDF">DOWNLOAD</button>
+          <button type="button" onclick="downloadPdfFile('${url.replace(/'/g, "\'")}', 'Bukti_Parsial_${idx+1}.pdf')" style="background: #10b981; color: #ffffff; border: none; border-radius: 3px; padding: 2px 6px; font-size: 10px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 2px;" title="Download PDF">DOWNLOAD</button>
 
-          <button type="button" onclick="hapusTempFotoParsial(${idx})" title="Hapus PDF" style="position: absolute; top: -4px; right: -4px; background: #dc2626 !important; color: #ffffff !important; border: 1px solid #ffffff !important; width: 15px !important; height: 15px !important; border-radius: 50% !important; cursor: pointer !important; font-size: 7pt !important; font-weight: 900 !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; line-height: 1 !important; padding: 0 !important; margin: 0 !important; box-shadow: 0 2px 4px rgba(0,0,0,0.3) !important; z-index: 10 !important;">&times;</button>
+          <button type="button" onclick="hapusTempFotoParsial(${idx})" title="Hapus PDF" style="position: absolute; top: -4px; right: -4px; background: #dc2626 !important; color: #ffffff !important; border: 1px solid #ffffff !important; width: 15px !important; height: 15px !important; border-radius: 50% !important; cursor: pointer !important; font-size: 11px !important; font-weight: 900 !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; line-height: 1 !important; padding: 0 !important; margin: 0 !important; box-shadow: 0 2px 4px rgba(0,0,0,0.3) !important; z-index: 10 !important;">&times;</button>
 
         </div>
 
@@ -45738,7 +50366,7 @@ function renderTempFotoParsialPreviews() {
 
         <img src="${url}" onclick="if (typeof bukaViewGambar === 'function') bukaViewGambar(['${url}'], 0)" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer; border-radius: 3px; display: block;" title="Klik untuk memperbesar foto">
 
-        <button type="button" onclick="hapusTempFotoParsial(${idx})" title="Hapus foto ini" style="position: absolute; top: -4px; right: -4px; background: #dc2626 !important; color: #ffffff !important; border: 1px solid #ffffff !important; width: 15px !important; height: 15px !important; border-radius: 50% !important; cursor: pointer !important; font-size: 7pt !important; font-weight: 900 !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; line-height: 1 !important; padding: 0 !important; margin: 0 !important; box-shadow: 0 2px 4px rgba(0,0,0,0.3) !important; z-index: 10 !important;">&times;</button>
+        <button type="button" onclick="hapusTempFotoParsial(${idx})" title="Hapus foto ini" style="position: absolute; top: -4px; right: -4px; background: #dc2626 !important; color: #ffffff !important; border: 1px solid #ffffff !important; width: 15px !important; height: 15px !important; border-radius: 50% !important; cursor: pointer !important; font-size: 11px !important; font-weight: 900 !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; line-height: 1 !important; padding: 0 !important; margin: 0 !important; box-shadow: 0 2px 4px rgba(0,0,0,0.3) !important; z-index: 10 !important;">&times;</button>
 
       </div>
 
@@ -46210,7 +50838,7 @@ async function bukaModalRiwayatParsialList(noSurat) {
 
               <!-- ICON ONLY BUTTONS WITH TITLE TOOLTIPS -->
 
-              <button type="button" onclick="bukaDetailSuratParsial('${req.noSurat}', '${pid}')" style="background: #334155; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 7pt !important; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;" title="LIHAT DATA PARSIAL (${pid})">
+              <button type="button" onclick="bukaDetailSuratParsial('${req.noSurat}', '${pid}')" style="background: #334155; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;" title="LIHAT DATA PARSIAL (${pid})">
 
                 <span class="material-symbols-rounded" style="font-size: 18px;">visibility</span>
 
@@ -46220,7 +50848,7 @@ async function bukaModalRiwayatParsialList(noSurat) {
 
               ${hasPhotos ? `
 
-                <button type="button" onclick="bukaModalArtemisParsial('${req.noSurat}', '${pid}')" style="background: #0284c7; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 7pt !important; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;" title="LIHAT BUKTI FOTO (${photosList.length})">
+                <button type="button" onclick="bukaModalArtemisParsial('${req.noSurat}', '${pid}')" style="background: #0284c7; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;" title="LIHAT BUKTI FOTO (${photosList.length})">
 
                   <span class="material-symbols-rounded" style="font-size: 18px;">photo_library</span>
 
@@ -46234,7 +50862,7 @@ async function bukaModalRiwayatParsialList(noSurat) {
 
                 <!-- EDIT BUTTON FOR PENDING BREAKDOWN (NON-DM ONLY) -->
 
-                <button type="button" onclick="editSuratParsialPending('${req.noSurat}', '${pid}')" style="background: #f59e0b; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 7pt !important; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(245,158,11,0.3);" title="UBAH / EDIT PENGAJUAN PARSIAL (${pid})">
+                <button type="button" onclick="editSuratParsialPending('${req.noSurat}', '${pid}')" style="background: #f59e0b; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(245,158,11,0.3);" title="UBAH / EDIT PENGAJUAN PARSIAL (${pid})">
 
                   <span class="material-symbols-rounded" style="font-size: 18px;">edit</span>
 
@@ -46244,7 +50872,7 @@ async function bukaModalRiwayatParsialList(noSurat) {
 
                 <!-- BATAL / HAPUS BUTTON FOR PENDING BREAKDOWN (NON-DM ONLY) -->
 
-                <button type="button" onclick="batalSuratParsial('${req.noSurat}', '${pid}')" style="background: #ef4444; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 7pt !important; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(239,68,68,0.3);" title="BATALKAN / HAPUS PENGAJUAN PARSIAL (${pid})">
+                <button type="button" onclick="batalSuratParsial('${req.noSurat}', '${pid}')" style="background: #ef4444; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(239,68,68,0.3);" title="BATALKAN / HAPUS PENGAJUAN PARSIAL (${pid})">
 
                   <span class="material-symbols-rounded" style="font-size: 18px;">delete</span>
 
@@ -46256,13 +50884,13 @@ async function bukaModalRiwayatParsialList(noSurat) {
 
               ${(pStatus === 'PENDING' && canDMApprove) ? `
 
-                <button type="button" onclick="bukaModalKonfirmasiApproveBreakdown('${req.noSurat}', '${pid}')" style="background: #10b981; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 7pt !important; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(16,185,129,0.3);" title="APPROVE DM (${pid})">
+                <button type="button" onclick="bukaModalKonfirmasiApproveBreakdown('${req.noSurat}', '${pid}')" style="background: #10b981; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(16,185,129,0.3);" title="APPROVE DM (${pid})">
 
                   <span class="material-symbols-rounded" style="font-size: 18px;">check_circle</span>
 
                 </button>
 
-                <button type="button" onclick="bukaModalRejectBreakdown('${req.noSurat}', '${pid}')" style="background: #ef4444; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 7pt !important; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;" title="TOLAK DM (${pid})">
+                <button type="button" onclick="bukaModalRejectBreakdown('${req.noSurat}', '${pid}')" style="background: #ef4444; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;" title="TOLAK DM (${pid})">
 
                   <span class="material-symbols-rounded" style="font-size: 18px;">cancel</span>
 
@@ -46274,7 +50902,7 @@ async function bukaModalRiwayatParsialList(noSurat) {
 
               ${(pStatus === 'APPROVE') ? `
 
-                <button type="button" onclick="bukaModalDoneParsial('${req.noSurat}', '${pid}')" style="background: #0284c7; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 7pt !important; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(2,132,199,0.3);" title="SELESAIKAN (DONE) SURAT PARSIAL ${pid}">
+                <button type="button" onclick="bukaModalDoneParsial('${req.noSurat}', '${pid}')" style="background: #0284c7; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(2,132,199,0.3);" title="SELESAIKAN (DONE) SURAT PARSIAL ${pid}">
 
                   <span class="material-symbols-rounded" style="font-size: 18px;">task_alt</span>
 
@@ -46286,7 +50914,7 @@ async function bukaModalRiwayatParsialList(noSurat) {
 
               ${(pStatus === 'APPROVE' || pStatus === 'DONE') ? `
 
-                <button type="button" onclick="cetakPdfSuratParsial('${req.noSurat}', '${pid}')" style="background: #f97316; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 7pt !important; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(249,115,22,0.3);" title="CETAK PDF PARSIAL (${pid})">
+                <button type="button" onclick="cetakPdfSuratParsial('${req.noSurat}', '${pid}')" style="background: #f97316; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(249,115,22,0.3);" title="CETAK PDF PARSIAL (${pid})">
 
                   <span class="material-symbols-rounded" style="font-size: 18px;">picture_as_pdf</span>
 
@@ -46298,7 +50926,7 @@ async function bukaModalRiwayatParsialList(noSurat) {
 
               ${(isStrictAdminUser && pStatus !== 'PENDING') ? `
 
-                <button type="button" onclick="batalSuratParsial('${req.noSurat}', '${pid}')" style="background: #dc2626; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 7pt !important; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;" title="BATALKAN / HAPUS PARSIAL (${pid})">
+                <button type="button" onclick="batalSuratParsial('${req.noSurat}', '${pid}')" style="background: #dc2626; color: #ffffff; border: none; border-radius: 4px !important; width: 32px; height: 32px; padding: 0; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;" title="BATALKAN / HAPUS PARSIAL (${pid})">
 
                   <span class="material-symbols-rounded" style="font-size: 18px;">delete</span>
 
@@ -46316,13 +50944,13 @@ async function bukaModalRiwayatParsialList(noSurat) {
 
               <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
 
-                <div style="background: ${badgeBg}; color: #ffffff; padding: 3px 10px; border-radius: 4px !important; font-size: 7pt !important; font-weight: 800; display: inline-flex; align-items: center; gap: 4px; flex-shrink: 0;">
+                <div style="background: ${badgeBg}; color: #ffffff; padding: 3px 10px; border-radius: 4px !important; font-size: 10.5px; font-weight: 800; display: inline-flex; align-items: center; gap: 4px; flex-shrink: 0;">
 
                   ${badgeText}
 
                 </div>
 
-                <div style="font-weight: 800; font-size: 7pt !important; color: var(--primary); display: flex; align-items: center; gap: 5px;">
+                <div style="font-weight: 800; font-size: 13px; color: var(--primary); display: flex; align-items: center; gap: 5px;">
 
                   <span class="material-symbols-rounded" style="font-size: 16px;">receipt_long</span>
 
@@ -46334,7 +50962,7 @@ async function bukaModalRiwayatParsialList(noSurat) {
 
 
 
-              <div style="font-size: 7pt !important; color: var(--text-main); font-weight: 700;">
+              <div style="font-size: 11.5px; color: var(--text-main); font-weight: 700;">
 
                 Total Diserahkan: <span style="color: var(--primary); font-weight: 800;">${itemsCount} Jenis Barang (${totalQtySerah} Qty)</span>
 
@@ -46342,7 +50970,7 @@ async function bukaModalRiwayatParsialList(noSurat) {
 
 
 
-              <div style="font-size: 7pt !important; color: var(--text-muted);">
+              <div style="font-size: 10.5px; color: var(--text-muted);">
 
                 Diajukan oleh: <strong>${(function(cVal){
 
@@ -46392,13 +51020,13 @@ async function bukaModalRiwayatParsialList(noSurat) {
 
         <div style="background: #e2e8f0 !important; color: #0f172a !important; padding: 12px 16px !important; display: flex; justify-content: space-between; align-items: center; border-radius: 0px !important; border-bottom: 2px solid #cbd5e1 !important; flex-shrink: 0; position: relative !important;">
 
-          <div style="font-weight: 800; font-size: 7pt !important; color: #0f172a !important; text-align: center !important; width: 100%;">
+          <div style="font-weight: 800; font-size: 14.5px; color: #0f172a !important; text-align: center !important; width: 100%;">
 
             DETAIL PENGAJUAN BREAKDOWN SURAT
 
           </div>
 
-          <button type="button" onclick="tutupModalRiwayatParsialList('${cleanNoSuratRaw}')" title="TUTUP" style="background: #cbd5e1 !important; color: #0f172a !important; border: 1px solid #94a3b8 !important; border-radius: 6px !important; width: 28px !important; min-width: 28px !important; height: 28px !important; font-size: 7pt !important; line-height: 1 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; font-weight: 700 !important; flex-shrink: 0 !important;">&times;</button>
+          <button type="button" onclick="tutupModalRiwayatParsialList('${cleanNoSuratRaw}')" title="TUTUP" style="background: #cbd5e1 !important; color: #0f172a !important; border: 1px solid #94a3b8 !important; border-radius: 6px !important; width: 28px !important; min-width: 28px !important; height: 28px !important; font-size: 20px !important; line-height: 1 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; font-weight: 700 !important; flex-shrink: 0 !important;">&times;</button>
 
         </div>
 
@@ -46683,19 +51311,19 @@ function bukaModalRejectBreakdown(noSurat, partialId) {
         
         <!-- HEADER POPUP -->
         <div class="artemisHeaderPopup" style="background: #0172ad !important; color: #ffffff !important; padding: 14px 18px !important; border-bottom: none !important; display: flex !important; align-items: center !important; justify-content: space-between !important; flex-shrink: 0 !important; width: 100% !important; box-sizing: border-box !important;">
-          <span style="font-size: 7pt !important; font-weight: 400 !important; color: #ffffff !important; letter-spacing: 0 !important;">TOLAK PENGAJUAN BREAKDOWN (${partialId})</span>
-          <button type="button" class="btnHeaderCloseX" onclick="tutupModalRejectBreakdown()" style="background: rgba(255, 255, 255, 0.2) !important; border: 1px solid rgba(255, 255, 255, 0.4) !important; font-size: 7pt !important; font-weight: 900 !important; color: #ffffff !important; cursor: pointer !important; width: 30px !important; height: 30px !important; border-radius: 4px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; padding: 0 !important; margin-left: auto !important; line-height: 1 !important; transition: all 0.15s ease !important;" title="TUTUP">&times;</button>
+          <span style="font-size: 14px !important; font-weight: 400 !important; color: #ffffff !important; letter-spacing: 0 !important;">TOLAK PENGAJUAN BREAKDOWN (${partialId})</span>
+          <button type="button" class="btnHeaderCloseX" onclick="tutupModalRejectBreakdown()" style="background: rgba(255, 255, 255, 0.2) !important; border: 1px solid rgba(255, 255, 255, 0.4) !important; font-size: 22px !important; font-weight: 900 !important; color: #ffffff !important; cursor: pointer !important; width: 30px !important; height: 30px !important; border-radius: 4px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; padding: 0 !important; margin-left: auto !important; line-height: 1 !important; transition: all 0.15s ease !important;" title="TUTUP">&times;</button>
         </div>
 
         <!-- BODY POPUP -->
         <div class="artemisBodyPopup" style="padding: 18px !important; background: #ffffff !important; color: #0f172a !important; display: flex !important; flex-direction: column !important; gap: 12px !important; box-sizing: border-box !important; width: 100% !important;">
-          <p style="font-size: 7pt !important; color: #64748b !important; margin: 0 !important; font-weight: 400 !important; text-transform: uppercase !important;">MASUKKAN ALASAN PENOLAKAN DM:</p>
-          <textarea id="inputAlasanRejectParsial" rows="3" placeholder="Tuliskan alasan penolakan..." style="width: 100% !important; height: 90px !important; padding: 10px 12px !important; font-size: 7pt !important; font-weight: 400 !important; border-radius: 4px !important; border: 1px solid #cbd5e1 !important; background: #ffffff !important; color: #0f172a !important; box-sizing: border-box !important; outline: none !important; resize: vertical !important; box-shadow: none !important;"></textarea>
+          <p style="font-size: 11.5px !important; color: #64748b !important; margin: 0 !important; font-weight: 400 !important; text-transform: uppercase !important;">MASUKKAN ALASAN PENOLAKAN DM:</p>
+          <textarea id="inputAlasanRejectParsial" rows="3" placeholder="Tuliskan alasan penolakan..." style="width: 100% !important; height: 90px !important; padding: 10px 12px !important; font-size: 12.5px !important; font-weight: 400 !important; border-radius: 4px !important; border: 1px solid #cbd5e1 !important; background: #ffffff !important; color: #0f172a !important; box-sizing: border-box !important; outline: none !important; resize: vertical !important; box-shadow: none !important;"></textarea>
 
           <!-- TOMBOL BATAL & YA -->
           <div style="display: flex !important; justify-content: flex-end !important; gap: 8px !important; margin-top: 4px !important; padding-top: 12px !important; border-top: 1px solid #e2e8f0 !important;">
-            <button type="button" class="btnBatal" onclick="tutupModalRejectBreakdown()" style="height: 36px !important; padding: 0 16px !important; border-radius: 4px !important; font-weight: 600 !important; font-size: 7pt !important; cursor: pointer !important; background: #ffffff !important; color: #0f172a !important; border: 1px solid #000000 !important; transition: all 0.15s ease !important;">BATAL</button>
-            <button type="button" class="btnOkNotif" onclick="prosesKirimTolakBreakdownDM()" style="height: 36px !important; padding: 0 20px !important; border-radius: 4px !important; font-weight: 700 !important; font-size: 7pt !important; cursor: pointer !important; background: #e2e8f0 !important; color: #0f172a !important; border: 1px solid #000000 !important; transition: all 0.15s ease !important;">YA, KIRIM</button>
+            <button type="button" class="btnBatal" onclick="tutupModalRejectBreakdown()" style="height: 36px !important; padding: 0 16px !important; border-radius: 4px !important; font-weight: 600 !important; font-size: 12px !important; cursor: pointer !important; background: #ffffff !important; color: #0f172a !important; border: 1px solid #000000 !important; transition: all 0.15s ease !important;">BATAL</button>
+            <button type="button" class="btnOkNotif" onclick="prosesKirimTolakBreakdownDM()" style="height: 36px !important; padding: 0 20px !important; border-radius: 4px !important; font-weight: 700 !important; font-size: 12px !important; cursor: pointer !important; background: #e2e8f0 !important; color: #0f172a !important; border: 1px solid #000000 !important; transition: all 0.15s ease !important;">YA, KIRIM</button>
           </div>
         </div>
 
@@ -47197,7 +51825,7 @@ function bukaDetailSuratParsial(noSurat, partialId) {
 
       <td style="padding: 2mm !important; text-align: center; white-space: nowrap !important; background-color: inherit !important;">
 
-        <span style="font-weight: 800; font-size: 7pt !important; color: #1e293b !important;">
+        <span style="font-weight: 800; font-size: 11.5px; color: #1e293b !important;">
 
           SUDAH DISERAHKAN (${cleanNoSuratRaw}-${partialId})
 
@@ -47237,7 +51865,7 @@ function bukaDetailSuratParsial(noSurat, partialId) {
 
         <div style="background: #e2e8f0 !important; color: #0f172a !important; padding: 12px 16px !important; display: flex; justify-content: space-between; align-items: center; border-radius: 0px !important; border-bottom: 2px solid #cbd5e1 !important; flex-shrink: 0; position: relative !important;">
 
-          <div style="font-weight: 800; font-size: 7pt !important; color: #0f172a !important; text-align: center !important; width: 100%;">
+          <div style="font-weight: 800; font-size: 14.5px; color: #0f172a !important; text-align: center !important; width: 100%;">
 
             DETAIL PERMINTAAN BREAKDOWN
 
@@ -47247,7 +51875,7 @@ function bukaDetailSuratParsial(noSurat, partialId) {
 
             ${hasSubPhotos ? `
 
-              <button type="button" onclick="bukaModalArtemisParsial('${cleanNoSuratRaw}', '${partialId}')" style="background: #0284c7; color: #ffffff; border: none; border-radius: 4px !important; padding: 4px 10px; font-size: 7pt !important; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: 0 2px 6px rgba(2,132,199,0.3);">
+              <button type="button" onclick="bukaModalArtemisParsial('${cleanNoSuratRaw}', '${partialId}')" style="background: #0284c7; color: #ffffff; border: none; border-radius: 4px !important; padding: 4px 10px; font-size: 11px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: 0 2px 6px rgba(2,132,199,0.3);">
 
                 <span class="material-symbols-rounded" style="font-size: 14px;">photo_library</span> VIEW FOTO (${subPhotos.length})
 
@@ -47255,7 +51883,7 @@ function bukaDetailSuratParsial(noSurat, partialId) {
 
             ` : ''}
 
-            <button type="button" onclick="tutupModalDetailParsialSub('${cleanNoSuratRaw}')" title="TUTUP" style="background: #cbd5e1 !important; color: #0f172a !important; border: 1px solid #94a3b8 !important; border-radius: 6px !important; width: 28px !important; min-width: 28px !important; height: 28px !important; font-size: 7pt !important; line-height: 1 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; font-weight: 700 !important; flex-shrink: 0 !important;">&times;</button>
+            <button type="button" onclick="tutupModalDetailParsialSub('${cleanNoSuratRaw}')" title="TUTUP" style="background: #cbd5e1 !important; color: #0f172a !important; border: 1px solid #94a3b8 !important; border-radius: 6px !important; width: 28px !important; min-width: 28px !important; height: 28px !important; font-size: 20px !important; line-height: 1 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; font-weight: 700 !important; flex-shrink: 0 !important;">&times;</button>
 
           </div>
 
@@ -47267,11 +51895,11 @@ function bukaDetailSuratParsial(noSurat, partialId) {
 
           <!-- NO SURAT BREAKDOWN RATA KIRI DENGAN DEKAT DENGAN TABEL -->
 
-          <div style="background: var(--bg-box); border: none !important; border-left: none !important; padding: 4px 8px !important; margin: 0 2mm 1mm 2mm !important; font-size: 7pt !important; color: var(--text-main); font-weight: 700; text-align: left !important; flex-shrink: 0; border-radius: 0px !important; display: flex; justify-content: space-between; align-items: center;">
+          <div style="background: var(--bg-box); border: none !important; border-left: none !important; padding: 4px 8px !important; margin: 0 2mm 1mm 2mm !important; font-size: 12px; color: var(--text-main); font-weight: 700; text-align: left !important; flex-shrink: 0; border-radius: 0px !important; display: flex; justify-content: space-between; align-items: center;">
 
-            <div>NO SURAT : <strong style="color: var(--primary); font-size: 7pt !important; font-weight: 800;">${cleanNoSuratRaw}-${partialId}</strong></div>
+            <div>NO SURAT : <strong style="color: var(--primary); font-size: 12.5px; font-weight: 800;">${cleanNoSuratRaw}-${partialId}</strong></div>
 
-            <div style="font-size: 7pt !important; font-weight: 800; color: var(--primary);">STATUS : ${statusTextSub}</div>
+            <div style="font-size: 11px; font-weight: 800; color: var(--primary);">STATUS : ${statusTextSub}</div>
 
           </div>
 
@@ -47279,7 +51907,7 @@ function bukaDetailSuratParsial(noSurat, partialId) {
 
           <div style="overflow-x: auto; width: 100%; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); border-left: none !important; border-right: none !important; margin: 0 !important; border-radius: 0px !important; flex: 1;">
 
-            <table style="width: 100%; border-collapse: collapse; font-size: 7pt !important; border-radius: 0px !important;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 11.5px; border-radius: 0px !important;">
 
               <thead style="position: sticky; top: 0; z-index: 5; background: #e2e8f0 !important; border-radius: 0px !important;">
 
@@ -47709,19 +52337,19 @@ async function cetakPdfSuratParsial(noSurat, partialId) {
 
       <tr style="border-bottom:1px solid #cbd5e1;">
 
-        <td style="text-align:center; padding:6px 4px; border:1px solid #cbd5e1; font-size: 7pt !important; white-space: nowrap !important; width:1%;">${idx + 1}</td>
+        <td style="text-align:center; padding:6px 4px; border:1px solid #cbd5e1; font-size:11px; white-space: nowrap !important; width:1%;">${idx + 1}</td>
 
-        <td style="padding:6px 6px; border:1px solid #cbd5e1; font-size: 7pt !important; white-space: nowrap !important; width:1%; text-align:left;">${i.type || i.tipe || '-'}</td>
+        <td style="padding:6px 6px; border:1px solid #cbd5e1; font-size:11px; white-space: nowrap !important; width:1%; text-align:left;">${i.type || i.tipe || '-'}</td>
 
-        <td style="padding:6px 6px; border:1px solid #cbd5e1; font-size: 7pt !important; white-space: nowrap !important; width:1%; text-align:left;">${i.seri || i.sn || '-'}</td>
+        <td style="padding:6px 6px; border:1px solid #cbd5e1; font-size:11px; white-space: nowrap !important; width:1%; text-align:left;">${i.seri || i.sn || '-'}</td>
 
-        ${req.jenis === 'DUS' ? `<td style="padding:6px 6px; border:1px solid #cbd5e1; font-size: 7pt !important; white-space: nowrap !important; width:1%; text-align:left; color:#b45309; font-weight: 400 ;">${i.seriDus || i.snDus || '-'}</td>` : ''}
+        ${req.jenis === 'DUS' ? `<td style="padding:6px 6px; border:1px solid #cbd5e1; font-size:11px; white-space: nowrap !important; width:1%; text-align:left; color:#b45309; font-weight: 400 ;">${i.seriDus || i.snDus || '-'}</td>` : ''}
 
-        <td style="padding:6px 6px; border:1px solid #cbd5e1; font-size: 7pt !important; white-space: normal !important; word-break: break-word; text-align:left;">${i.barang || i.permintaan || '-'}</td>
+        <td style="padding:6px 6px; border:1px solid #cbd5e1; font-size:11px; white-space: normal !important; word-break: break-word; text-align:left;">${i.barang || i.permintaan || '-'}</td>
 
-        <td style="padding:6px 6px; border:1px solid #cbd5e1; font-size: 7pt !important; white-space: normal !important; word-break: break-word; text-align:left;">${i.alasan || '-'}</td>
+        <td style="padding:6px 6px; border:1px solid #cbd5e1; font-size:11px; white-space: normal !important; word-break: break-word; text-align:left;">${i.alasan || '-'}</td>
 
-        <td style="text-align:center; padding:6px 4px; border:1px solid #cbd5e1; font-size: 7pt !important; font-weight: 400 ; color: #0284c7; width:1%;">${i.qtyDiserahkan || i.qty || 1}</td>
+        <td style="text-align:center; padding:6px 4px; border:1px solid #cbd5e1; font-size:11px; font-weight: 400 ; color: #0284c7; width:1%;">${i.qtyDiserahkan || i.qty || 1}</td>
 
       </tr>
 
@@ -47928,7 +52556,7 @@ async function cetakPdfSuratParsial(noSurat, partialId) {
 
         <div>
 
-          <div style="text-align: center; font-size: 7pt !important; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 24px; margin-bottom: 20px; letter-spacing: 0.5px; color: #0f172a; text-transform: uppercase;">
+          <div style="text-align: center; font-size: 20px; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 24px; margin-bottom: 20px; letter-spacing: 0.5px; color: #0f172a; text-transform: uppercase;">
 
             PERMINTAAN TOKO
 
@@ -47936,7 +52564,7 @@ async function cetakPdfSuratParsial(noSurat, partialId) {
 
 
 
-          <table class="pdf-info-table" style="width: 100%; border-collapse: collapse; margin-top: 8px; margin-bottom: 20px; font-size: 7pt !important; background: transparent; border: none;">
+          <table class="pdf-info-table" style="width: 100%; border-collapse: collapse; margin-top: 8px; margin-bottom: 20px; font-size: 12px; background: transparent; border: none;">
 
             <tr>
 
@@ -47978,9 +52606,9 @@ async function cetakPdfSuratParsial(noSurat, partialId) {
 
 
 
-          <div style="font-size: 7pt !important; font-weight: bold; margin-bottom: 6px; color: #0f172a;">DETAIL PERMINTAAN:</div>
+          <div style="font-size: 11px; font-weight: bold; margin-bottom: 6px; color: #0f172a;">DETAIL PERMINTAAN:</div>
 
-          <table style="width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 7pt !important; border: 1px solid #cbd5e1;">
+          <table style="width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 11.5px; border: 1px solid #cbd5e1;">
 
             <thead>
 
@@ -48022,7 +52650,7 @@ async function cetakPdfSuratParsial(noSurat, partialId) {
 
         <div>
 
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 28px; text-align: center; font-size: 7pt !important; page-break-inside: avoid;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 28px; text-align: center; font-size: 11px; page-break-inside: avoid;">
 
             <div style="width: 30%; display: flex; flex-direction: column; justify-content: space-between; height: 125px;">
 
@@ -48036,9 +52664,9 @@ async function cetakPdfSuratParsial(noSurat, partialId) {
 
               <div>
 
-                <div style="font-weight: 500; color: #0f172a; font-size: 7pt !important;">${pemohonName}</div>
+                <div style="font-weight: 500; color: #0f172a; font-size: 11.5px;">${pemohonName}</div>
 
-                <div style="font-size: 7pt !important; color: #475569; margin-top: 2px; text-transform: uppercase;">${pemohonRoleTitle}</div>
+                <div style="font-size: 10px; color: #475569; margin-top: 2px; text-transform: uppercase;">${pemohonRoleTitle}</div>
 
               </div>
 
@@ -48058,9 +52686,9 @@ async function cetakPdfSuratParsial(noSurat, partialId) {
 
               <div>
 
-                <div style="font-weight: 500; color: #0f172a; font-size: 7pt !important;">${serviceName}</div>
+                <div style="font-weight: 500; color: #0f172a; font-size: 11.5px;">${serviceName}</div>
 
-                <div style="font-size: 7pt !important; color: #475569; margin-top: 2px; text-transform: uppercase;">${hodsAreaTitle}</div>
+                <div style="font-size: 10px; color: #475569; margin-top: 2px; text-transform: uppercase;">${hodsAreaTitle}</div>
 
               </div>
 
@@ -48080,9 +52708,9 @@ async function cetakPdfSuratParsial(noSurat, partialId) {
 
               <div>
 
-                <div style="font-weight: 500; color: #0f172a; font-size: 7pt !important;">${dmName}</div>
+                <div style="font-weight: 500; color: #0f172a; font-size: 11.5px;">${dmName}</div>
 
-                <div style="font-size: 7pt !important; color: #475569; margin-top: 2px; text-transform: uppercase;">DISTRICT MANAGER</div>
+                <div style="font-size: 10px; color: #475569; margin-top: 2px; text-transform: uppercase;">DISTRICT MANAGER</div>
 
               </div>
 
@@ -48092,7 +52720,7 @@ async function cetakPdfSuratParsial(noSurat, partialId) {
 
 
 
-          <div style="margin-top: 20px; display: flex; justify-content: flex-end; align-items: center; font-size: 7pt !important; color: #64748b;">
+          <div style="margin-top: 20px; display: flex; justify-content: flex-end; align-items: center; font-size: 8px; color: #64748b;">
 
             <div style="font-style: italic; opacity: 0.85;">${timestampStr}</div>
 
@@ -48201,12 +52829,12 @@ function tampilkanPilihanCetakPdf(noSurat, targetReq = null) {
   let optionsGridHtml = `
     <div style="display: flex !important; flex-wrap: wrap !important; gap: 10px !important; align-items: stretch !important; justify-content: flex-start !important; width: auto !important; max-width: 100% !important; max-height: calc(80vh - 100px) !important; overflow-y: auto !important;">
       <!-- OPTION 1: SURAT UTAMA INDUK -->
-      <button type="button" onclick="document.getElementById('modalPilihanCetakPdf').remove(); bukaPdfModal('${noSurat}', 'skipChoice', false);" style="flex: 1 1 170px !important; max-width: 210px !important; min-height: 64px !important; padding: 12px 14px !important; border-radius: 4px !important; border: 1.5px solid #0284c7 !important; background: #f0f9ff !important; color: #0369a1 !important; font-weight: 800 !important; font-size: 7pt !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 8px !important; transition: all 0.15s ease !important; box-shadow: 0 4px 10px rgba(2,132,199,0.12) !important;">
+      <button type="button" onclick="document.getElementById('modalPilihanCetakPdf').remove(); bukaPdfModal('${noSurat}', 'skipChoice', false);" style="flex: 1 1 170px !important; max-width: 210px !important; min-height: 64px !important; padding: 12px 14px !important; border-radius: 4px !important; border: 1.5px solid #0284c7 !important; background: #f0f9ff !important; color: #0369a1 !important; font-weight: 800 !important; font-size: 12.5px !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 8px !important; transition: all 0.15s ease !important; box-shadow: 0 4px 10px rgba(2,132,199,0.12) !important;">
         <span style="display: flex !important; align-items: center !important; gap: 8px !important; text-align: left !important;">
           <span class="material-symbols-rounded" style="color: #0284c7 !important; font-size: 22px !important; flex-shrink: 0 !important;">description</span> 
           <span>
-            <div style="font-size: 7pt !important; font-weight: 800 !important; color: #0369a1 !important; line-height: 1.2 !important;">SURAT UTAMA (INDUK)</div>
-            <div style="font-size: 7pt !important; color: #64748b !important; font-weight: 700 !important; margin-top: 2px !important;">#${noSurat}</div>
+            <div style="font-size: 12px !important; font-weight: 800 !important; color: #0369a1 !important; line-height: 1.2 !important;">SURAT UTAMA (INDUK)</div>
+            <div style="font-size: 10px !important; color: #64748b !important; font-weight: 700 !important; margin-top: 2px !important;">#${noSurat}</div>
           </span>
         </span>
         <span class="material-symbols-rounded" style="font-size: 18px !important; color: #0284c7 !important; flex-shrink: 0 !important;">chevron_right</span>
@@ -48216,12 +52844,12 @@ function tampilkanPilihanCetakPdf(noSurat, targetReq = null) {
       ${approvedPartials.map((p, idx) => {
         const pid = p.partial_id || p.partialId || `P${idx + 1}`;
         return `
-          <button type="button" onclick="document.getElementById('modalPilihanCetakPdf').remove(); cetakPdfSuratParsial('${noSurat}', '${pid}');" style="flex: 1 1 170px !important; max-width: 210px !important; min-height: 64px !important; padding: 12px 14px !important; border-radius: 4px !important; border: 1.5px solid #f97316 !important; background: #fff7ed !important; color: #c2410c !important; font-weight: 800 !important; font-size: 7pt !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 8px !important; transition: all 0.15s ease !important; box-shadow: 0 4px 10px rgba(249,115,22,0.12) !important;">
+          <button type="button" onclick="document.getElementById('modalPilihanCetakPdf').remove(); cetakPdfSuratParsial('${noSurat}', '${pid}');" style="flex: 1 1 170px !important; max-width: 210px !important; min-height: 64px !important; padding: 12px 14px !important; border-radius: 4px !important; border: 1.5px solid #f97316 !important; background: #fff7ed !important; color: #c2410c !important; font-weight: 800 !important; font-size: 12.5px !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 8px !important; transition: all 0.15s ease !important; box-shadow: 0 4px 10px rgba(249,115,22,0.12) !important;">
             <span style="display: flex !important; align-items: center !important; gap: 8px !important; text-align: left !important;">
               <span class="material-symbols-rounded" style="color: #f97316 !important; font-size: 22px !important; flex-shrink: 0 !important;">receipt_long</span> 
               <span>
-                <div style="font-size: 7pt !important; font-weight: 800 !important; color: #c2410c !important; line-height: 1.2 !important;">SURAT PARSIAL (${pid})</div>
-                <div style="font-size: 7pt !important; color: #ea580c !important; font-weight: 700 !important; margin-top: 2px !important;">#${noSurat}-${pid}</div>
+                <div style="font-size: 12px !important; font-weight: 800 !important; color: #c2410c !important; line-height: 1.2 !important;">SURAT PARSIAL (${pid})</div>
+                <div style="font-size: 10px !important; color: #ea580c !important; font-weight: 700 !important; margin-top: 2px !important;">#${noSurat}-${pid}</div>
               </span>
             </span>
             <span class="material-symbols-rounded" style="font-size: 18px !important; color: #f97316 !important; flex-shrink: 0 !important;">chevron_right</span>
@@ -48235,12 +52863,12 @@ function tampilkanPilihanCetakPdf(noSurat, targetReq = null) {
         const safeUploadedPdf = String(uploadedPdf).replace(/'/g, "\\'");
         const safeNoSurat = String(noSurat).replace(/'/g, "\\'");
         return `
-          <button type="button" onclick="document.getElementById('modalPilihanCetakPdf').remove(); if(typeof openBuktiPermintaanPreview==='function'){ openBuktiPermintaanPreview('${safeUploadedPdf}', '${safeNoSurat}'); } else if(typeof cetakPdfUploadedLangsung==='function'){ cetakPdfUploadedLangsung('${safeUploadedPdf}', 'Dokumen_Bukti_PDF_${safeNoSurat}.pdf'); } else { window.open('${safeUploadedPdf}', '_blank'); }" style="flex: 1 1 170px !important; max-width: 210px !important; min-height: 64px !important; padding: 12px 14px !important; border-radius: 4px !important; border: 1.5px solid #16a34a !important; background: #f0fdf4 !important; color: #15803d !important; font-weight: 800 !important; font-size: 7pt !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 8px !important; transition: all 0.15s ease !important; box-shadow: 0 4px 10px rgba(22,163,74,0.12) !important;">
+          <button type="button" onclick="document.getElementById('modalPilihanCetakPdf').remove(); if(typeof openBuktiPermintaanPreview==='function'){ openBuktiPermintaanPreview('${safeUploadedPdf}', '${safeNoSurat}'); } else if(typeof cetakPdfUploadedLangsung==='function'){ cetakPdfUploadedLangsung('${safeUploadedPdf}', 'Dokumen_Bukti_PDF_${safeNoSurat}.pdf'); } else { window.open('${safeUploadedPdf}', '_blank'); }" style="flex: 1 1 170px !important; max-width: 210px !important; min-height: 64px !important; padding: 12px 14px !important; border-radius: 4px !important; border: 1.5px solid #16a34a !important; background: #f0fdf4 !important; color: #15803d !important; font-weight: 800 !important; font-size: 12.5px !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 8px !important; transition: all 0.15s ease !important; box-shadow: 0 4px 10px rgba(22,163,74,0.12) !important;">
             <span style="display: flex !important; align-items: center !important; gap: 8px !important; text-align: left !important;">
               <span class="material-symbols-rounded" style="color: #16a34a !important; font-size: 22px !important; flex-shrink: 0 !important;">picture_as_pdf</span> 
               <span>
-                <div style="font-size: 7pt !important; font-weight: 800 !important; color: #15803d !important; line-height: 1.2 !important;">BUKTI PERMINTAAN</div>
-                <div style="font-size: 7pt !important; color: #166534 !important; font-weight: 700 !important; margin-top: 2px !important;">FILE LAMPIRAN</div>
+                <div style="font-size: 12px !important; font-weight: 800 !important; color: #15803d !important; line-height: 1.2 !important;">BUKTI PERMINTAAN</div>
+                <div style="font-size: 10px !important; color: #166534 !important; font-weight: 700 !important; margin-top: 2px !important;">FILE LAMPIRAN</div>
               </span>
             </span>
             <span class="material-symbols-rounded" style="font-size: 18px !important; color: #16a34a !important; flex-shrink: 0 !important;">chevron_right</span>
@@ -48258,15 +52886,15 @@ function tampilkanPilihanCetakPdf(noSurat, targetReq = null) {
       <div id="modalPilihanCetakPdfCard" style="background: #ffffff !important; color: #0f172a !important; width: fit-content !important; min-width: 260px !important; max-width: min(95vw, 1120px) !important; height: auto !important; border-radius: 4px !important; margin: auto !important; overflow: hidden !important; box-shadow: 0 20px 45px rgba(0,0,0,0.5) !important; border: 1px solid #cbd5e1 !important; animation: popIn 0.2s ease-out !important; position: relative !important; z-index: 2147483647 !important;">
         <!-- HEADER LATAR BIRU FULL (SOLID, TIDAK BELANG) DENGAN JUDUL BOLD OFF (FONT-WEIGHT: 400) -->
         <div style="background: #0284c7 !important; background-color: #0284c7 !important; background-image: none !important; color: #ffffff !important; padding: 10px 14px !important; display: flex !important; justify-content: space-between !important; align-items: center !important; border-radius: 4px 4px 0 0 !important; flex-shrink: 0 !important; border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;">
-          <div style="font-weight: 400 !important; font-size: 7pt !important; display: flex !important; align-items: center !important; gap: 6px !important; color: #ffffff !important; letter-spacing: 0.3px !important;">
+          <div style="font-weight: 400 !important; font-size: 12.5px !important; display: flex !important; align-items: center !important; gap: 6px !important; color: #ffffff !important; letter-spacing: 0.3px !important;">
             <span class="material-symbols-rounded" style="color: #ffffff !important; font-size: 18px !important;">picture_as_pdf</span> 
             PILIH DOKUMEN PDF UNTUK DICETAK
           </div>
-          <button type="button" onclick="document.getElementById('modalPilihanCetakPdf').remove()" title="TUTUP" style="font-size: 7pt !important; font-weight: 400 !important; color: #ffffff !important; background: rgba(255, 255, 255, 0.2) !important; border: 1px solid rgba(255, 255, 255, 0.35) !important; border-radius: 4px !important; width: 24px !important; height: 24px !important; cursor: pointer !important; line-height: 1 !important; outline: none !important; padding: 0 !important; margin: 0 !important; display: inline-flex !important; align-items: center !important; justify-content: center !important;">&times;</button>
+          <button type="button" onclick="document.getElementById('modalPilihanCetakPdf').remove()" title="TUTUP" style="font-size: 20px !important; font-weight: 400 !important; color: #ffffff !important; background: rgba(255, 255, 255, 0.2) !important; border: 1px solid rgba(255, 255, 255, 0.35) !important; border-radius: 4px !important; width: 24px !important; height: 24px !important; cursor: pointer !important; line-height: 1 !important; outline: none !important; padding: 0 !important; margin: 0 !important; display: inline-flex !important; align-items: center !important; justify-content: center !important;">&times;</button>
         </div>
         <!-- BODY CONTAINER -->
         <div style="padding: 14px 14px !important; background: #ffffff !important;">
-          <div style="font-size: 7pt !important; font-weight: 700 !important; color: #64748b !important; text-transform: uppercase !important; margin-bottom: 10px !important;">
+          <div style="font-size: 11px !important; font-weight: 700 !important; color: #64748b !important; text-transform: uppercase !important; margin-bottom: 10px !important;">
             SILAKAN PILIH DOKUMEN YANG INGIN DICETAK:
           </div>
           ${optionsGridHtml}
@@ -48914,9 +53542,9 @@ function bukaModalUbahStatusAdmin(noSurat) {
 
     infoBox.innerHTML = `
 
-      <div style="font-size: 7pt !important; font-weight: 800; color: var(--primary); margin-bottom: 2px;">SURAT: #${req.noSurat}</div>
+      <div style="font-size: 13px; font-weight: 800; color: var(--primary); margin-bottom: 2px;">SURAT: #${req.noSurat}</div>
 
-      <div style="color: var(--text-main); font-size: 7pt !important; font-weight: 600;">Toko: <strong>${req.toko || '-'}</strong> (${req.area || '-'}) | Status Saat Ini: <strong style="color: var(--primary);">${req.status || 'PENDING'}</strong></div>
+      <div style="color: var(--text-main); font-size: 12px; font-weight: 600;">Toko: <strong>${req.toko || '-'}</strong> (${req.area || '-'}) | Status Saat Ini: <strong style="color: var(--primary);">${req.status || 'PENDING'}</strong></div>
 
     `;
 
@@ -50118,12 +54746,12 @@ function renderBuktiPermintaanModalGrid() {
       <div style="font-family: 'Poppins', Arial, sans-serif; background: #ffffff; color: #0f172a; padding: 18px; border-radius: 4px; border: 1px solid #cbd5e1; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
         
         <!-- Header Title: PERMINTAAN TOKO -->
-        <div style="text-align: center; font-size: 7pt !important; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 10px; margin-bottom: 16px; color: #0f172a; text-transform: uppercase; letter-spacing: 0.5px;">
+        <div style="text-align: center; font-size: 18px; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 10px; margin-bottom: 16px; color: #0f172a; text-transform: uppercase; letter-spacing: 0.5px;">
           PERMINTAAN TOKO
         </div>
 
         <!-- Info Grid -->
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 7pt !important; color: #0f172a;">
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 11.5px; color: #0f172a;">
           <tr>
             <td style="padding: 3px 0; width: 85px; font-weight: 600; color: #0f172a;">NO SURAT</td>
             <td style="padding: 3px 4px; width: 12px; color: #0f172a;">:</td>
@@ -50143,10 +54771,10 @@ function renderBuktiPermintaanModalGrid() {
         </table>
 
         <!-- Section Label -->
-        <div style="font-size: 7pt !important; font-weight: 700; margin-bottom: 8px; color: #0f172a; text-transform: uppercase;">DETAIL PERMINTAAN:</div>
+        <div style="font-size: 11.5px; font-weight: 700; margin-bottom: 8px; color: #0f172a; text-transform: uppercase;">DETAIL PERMINTAAN:</div>
 
         <!-- Items Table -->
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 7pt !important; border: 1px solid #cbd5e1;">
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 11px; border: 1px solid #cbd5e1;">
           <thead>
             <tr style="background: #0284c7; color: #ffffff;">
               <th style="width: 32px; text-align: center; padding: 7px 4px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600;">NO</th>
@@ -50163,13 +54791,13 @@ function renderBuktiPermintaanModalGrid() {
         </table>
 
         <!-- TTD Area Summary -->
-        <div style="display: flex; justify-content: space-around; text-align: center; font-size: 7pt !important; margin-top: 10px; gap: 8px;">
+        <div style="display: flex; justify-content: space-around; text-align: center; font-size: 11px; margin-top: 10px; gap: 8px;">
           <div style="flex: 1; border: 1px solid #e2e8f0; padding: 6px; border-radius: 4px; background: #f8fafc;">
             <div style="font-weight: 500; color: #475569; margin-bottom: 2px;">PEMOHON (TOKO)</div>
             <div style="height: 44px; display: flex; align-items: center; justify-content: center;">
               ${pemohonTtdImg || '<span style="color: #94a3b8; font-style: italic; font-weight: 400;">ADA</span>'}
             </div>
-            <div style="font-size: 7pt !important; color: #64748b; font-weight: 400; margin-top: 2px;">${req.pemohonUserName || req.pemohon || 'Pemohon Toko'}</div>
+            <div style="font-size: 10px; color: #64748b; font-weight: 400; margin-top: 2px;">${req.pemohonUserName || req.pemohon || 'Pemohon Toko'}</div>
           </div>
 
           <div style="flex: 1; border: 1px solid #e2e8f0; padding: 6px; border-radius: 4px; background: #f8fafc;">
@@ -50177,15 +54805,15 @@ function renderBuktiPermintaanModalGrid() {
             <div style="height: 44px; display: flex; align-items: center; justify-content: center;">
               ${serviceTtdImg}
             </div>
-            <div style="font-size: 7pt !important; color: #64748b; font-weight: 400; margin-top: 2px;">${req.serviceUserName || 'Service'}</div>
+            <div style="font-size: 10px; color: #64748b; font-weight: 400; margin-top: 2px;">${req.serviceUserName || 'Service'}</div>
           </div>
 
           <div style="flex: 1; border: 1px dashed #16a34a; padding: 6px; border-radius: 4px; background: #f0fdf4;">
             <div style="font-weight: 500; color: #16a34a; margin-bottom: 2px;">DM (DITANDATANGANI DI BEWAH)</div>
-            <div style="height: 44px; display: flex; align-items: center; justify-content: center; color: #16a34a; font-weight: 500; font-size: 7pt !important;">
+            <div style="height: 44px; display: flex; align-items: center; justify-content: center; color: #16a34a; font-weight: 500; font-size: 10px;">
               [ SILAKAN TTD DI CANVAS ]
             </div>
-            <div style="font-size: 7pt !important; color: #16a34a; font-weight: 500; margin-top: 2px;">${currentUser ? (currentUser.fullName || currentUser.username) : 'DM'}</div>
+            <div style="font-size: 10px; color: #16a34a; font-weight: 500; margin-top: 2px;">${currentUser ? (currentUser.fullName || currentUser.username) : 'DM'}</div>
           </div>
         </div>
 
@@ -50201,13 +54829,13 @@ function renderBuktiPermintaanModalGrid() {
     const safeP = encodeURIComponent(p);
     const safeNoSurat = encodeURIComponent(currentUploadBuktiNoSurat || '');
     htmlItems.push(`
-      <div style="display: flex; align-items: center; justify-content: space-between; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 4px; padding: 1px 3px !important; line-height: 1.15 !important; width: 100%; box-sizing: border-box;">
+      <div style="display: flex; align-items: center; justify-content: space-between; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 4px; padding: 8px 12px; width: 100%; box-sizing: border-box;">
         <div style="display: flex; align-items: center; gap: 10px; overflow: hidden; flex: 1;">
           <div style="width: 30px; height: 30px; border-radius: 4px; background: #fef2f2; color: #dc2626; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
             <span class="material-symbols-rounded" style="font-size: 20px;">picture_as_pdf</span>
           </div>
           <div style="display: flex; flex-direction: column; overflow: hidden;">
-            <span style="font-size: 7pt !important; font-weight: 400; color: #0f172a; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Dokumen PDF</span>
+            <span style="font-size: 12.5px; font-weight: 400; color: #0f172a; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Dokumen PDF</span>
           </div>
         </div>
         <!-- Single Eye Action Box (Tanda Mata Tanpa X) -->
@@ -50225,13 +54853,13 @@ function renderBuktiPermintaanModalGrid() {
     const safeP = encodeURIComponent(p);
     const safeNoSurat = encodeURIComponent(currentUploadBuktiNoSurat || '');
     htmlItems.push(`
-      <div style="display: flex; align-items: center; justify-content: space-between; background: #ffffff; border: 1px solid #bfdbfe; border-radius: 4px; padding: 1px 3px !important; line-height: 1.15 !important; width: 100%; box-sizing: border-box;">
+      <div style="display: flex; align-items: center; justify-content: space-between; background: #ffffff; border: 1px solid #bfdbfe; border-radius: 4px; padding: 8px 12px; width: 100%; box-sizing: border-box;">
         <div style="display: flex; align-items: center; gap: 10px; overflow: hidden; flex: 1;">
           <div style="width: 30px; height: 30px; border-radius: 4px; background: #eff6ff; color: #0077b6; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
             <span class="material-symbols-rounded" style="font-size: 20px;">picture_as_pdf</span>
           </div>
           <div style="display: flex; flex-direction: column; overflow: hidden;">
-            <span style="font-size: 7pt !important; font-weight: 400; color: #0f172a; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Dokumen Terpilih</span>
+            <span style="font-size: 12.5px; font-weight: 400; color: #0f172a; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Dokumen Terpilih</span>
           </div>
         </div>
         <!-- Single Eye Action Box (Tanda Mata Tanpa X) -->
@@ -51737,12 +56365,37 @@ window.simpanPengaturanHakAksesExcelAdmin = simpanPengaturanHakAksesExcelAdmin;
 
 
 function toggleSidebar() {
-
   document.body.classList.toggle('sidebar-open');
-
 }
-
 window.toggleSidebar = toggleSidebar;
+
+function tutupSidebarAutoMobile() {
+  if (window.innerWidth <= 768) {
+    document.body.classList.remove('sidebar-open');
+  }
+}
+window.tutupSidebarAutoMobile = tutupSidebarAutoMobile;
+
+// Auto-close sidebar on mobile when clicking any menu item or outside sidebar drawer
+document.addEventListener('click', function(e) {
+  var isToggleBtn = e.target.closest('.topbar-toggle-btn') || e.target.closest('.btn-hamburger') || e.target.closest('[onclick*="toggleSidebar"]');
+  if (isToggleBtn) {
+    return; // Do nothing on click handler, let toggleSidebar() manage it
+  }
+
+  var sidebarItem = e.target.closest('.sidebar-item');
+  if (sidebarItem && window.innerWidth <= 768) {
+    document.body.classList.remove('sidebar-open');
+    return;
+  }
+
+  if (window.innerWidth <= 768 && document.body.classList.contains('sidebar-open')) {
+    var sidebar = document.getElementById('appSidebar') || document.querySelector('.app-sidebar');
+    if (sidebar && !sidebar.contains(e.target)) {
+      document.body.classList.remove('sidebar-open');
+    }
+  }
+});
 
 
 
@@ -52142,7 +56795,7 @@ window.tutupImageViewer = tutupImageViewer;
 
 function formatTanggalJam2Baris(r) {
 
-  if (!r) return '<div style="line-height: 1.35; text-align: left;"><div style="font-weight: 700; color: var(--text-main, #0f172a); font-size: 7pt !important; white-space: nowrap;">-</div><div style="font-weight: 600; color: #64748b; font-size: 7pt !important; margin-top: 1px; white-space: nowrap;">-</div></div>';
+  if (!r) return '<div style="line-height: 1.35; text-align: left;"><div style="font-weight: 700; color: var(--text-main, #0f172a); font-size: 12px; white-space: nowrap;">-</div><div style="font-weight: 600; color: #64748b; font-size: 11px; margin-top: 1px; white-space: nowrap;">-</div></div>';
 
 
 
@@ -52324,9 +56977,9 @@ function formatTanggalJam2Baris(r) {
 
     <div style="line-height: 1.35; text-align: left;">
 
-      <div style="font-weight: 700; color: var(--text-main, #0f172a); font-size: 7pt !important; white-space: nowrap;">${dateStr}</div>
+      <div style="font-weight: 700; color: var(--text-main, #0f172a); font-size: 12px; white-space: nowrap;">${dateStr}</div>
 
-      <div style="font-weight: 600; color: #64748b; font-size: 7pt !important; margin-top: 1px; white-space: nowrap;">${timeStr}</div>
+      <div style="font-weight: 600; color: #64748b; font-size: 11px; margin-top: 1px; white-space: nowrap;">${timeStr}</div>
 
     </div>
 
@@ -53616,13 +58269,13 @@ function bukaViewPdfDokumen(pdfUrl, fileName = 'Dokumen_Bukti.pdf', otherImages 
       <div style="background: linear-gradient(135deg, #0284c7, #0369a1) !important; color: #ffffff !important; padding: 12px 18px !important; display: flex !important; align-items: center !important; justify-content: space-between !important; flex-shrink: 0 !important;">
         <div style="display: flex !important; align-items: center !important; gap: 8px !important;">
           <span class="material-symbols-rounded" style="font-size: 22px !important; color: #e0f2fe !important;">picture_as_pdf</span>
-          <span style="font-weight: 800 !important; font-size: 7pt !important;">PRATINJAU DOKUMEN PDF BUKTI</span>
+          <span style="font-weight: 800 !important; font-size: 14px !important;">PRATINJAU DOKUMEN PDF BUKTI</span>
         </div>
         <div style="display: flex !important; align-items: center !important; gap: 8px !important;">
-          <button type="button" onclick="downloadPdfFile('${safePdfUrl}', '${safeFileName}')" style="background: #16a34a !important; color: #ffffff !important; border: none !important; border-radius: 4px !important; padding: 6px 14px !important; font-size: 7pt !important; font-weight: 800 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; gap: 4px !important;" title="Download File PDF">
+          <button type="button" onclick="downloadPdfFile('${safePdfUrl}', '${safeFileName}')" style="background: #16a34a !important; color: #ffffff !important; border: none !important; border-radius: 4px !important; padding: 6px 14px !important; font-size: 12px !important; font-weight: 800 !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; gap: 4px !important;" title="Download File PDF">
             <span class="material-symbols-rounded" style="font-size: 16px !important;">download</span> DOWNLOAD PDF
           </button>
-          <button type="button" onclick="tutupPdfDokumenViewer()" style="background: rgba(255,255,255,0.2) !important; color: #ffffff !important; border: none !important; border-radius: 4px !important; width: 30px !important; height: 30px !important; font-size: 7pt !important; cursor: pointer !important;" title="Tutup">&times;</button>
+          <button type="button" onclick="tutupPdfDokumenViewer()" style="background: rgba(255,255,255,0.2) !important; color: #ffffff !important; border: none !important; border-radius: 4px !important; width: 30px !important; height: 30px !important; font-size: 22px !important; cursor: pointer !important;" title="Tutup">&times;</button>
         </div>
       </div>
 
@@ -53777,9 +58430,9 @@ function onSearchMenuInput(queryInput) {
 
         <div style="display:flex; flex-direction:column; gap:1px;">
 
-          <span style="font-weight:700; font-size: 7pt !important;">${m.title}</span>
+          <span style="font-weight:700; font-size:12.5px;">${m.title}</span>
 
-          <span style="font-size: 7pt !important; color:#94a3b8; font-weight:400;">${m.desc}</span>
+          <span style="font-size:10px; color:#94a3b8; font-weight:400;">${m.desc}</span>
 
         </div>
 
@@ -54752,16 +59405,16 @@ async function generateAndBackupApprovedPdf(noSurat, reqObj, forceDownload = fal
     let itemsRowsHtml = items.map((i, idx) => {
       const dusVal = i.noSeriDus || i.seriDus || i.snDus || i.dus || '-';
       const dusStyle = (dusVal && dusVal !== '-') ? 'color: #d97706; font-weight: 600;' : 'color: #94a3b8; font-weight: 400;';
-      const dusTd = isDus ? `<td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 7pt !important; white-space: nowrap; ${dusStyle}">${dusVal}</td>` : '';
+      const dusTd = isDus ? `<td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; white-space: nowrap; ${dusStyle}">${dusVal}</td>` : '';
       return `
         <tr style="border-bottom: 1px solid #cbd5e1;">
-          <td style="text-align: center; padding: 6px 6px; border: 1px solid #cbd5e1; font-size: 7pt !important; color: #0f172a; font-weight: 400; white-space: nowrap;">${idx + 1}</td>
-          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 7pt !important; color: #0f172a; font-weight: 400; white-space: nowrap;">${i.type || i.tipe || '-'}</td>
-          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 7pt !important; color: #0f172a; font-weight: 400; white-space: nowrap;">${i.seri || i.sn || '-'}</td>
+          <td style="text-align: center; padding: 6px 6px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: nowrap;">${idx + 1}</td>
+          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: nowrap;">${i.type || i.tipe || '-'}</td>
+          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: nowrap;">${i.seri || i.sn || '-'}</td>
           ${dusTd}
-          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 7pt !important; color: #0f172a; font-weight: 400; white-space: normal; word-break: break-word;">${i.barang || i.permintaan || '-'}</td>
-          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 7pt !important; color: #0f172a; font-weight: 400; white-space: normal; word-break: break-word;">${i.alasan || i.keterangan || '-'}</td>
-          <td style="text-align: center; padding: 6px 6px; border: 1px solid #cbd5e1; font-size: 7pt !important; color: #0f172a; font-weight: 600; white-space: nowrap;">${i.qty || 1}</td>
+          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: normal; word-break: break-word;">${i.barang || i.permintaan || '-'}</td>
+          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: normal; word-break: break-word;">${i.alasan || i.keterangan || '-'}</td>
+          <td style="text-align: center; padding: 6px 6px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 600; white-space: nowrap;">${i.qty || 1}</td>
         </tr>
       `;
     }).join('');
@@ -54803,12 +59456,12 @@ async function generateAndBackupApprovedPdf(noSurat, reqObj, forceDownload = fal
       <div style="width: 794px; min-height: 1050px; padding: 35px; background: #ffffff !important; color: #0f172a !important; font-family: 'Poppins', Arial, sans-serif; box-sizing: border-box; position: relative; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility;">
         
         <!-- HEADER SURAT (CENTERED TITLE WITH DARK UNDERLINE) -->
-        <div style="text-align: center; font-size: 7pt !important; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 16px; margin-bottom: 20px; letter-spacing: 0.5px; color: #0f172a; text-transform: uppercase;">
+        <div style="text-align: center; font-size: 20px; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 16px; margin-bottom: 20px; letter-spacing: 0.5px; color: #0f172a; text-transform: uppercase;">
           PERMINTAAN TOKO
         </div>
 
         <!-- INFO TABLE (PERFECT MATCH WITH REFERENCE IMAGE) -->
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 18px; font-size: 7pt !important; color: #0f172a; background: transparent; border: none;">
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 18px; font-size: 11.5px; color: #0f172a; background: transparent; border: none;">
           <tr>
             <td style="padding: 3px 0; width: 85px; font-weight: 400; color: #0f172a; border: none; white-space: nowrap;">NO SURAT</td>
             <td style="padding: 3px 4px; width: 12px; color: #0f172a; border: none; text-align: center;">:</td>
@@ -54828,8 +59481,8 @@ async function generateAndBackupApprovedPdf(noSurat, reqObj, forceDownload = fal
         </table>
 
         <!-- TABLE ITEMS -->
-        <div style="font-size: 7pt !important; font-weight: 800; margin-bottom: 6px; color: #0f172a; text-transform: uppercase;">DETAIL PERMINTAAN:</div>
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 28px; font-size: 7pt !important; border: 1px solid #cbd5e1; table-layout: auto;">
+        <div style="font-size: 11px; font-weight: 800; margin-bottom: 6px; color: #0f172a; text-transform: uppercase;">DETAIL PERMINTAAN:</div>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 28px; font-size: 10.5px; border: 1px solid #cbd5e1; table-layout: auto;">
           <thead>
             <tr style="background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important;">
               <th style="width: 1%; white-space: nowrap; text-align: center !important; padding: 8px 6px; border: 1px solid #0369a1; background: #0284c7 !important; background-color: #0284c7 !important; color: #ffffff !important; font-weight: 700;">NO</th>
@@ -54847,25 +59500,25 @@ async function generateAndBackupApprovedPdf(noSurat, reqObj, forceDownload = fal
         </table>
 
         <!-- TANDA TANGAN SECTION (3 COLUMNS LIKE IMAGE) -->
-        <table style="width: 100%; text-align: center; margin-top: 40px; font-size: 7pt !important; color: #0f172a; border: none; page-break-inside: avoid;">
+        <table style="width: 100%; text-align: center; margin-top: 40px; font-size: 10.5px; color: #0f172a; border: none; page-break-inside: avoid;">
           <tr>
             <td style="width: 33%; vertical-align: top; border: none;">
               <div style="font-weight: 700; text-transform: uppercase; color: #0f172a; margin-bottom: 4px;">PEMOHON</div>
               <div style="height: 60px; display: flex; align-items: center; justify-content: center; margin: 4px 0;">${pemohonTtdImg}</div>
-              <strong style="text-transform: uppercase; color: #0f172a; font-size: 7pt !important;">${pemohonNameVal}</strong>
-              <div style="font-size: 7pt !important; color: #64748b; margin-top: 2px;">TOKO</div>
+              <strong style="text-transform: uppercase; color: #0f172a; font-size: 11px;">${pemohonNameVal}</strong>
+              <div style="font-size: 9.5px; color: #64748b; margin-top: 2px;">TOKO</div>
             </td>
             <td style="width: 33%; vertical-align: top; border: none;">
               <div style="font-weight: 700; text-transform: uppercase; color: #0f172a; margin-bottom: 4px;">DIPERIKSA</div>
               <div style="height: 60px; display: flex; align-items: center; justify-content: center; margin: 4px 0;">${serviceTtdImg}</div>
-              <strong style="text-transform: uppercase; color: #0f172a; font-size: 7pt !important;">${req.serviceUserName || 'SERVICE'}</strong>
-              <div style="font-size: 7pt !important; color: #64748b; margin-top: 2px;">${hodsAreaTitle}</div>
+              <strong style="text-transform: uppercase; color: #0f172a; font-size: 11px;">${req.serviceUserName || 'SERVICE'}</strong>
+              <div style="font-size: 9.5px; color: #64748b; margin-top: 2px;">${hodsAreaTitle}</div>
             </td>
             <td style="width: 33%; vertical-align: top; border: none;">
               <div style="font-weight: 700; text-transform: uppercase; color: #0f172a; margin-bottom: 4px;">DISETUJUI</div>
               <div style="height: 60px; display: flex; align-items: center; justify-content: center; margin: 4px 0;">${dmTtdImg}</div>
-              <strong style="text-transform: uppercase; color: #0f172a; font-size: 7pt !important;">${req.dmUserName || 'DISTRICT MANAGER'}</strong>
-              <div style="font-size: 7pt !important; color: #64748b; margin-top: 2px;">DISTRICT MANAGER</div>
+              <strong style="text-transform: uppercase; color: #0f172a; font-size: 11px;">${req.dmUserName || 'DISTRICT MANAGER'}</strong>
+              <div style="font-size: 9.5px; color: #64748b; margin-top: 2px;">DISTRICT MANAGER</div>
             </td>
           </tr>
         </table>
@@ -55120,16 +59773,16 @@ function bukaModalApprovalDMCanvas(noSurat) {
     let itemsRowsHtml = items.map((i, idx) => {
       const dusVal = i.noSeriDus || i.seriDus || i.snDus || i.dus || '-';
       const dusStyle = (dusVal && dusVal !== '-') ? 'color: #d97706; font-weight: 600;' : 'color: #94a3b8; font-weight: 400;';
-      const dusTd = isDus ? `<td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 7pt !important; white-space: nowrap !important; ${dusStyle}">${dusVal}</td>` : '';
+      const dusTd = isDus ? `<td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; white-space: nowrap !important; ${dusStyle}">${dusVal}</td>` : '';
       return `
         <tr style="border-bottom: 1px solid #cbd5e1;">
-          <td style="text-align: center !important; padding: 6px 4px; border: 1px solid #cbd5e1; font-size: 7pt !important; color: #0f172a; font-weight: 400; white-space: nowrap !important;">${idx + 1}</td>
-          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 7pt !important; color: #0f172a; font-weight: 400; white-space: nowrap !important;">${i.type || i.tipe || '-'}</td>
-          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 7pt !important; color: #0f172a; font-weight: 400; white-space: nowrap !important;">${i.seri || i.sn || '-'}</td>
+          <td style="text-align: center !important; padding: 6px 4px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: nowrap !important;">${idx + 1}</td>
+          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: nowrap !important;">${i.type || i.tipe || '-'}</td>
+          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: nowrap !important;">${i.seri || i.sn || '-'}</td>
           ${dusTd}
-          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 7pt !important; color: #0f172a; font-weight: 400; white-space: normal !important; word-break: break-word !important; overflow-wrap: break-word !important;">${i.barang || i.permintaan || '-'}</td>
-          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 7pt !important; color: #0f172a; font-weight: 400; white-space: normal !important; word-break: break-word !important; overflow-wrap: break-word !important;">${i.alasan || i.keterangan || '-'}</td>
-          <td style="text-align: center !important; padding: 6px 4px; border: 1px solid #cbd5e1; font-size: 7pt !important; color: #0f172a; font-weight: 600; white-space: nowrap !important;">${i.qty || 1}</td>
+          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: normal !important; word-break: break-word !important; overflow-wrap: break-word !important;">${i.barang || i.permintaan || '-'}</td>
+          <td style="padding: 6px 10px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 400; white-space: normal !important; word-break: break-word !important; overflow-wrap: break-word !important;">${i.alasan || i.keterangan || '-'}</td>
+          <td style="text-align: center !important; padding: 6px 4px; border: 1px solid #cbd5e1; font-size: 10.5px; color: #0f172a; font-weight: 600; white-space: nowrap !important;">${i.qty || 1}</td>
         </tr>
       `;
     }).join('');
@@ -55141,12 +59794,12 @@ function bukaModalApprovalDMCanvas(noSurat) {
       <div style="font-family: 'Poppins', Arial, sans-serif; background: #ffffff; color: #0f172a; padding: 18px; border-radius: 4px; border: 1px solid #cbd5e1; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
         
         <!-- Header Title: PERMINTAAN TOKO (CENTERED TITLE WITH DARK UNDERLINE LIKE IMAGE) -->
-        <div style="text-align: center; font-size: 7pt !important; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 12px; margin-bottom: 16px; letter-spacing: 0.5px; color: #0f172a; text-transform: uppercase;">
+        <div style="text-align: center; font-size: 18px; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 12px; margin-bottom: 16px; letter-spacing: 0.5px; color: #0f172a; text-transform: uppercase;">
           PERMINTAAN TOKO
         </div>
 
         <!-- Info Grid -->
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 7pt !important; color: #0f172a;">
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 11.5px; color: #0f172a;">
           <tr>
             <td style="padding: 3px 0; width: 85px; font-weight: 400; color: #0f172a;">NO SURAT</td>
             <td style="padding: 3px 4px; width: 12px; color: #0f172a;">:</td>
@@ -55166,10 +59819,10 @@ function bukaModalApprovalDMCanvas(noSurat) {
         </table>
 
         <!-- Section Label -->
-        <div style="font-size: 7pt !important; font-weight: 700; margin-bottom: 8px; color: #0f172a; text-transform: uppercase;">DETAIL PERMINTAAN:</div>
+        <div style="font-size: 11.5px; font-weight: 700; margin-bottom: 8px; color: #0f172a; text-transform: uppercase;">DETAIL PERMINTAAN:</div>
 
         <!-- Items Table (Auto-fit layout with Word Wrap) -->
-        <table style="width: 100% !important; table-layout: auto !important; border-collapse: collapse; margin-bottom: 16px; font-size: 7pt !important; border: 1px solid #cbd5e1;">
+        <table style="width: 100% !important; table-layout: auto !important; border-collapse: collapse; margin-bottom: 16px; font-size: 10.5px; border: 1px solid #cbd5e1;">
           <thead>
             <tr style="background: #0284c7 !important; color: #ffffff !important;">
               <th style="width: 1%; white-space: nowrap !important; text-align: center !important; padding: 7px 6px; border: 1px solid #0369a1; background: #0284c7 !important; color: #ffffff !important; font-weight: 700;">NO</th>
@@ -55187,13 +59840,13 @@ function bukaModalApprovalDMCanvas(noSurat) {
         </table>
 
         <!-- TTD Area Summary -->
-        <div style="display: flex; justify-content: space-around; text-align: center; font-size: 7pt !important; margin-top: 10px; gap: 8px;">
+        <div style="display: flex; justify-content: space-around; text-align: center; font-size: 11px; margin-top: 10px; gap: 8px;">
           <div style="flex: 1; border: 1px solid #e2e8f0; padding: 6px; border-radius: 4px; background: #f8fafc;">
             <div style="font-weight: 600; color: #475569; margin-bottom: 2px;">PEMOHON</div>
             <div style="height: 44px; display: flex; align-items: center; justify-content: center;">
               ${pemohonTtdImg || '<span style="color: #94a3b8; font-style: italic; font-weight: 400;">ADA</span>'}
             </div>
-            <div style="font-size: 7pt !important; color: #64748b; font-weight: 400; margin-top: 2px;">${req.pemohonUserName || req.pemohon || 'Pemohon Toko'}</div>
+            <div style="font-size: 10px; color: #64748b; font-weight: 400; margin-top: 2px;">${req.pemohonUserName || req.pemohon || 'Pemohon Toko'}</div>
           </div>
 
           <div style="flex: 1; border: 1px solid #e2e8f0; padding: 6px; border-radius: 4px; background: #f8fafc;">
@@ -55201,15 +59854,15 @@ function bukaModalApprovalDMCanvas(noSurat) {
             <div style="height: 44px; display: flex; align-items: center; justify-content: center;">
               ${serviceTtdImg}
             </div>
-            <div style="font-size: 7pt !important; color: #64748b; font-weight: 400; margin-top: 2px;">${req.serviceUserName || 'Service'}</div>
+            <div style="font-size: 10px; color: #64748b; font-weight: 400; margin-top: 2px;">${req.serviceUserName || 'Service'}</div>
           </div>
 
           <div style="flex: 1; border: 1px dashed #16a34a; padding: 6px; border-radius: 4px; background: #f0fdf4;">
             <div style="font-weight: 600; color: #16a34a; margin-bottom: 2px;">DM</div>
-            <div style="height: 44px; display: flex; align-items: center; justify-content: center; color: #16a34a; font-weight: 500; font-size: 7pt !important;">
+            <div style="height: 44px; display: flex; align-items: center; justify-content: center; color: #16a34a; font-weight: 500; font-size: 10px;">
               [ SILAKAN TTD DI CANVAS ]
             </div>
-            <div style="font-size: 7pt !important; color: #16a34a; font-weight: 500; margin-top: 2px;">${currentUser ? (currentUser.fullName || currentUser.username) : 'DM'}</div>
+            <div style="font-size: 10px; color: #16a34a; font-weight: 500; margin-top: 2px;">${currentUser ? (currentUser.fullName || currentUser.username) : 'DM'}</div>
           </div>
         </div>
 
@@ -55369,421 +60022,3 @@ function isDMCanvasBlank() {
   return !_isDMCanvasDirty;
 }
 window.isDMCanvasBlank = isDMCanvasBlank;
-
-/* ==========================================================================
-   RESTORED CLEAN MODAL & MANAGEMENT FUNCTIONS
-   ========================================================================== */
-
-function bukaModalTambahToko(btnElement = null) {
-  if (!currentUser) return;
-  const userCat = (currentUser.category || '').toUpperCase();
-  if (userCat === 'TOKO') {
-    if (typeof showNotif === 'function') showNotif('TIDAK ADA HAK AKSES!', 'warning');
-    return;
-  }
-  const popupAkunEl = document.getElementById('popupAkun');
-  if (popupAkunEl) {
-    popupAkunEl.style.setProperty('display', 'none', 'important');
-    popupAkunEl.classList.remove('show');
-  }
-  const popup = document.getElementById('popupTambahToko');
-  if (popup) {
-    popup.style.setProperty('display', 'flex', 'important');
-    popup.style.setProperty('position', 'fixed', 'important');
-    popup.style.setProperty('top', '0px', 'important');
-    popup.style.setProperty('left', '0px', 'important');
-    popup.style.setProperty('width', '100vw', 'important');
-    popup.style.setProperty('height', '100vh', 'important');
-    popup.style.setProperty('padding', '1mm', 'important');
-    popup.style.setProperty('margin', '0px', 'important');
-    popup.style.setProperty('align-items', 'center', 'important');
-    popup.style.setProperty('justify-content', 'center', 'important');
-
-    const innerBox = popup.querySelector('.popupBox') || popup.firstElementChild;
-    if (innerBox) {
-      innerBox.style.setProperty('position', 'relative', 'important');
-      innerBox.style.setProperty('width', 'calc(100vw - 2mm)', 'important');
-      innerBox.style.setProperty('height', 'calc(100vh - 2mm)', 'important');
-      innerBox.style.setProperty('min-width', 'calc(100vw - 2mm)', 'important');
-      innerBox.style.setProperty('min-height', 'calc(100vh - 2mm)', 'important');
-      innerBox.style.setProperty('max-width', 'calc(100vw - 2mm)', 'important');
-      innerBox.style.setProperty('max-height', 'calc(100vh - 2mm)', 'important');
-      innerBox.style.setProperty('margin', 'auto', 'important');
-      innerBox.style.setProperty('padding', '0px', 'important');
-      innerBox.style.setProperty('border-radius', '4px', 'important');
-    }
-    popup.classList.add('show');
-    if (typeof loadDaftarTokoModal === 'function') loadDaftarTokoModal('');
-  }
-}
-window.bukaModalTambahToko = bukaModalTambahToko;
-
-function tutupModalTambahToko() {
-  const popup = document.getElementById('popupTambahToko');
-  if (popup) {
-    popup.style.setProperty('display', 'none', 'important');
-    popup.classList.remove('show');
-  }
-}
-window.tutupModalTambahToko = tutupModalTambahToko;
-
-async function simpanTokoBaru(btnElement = null) {
-  const codeEl = document.getElementById('tokoFormKode');
-  const nameEl = document.getElementById('tokoFormNama');
-  const areaEl = document.getElementById('tokoFormArea');
-  if (!codeEl || !nameEl) return;
-  const kode = codeEl.value.trim().toUpperCase();
-  const nama = nameEl.value.trim().toUpperCase();
-  const area = areaEl ? areaEl.value.trim().toUpperCase() : 'BDG';
-  if (!kode || !nama) {
-    if (typeof showNotif === 'function') showNotif('KODE DAN NAMA TOKO HARUS DIISI!', 'warning');
-    return;
-  }
-  const storeData = { id: kode, storeCode: kode, storeName: nama, area: area };
-  if (typeof saveStoreToDB === 'function') saveStoreToDB(storeData);
-  if (typeof showNotif === 'function') showNotif(`TOKO ${nama} BERHASIL DISIMPAN!`, 'success');
-  codeEl.value = '';
-  nameEl.value = '';
-  if (typeof loadDaftarTokoModal === 'function') loadDaftarTokoModal('');
-}
-window.simpanTokoBaru = simpanTokoBaru;
-
-function resetCariTokoModal() {
-  const inp = document.getElementById('cariTokoModalInput');
-  if (inp) inp.value = '';
-  if (typeof loadDaftarTokoModal === 'function') loadDaftarTokoModal('');
-}
-window.resetCariTokoModal = resetCariTokoModal;
-
-window._tokoSortCol = null;
-window._tokoSortDir = 'asc';
-
-function sortTableDaftarTokoModal(colKey) {
-  if (window._tokoSortCol === colKey) {
-    window._tokoSortDir = window._tokoSortDir === 'asc' ? 'desc' : 'asc';
-  } else {
-    window._tokoSortCol = colKey;
-    window._tokoSortDir = 'asc';
-  }
-  if (typeof loadDaftarTokoModal === 'function') {
-    const inp = document.getElementById('cariTokoModalInput');
-    loadDaftarTokoModal(inp ? inp.value : '');
-  }
-}
-window.sortTableDaftarTokoModal = sortTableDaftarTokoModal;
-
-async function simpanUserData(btnElement = null) {
-  let editId = document.getElementById('editUserId') ? document.getElementById('editUserId').value : '';
-  const username = document.getElementById('uFormUsername') ? document.getElementById('uFormUsername').value.trim() : '';
-  const password = document.getElementById('uFormPassword') ? document.getElementById('uFormPassword').value.trim() : '';
-  const fullName = document.getElementById('uFormFullName') ? document.getElementById('uFormFullName').value.trim().toUpperCase() : '';
-  const storeCode = document.getElementById('uFormStoreCode') ? document.getElementById('uFormStoreCode').value.trim().toUpperCase() : '';
-  const phone = document.getElementById('uFormPhone') ? document.getElementById('uFormPhone').value.trim() : '';
-  const category = document.getElementById('uFormCategory') ? document.getElementById('uFormCategory').value : 'TOKO';
-  const area = document.getElementById('uFormArea') ? document.getElementById('uFormArea').value : 'BDG';
-
-  if (!username || !password) {
-    if (typeof showNotif === 'function') showNotif('USERNAME DAN PASSWORD HARUS DIISI!', 'warning');
-    return;
-  }
-
-  const userData = {
-    id: editId || username,
-    username: username,
-    password: password,
-    fullName: fullName || username,
-    storeCode: storeCode,
-    phone: phone,
-    category: category,
-    area: area,
-    canPrintPdf: document.getElementById('uFormCanPrintPdf') ? document.getElementById('uFormCanPrintPdf').checked : false,
-    canForwardService: document.getElementById('uFormCanForwardService') ? document.getElementById('uFormCanForwardService').checked : true,
-    canDownloadExcel: document.getElementById('uFormCanDownloadExcel') ? document.getElementById('uFormCanDownloadExcel').checked : false,
-    canUploadBukti: document.getElementById('uFormCanUploadBukti') ? document.getElementById('uFormCanUploadBukti').checked : true,
-    canUploadSmart: document.getElementById('uFormCanUploadSmart') ? document.getElementById('uFormCanUploadSmart').checked : true
-  };
-
-  if (typeof saveUserToDB === 'function') saveUserToDB(userData);
-  if (typeof showNotif === 'function') showNotif(`USER ${username.toUpperCase()} BERHASIL DISIMPAN!`, 'success');
-  if (typeof tutupUserModal === 'function') tutupUserModal();
-  if (typeof loadUserManagementTable === 'function') loadUserManagementTable();
-}
-window.simpanUserData = simpanUserData;
-
-function hapusMultiMasterDb() {
-  if (typeof showConfirm === 'function') {
-    showConfirm('APAKAH ANDA YAKIN INGIN MENGHAPUS SEMUA DATA MASTER DARI DATABASE?', async () => {
-      if (typeof clearMasterDB === 'function') clearMasterDB();
-      if (typeof showNotif === 'function') showNotif('SELURUH DATA MASTER BERHASIL DIHAPUS!', 'success');
-      if (typeof loadMasterDbTable === 'function') loadMasterDbTable();
-    });
-  }
-}
-window.hapusMultiMasterDb = hapusMultiMasterDb;
-
-function bukaModalPengaturanFotoProfil() {
-  if (!currentUser) return;
-  const modal = document.getElementById('popupFotoProfilModal');
-  if (!modal) return;
-  const photoKey = typeof getProfilePhotoKey === 'function' ? getProfilePhotoKey() : 'user_photo';
-  const savedPhoto = localStorage.getItem(photoKey) || currentUser.photo || currentUser.foto || null;
-  tempSelectedProfilePhoto = savedPhoto;
-  if (typeof renderPreviewFotoInModal === 'function') renderPreviewFotoInModal(tempSelectedProfilePhoto);
-  modal.style.setProperty('display', 'flex', 'important');
-  modal.style.setProperty('z-index', '2147483647', 'important');
-  modal.classList.add('show');
-}
-window.bukaModalPengaturanFotoProfil = bukaModalPengaturanFotoProfil;
-
-function tutupModalPengaturanFotoProfil() {
-  const modal = document.getElementById('popupFotoProfilModal');
-  if (modal) {
-    modal.style.setProperty('display', 'none', 'important');
-    modal.classList.remove('show');
-  }
-  tempSelectedProfilePhoto = undefined;
-}
-window.tutupModalPengaturanFotoProfil = tutupModalPengaturanFotoProfil;
-
-function handleHapusFotoInModal() {
-  tempSelectedProfilePhoto = null;
-  if (typeof renderPreviewFotoInModal === 'function') renderPreviewFotoInModal(null);
-}
-window.handleHapusFotoInModal = handleHapusFotoInModal;
-
-function simpanFotoProfilFromModal() {
-  if (tempSelectedProfilePhoto === undefined) {
-    tutupModalPengaturanFotoProfil();
-    return;
-  }
-  if (tempSelectedProfilePhoto === null) {
-    if (typeof prosesHapusFotoProfilLocal === 'function') prosesHapusFotoProfilLocal();
-  } else {
-    if (typeof simpanDanTerapkanFotoProfil === 'function') simpanDanTerapkanFotoProfil(tempSelectedProfilePhoto);
-  }
-  tutupModalPengaturanFotoProfil();
-}
-window.simpanFotoProfilFromModal = simpanFotoProfilFromModal;
-
-function simpanAkun(autoClose = false) {
-  if (autoClose) {
-    if (typeof eksekusiSimpanAkun === 'function') eksekusiSimpanAkun(true);
-  } else {
-    if (typeof showConfirm === 'function') {
-      showConfirm('SIMPAN PERUBAHAN DATA AKUN?', () => {
-        if (typeof eksekusiSimpanAkun === 'function') eksekusiSimpanAkun(false);
-      });
-    } else if (typeof eksekusiSimpanAkun === 'function') {
-      eksekusiSimpanAkun(false);
-    }
-  }
-}
-window.simpanAkun = simpanAkun;
-
-/* Modal Pilihan Cetak PDF */
-function tutupPilihanCetakPdf() {
-  const container = document.getElementById('pdfPrintChoiceModal');
-  if (container) {
-    container.style.setProperty('display', 'none', 'important');
-    container.classList.remove('show');
-    container.innerHTML = '';
-  }
-}
-window.tutupPilihanCetakPdf = tutupPilihanCetakPdf;
-
-function bukaModalPilihanCetakPdf(noSurat, matchedReq = null) {
-  tutupPilihanCetakPdf();
-  const cleanNo = String(noSurat || '').replace(/^#/g, '').trim().toUpperCase();
-  const req = matchedReq || (typeof getRequestsFromDB === 'function' ? getRequestsFromDB().find(r => r && String(r.noSurat || '').replace(/^#/g, '').trim().toUpperCase() === cleanNo) : null);
-  
-  let container = document.getElementById('pdfPrintChoiceModal');
-  if (!container) {
-    container = document.createElement('div');
-    container.id = 'pdfPrintChoiceModal';
-    document.body.appendChild(container);
-  }
-
-  const driveUrl = (req && (req.pdf_drive_url || req.pdfDriveUrl)) || '';
-  const uploadedPdf = typeof getUploadedPdfFromRequest === 'function' ? getUploadedPdfFromRequest(req) : null;
-  const partials = typeof getPartialBreakdownsFromDB === 'function' ? getPartialBreakdownsFromDB(cleanNo) : [];
-  const approvedPartials = partials.filter(p => p && (p.status === 'APPROVE' || p.status === 'DONE'));
-
-  container.className = 'popupOverlay show';
-  container.style.setProperty('display', 'flex', 'important');
-  container.style.setProperty('position', 'fixed', 'important');
-  container.style.setProperty('top', '0px', 'important');
-  container.style.setProperty('left', '0px', 'important');
-  container.style.setProperty('width', '100vw', 'important');
-  container.style.setProperty('height', '100vh', 'important');
-  container.style.setProperty('z-index', '2147483647', 'important');
-  container.style.setProperty('background', 'rgba(0, 0, 0, 0.82)', 'important');
-  container.style.setProperty('align-items', 'center', 'important');
-  container.style.setProperty('justify-content', 'center', 'important');
-
-  let html = `
-    <div id="modalPilihanCetakPdfCard" class="popupCard" style="width: min(460px, 92vw) !important; background: #ffffff !important; border-radius: 4px !important; overflow: hidden !important; border: 1px solid #000 !important; box-shadow: 0 10px 25px rgba(0,0,0,0.4) !important;">
-      <div style="background: linear-gradient(135deg, #0284c7, #0369a1) !important; color: #ffffff !important; padding: 10px 14px !important; display: flex !important; justify-content: space-between !important; align-items: center !important;">
-        <span style="font-weight: 600; font-size: 7pt !important;">PILIH DOKUMEN CETAK / UNDUH (#${cleanNo})</span>
-        <button type="button" onclick="tutupPilihanCetakPdf()" style="background: rgba(255,255,255,0.2) !important; border: 1px solid rgba(255,255,255,0.4) !important; color: #fff !important; width: 24px !important; height: 24px !important; border-radius: 4px !important; cursor: pointer !important; font-size: 7pt !important;">✕</button>
-      </div>
-      <div style="padding: 14px !important; display: flex !important; flex-direction: column !important; gap: 8px !important;">
-        <button type="button" onclick="tutupPilihanCetakPdf(); bukaPdfModal('${cleanNo}', 'skipChoice', true);" style="width: 100% !important; height: 32px !important; background: #0284c7 !important; color: #fff !important; border: none !important; border-radius: 4px !important; cursor: pointer !important; font-size: 7pt !important; font-weight: 600 !important;">📄 DOKUMEN PERMINTAAN UTAMA (PDF)</button>
-  `;
-
-  if (driveUrl) {
-    html += `
-        <button type="button" onclick="tutupPilihanCetakPdf(); downloadPdfFile('${driveUrl}', 'SURAT_PERMINTAAN_${cleanNo}.pdf');" style="width: 100% !important; height: 32px !important; background: #16a34a !important; color: #fff !important; border: none !important; border-radius: 4px !important; cursor: pointer !important; font-size: 7pt !important; font-weight: 600 !important;">📥 UNDUH PDF GOOGLE DRIVE</button>
-    `;
-  }
-
-  if (uploadedPdf) {
-    html += `
-        <button type="button" onclick="tutupPilihanCetakPdf(); downloadPdfFile('${uploadedPdf}', 'LAMPIRAN_BUKTI_${cleanNo}.pdf');" style="width: 100% !important; height: 32px !important; background: #d97706 !important; color: #fff !important; border: none !important; border-radius: 4px !important; cursor: pointer !important; font-size: 7pt !important; font-weight: 600 !important;">📎 LAMPIRAN BUKTI DOKUMEN TERUPLOAD</button>
-    `;
-  }
-
-  if (approvedPartials && approvedPartials.length > 0) {
-    approvedPartials.forEach(p => {
-      html += `
-        <button type="button" onclick="tutupPilihanCetakPdf(); bukaDetailSuratParsial('${cleanNo}', '${p.id}');" style="width: 100% !important; height: 32px !important; background: #4f46e5 !important; color: #fff !important; border: none !important; border-radius: 4px !important; cursor: pointer !important; font-size: 7pt !important; font-weight: 600 !important;">📦 SURAT JALAN PARSIAL #${cleanNo}-${p.id}</button>
-      `;
-    });
-  }
-
-  html += `
-        <button type="button" onclick="tutupPilihanCetakPdf()" style="width: 100% !important; height: 28px !important; background: #64748b !important; color: #fff !important; border: none !important; border-radius: 4px !important; cursor: pointer !important; font-size: 7pt !important; margin-top: 4px !important;">BATAL</button>
-      </div>
-    </div>
-  `;
-
-  container.innerHTML = html;
-}
-window.bukaModalPilihanCetakPdf = bukaModalPilihanCetakPdf;
-
-// AUTO HIDE SIDEBAR ON ITEM CLICK
-document.addEventListener('click', function(e) {
-  const sidebarItem = e.target.closest('.sidebar-item');
-  if (sidebarItem && document.body.classList.contains('sidebar-open')) {
-    document.body.classList.remove('sidebar-open');
-  }
-});
-
-// =============================================================================
-// IMPLEMENTATION OF DAFTAR TOKO MODAL (POPUP TAMBAH TOKO DATA TABLE)
-// =============================================================================
-function loadDaftarTokoModal(filterQuery = '') {
-  const tbody = document.getElementById('daftarTokoTableBody');
-  if (!tbody) return;
-
-  let stores = typeof getStoresFromDB === 'function' ? getStoresFromDB() : [];
-
-  // Filter by user area if not ALL admin
-  if (currentUser && currentUser.category !== 'ADMIN' && currentUser.area && String(currentUser.area).trim().toUpperCase() !== 'ALL') {
-    const uArea = String(currentUser.area).trim().toUpperCase();
-    stores = stores.filter(s => String(s.area || '').trim().toUpperCase() === uArea);
-  }
-
-  // Filter by search text
-  const q = String(filterQuery || '').trim().toLowerCase();
-  if (q) {
-    stores = stores.filter(s => {
-      const name = String(s.fullName || s.username || '').toLowerCase();
-      const area = String(s.area || '').toLowerCase();
-      const code = String(s.storeCode || s.code || '').toLowerCase();
-      return name.includes(q) || area.includes(q) || code.includes(q);
-    });
-  }
-
-  // Sort if requested
-  const sortCol = window._tokoSortCol || 'fullName';
-  const sortDir = window._tokoSortDir || 'asc';
-  stores.sort((a, b) => {
-    let valA = String(a[sortCol] || '').toLowerCase();
-    let valB = String(b[sortCol] || '').toLowerCase();
-    if (valA < valB) return sortDir === 'asc' ? -1 : 1;
-    if (valA > valB) return sortDir === 'asc' ? 1 : -1;
-    return 0;
-  });
-
-  if (!stores.length) {
-    tbody.innerHTML = `<tr><td colspan="4" style="text-align: center !important; padding: 16px !important; color: #64748b !important; font-weight: 700 !important;">BELUM ADA DATA TOKO TERDAFTAR</td></tr>`;
-    return;
-  }
-
-  let html = '';
-  stores.forEach(s => {
-    const sId = s.id || s.username || s.fullName;
-    const sName = s.fullName || s.username || '-';
-    const sArea = s.area || 'BDG';
-    const sCode = s.storeCode || s.code || s.username || '-';
-    html += `
-      <tr style="border-bottom: 1px solid #e2e8f0;">
-        <td style="padding: 6px 8px !important; font-weight: 800 !important; color: #0f172a !important;">${escapeHtml(sName)}</td>
-        <td style="padding: 6px 8px !important; text-align: center !important; font-weight: 700 !important; color: #0284c7 !important;">${escapeHtml(sArea)}</td>
-        <td style="padding: 6px 8px !important; text-align: center !important; font-weight: 700 !important; color: #334155 !important;">${escapeHtml(sCode)}</td>
-        <td style="padding: 6px 8px !important; text-align: center !important;">
-          <button type="button" onclick="hapusTokoByAdmin('${escapeHtml(String(sId))}')" style="background: #dc2626 !important; color: #ffffff !important; border: 1px solid #991b1b !important; border-radius: 4px !important; padding: 4px 10px !important; font-size: 7pt !important; font-weight: 800 !important; cursor: pointer !important;">
-            HAPUS
-          </button>
-        </td>
-      </tr>
-    `;
-  });
-
-  tbody.innerHTML = html;
-}
-window.loadDaftarTokoModal = loadDaftarTokoModal;
-
-function filterDaftarTokoModal(q) {
-  const btnReset = document.getElementById('btnHapusCariTokoModal');
-  if (btnReset) {
-    btnReset.style.display = q ? 'block' : 'none';
-  }
-  loadDaftarTokoModal(q);
-}
-window.filterDaftarTokoModal = filterDaftarTokoModal;
-
-function resetCariTokoModal() {
-  const inp = document.getElementById('cariTokoModalInput');
-  if (inp) inp.value = '';
-  filterDaftarTokoModal('');
-}
-window.resetCariTokoModal = resetCariTokoModal;
-
-function hapusTokoByAdmin(storeId) {
-  if (!storeId) return;
-  if (typeof showConfirm === 'function') {
-    showConfirm('APAKAH ANDA YAKIN INGIN MENGHAPUS TOKO INI?', () => {
-      eksekusiHapusToko(storeId);
-    }, null, 'YA, HAPUS', 'BATAL');
-  } else if (confirm('Apakah Anda yakin ingin menghapus toko ini?')) {
-    eksekusiHapusToko(storeId);
-  }
-}
-window.hapusTokoByAdmin = hapusTokoByAdmin;
-
-function eksekusiHapusToko(storeId) {
-  let delStores = [];
-  try {
-    delStores = JSON.parse(appStorage.getItem(DELETED_STORES_KEY) || '[]');
-  } catch (e) { delStores = []; }
-  if (!Array.isArray(delStores)) delStores = [];
-  delStores.push(String(storeId).toUpperCase());
-  appStorage.setItem(DELETED_STORES_KEY, JSON.stringify(delStores));
-
-  if (typeof deleteStoreFromSupabase === 'function') {
-    deleteStoreFromSupabase(storeId);
-  }
-
-  if (typeof updateStoreDropdownOptions === 'function') {
-    updateStoreDropdownOptions();
-  }
-  if (typeof loadDaftarTokoModal === 'function') {
-    const inp = document.getElementById('cariTokoModalInput');
-    loadDaftarTokoModal(inp ? inp.value : '');
-  }
-  if (typeof showNotif === 'function') {
-    showNotif('DATA TOKO BERHASIL DIHAPUS!', 'success');
-  }
-}
-window.eksekusiHapusToko = eksekusiHapusToko;
