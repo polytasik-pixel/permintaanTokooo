@@ -54529,24 +54529,22 @@ function bukaModalUploadBuktiPermintaan(noSurat) {
 
   const reqs = typeof getRequestsFromDB === 'function' ? getRequestsFromDB() : [];
 
-  const req = reqs.find(r => r && (
+  let req = reqs.find(r => r && (
 
     r.noSurat === noSurat ||
 
     String(r.noSurat || '').trim().toUpperCase() === String(noSurat).trim().toUpperCase() ||
 
-    String(r.id || '').trim().toUpperCase() === String(noSurat).trim().toUpperCase()
+    String(r.id || '').trim().toUpperCase() === String(noSurat).trim().toUpperCase() ||
+
+    String(r.no_surat || '').trim().toUpperCase() === String(noSurat).trim().toUpperCase()
 
   ));
 
 
 
   if (!req) {
-
-    if (typeof showNotif === 'function') showNotif('DATA PERMINTAAN TIDAK DITEMUKAN!', 'warning');
-
-    return;
-
+    req = { noSurat: noSurat };
   }
 
 
@@ -54760,80 +54758,8 @@ function renderBuktiPermintaanModalGrid() {
 
   if (totalFiles === 0) {
     container.innerHTML = `
-      <div style="font-family: 'Poppins', Arial, sans-serif; background: #ffffff; color: #0f172a; padding: 18px; border-radius: 4px; border: 1px solid #cbd5e1; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
-        
-        <!-- Header Title: PERMINTAAN TOKO -->
-        <div style="text-align: center; font-size: 18px; font-weight: 800; border-bottom: 2.5px solid #0f172a; padding-bottom: 10px; margin-bottom: 16px; color: #0f172a; text-transform: uppercase; letter-spacing: 0.5px;">
-          PERMINTAAN TOKO
-        </div>
-
-        <!-- Info Grid -->
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 11.5px; color: #0f172a;">
-          <tr>
-            <td style="padding: 3px 0; width: 85px; font-weight: 600; color: #0f172a;">NO SURAT</td>
-            <td style="padding: 3px 4px; width: 12px; color: #0f172a;">:</td>
-            <td style="padding: 3px 0; font-weight: 600; color: #0284c7;">${req.noSurat || '-'}</td>
-            <td style="padding: 3px 0; width: 85px; font-weight: 600; color: #0f172a; text-align: left;">TANGGAL</td>
-            <td style="padding: 3px 4px; width: 12px; color: #0f172a; text-align: center;">:</td>
-            <td style="padding: 3px 0; font-weight: 400; color: #0f172a; width: 120px;">${req.tanggal || '-'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 3px 0; font-weight: 600; color: #0f172a;">TOKO</td>
-            <td style="padding: 3px 4px; color: #0f172a;">:</td>
-            <td style="padding: 3px 0; font-weight: 600; color: #0f172a; text-transform: uppercase;">${req.toko || '-'}</td>
-            <td style="padding: 3px 0; font-weight: 600; color: #0f172a; text-align: left;">JENIS</td>
-            <td style="padding: 3px 4px; color: #0f172a; text-align: center;">:</td>
-            <td style="padding: 3px 0; text-transform: uppercase; font-weight: 400; color: #0f172a;">${req.jenis || 'DEFAULT'}</td>
-          </tr>
-        </table>
-
-        <!-- Section Label -->
-        <div style="font-size: 11.5px; font-weight: 700; margin-bottom: 8px; color: #0f172a; text-transform: uppercase;">DETAIL PERMINTAAN:</div>
-
-        <!-- Items Table -->
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 11px; border: 1px solid #cbd5e1;">
-          <thead>
-            <tr style="background: #0284c7; color: #ffffff;">
-              <th style="width: 32px; text-align: center; padding: 7px 4px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600;">NO</th>
-              <th style="width: 110px; padding: 7px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600; text-align: left;">TIPE BARANG</th>
-              <th style="width: 110px; padding: 7px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600; text-align: left;">NO. SERI</th>
-              <th style="padding: 7px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600; text-align: left;">PERMINTAAN BARANG</th>
-              <th style="padding: 7px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600; text-align: left;">ALASAN PERMINTAAN</th>
-              <th style="width: 42px; text-align: center; padding: 7px 4px; border: 1px solid #0369a1; color: #ffffff; font-weight: 600;">QTY</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${itemsRowsHtml || '<tr><td colspan="6" style="text-align: center; padding: 10px; color: #94a3b8; font-weight: 400;">Tidak ada item</td></tr>'}
-          </tbody>
-        </table>
-
-        <!-- TTD Area Summary -->
-        <div style="display: flex; justify-content: space-around; text-align: center; font-size: 11px; margin-top: 10px; gap: 8px;">
-          <div style="flex: 1; border: 1px solid #e2e8f0; padding: 6px; border-radius: 4px; background: #f8fafc;">
-            <div style="font-weight: 500; color: #475569; margin-bottom: 2px;">PEMOHON (TOKO)</div>
-            <div style="height: 44px; display: flex; align-items: center; justify-content: center;">
-              ${pemohonTtdImg || '<span style="color: #94a3b8; font-style: italic; font-weight: 400;">ADA</span>'}
-            </div>
-            <div style="font-size: 10px; color: #64748b; font-weight: 400; margin-top: 2px;">${req.pemohonUserName || req.pemohon || 'Pemohon Toko'}</div>
-          </div>
-
-          <div style="flex: 1; border: 1px solid #e2e8f0; padding: 6px; border-radius: 4px; background: #f8fafc;">
-            <div style="font-weight: 500; color: #0284c7; margin-bottom: 2px;">SERVICE (VERIFIKATOR)</div>
-            <div style="height: 44px; display: flex; align-items: center; justify-content: center;">
-              ${serviceTtdImg}
-            </div>
-            <div style="font-size: 10px; color: #64748b; font-weight: 400; margin-top: 2px;">${req.serviceUserName || 'Service'}</div>
-          </div>
-
-          <div style="flex: 1; border: 1px dashed #16a34a; padding: 6px; border-radius: 4px; background: #f0fdf4;">
-            <div style="font-weight: 500; color: #16a34a; margin-bottom: 2px;">DM (DITANDATANGANI DI BEWAH)</div>
-            <div style="height: 44px; display: flex; align-items: center; justify-content: center; color: #16a34a; font-weight: 500; font-size: 10px;">
-              [ SILAKAN TTD DI CANVAS ]
-            </div>
-            <div style="font-size: 10px; color: #16a34a; font-weight: 500; margin-top: 2px;">${currentUser ? (currentUser.fullName || currentUser.username) : 'DM'}</div>
-          </div>
-        </div>
-
+      <div style="padding: 16px !important; text-align: center !important; color: #64748b !important; font-size: 12px !important; background: #f8fafc !important; border: 1px dashed #cbd5e1 !important; border-radius: 4px !important;">
+        Belum ada dokumen bukti permintaan yang diunggah.
       </div>
     `;
     return;

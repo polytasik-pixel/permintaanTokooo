@@ -11398,39 +11398,39 @@ body #inputPage.active {
 }
 
 /* ==========================================================================
-   100% FULL-WIDTH LAYOUT FOR SYSTEM NOTIFICATION POPUP (KANAN KIRI EDGE-TO-EDGE, PADDING 1MM)
+   PRESISION SIZE MATCH FOR SYSTEM NOTIFICATION POPUP (SAME AS POPUP CONFIRMATION)
    ========================================================================== */
 #popupNotif,
 html body #popupNotif {
-  padding: 0 !important;
-  margin: 0 !important;
-  width: 100vw !important;
-  max-width: 100vw !important;
+  padding: 16px !important;
+  margin: auto !important;
+  box-sizing: border-box !important;
 }
 
 #popupNotifCard,
 .popupNotifCard,
 html body #popupNotifCard,
 html body .popupNotifCard {
-  width: 100vw !important;
-  max-width: 100vw !important;
-  min-width: 100vw !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding-left: 1mm !important;
-  padding-right: 1mm !important;
-  border-left: none !important;
-  border-right: none !important;
-  border-radius: 0 !important;
+  width: min(420px, 92vw) !important;
+  max-width: 92vw !important;
+  min-width: 0 !important;
+  margin: auto !important;
+  padding: 0 !important;
+  border: 1px solid #000000 !important;
+  border-radius: 4px !important;
   box-sizing: border-box !important;
+  box-shadow: none !important;
 }
 
 #popupNotifMessage,
-#notifListBody,
-html body #popupNotifMessage,
-html body #notifListBody {
-  padding-left: 1mm !important;
-  padding-right: 1mm !important;
+html body #popupNotifMessage {
+  padding: 18px !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  color: #0f172a !important;
+  line-height: 1.5 !important;
+  background: #ffffff !important;
+  text-align: left !important;
 }
 
 /* ==========================================================================
