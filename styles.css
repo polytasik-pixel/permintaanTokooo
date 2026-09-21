@@ -10419,11 +10419,19 @@ html body .login-card button[type="submit"]:hover {
   border-bottom-right-radius: 0 !important;
 }
 
-/* PRES DAN PATEN UNTUK TABEL DASHBOARD 8 KOLOM */
-.dashboardTable th {
-  text-align: center !important;
-  padding-left: 5mm !important;
-  padding-right: 5mm !important;
+/* PRES DAN PATEN UNTUK TABEL DASHBOARD 8 KOLOM (PADDING KANAN KIRI 1MM) */
+.dashboardTable th,
+.dashboardTable td,
+#dashboardPage table th,
+#dashboardPage table td,
+#dashboardPage .dashboardTable th,
+#dashboardPage .dashboardTable td,
+html body #dashboardPage table th,
+html body #dashboardPage table td,
+html body table.dashboardTable th,
+html body table.dashboardTable td {
+  padding-left: 1mm !important;
+  padding-right: 1mm !important;
 }
 
 .dashboardTable th .th-sort-wrapper {
@@ -10434,77 +10442,55 @@ html body .login-card button[type="submit"]:hover {
   text-align: center !important;
 }
 
-.dashboardTable td {
-  padding-left: 5mm !important;
-  padding-right: 5mm !important;
-}
-
-/* AREA (col 1) & TANGGAL (col 2) - 1MM SPACE */
+/* SEMUA KOLOM (1-8) PADDING KANAN KIRI 1MM */
 .dashboardTable th:nth-child(1),
 .dashboardTable td:nth-child(1),
 .dashboardTable th:nth-child(2),
-.dashboardTable td:nth-child(2) {
-  width: 1% !important;
-  white-space: nowrap !important;
-  padding-left: 1mm !important;
-  padding-right: 1mm !important;
-}
-
-/* NO SURAT (col 3) - 5MM SPACE */
+.dashboardTable td:nth-child(2),
 .dashboardTable th:nth-child(3),
-.dashboardTable td:nth-child(3) {
-  width: 1% !important;
-  white-space: nowrap !important;
-  padding-left: 5mm !important;
-  padding-right: 5mm !important;
-}
-
-/* NAMA TOKO (col 4) - 5MM SPACE */
+.dashboardTable td:nth-child(3),
 .dashboardTable th:nth-child(4),
-.dashboardTable td:nth-child(4) {
-  width: 1% !important;
-  white-space: nowrap !important;
-  padding-left: 5mm !important;
-  padding-right: 5mm !important;
-}
-
-/* JENIS (col 5) - 5MM SPACE */
+.dashboardTable td:nth-child(4),
 .dashboardTable th:nth-child(5),
-.dashboardTable td:nth-child(5) {
-  width: 1% !important;
-  white-space: nowrap !important;
-  padding-left: 5mm !important;
-  padding-right: 5mm !important;
-  text-align: left !important;
-}
-
-/* JUMLAH ITEM (col 6) - 1MM SPACE */
+.dashboardTable td:nth-child(5),
 .dashboardTable th:nth-child(6),
-.dashboardTable td:nth-child(6) {
-  width: 1% !important;
-  white-space: nowrap !important;
+.dashboardTable td:nth-child(6),
+.dashboardTable th:nth-child(7),
+.dashboardTable td:nth-child(7),
+.dashboardTable th:nth-child(8),
+.dashboardTable td:nth-child(8) {
   padding-left: 1mm !important;
   padding-right: 1mm !important;
-  text-align: left !important;
 }
 
-/* KETERANGAN (col 7) - 5MM SPACE */
+.dashboardTable th:nth-child(1),
+.dashboardTable td:nth-child(1),
+.dashboardTable th:nth-child(2),
+.dashboardTable td:nth-child(2),
+.dashboardTable th:nth-child(3),
+.dashboardTable td:nth-child(3),
+.dashboardTable th:nth-child(4),
+.dashboardTable td:nth-child(4),
 .dashboardTable th:nth-child(7),
 .dashboardTable td:nth-child(7) {
   width: 1% !important;
   white-space: nowrap !important;
-  padding-left: 5mm !important;
-  padding-right: 5mm !important;
 }
 
-/* STATUS (AUTO-FIT BADGE) */
+.dashboardTable th:nth-child(5),
+.dashboardTable td:nth-child(5),
+.dashboardTable th:nth-child(6),
+.dashboardTable td:nth-child(6) {
+  width: 1% !important;
+  white-space: nowrap !important;
+  text-align: left !important;
+}
+
 .dashboardTable th:nth-child(8),
 .dashboardTable td:nth-child(8) {
   width: 1% !important;
   white-space: nowrap !important;
   min-width: 130px !important;
-  padding-left: 5mm !important;
-  padding-right: 5mm !important;
   text-align: center !important;
 }
 
@@ -11312,4 +11298,137 @@ html body #searchDashboard {
 #liveDateText,
 #liveClockWidget {
   display: none !important;
+}
+
+/* ==========================================================================
+   100% FULL-WIDTH LAYOUT FOR DASHBOARD PAGE (KANAN KIRI FULL EDGE-TO-EDGE)
+   ========================================================================== */
+#dashboardPage,
+html body #dashboardPage {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.app-main:has(#dashboardPage.active),
+body #dashboardPage.active {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#dashboardPage .dashboardTop,
+#dashboardPage .stats,
+#dashboardPage #detailDashboard,
+#detailDashboard {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+  box-sizing: border-box !important;
+}
+
+#detailDashboard {
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}
+
+#detailDashboard .tableWrap {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+  box-sizing: border-box !important;
+}
+
+#detailDashboard table,
+.dashboardTable {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.dashboardTable th,
+.dashboardTable td {
+  padding-left: 1mm !important;
+  padding-right: 1mm !important;
+}
+
+/* ==========================================================================
+   100% FULL-WIDTH LAYOUT FOR INPUT PAGE (KANAN KIRI FULL EDGE-TO-EDGE)
+   ========================================================================== */
+#inputPage,
+html body #inputPage {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.app-main:has(#inputPage.active),
+body #inputPage.active {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#inputPage > .box.card,
+#inputPage .card,
+#inputPage .box {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* ==========================================================================
+   100% FULL-WIDTH LAYOUT FOR SYSTEM NOTIFICATION POPUP (KANAN KIRI EDGE-TO-EDGE, PADDING 1MM)
+   ========================================================================== */
+#popupNotif,
+html body #popupNotif {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+}
+
+#popupNotifCard,
+.popupNotifCard,
+html body #popupNotifCard,
+html body .popupNotifCard {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  min-width: 100vw !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 1mm !important;
+  padding-right: 1mm !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+  box-sizing: border-box !important;
+}
+
+#popupNotifMessage,
+#notifListBody,
+html body #popupNotifMessage,
+html body #notifListBody {
+  padding-left: 1mm !important;
+  padding-right: 1mm !important;
 }
