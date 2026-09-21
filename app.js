@@ -1,4 +1,21 @@
 
+// ==========================================================================
+// PREVENT MOBILE CHROME TOP TAB / ADDRESS BAR BOUNCE SCROLL ON ALL PAGES
+// (INPUT PAGE, AKUN/PROFIL PAGE, DASHBOARD, RIWAYAT, MASTER DB, USER MGMT)
+// ==========================================================================
+(function lockMobileChromeAddressBarGlobally() {
+  if (typeof window === 'undefined' || typeof document === 'undefined') return;
+
+  document.addEventListener('touchmove', function(e) {
+    if (window.innerWidth <= 900) {
+      const isScrollableContent = e.target.closest('.app-main, .modalBackdrop, .popupOverlay, .tableWrap, .detailModalContent, .popupBox, select, input, textarea, form');
+      if (!isScrollableContent) {
+        if (e.cancelable) e.preventDefault();
+      }
+    }
+  }, { passive: false });
+})();
+
 function findRequestByNoSuratOrId(noSurat) {
   if (!noSurat) return null;
   const requests = typeof getRequestsFromDB === 'function' ? getRequestsFromDB() : [];
